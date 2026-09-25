@@ -1,0 +1,593 @@
+<!-- Three.js -->
+<!doctype html>
+
+<html class="" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <title>CORNESS — 3D Product Viewer Mobile</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #000;
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- STITCH_THREEJS_START:ANIMATION_43 class="fixed inset-0 w-full h-full bg-transparent" -->
+    <div
+      class="fixed inset-0 w-full h-full bg-transparent"
+      style="display: block"
+    >
+      <script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+      <div
+        id="threejs-container-ANIMATION_43"
+        style="width: 100%; height: 100%"
+      ></div>
+      <script>
+        (function () {
+          const container = document.getElementById(
+            "threejs-container-ANIMATION_43",
+          );
+          const devicePixelRatio = window.devicePixelRatio || 1;
+          // Interactive 3D Museum Coaster Viewer for Mobile (/my-product)
+          // Soft natural matte organic corn-cob finish with Xuan Phu folk heritage motifs and laser-engraved back side
+
+          const width = container.clientWidth || 360;
+          const height = container.clientHeight || 360;
+
+          const scene = new THREE.Scene();
+          const camera = new THREE.PerspectiveCamera(
+            38,
+            width / height,
+            0.1,
+            100,
+          );
+          camera.position.set(0, 1.4, 4.6);
+          camera.lookAt(0, 0, 0);
+
+          const renderer = new THREE.WebGLRenderer({
+            alpha: true,
+            antialias: true,
+            powerPreference: "high-performance",
+          });
+          renderer.setSize(width, height);
+          renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+          renderer.shadowMap.enabled = true;
+          renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+          renderer.toneMapping = THREE.ACESFilmicToneMapping;
+          renderer.toneMappingExposure = 0.95;
+          container.appendChild(renderer.domElement);
+
+          // Soft diffused museum natural lighting
+          const ambientLight = new THREE.AmbientLight(0xfcf7eb, 1.2);
+          scene.add(ambientLight);
+
+          const mainSpot = new THREE.SpotLight(
+            0xfff3de,
+            1.8,
+            25,
+            Math.PI / 3,
+            0.8,
+            1.2,
+          );
+          mainSpot.position.set(2.4, 5.0, 4.0);
+          mainSpot.castShadow = true;
+          mainSpot.shadow.mapSize.width = 1024;
+          mainSpot.shadow.mapSize.height = 1024;
+          mainSpot.shadow.bias = -0.0008;
+          scene.add(mainSpot);
+
+          const rimLight = new THREE.DirectionalLight(0xdcb055, 0.9);
+          rimLight.position.set(-3.0, 2.0, -2.0);
+          scene.add(rimLight);
+
+          const bottomFill = new THREE.DirectionalLight(0x4f6f3a, 0.6);
+          bottomFill.position.set(0, -2.5, 1.8);
+          scene.add(bottomFill);
+
+          const coasterGroup = new THREE.Group();
+          scene.add(coasterGroup);
+
+          // Front texture: Corn-cob composite + Folk Heritage motif
+          function createFrontTexture() {
+            const canvas = document.createElement("canvas");
+            canvas.width = 1024;
+            canvas.height = 1024;
+            const ctx = canvas.getContext("2d");
+
+            ctx.fillStyle = "#dfbe8f";
+            ctx.fillRect(0, 0, 1024, 1024);
+
+            // Organic corn cob flakes
+            const colors = [
+              "#c89f6d",
+              "#f1dbb3",
+              "#a77c48",
+              "#865b2f",
+              "#ede3cd",
+              "#b58b54",
+              "#79522b",
+            ];
+            for (let i = 0; i < 46000; i++) {
+              const x = Math.random() * 1024;
+              const y = Math.random() * 1024;
+              const r = Math.random() * 2.3 + 0.4;
+              ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+              ctx.beginPath();
+              ctx.arc(x, y, r, 0, Math.PI * 2);
+              ctx.fill();
+            }
+
+            ctx.save();
+            ctx.translate(512, 512);
+
+            // Border ring
+            ctx.beginPath();
+            ctx.arc(0, 0, 465, 0, Math.PI * 2);
+            ctx.strokeStyle = "rgba(62, 46, 29, 0.65)";
+            ctx.lineWidth = 7;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(0, 0, 448, 0, Math.PI * 2);
+            ctx.strokeStyle = "rgba(216, 166, 42, 0.7)";
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // Circumference typography
+            ctx.fillStyle = "#2d1f11";
+            ctx.font = 'bold 24px "Newsreader", serif, sans-serif';
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+
+            const textBottom =
+              "XUÂN PHÚ COMMUNE, ĐỒNG NAI PROVINCE  •  FROM WASTE TO STORY";
+            const radius = 418;
+            const step = (Math.PI * 1.35) / textBottom.length;
+            const startAngle =
+              Math.PI * 0.5 - ((textBottom.length - 1) * step) / 2;
+
+            for (let i = 0; i < textBottom.length; i++) {
+              const angle = startAngle + i * step;
+              ctx.save();
+              ctx.rotate(angle);
+              ctx.translate(0, radius);
+              ctx.rotate(Math.PI);
+              ctx.fillText(textBottom[i], 0, 0);
+              ctx.restore();
+            }
+
+            // Heritage center motif
+            ctx.beginPath();
+            ctx.arc(0, 0, 160, 0, Math.PI * 2);
+            ctx.fillStyle = "#d89b2b";
+            ctx.fill();
+            ctx.lineWidth = 9;
+            ctx.strokeStyle = "#1b4a34";
+            ctx.stroke();
+
+            for (let i = 0; i < 8; i++) {
+              ctx.save();
+              ctx.rotate((i * Math.PI) / 4);
+
+              ctx.beginPath();
+              ctx.moveTo(0, -60);
+              ctx.bezierCurveTo(70, -180, 80, -280, 0, -350);
+              ctx.bezierCurveTo(-80, -280, -70, -180, 0, -60);
+              ctx.fillStyle = "#2e5b3f";
+              ctx.fill();
+              ctx.strokeStyle = "#f4e3b7";
+              ctx.lineWidth = 4;
+              ctx.stroke();
+
+              ctx.beginPath();
+              ctx.moveTo(0, -80);
+              ctx.bezierCurveTo(40, -160, 45, -230, 0, -290);
+              ctx.bezierCurveTo(-45, -230, -40, -160, 0, -80);
+              ctx.fillStyle = "#c55d38";
+              ctx.fill();
+              ctx.stroke();
+
+              ctx.beginPath();
+              ctx.moveTo(0, -100);
+              ctx.bezierCurveTo(20, -140, 20, -180, 0, -220);
+              ctx.bezierCurveTo(-20, -180, -20, -140, 0, -100);
+              ctx.fillStyle = "#ebb33d";
+              ctx.fill();
+
+              ctx.restore();
+            }
+
+            // Center crest
+            ctx.beginPath();
+            ctx.arc(0, 0, 78, 0, Math.PI * 2);
+            ctx.fillStyle = "#f8f3e6";
+            ctx.fill();
+            ctx.lineWidth = 6;
+            ctx.strokeStyle = "#2e5b3f";
+            ctx.stroke();
+
+            ctx.fillStyle = "#213322";
+            ctx.font = 'bold 30px "Newsreader", serif';
+            ctx.fillText("MINH", 0, -12);
+            ctx.fillStyle = "#c55d38";
+            ctx.font = "bold 20px sans-serif";
+            ctx.fillText("2026", 0, 18);
+
+            ctx.restore();
+
+            const texture = new THREE.CanvasTexture(canvas);
+            texture.generateMipmaps = true;
+            return texture;
+          }
+
+          // Back side with laser engraved QR code & authentication
+          function createBackTexture() {
+            const canvas = document.createElement("canvas");
+            canvas.width = 1024;
+            canvas.height = 1024;
+            const ctx = canvas.getContext("2d");
+
+            ctx.fillStyle = "#d2b07e";
+            ctx.fillRect(0, 0, 1024, 1024);
+
+            const colors = ["#be935f", "#deb683", "#956c3c", "#795025"];
+            for (let i = 0; i < 38000; i++) {
+              const x = Math.random() * 1024;
+              const y = Math.random() * 1024;
+              const r = Math.random() * 2.2 + 0.4;
+              ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+              ctx.beginPath();
+              ctx.arc(x, y, r, 0, Math.PI * 2);
+              ctx.fill();
+            }
+
+            ctx.save();
+            ctx.translate(512, 512);
+
+            ctx.beginPath();
+            ctx.arc(0, 0, 440, 0, Math.PI * 2);
+            ctx.strokeStyle = "#4e331b";
+            ctx.lineWidth = 5;
+            ctx.setLineDash([14, 10]);
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            ctx.fillStyle = "#3a2412";
+            ctx.font = 'bold 24px "Newsreader", serif, sans-serif';
+            ctx.textAlign = "center";
+            ctx.fillText("CORNESS AUTHENTICATED ARTIFACT", 0, -280);
+
+            ctx.font = "600 20px monospace, sans-serif";
+            ctx.fillText("PRODUCT ID: CN-2026-0922-001", 0, -240);
+            ctx.fillText("86G RECYCLED CORN COB • XUÂN PHÚ", 0, -205);
+
+            const qrSize = 280;
+            const qrX = -qrSize / 2;
+            const qrY = -120;
+            ctx.fillStyle = "#2c190a";
+            ctx.fillRect(qrX, qrY, qrSize, qrSize);
+
+            ctx.fillStyle = "#f8f4eb";
+            ctx.fillRect(qrX + 16, qrY + 16, qrSize - 32, qrSize - 32);
+
+            ctx.fillStyle = "#2c190a";
+            function drawFinder(fx, fy) {
+              ctx.fillRect(fx, fy, 56, 56);
+              ctx.fillStyle = "#f8f4eb";
+              ctx.fillRect(fx + 10, fy + 10, 36, 36);
+              ctx.fillStyle = "#2c190a";
+              ctx.fillRect(fx + 18, fy + 18, 20, 20);
+            }
+            drawFinder(qrX + 28, qrY + 28);
+            drawFinder(qrX + qrSize - 84, qrY + 28);
+            drawFinder(qrX + 28, qrY + qrSize - 84);
+
+            for (let r = 0; r < 14; r++) {
+              for (let c = 0; c < 14; c++) {
+                if ((r < 5 && c < 5) || (r < 5 && c > 8) || (r > 8 && c < 5))
+                  continue;
+                if ((r * 7 + c * 13) % 3 === 0) {
+                  ctx.fillRect(qrX + 34 + c * 15, qrY + 34 + r * 15, 12, 12);
+                }
+              }
+            }
+
+            ctx.fillStyle = "#3a2412";
+            ctx.font = 'italic 20px "Newsreader", serif';
+            ctx.fillText("“Made by Minh — 22 September 2026”", 0, 220);
+            ctx.font = "bold 16px sans-serif";
+            ctx.fillStyle = "#1b4a34";
+            ctx.fillText("CORNESS WORKSHOP #04 • VERIFIED STORY", 0, 260);
+
+            ctx.restore();
+
+            const texture = new THREE.CanvasTexture(canvas);
+            texture.generateMipmaps = true;
+            return texture;
+          }
+
+          function createSideTexture() {
+            const canvas = document.createElement("canvas");
+            canvas.width = 512;
+            canvas.height = 64;
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#c79f6e";
+            ctx.fillRect(0, 0, 512, 64);
+            for (let i = 0; i < 4000; i++) {
+              ctx.fillStyle = ["#a27745", "#deb986", "#875d2e", "#f0e3cc"][
+                Math.floor(Math.random() * 4)
+              ];
+              ctx.fillRect(
+                Math.random() * 512,
+                Math.random() * 64,
+                Math.random() * 3 + 1,
+                Math.random() * 2 + 1,
+              );
+            }
+            const texture = new THREE.CanvasTexture(canvas);
+            texture.wrapS = THREE.RepeatWrapping;
+            texture.repeat.set(8, 1);
+            return texture;
+          }
+
+          const frontTex = createFrontTexture();
+          const backTex = createBackTexture();
+          const sideTex = createSideTexture();
+
+          const frontMat = new THREE.MeshStandardMaterial({
+            map: frontTex,
+            roughness: 0.95,
+            metalness: 0.0,
+          });
+
+          const backMat = new THREE.MeshStandardMaterial({
+            map: backTex,
+            roughness: 0.96,
+            metalness: 0.0,
+          });
+
+          const sideMat = new THREE.MeshStandardMaterial({
+            map: sideTex,
+            roughness: 0.98,
+            metalness: 0.0,
+          });
+
+          const coasterGeo = new THREE.CylinderGeometry(
+            1.45,
+            1.45,
+            0.14,
+            84,
+            1,
+            false,
+          );
+          const coasterMesh = new THREE.Mesh(coasterGeo, [
+            sideMat,
+            frontMat,
+            backMat,
+          ]);
+          coasterMesh.castShadow = true;
+          coasterGroup.add(coasterMesh);
+
+          // Ground soft shadow
+          const softShadowCanvas = document.createElement("canvas");
+          softShadowCanvas.width = 256;
+          softShadowCanvas.height = 256;
+          const sCtx = softShadowCanvas.getContext("2d");
+          const grad = sCtx.createRadialGradient(128, 128, 20, 128, 128, 120);
+          grad.addColorStop(0, "rgba(5, 15, 30, 0.7)");
+          grad.addColorStop(0.5, "rgba(8, 20, 40, 0.35)");
+          grad.addColorStop(1, "rgba(0, 0, 0, 0)");
+          sCtx.fillStyle = grad;
+          sCtx.fillRect(0, 0, 256, 256);
+
+          const contactShadowMat = new THREE.MeshBasicMaterial({
+            map: new THREE.CanvasTexture(softShadowCanvas),
+            transparent: true,
+            opacity: 0.85,
+            depthWrite: false,
+          });
+          const contactShadow = new THREE.Mesh(
+            new THREE.PlaneGeometry(3.6, 3.6),
+            contactShadowMat,
+          );
+          contactShadow.rotation.x = -Math.PI / 2;
+          contactShadow.position.y = -0.74;
+          scene.add(contactShadow);
+
+          coasterGroup.rotation.x = 0.36;
+          coasterGroup.rotation.y = -0.4;
+
+          let isDragging = false;
+          let prevMousePos = { x: 0, y: 0 };
+          let autoRotate = true;
+          let velocityX = 0;
+          let velocityY = 0;
+          let targetZoom = 4.6;
+          let currentZoom = 4.6;
+
+          const onDown = (clientX, clientY) => {
+            isDragging = true;
+            autoRotate = false;
+            prevMousePos = { x: clientX, y: clientY };
+          };
+
+          const onMove = (clientX, clientY) => {
+            if (!isDragging) return;
+            const dx = clientX - prevMousePos.x;
+            const dy = clientY - prevMousePos.y;
+            velocityX = dx * 0.009;
+            velocityY = dy * 0.009;
+            coasterGroup.rotation.y += velocityX;
+            coasterGroup.rotation.x += velocityY;
+            prevMousePos = { x: clientX, y: clientY };
+          };
+
+          const onUp = () => {
+            isDragging = false;
+          };
+
+          container.addEventListener("mousedown", (e) => {
+            onDown(e.clientX, e.clientY);
+            e.preventDefault();
+          });
+          window.addEventListener("mousemove", (e) =>
+            onMove(e.clientX, e.clientY),
+          );
+          window.addEventListener("mouseup", () => {
+            onUp();
+            clearTimeout(container._autoResume);
+            container._autoResume = setTimeout(() => {
+              autoRotate = true;
+            }, 3000);
+          });
+
+          let touchStartDist = 0;
+          container.addEventListener(
+            "touchstart",
+            (e) => {
+              if (e.touches.length === 1) {
+                onDown(e.touches[0].clientX, e.touches[0].clientY);
+              } else if (e.touches.length === 2) {
+                touchStartDist = Math.hypot(
+                  e.touches[0].clientX - e.touches[1].clientX,
+                  e.touches[0].clientY - e.touches[1].clientY,
+                );
+              }
+            },
+            { passive: true },
+          );
+
+          container.addEventListener(
+            "touchmove",
+            (e) => {
+              if (e.touches.length === 1) {
+                onMove(e.touches[0].clientX, e.touches[0].clientY);
+              } else if (e.touches.length === 2) {
+                const dist = Math.hypot(
+                  e.touches[0].clientX - e.touches[1].clientX,
+                  e.touches[0].clientY - e.touches[1].clientY,
+                );
+                const diff = dist - touchStartDist;
+                targetZoom = Math.max(
+                  2.6,
+                  Math.min(6.2, targetZoom - diff * 0.01),
+                );
+                touchStartDist = dist;
+              }
+            },
+            { passive: true },
+          );
+
+          container.addEventListener("touchend", () => {
+            onUp();
+            clearTimeout(container._autoResume);
+            container._autoResume = setTimeout(() => {
+              autoRotate = true;
+            }, 3000);
+          });
+
+          container.addEventListener(
+            "wheel",
+            (e) => {
+              e.preventDefault();
+              targetZoom += e.deltaY * 0.0035;
+              targetZoom = Math.max(2.6, Math.min(6.2, targetZoom));
+            },
+            { passive: false },
+          );
+
+          window.cornessMobileFlipFront = function () {
+            autoRotate = false;
+            coasterGroup.rotation.x = 0.35;
+            coasterGroup.rotation.y = 0;
+          };
+          window.cornessMobileFlipBack = function () {
+            autoRotate = false;
+            coasterGroup.rotation.x = -0.35;
+            coasterGroup.rotation.y = Math.PI;
+          };
+          window.cornessMobileReset = function () {
+            autoRotate = true;
+            targetZoom = 4.6;
+            coasterGroup.rotation.x = 0.36;
+            coasterGroup.rotation.y = -0.4;
+          };
+
+          function handleResize() {
+            const w = container.clientWidth || 360;
+            const h = container.clientHeight || 360;
+            camera.aspect = w / h;
+            camera.updateProjectionMatrix();
+            renderer.setSize(w, h);
+          }
+          window.addEventListener("resize", handleResize);
+
+          function animate() {
+            requestAnimationFrame(animate);
+
+            if (autoRotate && !isDragging) {
+              coasterGroup.rotation.y += 0.006;
+              coasterGroup.rotation.x +=
+                (0.35 - coasterGroup.rotation.x) * 0.02;
+            } else if (!isDragging) {
+              coasterGroup.rotation.y += velocityX;
+              coasterGroup.rotation.x += velocityY;
+              velocityX *= 0.92;
+              velocityY *= 0.92;
+            }
+
+            currentZoom += (targetZoom - currentZoom) * 0.09;
+            camera.position.z = currentZoom;
+            camera.position.y = currentZoom * 0.26;
+            camera.lookAt(0, 0, 0);
+
+            renderer.render(scene, camera);
+          }
+          animate();
+        })();
+      </script>
+    </div>
+    <!-- STITCH_THREEJS_END:ANIMATION_43 -->
+  </body>
+</html>
