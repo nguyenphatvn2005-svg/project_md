@@ -8,7 +8,7 @@
     <meta content="web_standard" name="shell-type" />
     <title>CORNESS — Workshop Thủ Công &amp; Hộ Chiếu Du Lịch</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&amp;family=Anton&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link
@@ -103,16 +103,151 @@
             },
             spacing: {},
             fontFamily: {
-              headline: ["Climate Crisis"],
-              display: ["Climate Crisis"],
-              body: ["Anton"],
-              label: ["Inter"],
+              headline: ["Playfair Display", "Georgia", "serif"],
+              display: ["Playfair Display", "Georgia", "serif"],
+              body: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
+              label: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
             },
             fontSize: {},
           },
         },
       };
     </script>
+
+    <style>
+      :root {
+        --corness-forest: #24452d;
+        --corness-forest-deep: #173320;
+        --corness-moss: #557344;
+        --corness-cream: #fbf7ee;
+        --corness-paper: #fffdf8;
+        --corness-gold: #c9962f;
+        --corness-earth: #73543c;
+        --corness-line: rgba(67, 72, 62, 0.14);
+        --corness-shadow: 0 18px 50px rgba(46, 57, 43, 0.08);
+        --corness-shadow-soft: 0 8px 24px rgba(46, 57, 43, 0.06);
+      }
+
+      html {
+        scroll-behavior: smooth;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body,
+      .font-body,
+      .font-label {
+        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+      }
+
+      .font-headline,
+      .font-display {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        font-kerning: normal;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at 8% 8%, rgba(201, 150, 47, 0.07), transparent 26rem),
+          radial-gradient(circle at 92% 18%, rgba(56, 86, 36, 0.055), transparent 30rem),
+          var(--corness-cream);
+      }
+
+      header {
+        background: rgba(251, 247, 238, 0.86) !important;
+        border-bottom: 1px solid rgba(56, 86, 36, 0.10);
+        backdrop-filter: blur(20px) saturate(155%);
+        -webkit-backdrop-filter: blur(20px) saturate(155%);
+        box-shadow: 0 8px 30px rgba(46, 57, 43, 0.055) !important;
+      }
+
+      header > div {
+        max-width: 1600px;
+        margin-inline: auto;
+      }
+
+      header nav {
+        border: 1px solid rgba(56, 86, 36, 0.09);
+        background: rgba(255, 253, 248, 0.70) !important;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+      }
+
+      header nav a {
+        border-radius: 0.65rem;
+        transition:
+          color 180ms ease,
+          background-color 180ms ease,
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      header nav a:hover {
+        transform: translateY(-1px);
+        background: rgba(56, 86, 36, 0.07) !important;
+      }
+
+      main .bg-surface-container-lowest.rounded-2xl {
+        border: 1px solid rgba(67, 72, 62, 0.10);
+        box-shadow: var(--corness-shadow-soft);
+      }
+
+      main .rounded-xl,
+      main .rounded-2xl {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      button {
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          background-color 180ms ease,
+          border-color 180ms ease,
+          color 180ms ease;
+      }
+
+      button:active {
+        transform: translateY(1px);
+      }
+
+      input,
+      textarea,
+      select {
+        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif !important;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(56, 86, 36, 0.12);
+      }
+
+      @media (max-width: 767px) {
+        header > div {
+          padding-inline: 1rem !important;
+        }
+
+        main {
+          overflow-x: clip;
+        }
+
+        .font-headline,
+        .font-display {
+          letter-spacing: -0.018em;
+        }
+      }
+    </style>
+
   </head>
   <body class="bg-surface font-body text-on-surface antialiased">
     <header
@@ -308,7 +443,6 @@
                   class="w-full h-full object-cover"
                   data-alt="Warm intimate candid photo inside a rustic Vietnamese corn husk artisan workshop in Xuan Phu Dong Nai. An elderly Vietnamese master artisan with warm weathered hands is guiding a young visitor pressing golden sun-dried corn husks and crushed cobs onto a bronze round mold. Sunlight streams through wooden slatted windows illuminating swirling botanical dust, ceramic plates, steaming fresh corn milk cups and tools."
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmhlDVQHhKI7GoJRKuNUhdKAw7orLKXPtiF-7CL3A-GZSLTjYcZMfWjcdga6glqLOOUDUNAm98tF6z9RikUsWVllVUvwAgh8OOBwYn4s-mQu-wPK8OFM_9Dw0Bt311gxMJu7mWhwVlq3uct7LOudhiKhlUJCTIiXSS2RuvvN-JiWhsqBty2huyARHpJZl-I_l7MoonlNRmjWcsZNRzPYkgfB7s_nwsdqN6YTLlnGV5yXT5M20pn9GAYg"
-                /
                     alt="Warm intimate candid photo inside a rustic Vietnamese corn husk artisan workshop in Xuan Phu Dong Nai. An elderly Vietnamese master artisan with warm weathered hands is guiding a young visitor pressing golden sun-dried corn husks and crushed cobs onto a bronze round mold. Sunlight streams through wooden slatted windows illuminating swirling botanical dust, ceramic plates, steaming fresh corn milk cups and tools."
                   >
                 <div
@@ -406,7 +540,6 @@
                     class="w-full h-full object-cover"
                     data-alt="Close up shot of warm rustic ceramic mugs filled with freshly boiled organic corn milk sprinkled with toasted corn powder, resting on a woven bamboo coaster next to sun-dried corn husks on an old elm table."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCENdxkbtV3MLf4-fhxzGlR2rpFdT29pRoAddEDUmfPNFo9bKEe1cAFdGXXcIUpV4b3B4TalnMnFmVYp3dVQbGd9W2i3k0ZKc1rRRLbA7X7kkNBBjiIa9GuZQs1GBeeL8f_w2zyF6H9Ug3sJsFgYzyMDo2d5qJmPxInWlcW2r8DSfOFl7i97ykCgyQ9z9C8eb0TrTLDR_s3l1PYLqIon6O-L_Ogzz4hRjn7jhbLtYd3UCyMrv2AYiU_eA"
-                  /
                     alt="Close up shot of warm rustic ceramic mugs filled with freshly boiled organic corn milk sprinkled with toasted corn powder, resting on a woven bamboo coaster next to sun-dried corn husks on an old elm table."
                   >
                 </div>
@@ -454,7 +587,6 @@
                     class="w-full h-full object-cover"
                     data-alt="Rustic wooden barn interior in Xuan Phu showing a large harvest collection of green and sun-dried corn on the cob, dried corn husk bundles, and dried corncobs neatly categorized in woven baskets and burlap sacks on a sturdy wooden table."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2PXcg2hDG5eBIq4AXmjxIvCJYuDpSzMo96VHRH0CEwdWqJ1wxcHFpcsDJdp7R9VTP__zlSrt7icboY9Zk859qhJ4tWQd8apRHyhpavs4I2ga3rSctLPCAFUV-LD2DRNzKic5yaSwIEQFsuRum4AZT0FNAdc2i3onhdHk4gCoYU9NYz8kxofGBWITCP2wFls50l0uVkopie1aF4emFQH6_p5YJKO3aMDF5ZICEQvMkO7f71o7Ih7Y7vw"
-                  /
                     alt="Rustic wooden barn interior in Xuan Phu showing a large harvest collection of green and sun-dried corn on the cob, dried corn husk bundles, and dried corncobs neatly categorized in woven baskets and burlap sacks on a sturdy wooden table."
                   >
                 </div>
@@ -500,7 +632,6 @@
                     class="w-full h-full object-cover"
                     data-alt="A vintage pneumatic thermal heat press machine in an artisan craft studio. Golden organic shredded corn husks blended with organic translucent cassava starch binder are being compressed inside a heavy round brass mold with slight steam rising."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuADYNiLd9woGOEwVwzYeiR65qOCIf7o_fNlTc1nI74DomHEgVye40tLnQWom_9vqTiirHc6ewG3JcF56OozLjRBBDob8_YoeqAbj62enGp0LMKC8IsfIUnS0IeYZrTs7xwbfgufle-W-i0_ue3TL6FUPieWVIvPt0JXVtiRd9GBKX7dJO_QoUkSL5BO85GQXmzV5txMQpyB1LmB7GQWhQQ4B_-ADQDW1cQ5RHILIep2f1P_sXF92z8RWA"
-                  /
                     alt="A vintage pneumatic thermal heat press machine in an artisan craft studio. Golden organic shredded corn husks blended with organic translucent cassava starch binder are being compressed inside a heavy round brass mold with slight steam rising."
                   >
                 </div>
@@ -548,7 +679,6 @@
                     class="w-full h-full object-cover"
                     data-alt="Artisanal coaster crafted from textured upcycled corn husk composite material inlaid with traditional Vietnamese ceramic glazed floral medallion pattern in sage green terracotta and deep cobalt blue glaze, fine handcrafted details."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3t2CEdyqS7JFIpNg5ls-Kinvesv61_YPAJOsy-9bPMVZ-EVrcrrtqEClwEAB9rKIjug8LsdQhfMx1DpRNlXNLsTRQhSyva13mOldmOYUaxVY4OGt8KXwJaIt3Nzm4IiUgsPIw89u3pZoMjQ6yMG2r_jaD8aNNijZBwz-KbTfIOCkzMvGw0REyFKnAgR3zx7CFXIlq6BoXZAoBeJpRDNujCf7hazGdJcoXB6JH2Mu3K8NFa-qthHmU_w"
-                  /
                     alt="Artisanal coaster crafted from textured upcycled corn husk composite material inlaid with traditional Vietnamese ceramic glazed floral medallion pattern in sage green terracotta and deep cobalt blue glaze, fine handcrafted details."
                   >
                 </div>
@@ -596,7 +726,6 @@
                     class="w-full h-full object-cover"
                     data-alt="Carefully hand-polishing a warm golden corn husk composite round coaster using a block of natural golden beeswax and a linen cloth, next to an unbleached recycled card gift box with a green wax seal."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD80bHMy0yO10peoW_Or4WTg-lWmUFFOjxKTX9f_Np4E51c6CHn4froFgS1DpLJtMcG9T_oewgUO4L68IOLk-sBjXIjagdjvwKCuMTNVjR_hdPU88okXslAgsVpTcjRToSF9lWgj4qORDgeYXaykkKvWxy0O-td1PuuNT1wyFkJdCmd_od2dloNA8eULloJcwu3rooE9TiF3S2C-d_WVo30yTl5XAWUpdTNUMBXn6ruUEXYxyM5Ycv6Kw"
-                  /
                     alt="Carefully hand-polishing a warm golden corn husk composite round coaster using a block of natural golden beeswax and a linen cloth, next to an unbleached recycled card gift box with a green wax seal."
                   >
                 </div>
@@ -756,7 +885,6 @@
                           class="w-full h-full object-cover"
                           data-alt="Circular artisan drink coaster made of pressed light brown corn husk composite with traditional Vietnamese glazed floral medallion inset on clean cream background."
                           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT9eG0kwSEwD_X-SSdgIoIUqZUPjI1i4jgvhABxZFASsoQJ0wHaSKJewhnXKzZ4VezVFaA4sBiW0CRKPb6sH0raPf3DZuw2vrhMpuuengvEY3AiGcKxEIQpAP1ZZ_91FxaVkdfzX9e7sNGsRom-UE10ocMzWzvUfs6iOeBPtgF29peY3yyrgzLrSoUQokfO5tL-DWCuBD3CRi-2ec7oX6oAFZE-lM9LeqjwYQq-u3BLz8f2hrH5IjHWA"
-                        /
                     alt="Circular artisan drink coaster made of pressed light brown corn husk composite with traditional Vietnamese glazed floral medallion inset on clean cream background."
                   >
                       </div>
@@ -791,7 +919,6 @@
                           class="w-full h-full object-cover"
                           data-alt="Large diameter heat-resistant pot trivet placemat made of pressed Vietnamese corn cob fibers with deep embossed sunburst motifs on studio surface."
                           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM4YV32HA30i0H1loW0QWV3GuWyTnYlGrYDZ42xd_OzNIdDj_rPHOPz8raOmnzD1pvwU9Fbs9aYnuavQ5A6AhBvXkMd1TGpq9fQE6-OCczHRVKE13e9aI-3T4Wsd_Oo1hEpIUdFxLpHWeKsAbDQZnv8fsCHma2qV-sCU7qAvP9DQA6ZkMt30y4q-jh896JUEzCxEC5iVObUpfcnATf4XtdhyRdij6r9iuXckMdXlZhiqde2oOGRJ6bOQ"
-                        /
                     alt="Large diameter heat-resistant pot trivet placemat made of pressed Vietnamese corn cob fibers with deep embossed sunburst motifs on studio surface."
                   >
                       </div>

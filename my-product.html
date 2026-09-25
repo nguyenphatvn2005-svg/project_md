@@ -8,7 +8,7 @@
     <meta content="web_standard" name="shell-type" />
     <title>CORNESS — Sản Phẩm Của Bạn &amp; Kỷ Ước Di Sản</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&amp;family=Anton&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link
@@ -103,16 +103,151 @@
             },
             spacing: {},
             fontFamily: {
-              headline: ["Climate Crisis"],
-              display: ["Climate Crisis"],
-              body: ["Anton"],
-              label: ["Inter"],
+              headline: ["Playfair Display", "Georgia", "serif"],
+              display: ["Playfair Display", "Georgia", "serif"],
+              body: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
+              label: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
             },
             fontSize: {},
           },
         },
       };
     </script>
+
+    <style>
+      :root {
+        --corness-forest: #24452d;
+        --corness-forest-deep: #173320;
+        --corness-moss: #557344;
+        --corness-cream: #fbf7ee;
+        --corness-paper: #fffdf8;
+        --corness-gold: #c9962f;
+        --corness-earth: #73543c;
+        --corness-line: rgba(67, 72, 62, 0.14);
+        --corness-shadow: 0 18px 50px rgba(46, 57, 43, 0.08);
+        --corness-shadow-soft: 0 8px 24px rgba(46, 57, 43, 0.06);
+      }
+
+      html {
+        scroll-behavior: smooth;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body,
+      .font-body,
+      .font-label {
+        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+      }
+
+      .font-headline,
+      .font-display {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        font-kerning: normal;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at 8% 8%, rgba(201, 150, 47, 0.07), transparent 26rem),
+          radial-gradient(circle at 92% 18%, rgba(56, 86, 36, 0.055), transparent 30rem),
+          var(--corness-cream);
+      }
+
+      header {
+        background: rgba(251, 247, 238, 0.86) !important;
+        border-bottom: 1px solid rgba(56, 86, 36, 0.10);
+        backdrop-filter: blur(20px) saturate(155%);
+        -webkit-backdrop-filter: blur(20px) saturate(155%);
+        box-shadow: 0 8px 30px rgba(46, 57, 43, 0.055) !important;
+      }
+
+      header > div {
+        max-width: 1600px;
+        margin-inline: auto;
+      }
+
+      header nav {
+        border: 1px solid rgba(56, 86, 36, 0.09);
+        background: rgba(255, 253, 248, 0.70) !important;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+      }
+
+      header nav a {
+        border-radius: 0.65rem;
+        transition:
+          color 180ms ease,
+          background-color 180ms ease,
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      header nav a:hover {
+        transform: translateY(-1px);
+        background: rgba(56, 86, 36, 0.07) !important;
+      }
+
+      main .bg-surface-container-lowest.rounded-2xl {
+        border: 1px solid rgba(67, 72, 62, 0.10);
+        box-shadow: var(--corness-shadow-soft);
+      }
+
+      main .rounded-xl,
+      main .rounded-2xl {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      button {
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          background-color 180ms ease,
+          border-color 180ms ease,
+          color 180ms ease;
+      }
+
+      button:active {
+        transform: translateY(1px);
+      }
+
+      input,
+      textarea,
+      select {
+        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif !important;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(56, 86, 36, 0.12);
+      }
+
+      @media (max-width: 767px) {
+        header > div {
+          padding-inline: 1rem !important;
+        }
+
+        main {
+          overflow-x: clip;
+        }
+
+        .font-headline,
+        .font-display {
+          letter-spacing: -0.018em;
+        }
+      }
+    </style>
+
   </head>
   <body class="bg-surface font-body text-on-surface antialiased">
     <header
@@ -1250,7 +1385,6 @@
                     class="w-full h-full object-cover"
                     data-alt="Rustic wooden barn table with fresh unhusked green sweetcorn on the left and a neat pile of dried raw corn cobs and husks on the right, natural warm golden sunlight streaming through wooden shutters."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAir85OKx43fxCnYjT5P-xE2Qe6I9DlmjdbINogEsXYTGMMOmm2AVN_avjDqSS_wl1DZedCn7WitYU09mprUgn92JbYkH3lpXv3K5PtGcb4pH1U2uEOjUgEeUI-yy5AP0z3EwMylDvFJX_3-t5o8cy4UjciUGJHSr2Wh0NMmg4icAd_cETaroNjQuw2bobYAZV_YWgNNHX1UhcJKx_pu4xSnHHZo_pEFTj9blf3eWZIoTBPQJ2Rn1smPA"
-                  /
                     alt="Rustic wooden barn table with fresh unhusked green sweetcorn on the left and a neat pile of dried raw corn cobs and husks on the right, natural warm golden sunlight streaming through wooden shutters."
                   >
                 </div>
@@ -1384,7 +1518,6 @@
                   class="w-10 h-10 rounded-full object-cover shadow-sm"
                   data-alt="Close-up portrait of an elderly Vietnamese artisan craftsman in his 60s named Ba Thien, gentle smiling eyes with warm laugh lines, wearing traditional earthy organic linen craft shirt, sun-drenched artisan craft studio background."
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGodkqP8evsTILrYz51zgNjSkYuX1-6og-Tngct2M7Uo-EQkRfEAxrgE0Y9T1b-EDk24UpGtRixceQLSWDC0PCLUnMxY0twwfqw7gxwaCn7iojHFEmAuJcmMyDHOQv79XVgvuxMjED9QyjpCbOZ9u3xFzcTNbOXRuHcc1w_fdKykfbJoDR43azBgMQij1ocbgKeAE7EJaZlnwgeCItrGs-QzsVweerixGmSz5xJeKPZH9AH-9b8DtTNA"
-                /
                     alt="Close-up portrait of an elderly Vietnamese artisan craftsman in his 60s named Ba Thien, gentle smiling eyes with warm laugh lines, wearing traditional earthy organic linen craft shirt, sun-drenched artisan craft studio background."
                   >
                 <div>
@@ -1408,7 +1541,6 @@
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     data-alt="Hands of a young craft learner and an older Vietnamese artisan sorting through sun-dried golden corn fibers and raw corn cobs on an aged wooden work table, warm afternoon light."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuPf505zb9bltd3dMbso9op-wG1RoLoLhy8Yb9CsD_SKVdxykg4JGrLhP5lsrvOIORKDZW5lJPYSvGZgM523Ydd1TqN7Mu7syo-mFxEENrsgrIN630sHXZ0YAE5LTWifzk43Fj2YeE1KOblCANXS4bcqypQdgTCa8CjNQ8EOb9bQ6aKBwYnZ-mG5ypXJ8kSYi1KAqycJJIDduiKBpAxFKHJltIGFrUglFBthTgfUmrlhp0fac-bhnf9w"
-                  /
                     alt="Hands of a young craft learner and an older Vietnamese artisan sorting through sun-dried golden corn fibers and raw corn cobs on an aged wooden work table, warm afternoon light."
                   >
                   <span
@@ -1445,7 +1577,6 @@
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     data-alt="Artisanal hydraulic manual press machine pressing natural beige fibrous corn bio-composite material into circular mold disc, artisan hands operating lever carefully in workshop."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuByBjmF_EQfyukc4msvGe2Mh5WI8gmXJHwV5tCDO2_jwWD-KNJb_I8XxFCYXXeCNYYOfA0xbkxRmEBD1VprR3OhUVZzJsMAzx2Z7NXRjAxOi9HVJFrzCaEK2_KRCcHoZ9JorYqUTiAIB1q4I4yniAoQEq4XV5cWDP3FxzYbRzzmVWBvrU3r8CyvmGP3KafwYRg8XSiCfZkfL2vwbtMxOeyNKJQU9Wfp3KOejTIeOjRmnbZKf5tFnpMbhA"
-                  /
                     alt="Artisanal hydraulic manual press machine pressing natural beige fibrous corn bio-composite material into circular mold disc, artisan hands operating lever carefully in workshop."
                   >
                   <span
@@ -1482,7 +1613,6 @@
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     data-alt="Close-up overhead view of hands delicately applying botanical natural color pigments in deep teal blue, saffron yellow, and brick orange onto circular textured eco-craft coaster coaster surface."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7E_SdID2Yob566iDMO_NMtpnW9-d-e582cGRoe4TMzJDV9smbYCqqb3xxuDpP7dtJ18hclXipFbIWfC1B4YOZaGnuDNb4vRo6Vrq8uqkQk-Rv85wFbRfzCGuq2ml-k4ywqR3hi0rNLxdMEs-AfcWQybf1Kh0EjeDBuFuQBIltqb9wZQrr7Knv1KOOjFATeoPhzuRB-qs53I9BvMtxEx3tjQpRcQM-uJxnT-exslEefjK80ENwlZmVJw"
-                  /
                     alt="Close-up overhead view of hands delicately applying botanical natural color pigments in deep teal blue, saffron yellow, and brick orange onto circular textured eco-craft coaster coaster surface."
                   >
                   <span
@@ -1519,7 +1649,6 @@
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     data-alt="Precision laser cutter beam carefully inscribing Vietnamese geographic text and owner signature onto edge rim of circular artisan corn husk coaster, subtle smoke wisps."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt5O-RZk653m4Sw4FH4TsFKuIwv0sGmAsFGpkux0SxCWv3roT2gdm8Yf0uR9e1eKrKAUJ8Cn3MautRl33Ew4fWZC2b1joCjS1PpuYU4ymFG21brlOewDX3_lPDnJLUu8Dsy0TS6wV25w1wV-HsNl-LblXAYRs8Daf6iCufW1F1spy_tp0gL0jUCyDZH4XG-4AWnDMtGLAGowFZzpV-XaAYKyZYnbhz1QHxy9R2s3XJfiDCZ_bD2YnzUQ"
-                  /
                     alt="Precision laser cutter beam carefully inscribing Vietnamese geographic text and owner signature onto edge rim of circular artisan corn husk coaster, subtle smoke wisps."
                   >
                   <span
@@ -1893,7 +2022,6 @@
                     class="max-h-full object-contain filter drop-shadow-md"
                     data-alt="Circular artisan coaster handcrafted from upcycled compressed corn cobs, decorated with rich blue and orange Vietnamese heritage botanical motifs."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW4Mu_M-soaCPbU2mq0G7yb2fQh5FKfm1aa8j0o4C7hS-5IB90OUvN8RIZOTj9fNI9mxWcWnxCu-W2yWmCsTuCd1dW6RifbspWPqhvUWzXyWTA2ji6ohl3Gc5QAqnc5vg-L6xsiC9G4U27tmFolVpdm0GyRQYK1qRR7_3xMxHkR6XHKlWxwbUIvfk0X2HZb-3cKfiUgaPZm9odLRc2kCO_L3tpct3Al7STes9fBXDXqfgh-JZtyquiSw"
-                  /
                     alt="Circular artisan coaster handcrafted from upcycled compressed corn cobs, decorated with rich blue and orange Vietnamese heritage botanical motifs."
                   >
                 </div>
@@ -1931,7 +2059,6 @@
                     class="max-h-full object-contain filter drop-shadow-md"
                     data-alt="Handmade bespoke notebook journal with textured woven corn husk paper cover in natural cream tone, embossed with minimalist green botanical corn leaf symbol, stitched linen binding on rustic wood surface."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgJRCmIjN80NvY0ehfEZGZdTlmqWMJzhkyyZ1yldCHszkMHsGAulRqDBuleFHXbAPHktueYZC4aHp0KomHF0kzloJMsXVs-rV6Je83y3bzvbYqsWGB7uMsiCfv3WwI2wX-1VQWICqkhv56XPAOy3kaXy0jpY7R0YDjJ6_E5dfVyl7Fbxhk4439l3us-V0RHDHWf4RnMSvxu7OjFKC7rsdLNVDNLL8wskxlR_dAXlD-9b1FcUKLT7ukrw"
-                  /
                     alt="Handmade bespoke notebook journal with textured woven corn husk paper cover in natural cream tone, embossed with minimalist green botanical corn leaf symbol, stitched linen binding on rustic wood surface."
                   >
                 </div>
@@ -1969,7 +2096,6 @@
                     class="max-h-full object-contain filter drop-shadow-md"
                     data-alt="Modern sculptural origami table lamp shade made of translucent pressed corn husk fiber diffusing warm honey-gold incandescent glow, organic craft room aesthetic."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_79jq2lgv3BtpXVHFHZ3rCAQnjnaMCRCsJAGGYpB2n2jXVtn41YoGOWfLDNw42gzCyMtCLOpvavaK0YuzPFx_wI93Q94IVKH49qoC8e5Q9ck_vxqmOHbVPyHg2A_Uzy4N2zabzhgkmb7KOi7jgTvD9ymgPVwqIrm0YPGuA-5zgucGtYeoSfuN7dEWxnt_tHitroL-0ltl7miYV-57axdcbuHckuk6DWw9O8Sh74HGErzZb1PlTnvCpA"
-                  /
                     alt="Modern sculptural origami table lamp shade made of translucent pressed corn husk fiber diffusing warm honey-gold incandescent glow, organic craft room aesthetic."
                   >
                 </div>

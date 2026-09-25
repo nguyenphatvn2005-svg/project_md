@@ -8,7 +8,7 @@
     <meta content="web_standard" name="shell-type" />
     <title>CORNESS — Cửa Hàng Tạo Tác &amp; Tác Động Bền Vững</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&amp;family=Anton&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link
@@ -103,16 +103,151 @@
             },
             spacing: {},
             fontFamily: {
-              headline: ["Climate Crisis"],
-              display: ["Climate Crisis"],
-              body: ["Anton"],
-              label: ["Inter"],
+              headline: ["Playfair Display", "Georgia", "serif"],
+              display: ["Playfair Display", "Georgia", "serif"],
+              body: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
+              label: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
             },
             fontSize: {},
           },
         },
       };
     </script>
+
+    <style>
+      :root {
+        --corness-forest: #24452d;
+        --corness-forest-deep: #173320;
+        --corness-moss: #557344;
+        --corness-cream: #fbf7ee;
+        --corness-paper: #fffdf8;
+        --corness-gold: #c9962f;
+        --corness-earth: #73543c;
+        --corness-line: rgba(67, 72, 62, 0.14);
+        --corness-shadow: 0 18px 50px rgba(46, 57, 43, 0.08);
+        --corness-shadow-soft: 0 8px 24px rgba(46, 57, 43, 0.06);
+      }
+
+      html {
+        scroll-behavior: smooth;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body,
+      .font-body,
+      .font-label {
+        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+      }
+
+      .font-headline,
+      .font-display {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        font-kerning: normal;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at 8% 8%, rgba(201, 150, 47, 0.07), transparent 26rem),
+          radial-gradient(circle at 92% 18%, rgba(56, 86, 36, 0.055), transparent 30rem),
+          var(--corness-cream);
+      }
+
+      header {
+        background: rgba(251, 247, 238, 0.86) !important;
+        border-bottom: 1px solid rgba(56, 86, 36, 0.10);
+        backdrop-filter: blur(20px) saturate(155%);
+        -webkit-backdrop-filter: blur(20px) saturate(155%);
+        box-shadow: 0 8px 30px rgba(46, 57, 43, 0.055) !important;
+      }
+
+      header > div {
+        max-width: 1600px;
+        margin-inline: auto;
+      }
+
+      header nav {
+        border: 1px solid rgba(56, 86, 36, 0.09);
+        background: rgba(255, 253, 248, 0.70) !important;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+      }
+
+      header nav a {
+        border-radius: 0.65rem;
+        transition:
+          color 180ms ease,
+          background-color 180ms ease,
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      header nav a:hover {
+        transform: translateY(-1px);
+        background: rgba(56, 86, 36, 0.07) !important;
+      }
+
+      main .bg-surface-container-lowest.rounded-2xl {
+        border: 1px solid rgba(67, 72, 62, 0.10);
+        box-shadow: var(--corness-shadow-soft);
+      }
+
+      main .rounded-xl,
+      main .rounded-2xl {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      button {
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          background-color 180ms ease,
+          border-color 180ms ease,
+          color 180ms ease;
+      }
+
+      button:active {
+        transform: translateY(1px);
+      }
+
+      input,
+      textarea,
+      select {
+        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif !important;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(56, 86, 36, 0.12);
+      }
+
+      @media (max-width: 767px) {
+        header > div {
+          padding-inline: 1rem !important;
+        }
+
+        main {
+          overflow-x: clip;
+        }
+
+        .font-headline,
+        .font-display {
+          letter-spacing: -0.018em;
+        }
+      }
+    </style>
+
   </head>
   <body class="bg-surface font-body text-on-surface antialiased">
     <header
@@ -543,7 +678,6 @@
                     class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                     data-alt="Square artisanal heat coaster pad crafted from compacted raw corn husks with engraved Vietnamese lotus flower motif filled with natural organic indigo and teal dyes, macro studio photography, warm morning sunlight, natural organic grain texture."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVj-Kw1321iGY5Jpeqc7G1nxU4sBefxT0ekqUdD051FlA1HEgFJ4K7fVLm71JEQwwNCWQJShW-RVdR-W447uRKeNjO2guIoDZ8tcyBpjlKe6r16a94Iuuq_DI97zIt-zmfxcnjSVSc6LRrhOmoeyB0gzF1e9vQPzYC22tKglH5uUwuBB0A0piET6l39d-KHQCa64VACJPL6_0V-zyih6qrB_Q8WjNisrZHBObEsVwv3IzGrbwDNCptxw"
-                  /
                     alt="Square artisanal heat coaster pad crafted from compacted raw corn husks with engraved Vietnamese lotus flower motif filled with natural organic indigo and teal dyes, macro studio photography, warm morning sunlight, natural organic grain texture."
                   >
                   <span
@@ -609,7 +743,6 @@
                     class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500"
                     data-alt="Sustainable artisanal DIY craft box opened on a rustic wooden table showing dried corn leaves, natural pigment bottles, carving stylus tools, mold shapes and illustrated guide booklet for home crafting, warm earth tones, overhead soft studio lighting."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrRl9Rf9sF9BCOrMLOhBJuzvYssTy1O_KRTHs01TNL_OFfwiA30u4adZ9-MyJWCsfEKXRAPB_57rF8BNgMhdcbFMzScHc3MxfpFgMyo7s31VOHY_bUBD5sS8U9AKj4cwLEf1B0qZ0lztLaWCHdX6jRHembJSreZ5ZFJB2HjWLufpjbRzD2jevlJcUK-y-HBSVg2CDkDiNta7Xq4VYwxPLRPmh8e_86BF898N2wa1hPobR_ywKysI08MQ"
-                  /
                     alt="Sustainable artisanal DIY craft box opened on a rustic wooden table showing dried corn leaves, natural pigment bottles, carving stylus tools, mold shapes and illustrated guide booklet for home crafting, warm earth tones, overhead soft studio lighting."
                   >
                   <span
@@ -676,7 +809,6 @@
                     class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500"
                     data-alt="High-end corporate luxury gift box made of recycled textured corn husk fiber packaging containing handcrafted coasters with laser engraved corporate logos, botanical certificates, and silk ribbons in deep green and gold tones, pristine commercial catalog product photography."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3NB9vo6xOfbBd9cgldSs_iMhvxBrGtBm-rtoa0pU2ZTtL4uK-LUz41REf04j3EpbCLeFmQOVHGp88RYQ3-omrlNUFvtAMYNEGxudKwX1wmkPuEWvJRtmpSjvtyyDr-p4HVlyUelHrOLXSvu3HgyUHTW4LnTS11OhKyGViGuYnYlFW_hecVwMsSLfMBM8kTc0moNr1jqYETs4riMNU8qYMdqhcSg5z74NeiE45quf3eAlxjLyyriHLUQ"
-                  /
                     alt="High-end corporate luxury gift box made of recycled textured corn husk fiber packaging containing handcrafted coasters with laser engraved corporate logos, botanical certificates, and silk ribbons in deep green and gold tones, pristine commercial catalog product photography."
                   >
                   <span
@@ -857,7 +989,6 @@
                       class="w-full h-full object-cover"
                       data-alt="Authentic portrait of a Vietnamese middle-aged artisan woman smiling proudly in her craft workshop in Dong Nai, holding corn husk craft coasters, soft natural ambient lighting, documentary style photography."
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXeSbOCdY4gQQvukA47IJsHVhM4MjYlWdRx1VKYSjdyMUYgMM0DapxwIPaRSqwhiqAf814MnGCtjG81dGrmPQksbfvdQd2rYAYdxKBQ3q7igRFvc14HJKyiCIx2RL3hJTT0Zup9s4Uzi3EjsUbaEef7S4YRVASr4hsaRrnhl8zJqAdefjWzWYxqRjxJfD7YxdXhQHOv_4WTKipd3Ly5RsVPuEoPY-xNETGf2_KE0EVTrbMQoH8RZVBow"
-                    /
                     alt="Authentic portrait of a Vietnamese middle-aged artisan woman smiling proudly in her craft workshop in Dong Nai, holding corn husk craft coasters, soft natural ambient lighting, documentary style photography."
                   >
                     <div

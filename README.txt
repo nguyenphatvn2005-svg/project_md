@@ -1,33 +1,37 @@
-CORNESS — FINAL FIX
-===================
+CORNESS — AI Cultural Studio / Premium UI Optimization
+====================================================
 
-Mục tiêu:
-- Giữ nguyên giao diện, màu sắc, bố cục, nội dung, Three.js, animation và logic JavaScript hiện có.
-- Chỉ sửa lỗi HTML/validator và các liên kết điều hướng rõ ràng.
+Đã tối ưu:
+- Font tiếng Việt:
+  + Headline / Display: Playfair Display
+  + Body / Label: Be Vietnam Pro
+- Header glass / backdrop blur / cân bằng spacing.
+- Card, border, shadow và typography được tinh chỉnh theo phong cách premium craft/heritage.
+- ai-studio.html:
+  + Giữ nguyên layout editor 8 cột + CORA 4 cột.
+  + Nâng cấp Substrate / Style / Motif active-hover states.
+  + Nâng cấp Live Preview frame.
+  + Nâng cấp CORA chat bubbles, quick prompts, input và sticky panel.
+- checkout.html:
+  + Giữ nguyên layout form 7 cột + summary 5 cột.
+  + Nâng cấp payment cards và trạng thái checked.
+  + Làm nổi bật Laser Personalization Preview.
+  + Nâng cấp sticky pricing / eco impact summary.
+- Responsive được bổ sung cho tablet/mobile.
 
-Đã sửa:
-1. Thêm <title> cho toàn bộ 9 trang.
-2. Bổ sung thuộc tính alt cho các ảnh đang chỉ có data-alt.
-3. Chuẩn hóa SVG viewbox -> viewBox.
-4. Bổ sung type="button" cho các button còn thiếu.
-5. Nối các liên kết data-path:
-   - Khám Phá -> index.html
-   - Trải Nghiệm & Workshop -> experience.html
-   - AI Studio & Kể Chuyện -> ai-studio.html
-   - Sản Phẩm Của Bạn -> my-product.html
-   - Cửa Hàng & Tác Động -> shop.html
-6. Đổi trang chính từ index(1).html thành index.html trong bộ xuất.
+Cam kết giữ nguyên:
+- Tất cả ID gốc.
+- Tất cả src hình ảnh.
+- Các class JavaScript tương tác gốc (chỉ thêm class visual mới ở một số wrapper).
+- Script logic cuối file.
+- Three.js và các viewer hiện có.
 
-Đã kiểm tra:
-- 9/9 file: đúng 1 <!doctype html>, 1 <html>, 1 <body>.
-- Không có ID trùng.
-- Không còn ảnh thiếu alt.
-- Không còn button thiếu type.
-- Không còn data-path href="#".
-- Không có liên kết .html nội bộ bị thiếu file.
-- CSS inline không có lỗi parse.
+Kiểm tra:
+- 9/9 file parse HTML hợp lệ.
+- Không có duplicate ID.
 - JavaScript inline 9/9 file qua node --check.
+- Tất cả src hình ảnh trùng tuyệt đối với bản gốc.
+- Tất cả ID gốc trùng tuyệt đối với bản gốc.
 
-Lưu ý:
-- Website dùng Tailwind CDN, Google Fonts, Google-hosted images và Three.js CDN nên cần Internet để hiển thị đầy đủ.
-- Mở cả thư mục bằng VS Code và chạy index.html bằng Live Server.
+Chạy:
+Mở cả thư mục bằng VS Code và chạy index.html bằng Live Server.

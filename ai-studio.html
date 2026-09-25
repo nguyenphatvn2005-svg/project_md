@@ -8,7 +8,7 @@
     <meta content="web_standard" name="shell-type" />
     <title>CORNESS — AI Cultural Studio &amp; CORA</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&amp;family=Anton&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link
@@ -103,16 +103,338 @@
             },
             spacing: {},
             fontFamily: {
-              headline: ["Climate Crisis"],
-              display: ["Climate Crisis"],
-              body: ["Anton"],
-              label: ["Inter"],
+              headline: ["Playfair Display", "Georgia", "serif"],
+              display: ["Playfair Display", "Georgia", "serif"],
+              body: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
+              label: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
             },
             fontSize: {},
           },
         },
       };
     </script>
+
+    <style>
+      :root {
+        --corness-forest: #24452d;
+        --corness-forest-deep: #173320;
+        --corness-moss: #557344;
+        --corness-cream: #fbf7ee;
+        --corness-paper: #fffdf8;
+        --corness-gold: #c9962f;
+        --corness-earth: #73543c;
+        --corness-line: rgba(67, 72, 62, 0.14);
+        --corness-shadow: 0 18px 50px rgba(46, 57, 43, 0.08);
+        --corness-shadow-soft: 0 8px 24px rgba(46, 57, 43, 0.06);
+      }
+
+      html {
+        scroll-behavior: smooth;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body,
+      .font-body,
+      .font-label {
+        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+      }
+
+      .font-headline,
+      .font-display {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        font-kerning: normal;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at 8% 8%, rgba(201, 150, 47, 0.07), transparent 26rem),
+          radial-gradient(circle at 92% 18%, rgba(56, 86, 36, 0.055), transparent 30rem),
+          var(--corness-cream);
+      }
+
+      header {
+        background: rgba(251, 247, 238, 0.86) !important;
+        border-bottom: 1px solid rgba(56, 86, 36, 0.10);
+        backdrop-filter: blur(20px) saturate(155%);
+        -webkit-backdrop-filter: blur(20px) saturate(155%);
+        box-shadow: 0 8px 30px rgba(46, 57, 43, 0.055) !important;
+      }
+
+      header > div {
+        max-width: 1600px;
+        margin-inline: auto;
+      }
+
+      header nav {
+        border: 1px solid rgba(56, 86, 36, 0.09);
+        background: rgba(255, 253, 248, 0.70) !important;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+      }
+
+      header nav a {
+        border-radius: 0.65rem;
+        transition:
+          color 180ms ease,
+          background-color 180ms ease,
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      header nav a:hover {
+        transform: translateY(-1px);
+        background: rgba(56, 86, 36, 0.07) !important;
+      }
+
+      main .bg-surface-container-lowest.rounded-2xl {
+        border: 1px solid rgba(67, 72, 62, 0.10);
+        box-shadow: var(--corness-shadow-soft);
+      }
+
+      main .rounded-xl,
+      main .rounded-2xl {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      button {
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          background-color 180ms ease,
+          border-color 180ms ease,
+          color 180ms ease;
+      }
+
+      button:active {
+        transform: translateY(1px);
+      }
+
+      input,
+      textarea,
+      select {
+        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif !important;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(56, 86, 36, 0.12);
+      }
+
+      @media (max-width: 767px) {
+        header > div {
+          padding-inline: 1rem !important;
+        }
+
+        main {
+          overflow-x: clip;
+        }
+
+        .font-headline,
+        .font-display {
+          letter-spacing: -0.018em;
+        }
+      }
+    </style>
+
+    <style>
+      .studio-editor-column > .bg-surface-container-lowest {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .studio-editor-column > .bg-surface-container-lowest::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto auto 0;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(201, 150, 47, 0.45), transparent);
+        pointer-events: none;
+      }
+
+      #substrate-selector .substrate-btn,
+      #style-selector .style-btn,
+      #motif-selector .motif-card {
+        border: 1px solid rgba(67, 72, 62, 0.11);
+        background: linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(248, 243, 233, 0.92));
+        box-shadow: 0 7px 20px rgba(46, 57, 43, 0.04);
+      }
+
+      #substrate-selector .substrate-btn:hover,
+      #style-selector .style-btn:hover,
+      #motif-selector .motif-card:hover {
+        border-color: rgba(56, 86, 36, 0.28);
+        transform: translateY(-2px);
+        box-shadow: 0 13px 28px rgba(46, 57, 43, 0.08);
+      }
+
+      #substrate-selector .substrate-btn.active,
+      #style-selector .style-btn.active {
+        border-color: rgba(56, 86, 36, 0.55);
+        background: linear-gradient(145deg, rgba(200, 238, 172, 0.38), rgba(255, 253, 248, 0.98));
+        box-shadow:
+          0 12px 28px rgba(56, 86, 36, 0.10),
+          inset 0 0 0 1px rgba(56, 86, 36, 0.18);
+      }
+
+      .corness-preview-stage {
+        position: relative;
+        border: 1px solid rgba(56, 86, 36, 0.12);
+        background:
+          radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.96) 0, rgba(248, 243, 233, 0.88) 45%, rgba(237, 232, 222, 0.94) 100%) !important;
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.85),
+          0 24px 60px rgba(46, 57, 43, 0.10);
+      }
+
+      .corness-preview-stage::before {
+        content: "LIVE PREVIEW • CORNESS CULTURAL RENDER";
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 2;
+        padding: .42rem .68rem;
+        border-radius: 999px;
+        border: 1px solid rgba(56, 86, 36, 0.13);
+        background: rgba(255, 253, 248, 0.82);
+        backdrop-filter: blur(12px);
+        color: #385624;
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: .12em;
+      }
+
+      #preview-art-container {
+        filter: drop-shadow(0 24px 26px rgba(53, 45, 33, 0.16));
+      }
+
+      #preview-art-container img {
+        transition: transform 320ms cubic-bezier(.2,.7,.2,1), filter 320ms ease;
+      }
+
+      #preview-art-container img:hover {
+        filter: saturate(1.04) contrast(1.02);
+      }
+
+      .cora-shell {
+        border: 1px solid rgba(56, 86, 36, 0.13) !important;
+        background: rgba(255, 253, 248, 0.94) !important;
+        box-shadow: 0 22px 55px rgba(32, 55, 36, 0.12) !important;
+      }
+
+      .cora-shell > :first-child {
+        background:
+          linear-gradient(135deg, rgba(56, 86, 36, 0.12), rgba(201, 150, 47, 0.08)),
+          #f2ede3 !important;
+        border-bottom: 1px solid rgba(56, 86, 36, 0.10);
+      }
+
+      #chat-messages {
+        background:
+          radial-gradient(circle at 15% 15%, rgba(200, 238, 172, 0.18), transparent 18rem),
+          linear-gradient(180deg, rgba(248, 243, 233, 0.64), rgba(255, 253, 248, 0.92)) !important;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(56, 86, 36, 0.22) transparent;
+      }
+
+      #chat-messages::-webkit-scrollbar {
+        width: 6px;
+        display: block;
+      }
+
+      #chat-messages::-webkit-scrollbar-thumb {
+        background: rgba(56, 86, 36, 0.22);
+        border-radius: 999px;
+      }
+
+      #chat-messages .bg-surface-container {
+        border: 1px solid rgba(67, 72, 62, 0.08);
+        background: rgba(255, 253, 248, 0.92) !important;
+        box-shadow: 0 7px 20px rgba(46, 57, 43, 0.05);
+      }
+
+      .quick-q-btn {
+        border: 1px solid rgba(56, 86, 36, 0.11);
+        background: rgba(248, 243, 233, 0.9) !important;
+      }
+
+      .quick-q-btn:hover {
+        border-color: rgba(56, 86, 36, 0.28);
+        background: rgba(200, 238, 172, 0.28) !important;
+        color: #304e1d;
+      }
+
+      #chat-input {
+        min-height: 42px;
+        border: 1px solid rgba(56, 86, 36, 0.12) !important;
+        background: rgba(255, 253, 248, 0.96) !important;
+        box-shadow: inset 0 1px 2px rgba(46, 57, 43, 0.04);
+      }
+
+      #send-chat-btn {
+        box-shadow: 0 8px 20px rgba(56, 86, 36, 0.22);
+      }
+
+      #generate-btn {
+        box-shadow: 0 10px 26px rgba(56, 86, 36, 0.20);
+      }
+
+      @media (min-width: 1024px) {
+        .cora-column {
+          position: sticky;
+          top: 7rem;
+        }
+
+        .cora-shell {
+          height: min(780px, calc(100vh - 8.5rem)) !important;
+          min-height: 640px;
+        }
+      }
+
+      @media (max-width: 1023px) {
+        .cora-shell {
+          height: 680px !important;
+        }
+
+        .corness-preview-stage::before {
+          max-width: calc(100% - 2rem);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      @media (max-width: 640px) {
+        #substrate-selector,
+        #style-selector,
+        #motif-selector {
+          gap: .75rem;
+        }
+
+        .cora-shell {
+          height: 620px !important;
+          border-radius: 1.25rem !important;
+        }
+
+        .corness-preview-stage {
+          padding: 1rem !important;
+        }
+      }
+    </style>
+
   </head>
   <body class="bg-surface font-body text-on-surface antialiased">
     <header
@@ -276,7 +598,7 @@
             class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
           >
             <!-- LEFT / MAIN: AI Cultural Designer (8 cols) -->
-            <div class="lg:col-span-8 space-y-8">
+            <div class="lg:col-span-8 space-y-8 studio-editor-column">
               <!-- Step 1: Chọn phôi ép lõi ngô -->
               <div
                 class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4"
@@ -721,7 +1043,7 @@
                 </div>
                 <!-- The Real Showcase Stage -->
                 <div
-                  class="relative w-full aspect-square md:aspect-[16/10] rounded-xl bg-gradient-to-b from-surface-container-low to-surface-container flex items-center justify-center p-6 overflow-hidden"
+                  class="relative w-full aspect-square md:aspect-[16/10] rounded-xl bg-gradient-to-b from-surface-container-low to-surface-container flex items-center justify-center p-6 overflow-hidden corness-preview-stage"
                 >
                   <!-- Real Product Artifacts Switcher (Images from Prompt Context) -->
                   <div
@@ -837,10 +1159,10 @@
               </div>
             </div>
             <!-- RIGHT / SUPPORT: Trợ Lý CORA — AI Heritage Companion (4 cols) -->
-            <div class="lg:col-span-4 space-y-6">
+            <div class="lg:col-span-4 space-y-6 cora-column">
               <!-- Assistant Window Card -->
               <div
-                class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col h-[780px]"
+                class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col h-[780px] cora-shell"
               >
                 <!-- Top Header: CORA Identity -->
                 <div

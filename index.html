@@ -8,7 +8,7 @@
     <meta content="web_standard" name="shell-type" />
     <title>CORNESS — Khám Phá &amp; Di Sản Văn Hóa Xuân Phú</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&amp;family=Anton&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link
@@ -103,16 +103,151 @@
             },
             spacing: {},
             fontFamily: {
-              headline: ["Climate Crisis"],
-              display: ["Climate Crisis"],
-              body: ["Anton"],
-              label: ["Inter"],
+              headline: ["Playfair Display", "Georgia", "serif"],
+              display: ["Playfair Display", "Georgia", "serif"],
+              body: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
+              label: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
             },
             fontSize: {},
           },
         },
       };
     </script>
+
+    <style>
+      :root {
+        --corness-forest: #24452d;
+        --corness-forest-deep: #173320;
+        --corness-moss: #557344;
+        --corness-cream: #fbf7ee;
+        --corness-paper: #fffdf8;
+        --corness-gold: #c9962f;
+        --corness-earth: #73543c;
+        --corness-line: rgba(67, 72, 62, 0.14);
+        --corness-shadow: 0 18px 50px rgba(46, 57, 43, 0.08);
+        --corness-shadow-soft: 0 8px 24px rgba(46, 57, 43, 0.06);
+      }
+
+      html {
+        scroll-behavior: smooth;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body,
+      .font-body,
+      .font-label {
+        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+      }
+
+      .font-headline,
+      .font-display {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        font-kerning: normal;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at 8% 8%, rgba(201, 150, 47, 0.07), transparent 26rem),
+          radial-gradient(circle at 92% 18%, rgba(56, 86, 36, 0.055), transparent 30rem),
+          var(--corness-cream);
+      }
+
+      header {
+        background: rgba(251, 247, 238, 0.86) !important;
+        border-bottom: 1px solid rgba(56, 86, 36, 0.10);
+        backdrop-filter: blur(20px) saturate(155%);
+        -webkit-backdrop-filter: blur(20px) saturate(155%);
+        box-shadow: 0 8px 30px rgba(46, 57, 43, 0.055) !important;
+      }
+
+      header > div {
+        max-width: 1600px;
+        margin-inline: auto;
+      }
+
+      header nav {
+        border: 1px solid rgba(56, 86, 36, 0.09);
+        background: rgba(255, 253, 248, 0.70) !important;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+      }
+
+      header nav a {
+        border-radius: 0.65rem;
+        transition:
+          color 180ms ease,
+          background-color 180ms ease,
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      header nav a:hover {
+        transform: translateY(-1px);
+        background: rgba(56, 86, 36, 0.07) !important;
+      }
+
+      main .bg-surface-container-lowest.rounded-2xl {
+        border: 1px solid rgba(67, 72, 62, 0.10);
+        box-shadow: var(--corness-shadow-soft);
+      }
+
+      main .rounded-xl,
+      main .rounded-2xl {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      button {
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          background-color 180ms ease,
+          border-color 180ms ease,
+          color 180ms ease;
+      }
+
+      button:active {
+        transform: translateY(1px);
+      }
+
+      input,
+      textarea,
+      select {
+        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif !important;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(56, 86, 36, 0.12);
+      }
+
+      @media (max-width: 767px) {
+        header > div {
+          padding-inline: 1rem !important;
+        }
+
+        main {
+          overflow-x: clip;
+        }
+
+        .font-headline,
+        .font-display {
+          letter-spacing: -0.018em;
+        }
+      }
+    </style>
+
   </head>
   <body class="bg-surface font-body text-on-surface antialiased">
     <header
@@ -947,7 +1082,6 @@
                     class="w-full h-full object-cover"
                     data-alt="Portrait of an elderly Vietnamese farmer Uncle Ba Thien in Dong Nai corn field with warm genuine smile, wearing conical hat and linen shirt, holding dried golden corn cobs, soft natural sunlight, earthy editorial photograph"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnfc6-aLlgB8CRl0cIjyzsFf4ILwJPXt2Rqg9DICQ79JPEuyx0DiS5annQ5B-YhdETu8O-JpSs4en1xGGUjX3E3GJFUuKNmjnjI_O0W4aPkqyXzlY0yeejP_kzArM4QS4aKjTEi8LHn5sbQ5Wew3JWKl5axO2RReb20SxJY5Ubb5nw1cBhLnrxpdYXYxskUY2YG0PQ4vdBzB5bN-5NJe31B_ZC2rt3ivackC2LMCID9UjKTD3HphnSIw"
-                  /
                     alt="Portrait of an elderly Vietnamese farmer Uncle Ba Thien in Dong Nai corn field with warm genuine smile, wearing conical hat and linen shirt, holding dried golden corn cobs, soft natural sunlight, earthy editorial photograph"
                   >
                 </div>
@@ -960,7 +1094,6 @@
                       class="w-full h-full object-cover"
                       data-alt="Close up hands of a Vietnamese artisan crafting circular coaster made of compressed corn husk with ceramic glaze inlay, meticulous craft detail, rustic wooden table background, soft lighting"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0K8Z0aCGqmasZht6F_q-087vQaHXy5X-LyaLKsaGqE00rU-fF9gXQtovrz0nrntGx157Zce2jGGk9FaIjnl-Fzn7clW-PFpjVRgqwDd8SbArpxYJsiQ7U78xBX85ok-TdZ3U_6zeyCl7tGbajDyxu5y2u82vcZOEeqjJlsa8J50pRxMCFMfmKG7a8Mmfgvf86IGpA3b667qRHlEzmlpiqtGd0K7ZoaDDpDu2wYDAopeQ-PYQwsIJ0jw"
-                    /
                     alt="Close up hands of a Vietnamese artisan crafting circular coaster made of compressed corn husk with ceramic glaze inlay, meticulous craft detail, rustic wooden table background, soft lighting"
                   >
                   </div>
