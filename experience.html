@@ -1,7 +1,7 @@
 <!-- CORNESS — Workshop Thủ Công & Hộ Chiếu Du Lịch (Desktop) -->
 <!doctype html>
 
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -105,8 +105,18 @@
             fontFamily: {
               headline: ["Playfair Display", "Georgia", "serif"],
               display: ["Playfair Display", "Georgia", "serif"],
-              body: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
-              label: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
+              body: [
+                "Be Vietnam Pro",
+                "ui-sans-serif",
+                "system-ui",
+                "sans-serif",
+              ],
+              label: [
+                "Be Vietnam Pro",
+                "ui-sans-serif",
+                "system-ui",
+                "sans-serif",
+              ],
             },
             fontSize: {},
           },
@@ -138,13 +148,20 @@
       body,
       .font-body,
       .font-label {
-        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system,
-          BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+        font-family:
+          "Be Vietnam Pro",
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif !important;
       }
 
       .font-headline,
       .font-display {
-        font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+        font-family:
+          "Playfair Display", Georgia, "Times New Roman", serif !important;
         font-weight: 700;
         letter-spacing: -0.025em;
         font-kerning: normal;
@@ -152,14 +169,22 @@
 
       body {
         background:
-          radial-gradient(circle at 8% 8%, rgba(201, 150, 47, 0.07), transparent 26rem),
-          radial-gradient(circle at 92% 18%, rgba(56, 86, 36, 0.055), transparent 30rem),
+          radial-gradient(
+            circle at 8% 8%,
+            rgba(201, 150, 47, 0.07),
+            transparent 26rem
+          ),
+          radial-gradient(
+            circle at 92% 18%,
+            rgba(56, 86, 36, 0.055),
+            transparent 30rem
+          ),
           var(--corness-cream);
       }
 
       header {
         background: rgba(251, 247, 238, 0.86) !important;
-        border-bottom: 1px solid rgba(56, 86, 36, 0.10);
+        border-bottom: 1px solid rgba(56, 86, 36, 0.1);
         backdrop-filter: blur(20px) saturate(155%);
         -webkit-backdrop-filter: blur(20px) saturate(155%);
         box-shadow: 0 8px 30px rgba(46, 57, 43, 0.055) !important;
@@ -172,7 +197,7 @@
 
       header nav {
         border: 1px solid rgba(56, 86, 36, 0.09);
-        background: rgba(255, 253, 248, 0.70) !important;
+        background: rgba(255, 253, 248, 0.7) !important;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
       }
 
@@ -191,7 +216,7 @@
       }
 
       main .bg-surface-container-lowest.rounded-2xl {
-        border: 1px solid rgba(67, 72, 62, 0.10);
+        border: 1px solid rgba(67, 72, 62, 0.1);
         box-shadow: var(--corness-shadow-soft);
       }
 
@@ -222,7 +247,8 @@
       input,
       textarea,
       select {
-        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif !important;
+        font-family:
+          "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif !important;
       }
 
       input:focus,
@@ -248,17 +274,18 @@
       }
     </style>
 
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body class="bg-surface font-body text-on-surface antialiased">
     <header
       class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(112,88,66,0.06)]"
     >
       <div class="h-20 w-full px-6 lg:px-12 flex items-center justify-between">
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 shrink-0 2xl:mr-5">
           <img
-            alt="Favicon and PWA app icon for CORNESS - Sustainable Corn Craft &amp; Cultural Heritage brand. Minimalist graphic symbol of the CORNESS brand emblem: an elegant stylised deep green botanical corn sprout seedling with golden sun-yellow corn kernel inside the arc of the letter 'C'. Full-bleed solid background in organic earthy sage cream color (#fbf7ee). No rounded rectangle, no squircle container, no outer border, no framing shapes. The minimalist emblem is centered with clean vector geometric lines, modern organic craft aesthetic, high contrast, clean, sharp SVG vector icon look, edge-to-edge square canvas."
-            class="h-8 w-auto object-contain"
-            src="https://lh3.googleusercontent.com/aida/AEtjO1WzNpDLsD48UmBI9njzaHuhpd-kvHb66e2_1TFmms2ojZMto5EutZFD5zFkMNF01zIQhlSNRBjDQPVenxHWDc0Hk-jaap42-gye2RMQZ8xrpTAQc328Bm3UacCDPJxIDpTw4CpAnU73GbmrQuJxBJBxVsOXa0MPyfw5hPhHnSZayu872RJ-n5skocm3KW3NKm71T0DO8j5nQx5j3RwEBROnodTTQY2Mv-XSSfJdVdJ9iEX-wm1w2gH5xBdv"
+            src="images/FGlogo.png"
+            alt="CORNESS"
+            class="h-14 w-14 shrink-0 object-contain"
           />
           <div class="flex flex-col">
             <span
@@ -271,7 +298,7 @@
           </div>
         </div>
         <nav
-          class="hidden xl:flex items-center gap-2 p-1 bg-surface-container-low rounded-xl"
+          class="hidden 2xl:flex items-center gap-1 p-1 bg-surface-container-low rounded-xl"
           data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"
         >
           <a
@@ -301,22 +328,9 @@
             >Cửa Hàng &amp; Tác Động</a
           >
         </nav>
-        <div class="flex items-center gap-3 lg:gap-4">
+        <div class="flex items-center gap-3 lg:gap-4 2xl:ml-5">
           <div
-            class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-xs font-label text-on-surface-variant font-medium"
-          >
-            <span class="hover:text-primary cursor-pointer transition-colors"
-              >VN</span
-            ><span class="text-outline-variant">|</span
-            ><span class="hover:text-primary cursor-pointer transition-colors"
-              >EN</span
-            ><span class="text-outline-variant">|</span
-            ><span class="hover:text-primary cursor-pointer transition-colors"
-              >KO</span
-            >
-          </div>
-          <div
-            class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium"
+            class="hidden 2xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium"
           >
             <span class="material-symbols-outlined text-[16px]">graphic_eq</span
             ><span>CORA AI Audio</span>
@@ -329,11 +343,20 @@
               >shopping_bag</span
             ></a
           ><a
-            class="hidden lg:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm"
+            class="hidden 2xl:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm"
             data-path="trai-nghiem-workshop"
             href="experience.html"
             >Đặt Workshop / Create Story</a
           >
+          <button
+            class="corness-mobile-toggle 2xl:hidden"
+            type="button"
+            aria-label="Mở menu"
+            aria-controls="corness-mobile-menu"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined text-[21px]">menu</span>
+          </button>
           <div
             class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"
           >
@@ -341,6 +364,81 @@
               >person</span
             >
           </div>
+        </div>
+      </div>
+
+      <div
+        id="corness-mobile-menu"
+        class="corness-mobile-menu 2xl:hidden"
+        data-open="false"
+        aria-hidden="true"
+      >
+        <button
+          class="corness-mobile-menu__backdrop"
+          type="button"
+          data-mobile-close
+          aria-label="Đóng menu"
+        ></button>
+        <div
+          class="corness-mobile-menu__panel"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menu điều hướng CORNESS"
+        >
+          <div class="corness-mobile-menu__top">
+            <div>
+              <div
+                class="font-headline text-lg text-primary uppercase leading-none"
+              >
+                CORNESS
+              </div>
+              <div
+                class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-1"
+              >
+                Xuân Phú • Đồng Nai
+              </div>
+            </div>
+            <button
+              class="corness-mobile-menu__close"
+              type="button"
+              data-mobile-close
+              aria-label="Đóng menu"
+            >
+              <span class="material-symbols-outlined text-[20px]">close</span>
+            </button>
+          </div>
+          <nav class="corness-mobile-nav" aria-label="Điều hướng di động">
+            <a href="index.html"
+              ><span class="material-symbols-outlined text-[20px]">explore</span
+              ><span>Khám Phá</span></a
+            >
+            <a href="experience.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >handyman</span
+              ><span>Trải Nghiệm &amp; Workshop</span></a
+            >
+            <a href="ai-studio.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >auto_awesome</span
+              ><span>AI Studio &amp; Kể Chuyện</span></a
+            >
+            <a href="my-product.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >deployed_code</span
+              ><span>Sản Phẩm Của Bạn</span></a
+            >
+            <a href="shop.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >storefront</span
+              ><span>Cửa Hàng &amp; Tác Động</span></a
+            >
+          </nav>
+          <a class="corness-mobile-cta" href="experience.html">
+            <span>Đặt Workshop / Create Story</span>
+            <span class="material-symbols-outlined text-[18px]"
+              >arrow_forward</span
+            >
+          </a>
         </div>
       </div>
     </header>
@@ -443,8 +541,8 @@
                   class="w-full h-full object-cover"
                   data-alt="Warm intimate candid photo inside a rustic Vietnamese corn husk artisan workshop in Xuan Phu Dong Nai. An elderly Vietnamese master artisan with warm weathered hands is guiding a young visitor pressing golden sun-dried corn husks and crushed cobs onto a bronze round mold. Sunlight streams through wooden slatted windows illuminating swirling botanical dust, ceramic plates, steaming fresh corn milk cups and tools."
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmhlDVQHhKI7GoJRKuNUhdKAw7orLKXPtiF-7CL3A-GZSLTjYcZMfWjcdga6glqLOOUDUNAm98tF6z9RikUsWVllVUvwAgh8OOBwYn4s-mQu-wPK8OFM_9Dw0Bt311gxMJu7mWhwVlq3uct7LOudhiKhlUJCTIiXSS2RuvvN-JiWhsqBty2huyARHpJZl-I_l7MoonlNRmjWcsZNRzPYkgfB7s_nwsdqN6YTLlnGV5yXT5M20pn9GAYg"
-                    alt="Warm intimate candid photo inside a rustic Vietnamese corn husk artisan workshop in Xuan Phu Dong Nai. An elderly Vietnamese master artisan with warm weathered hands is guiding a young visitor pressing golden sun-dried corn husks and crushed cobs onto a bronze round mold. Sunlight streams through wooden slatted windows illuminating swirling botanical dust, ceramic plates, steaming fresh corn milk cups and tools."
-                  >
+                  alt="Warm intimate candid photo inside a rustic Vietnamese corn husk artisan workshop in Xuan Phu Dong Nai. An elderly Vietnamese master artisan with warm weathered hands is guiding a young visitor pressing golden sun-dried corn husks and crushed cobs onto a bronze round mold. Sunlight streams through wooden slatted windows illuminating swirling botanical dust, ceramic plates, steaming fresh corn milk cups and tools."
+                />
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-6 text-on-primary"
                 >
@@ -541,7 +639,7 @@
                     data-alt="Close up shot of warm rustic ceramic mugs filled with freshly boiled organic corn milk sprinkled with toasted corn powder, resting on a woven bamboo coaster next to sun-dried corn husks on an old elm table."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCENdxkbtV3MLf4-fhxzGlR2rpFdT29pRoAddEDUmfPNFo9bKEe1cAFdGXXcIUpV4b3B4TalnMnFmVYp3dVQbGd9W2i3k0ZKc1rRRLbA7X7kkNBBjiIa9GuZQs1GBeeL8f_w2zyF6H9Ug3sJsFgYzyMDo2d5qJmPxInWlcW2r8DSfOFl7i97ykCgyQ9z9C8eb0TrTLDR_s3l1PYLqIon6O-L_Ogzz4hRjn7jhbLtYd3UCyMrv2AYiU_eA"
                     alt="Close up shot of warm rustic ceramic mugs filled with freshly boiled organic corn milk sprinkled with toasted corn powder, resting on a woven bamboo coaster next to sun-dried corn husks on an old elm table."
-                  >
+                  />
                 </div>
                 <div>
                   <h3 class="font-headline text-sm uppercase text-on-surface">
@@ -588,7 +686,7 @@
                     data-alt="Rustic wooden barn interior in Xuan Phu showing a large harvest collection of green and sun-dried corn on the cob, dried corn husk bundles, and dried corncobs neatly categorized in woven baskets and burlap sacks on a sturdy wooden table."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2PXcg2hDG5eBIq4AXmjxIvCJYuDpSzMo96VHRH0CEwdWqJ1wxcHFpcsDJdp7R9VTP__zlSrt7icboY9Zk859qhJ4tWQd8apRHyhpavs4I2ga3rSctLPCAFUV-LD2DRNzKic5yaSwIEQFsuRum4AZT0FNAdc2i3onhdHk4gCoYU9NYz8kxofGBWITCP2wFls50l0uVkopie1aF4emFQH6_p5YJKO3aMDF5ZICEQvMkO7f71o7Ih7Y7vw"
                     alt="Rustic wooden barn interior in Xuan Phu showing a large harvest collection of green and sun-dried corn on the cob, dried corn husk bundles, and dried corncobs neatly categorized in woven baskets and burlap sacks on a sturdy wooden table."
-                  >
+                  />
                 </div>
                 <div>
                   <h3 class="font-headline text-sm uppercase text-on-surface">
@@ -633,7 +731,7 @@
                     data-alt="A vintage pneumatic thermal heat press machine in an artisan craft studio. Golden organic shredded corn husks blended with organic translucent cassava starch binder are being compressed inside a heavy round brass mold with slight steam rising."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuADYNiLd9woGOEwVwzYeiR65qOCIf7o_fNlTc1nI74DomHEgVye40tLnQWom_9vqTiirHc6ewG3JcF56OozLjRBBDob8_YoeqAbj62enGp0LMKC8IsfIUnS0IeYZrTs7xwbfgufle-W-i0_ue3TL6FUPieWVIvPt0JXVtiRd9GBKX7dJO_QoUkSL5BO85GQXmzV5txMQpyB1LmB7GQWhQQ4B_-ADQDW1cQ5RHILIep2f1P_sXF92z8RWA"
                     alt="A vintage pneumatic thermal heat press machine in an artisan craft studio. Golden organic shredded corn husks blended with organic translucent cassava starch binder are being compressed inside a heavy round brass mold with slight steam rising."
-                  >
+                  />
                 </div>
                 <div>
                   <h3 class="font-headline text-sm uppercase text-on-surface">
@@ -680,7 +778,7 @@
                     data-alt="Artisanal coaster crafted from textured upcycled corn husk composite material inlaid with traditional Vietnamese ceramic glazed floral medallion pattern in sage green terracotta and deep cobalt blue glaze, fine handcrafted details."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3t2CEdyqS7JFIpNg5ls-Kinvesv61_YPAJOsy-9bPMVZ-EVrcrrtqEClwEAB9rKIjug8LsdQhfMx1DpRNlXNLsTRQhSyva13mOldmOYUaxVY4OGt8KXwJaIt3Nzm4IiUgsPIw89u3pZoMjQ6yMG2r_jaD8aNNijZBwz-KbTfIOCkzMvGw0REyFKnAgR3zx7CFXIlq6BoXZAoBeJpRDNujCf7hazGdJcoXB6JH2Mu3K8NFa-qthHmU_w"
                     alt="Artisanal coaster crafted from textured upcycled corn husk composite material inlaid with traditional Vietnamese ceramic glazed floral medallion pattern in sage green terracotta and deep cobalt blue glaze, fine handcrafted details."
-                  >
+                  />
                 </div>
                 <div>
                   <h3 class="font-headline text-sm uppercase text-on-surface">
@@ -727,7 +825,7 @@
                     data-alt="Carefully hand-polishing a warm golden corn husk composite round coaster using a block of natural golden beeswax and a linen cloth, next to an unbleached recycled card gift box with a green wax seal."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD80bHMy0yO10peoW_Or4WTg-lWmUFFOjxKTX9f_Np4E51c6CHn4froFgS1DpLJtMcG9T_oewgUO4L68IOLk-sBjXIjagdjvwKCuMTNVjR_hdPU88okXslAgsVpTcjRToSF9lWgj4qORDgeYXaykkKvWxy0O-td1PuuNT1wyFkJdCmd_od2dloNA8eULloJcwu3rooE9TiF3S2C-d_WVo30yTl5XAWUpdTNUMBXn6ruUEXYxyM5Ycv6Kw"
                     alt="Carefully hand-polishing a warm golden corn husk composite round coaster using a block of natural golden beeswax and a linen cloth, next to an unbleached recycled card gift box with a green wax seal."
-                  >
+                  />
                 </div>
                 <div>
                   <h3 class="font-headline text-sm uppercase text-on-surface">
@@ -885,8 +983,8 @@
                           class="w-full h-full object-cover"
                           data-alt="Circular artisan drink coaster made of pressed light brown corn husk composite with traditional Vietnamese glazed floral medallion inset on clean cream background."
                           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT9eG0kwSEwD_X-SSdgIoIUqZUPjI1i4jgvhABxZFASsoQJ0wHaSKJewhnXKzZ4VezVFaA4sBiW0CRKPb6sH0raPf3DZuw2vrhMpuuengvEY3AiGcKxEIQpAP1ZZ_91FxaVkdfzX9e7sNGsRom-UE10ocMzWzvUfs6iOeBPtgF29peY3yyrgzLrSoUQokfO5tL-DWCuBD3CRi-2ec7oX6oAFZE-lM9LeqjwYQq-u3BLz8f2hrH5IjHWA"
-                    alt="Circular artisan drink coaster made of pressed light brown corn husk composite with traditional Vietnamese glazed floral medallion inset on clean cream background."
-                  >
+                          alt="Circular artisan drink coaster made of pressed light brown corn husk composite with traditional Vietnamese glazed floral medallion inset on clean cream background."
+                        />
                       </div>
                       <div class="space-y-1">
                         <div class="flex items-center justify-between">
@@ -919,8 +1017,8 @@
                           class="w-full h-full object-cover"
                           data-alt="Large diameter heat-resistant pot trivet placemat made of pressed Vietnamese corn cob fibers with deep embossed sunburst motifs on studio surface."
                           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM4YV32HA30i0H1loW0QWV3GuWyTnYlGrYDZ42xd_OzNIdDj_rPHOPz8raOmnzD1pvwU9Fbs9aYnuavQ5A6AhBvXkMd1TGpq9fQE6-OCczHRVKE13e9aI-3T4Wsd_Oo1hEpIUdFxLpHWeKsAbDQZnv8fsCHma2qV-sCU7qAvP9DQA6ZkMt30y4q-jh896JUEzCxEC5iVObUpfcnATf4XtdhyRdij6r9iuXckMdXlZhiqde2oOGRJ6bOQ"
-                    alt="Large diameter heat-resistant pot trivet placemat made of pressed Vietnamese corn cob fibers with deep embossed sunburst motifs on studio surface."
-                  >
+                          alt="Large diameter heat-resistant pot trivet placemat made of pressed Vietnamese corn cob fibers with deep embossed sunburst motifs on studio surface."
+                        />
                       </div>
                       <div class="space-y-1">
                         <div class="flex items-center justify-between">
@@ -1715,5 +1813,7 @@
         </div>
       </div>
     </footer>
+    <script src="responsive.js"></script>
+    <script src="i18n.js"></script>
   </body>
 </html>

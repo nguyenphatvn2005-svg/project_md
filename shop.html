@@ -1,7 +1,7 @@
 <!-- CORNESS — Cửa Hàng Tạo Tác & Tác Động Bền Vững (Desktop) -->
 <!doctype html>
 
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -105,8 +105,18 @@
             fontFamily: {
               headline: ["Playfair Display", "Georgia", "serif"],
               display: ["Playfair Display", "Georgia", "serif"],
-              body: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
-              label: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
+              body: [
+                "Be Vietnam Pro",
+                "ui-sans-serif",
+                "system-ui",
+                "sans-serif",
+              ],
+              label: [
+                "Be Vietnam Pro",
+                "ui-sans-serif",
+                "system-ui",
+                "sans-serif",
+              ],
             },
             fontSize: {},
           },
@@ -138,13 +148,20 @@
       body,
       .font-body,
       .font-label {
-        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system,
-          BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+        font-family:
+          "Be Vietnam Pro",
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif !important;
       }
 
       .font-headline,
       .font-display {
-        font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+        font-family:
+          "Playfair Display", Georgia, "Times New Roman", serif !important;
         font-weight: 700;
         letter-spacing: -0.025em;
         font-kerning: normal;
@@ -152,14 +169,22 @@
 
       body {
         background:
-          radial-gradient(circle at 8% 8%, rgba(201, 150, 47, 0.07), transparent 26rem),
-          radial-gradient(circle at 92% 18%, rgba(56, 86, 36, 0.055), transparent 30rem),
+          radial-gradient(
+            circle at 8% 8%,
+            rgba(201, 150, 47, 0.07),
+            transparent 26rem
+          ),
+          radial-gradient(
+            circle at 92% 18%,
+            rgba(56, 86, 36, 0.055),
+            transparent 30rem
+          ),
           var(--corness-cream);
       }
 
       header {
         background: rgba(251, 247, 238, 0.86) !important;
-        border-bottom: 1px solid rgba(56, 86, 36, 0.10);
+        border-bottom: 1px solid rgba(56, 86, 36, 0.1);
         backdrop-filter: blur(20px) saturate(155%);
         -webkit-backdrop-filter: blur(20px) saturate(155%);
         box-shadow: 0 8px 30px rgba(46, 57, 43, 0.055) !important;
@@ -172,7 +197,7 @@
 
       header nav {
         border: 1px solid rgba(56, 86, 36, 0.09);
-        background: rgba(255, 253, 248, 0.70) !important;
+        background: rgba(255, 253, 248, 0.7) !important;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
       }
 
@@ -191,7 +216,7 @@
       }
 
       main .bg-surface-container-lowest.rounded-2xl {
-        border: 1px solid rgba(67, 72, 62, 0.10);
+        border: 1px solid rgba(67, 72, 62, 0.1);
         box-shadow: var(--corness-shadow-soft);
       }
 
@@ -222,7 +247,8 @@
       input,
       textarea,
       select {
-        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif !important;
+        font-family:
+          "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif !important;
       }
 
       input:focus,
@@ -248,17 +274,18 @@
       }
     </style>
 
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body class="bg-surface font-body text-on-surface antialiased">
     <header
       class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(112,88,66,0.06)]"
     >
       <div class="h-20 w-full px-6 lg:px-12 flex items-center justify-between">
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 shrink-0 2xl:mr-5">
           <img
-            alt="Favicon and PWA app icon for CORNESS - Sustainable Corn Craft &amp; Cultural Heritage brand. Minimalist graphic symbol of the CORNESS brand emblem: an elegant stylised deep green botanical corn sprout seedling with golden sun-yellow corn kernel inside the arc of the letter 'C'. Full-bleed solid background in organic earthy sage cream color (#fbf7ee). No rounded rectangle, no squircle container, no outer border, no framing shapes. The minimalist emblem is centered with clean vector geometric lines, modern organic craft aesthetic, high contrast, clean, sharp SVG vector icon look, edge-to-edge square canvas."
-            class="h-8 w-auto object-contain"
-            src="https://lh3.googleusercontent.com/aida/AEtjO1WzNpDLsD48UmBI9njzaHuhpd-kvHb66e2_1TFmms2ojZMto5EutZFD5zFkMNF01zIQhlSNRBjDQPVenxHWDc0Hk-jaap42-gye2RMQZ8xrpTAQc328Bm3UacCDPJxIDpTw4CpAnU73GbmrQuJxBJBxVsOXa0MPyfw5hPhHnSZayu872RJ-n5skocm3KW3NKm71T0DO8j5nQx5j3RwEBROnodTTQY2Mv-XSSfJdVdJ9iEX-wm1w2gH5xBdv"
+            alt="CORNESS"
+            class="h-14 w-14 shrink-0 object-contain"
+            src="images/FGlogo.png"
           />
           <div class="flex flex-col">
             <span
@@ -271,7 +298,7 @@
           </div>
         </div>
         <nav
-          class="hidden xl:flex items-center gap-2 p-1 bg-surface-container-low rounded-xl"
+          class="hidden 2xl:flex items-center gap-1 p-1 bg-surface-container-low rounded-xl"
           data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"
         >
           <a
@@ -301,22 +328,9 @@
             >Cửa Hàng &amp; Tác Động</a
           >
         </nav>
-        <div class="flex items-center gap-3 lg:gap-4">
+        <div class="flex items-center gap-3 lg:gap-4 2xl:ml-5">
           <div
-            class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-xs font-label text-on-surface-variant font-medium"
-          >
-            <span class="hover:text-primary cursor-pointer transition-colors"
-              >VN</span
-            ><span class="text-outline-variant">|</span
-            ><span class="hover:text-primary cursor-pointer transition-colors"
-              >EN</span
-            ><span class="text-outline-variant">|</span
-            ><span class="hover:text-primary cursor-pointer transition-colors"
-              >KO</span
-            >
-          </div>
-          <div
-            class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium"
+            class="hidden 2xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium"
           >
             <span class="material-symbols-outlined text-[16px]">graphic_eq</span
             ><span>CORA AI Audio</span>
@@ -329,11 +343,20 @@
               >shopping_bag</span
             ></a
           ><a
-            class="hidden lg:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm"
+            class="hidden 2xl:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm"
             data-path="trai-nghiem-workshop"
             href="experience.html"
             >Đặt Workshop / Create Story</a
           >
+          <button
+            class="corness-mobile-toggle 2xl:hidden"
+            type="button"
+            aria-label="Mở menu"
+            aria-controls="corness-mobile-menu"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined text-[21px]">menu</span>
+          </button>
           <div
             class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"
           >
@@ -341,6 +364,81 @@
               >person</span
             >
           </div>
+        </div>
+      </div>
+
+      <div
+        id="corness-mobile-menu"
+        class="corness-mobile-menu 2xl:hidden"
+        data-open="false"
+        aria-hidden="true"
+      >
+        <button
+          class="corness-mobile-menu__backdrop"
+          type="button"
+          data-mobile-close
+          aria-label="Đóng menu"
+        ></button>
+        <div
+          class="corness-mobile-menu__panel"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menu điều hướng CORNESS"
+        >
+          <div class="corness-mobile-menu__top">
+            <div>
+              <div
+                class="font-headline text-lg text-primary uppercase leading-none"
+              >
+                CORNESS
+              </div>
+              <div
+                class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-1"
+              >
+                Xuân Phú • Đồng Nai
+              </div>
+            </div>
+            <button
+              class="corness-mobile-menu__close"
+              type="button"
+              data-mobile-close
+              aria-label="Đóng menu"
+            >
+              <span class="material-symbols-outlined text-[20px]">close</span>
+            </button>
+          </div>
+          <nav class="corness-mobile-nav" aria-label="Điều hướng di động">
+            <a href="index.html"
+              ><span class="material-symbols-outlined text-[20px]">explore</span
+              ><span>Khám Phá</span></a
+            >
+            <a href="experience.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >handyman</span
+              ><span>Trải Nghiệm &amp; Workshop</span></a
+            >
+            <a href="ai-studio.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >auto_awesome</span
+              ><span>AI Studio &amp; Kể Chuyện</span></a
+            >
+            <a href="my-product.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >deployed_code</span
+              ><span>Sản Phẩm Của Bạn</span></a
+            >
+            <a href="shop.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >storefront</span
+              ><span>Cửa Hàng &amp; Tác Động</span></a
+            >
+          </nav>
+          <a class="corness-mobile-cta" href="experience.html">
+            <span>Đặt Workshop / Create Story</span>
+            <span class="material-symbols-outlined text-[18px]"
+              >arrow_forward</span
+            >
+          </a>
         </div>
       </div>
     </header>
@@ -382,17 +480,23 @@
               >
                 <button
                   class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-bold transition-all"
-                  data-curr="VND" type="button">
+                  data-curr="VND"
+                  type="button"
+                >
                   VND (đ)
                 </button>
                 <button
                   class="px-3.5 py-1.5 rounded-lg hover:text-on-surface transition-all"
-                  data-curr="USD" type="button">
+                  data-curr="USD"
+                  type="button"
+                >
                   USD ($)
                 </button>
                 <button
                   class="px-3.5 py-1.5 rounded-lg hover:text-on-surface transition-all"
-                  data-curr="KRW" type="button">
+                  data-curr="KRW"
+                  type="button"
+                >
                   KRW (₩)
                 </button>
               </div>
@@ -658,7 +762,9 @@
                       >
                     </div>
                     <button
-                      class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5" type="button">
+                      class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5"
+                      type="button"
+                    >
                       <span class="material-symbols-outlined text-[16px]"
                         >keyboard_double_arrow_left</span
                       >
@@ -679,7 +785,7 @@
                     data-alt="Square artisanal heat coaster pad crafted from compacted raw corn husks with engraved Vietnamese lotus flower motif filled with natural organic indigo and teal dyes, macro studio photography, warm morning sunlight, natural organic grain texture."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVj-Kw1321iGY5Jpeqc7G1nxU4sBefxT0ekqUdD051FlA1HEgFJ4K7fVLm71JEQwwNCWQJShW-RVdR-W447uRKeNjO2guIoDZ8tcyBpjlKe6r16a94Iuuq_DI97zIt-zmfxcnjSVSc6LRrhOmoeyB0gzF1e9vQPzYC22tKglH5uUwuBB0A0piET6l39d-KHQCa64VACJPL6_0V-zyih6qrB_Q8WjNisrZHBObEsVwv3IzGrbwDNCptxw"
                     alt="Square artisanal heat coaster pad crafted from compacted raw corn husks with engraved Vietnamese lotus flower motif filled with natural organic indigo and teal dyes, macro studio photography, warm morning sunlight, natural organic grain texture."
-                  >
+                  />
                   <span
                     class="absolute top-4 left-4 px-2.5 py-1 rounded-md bg-surface-container-highest text-tertiary font-label text-[10px] font-bold uppercase tracking-wider"
                   >
@@ -723,7 +829,9 @@
                       >
                     </div>
                     <button
-                      class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5" type="button">
+                      class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5"
+                      type="button"
+                    >
                       <span class="material-symbols-outlined text-[16px]"
                         >keyboard_double_arrow_left</span
                       >
@@ -744,7 +852,7 @@
                     data-alt="Sustainable artisanal DIY craft box opened on a rustic wooden table showing dried corn leaves, natural pigment bottles, carving stylus tools, mold shapes and illustrated guide booklet for home crafting, warm earth tones, overhead soft studio lighting."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrRl9Rf9sF9BCOrMLOhBJuzvYssTy1O_KRTHs01TNL_OFfwiA30u4adZ9-MyJWCsfEKXRAPB_57rF8BNgMhdcbFMzScHc3MxfpFgMyo7s31VOHY_bUBD5sS8U9AKj4cwLEf1B0qZ0lztLaWCHdX6jRHembJSreZ5ZFJB2HjWLufpjbRzD2jevlJcUK-y-HBSVg2CDkDiNta7Xq4VYwxPLRPmh8e_86BF898N2wa1hPobR_ywKysI08MQ"
                     alt="Sustainable artisanal DIY craft box opened on a rustic wooden table showing dried corn leaves, natural pigment bottles, carving stylus tools, mold shapes and illustrated guide booklet for home crafting, warm earth tones, overhead soft studio lighting."
-                  >
+                  />
                   <span
                     class="absolute top-4 left-4 px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed font-label text-[10px] font-bold uppercase tracking-wider"
                   >
@@ -789,7 +897,9 @@
                       >
                     </div>
                     <button
-                      class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5" type="button">
+                      class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5"
+                      type="button"
+                    >
                       <span class="material-symbols-outlined text-[16px]"
                         >keyboard_double_arrow_left</span
                       >
@@ -810,7 +920,7 @@
                     data-alt="High-end corporate luxury gift box made of recycled textured corn husk fiber packaging containing handcrafted coasters with laser engraved corporate logos, botanical certificates, and silk ribbons in deep green and gold tones, pristine commercial catalog product photography."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3NB9vo6xOfbBd9cgldSs_iMhvxBrGtBm-rtoa0pU2ZTtL4uK-LUz41REf04j3EpbCLeFmQOVHGp88RYQ3-omrlNUFvtAMYNEGxudKwX1wmkPuEWvJRtmpSjvtyyDr-p4HVlyUelHrOLXSvu3HgyUHTW4LnTS11OhKyGViGuYnYlFW_hecVwMsSLfMBM8kTc0moNr1jqYETs4riMNU8qYMdqhcSg5z74NeiE45quf3eAlxjLyyriHLUQ"
                     alt="High-end corporate luxury gift box made of recycled textured corn husk fiber packaging containing handcrafted coasters with laser engraved corporate logos, botanical certificates, and silk ribbons in deep green and gold tones, pristine commercial catalog product photography."
-                  >
+                  />
                   <span
                     class="absolute top-4 left-4 px-2.5 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label text-[10px] font-bold uppercase tracking-wider"
                   >
@@ -851,7 +961,9 @@
                       >
                     </div>
                     <button
-                      class="px-4 py-2.5 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5" type="button">
+                      class="px-4 py-2.5 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5"
+                      type="button"
+                    >
                       <span class="material-symbols-outlined text-[16px]"
                         >contact_support</span
                       >
@@ -947,7 +1059,9 @@
                 <div class="pt-2 flex flex-wrap items-center gap-4">
                   <button
                     class="px-5 py-3 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-all shadow-md flex items-center gap-2"
-                    id="demo-qr-btn" type="button">
+                    id="demo-qr-btn"
+                    type="button"
+                  >
                     <span class="material-symbols-outlined text-lg"
                       >center_focus_strong</span
                     >
@@ -989,8 +1103,8 @@
                       class="w-full h-full object-cover"
                       data-alt="Authentic portrait of a Vietnamese middle-aged artisan woman smiling proudly in her craft workshop in Dong Nai, holding corn husk craft coasters, soft natural ambient lighting, documentary style photography."
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXeSbOCdY4gQQvukA47IJsHVhM4MjYlWdRx1VKYSjdyMUYgMM0DapxwIPaRSqwhiqAf814MnGCtjG81dGrmPQksbfvdQd2rYAYdxKBQ3q7igRFvc14HJKyiCIx2RL3hJTT0Zup9s4Uzi3EjsUbaEef7S4YRVASr4hsaRrnhl8zJqAdefjWzWYxqRjxJfD7YxdXhQHOv_4WTKipd3Ly5RsVPuEoPY-xNETGf2_KE0EVTrbMQoH8RZVBow"
-                    alt="Authentic portrait of a Vietnamese middle-aged artisan woman smiling proudly in her craft workshop in Dong Nai, holding corn husk craft coasters, soft natural ambient lighting, documentary style photography."
-                  >
+                      alt="Authentic portrait of a Vietnamese middle-aged artisan woman smiling proudly in her craft workshop in Dong Nai, holding corn husk craft coasters, soft natural ambient lighting, documentary style photography."
+                    />
                     <div
                       class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-4"
                     >
@@ -1412,5 +1526,7 @@
         </div>
       </div>
     </footer>
+    <script src="responsive.js"></script>
+    <script src="i18n.js"></script>
   </body>
 </html>

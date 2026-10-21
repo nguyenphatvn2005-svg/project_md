@@ -1,7 +1,7 @@
 <!-- CORNESS — Thanh Toán Workshop (Desktop Checkout) -->
 <!doctype html>
 
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -105,8 +105,18 @@
             fontFamily: {
               headline: ["Playfair Display", "Georgia", "serif"],
               display: ["Playfair Display", "Georgia", "serif"],
-              body: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
-              label: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
+              body: [
+                "Be Vietnam Pro",
+                "ui-sans-serif",
+                "system-ui",
+                "sans-serif",
+              ],
+              label: [
+                "Be Vietnam Pro",
+                "ui-sans-serif",
+                "system-ui",
+                "sans-serif",
+              ],
             },
             fontSize: {},
           },
@@ -138,13 +148,20 @@
       body,
       .font-body,
       .font-label {
-        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system,
-          BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+        font-family:
+          "Be Vietnam Pro",
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif !important;
       }
 
       .font-headline,
       .font-display {
-        font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+        font-family:
+          "Playfair Display", Georgia, "Times New Roman", serif !important;
         font-weight: 700;
         letter-spacing: -0.025em;
         font-kerning: normal;
@@ -152,14 +169,22 @@
 
       body {
         background:
-          radial-gradient(circle at 8% 8%, rgba(201, 150, 47, 0.07), transparent 26rem),
-          radial-gradient(circle at 92% 18%, rgba(56, 86, 36, 0.055), transparent 30rem),
+          radial-gradient(
+            circle at 8% 8%,
+            rgba(201, 150, 47, 0.07),
+            transparent 26rem
+          ),
+          radial-gradient(
+            circle at 92% 18%,
+            rgba(56, 86, 36, 0.055),
+            transparent 30rem
+          ),
           var(--corness-cream);
       }
 
       header {
         background: rgba(251, 247, 238, 0.86) !important;
-        border-bottom: 1px solid rgba(56, 86, 36, 0.10);
+        border-bottom: 1px solid rgba(56, 86, 36, 0.1);
         backdrop-filter: blur(20px) saturate(155%);
         -webkit-backdrop-filter: blur(20px) saturate(155%);
         box-shadow: 0 8px 30px rgba(46, 57, 43, 0.055) !important;
@@ -172,7 +197,7 @@
 
       header nav {
         border: 1px solid rgba(56, 86, 36, 0.09);
-        background: rgba(255, 253, 248, 0.70) !important;
+        background: rgba(255, 253, 248, 0.7) !important;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
       }
 
@@ -191,7 +216,7 @@
       }
 
       main .bg-surface-container-lowest.rounded-2xl {
-        border: 1px solid rgba(67, 72, 62, 0.10);
+        border: 1px solid rgba(67, 72, 62, 0.1);
         box-shadow: var(--corness-shadow-soft);
       }
 
@@ -222,7 +247,8 @@
       input,
       textarea,
       select {
-        font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif !important;
+        font-family:
+          "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif !important;
       }
 
       input:focus,
@@ -252,7 +278,7 @@
       .checkout-form-column > section,
       .checkout-summary-column > div,
       .checkout-summary-column > section {
-        border: 1px solid rgba(67, 72, 62, 0.10);
+        border: 1px solid rgba(67, 72, 62, 0.1);
       }
 
       .checkout-form-column > section {
@@ -260,8 +286,12 @@
       }
 
       #payment-method-selector label {
-        border: 1px solid rgba(67, 72, 62, 0.10);
-        background: linear-gradient(180deg, rgba(255,253,248,.98), rgba(248,243,233,.88)) !important;
+        border: 1px solid rgba(67, 72, 62, 0.1);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 253, 248, 0.98),
+          rgba(248, 243, 233, 0.88)
+        ) !important;
         box-shadow: 0 6px 18px rgba(46, 57, 43, 0.035);
       }
 
@@ -272,8 +302,12 @@
       }
 
       #payment-method-selector label:has(input:checked) {
-        border-color: rgba(56, 86, 36, 0.50);
-        background: linear-gradient(145deg, rgba(200, 238, 172, 0.28), rgba(255,253,248,.98)) !important;
+        border-color: rgba(56, 86, 36, 0.5);
+        background: linear-gradient(
+          145deg,
+          rgba(200, 238, 172, 0.28),
+          rgba(255, 253, 248, 0.98)
+        ) !important;
         box-shadow:
           0 12px 28px rgba(56, 86, 36, 0.08),
           inset 0 0 0 1px rgba(56, 86, 36, 0.13);
@@ -282,12 +316,16 @@
       .laser-preview-badge {
         position: relative;
         overflow: hidden;
-        border: 1px solid rgba(201, 150, 47, 0.30);
+        border: 1px solid rgba(201, 150, 47, 0.3);
         background:
-          radial-gradient(circle at 50% 30%, rgba(255,255,255,.80), transparent 55%),
+          radial-gradient(
+            circle at 50% 30%,
+            rgba(255, 255, 255, 0.8),
+            transparent 55%
+          ),
           linear-gradient(145deg, #efe4cc, #e2d2b4) !important;
         box-shadow:
-          inset 0 1px 0 rgba(255,255,255,.75),
+          inset 0 1px 0 rgba(255, 255, 255, 0.75),
           0 12px 28px rgba(97, 74, 53, 0.11) !important;
       }
 
@@ -296,18 +334,18 @@
         position: absolute;
         inset: 6px;
         border: 1px dashed rgba(97, 74, 53, 0.24);
-        border-radius: .55rem;
+        border-radius: 0.55rem;
         pointer-events: none;
       }
 
       #laser-preview-text {
         position: relative;
         z-index: 1;
-        text-shadow: 0 1px 0 rgba(255,255,255,.8);
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
       }
 
       #laser-text-input {
-        border: 1px solid rgba(201, 150, 47, 0.20) !important;
+        border: 1px solid rgba(201, 150, 47, 0.2) !important;
         background: rgba(255, 253, 248, 0.94) !important;
       }
 
@@ -324,7 +362,7 @@
       }
 
       #checkout-submit-btn {
-        box-shadow: 0 12px 30px rgba(56, 86, 36, 0.20);
+        box-shadow: 0 12px 30px rgba(56, 86, 36, 0.2);
       }
 
       #coupon-input,
@@ -353,17 +391,18 @@
       }
     </style>
 
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body class="bg-surface font-body text-on-surface antialiased">
     <header
       class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(112,88,66,0.06)]"
     >
       <div class="h-20 w-full px-6 lg:px-12 flex items-center justify-between">
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 shrink-0 2xl:mr-5">
           <img
-            alt="Favicon and PWA app icon for CORNESS - Sustainable Corn Craft &amp; Cultural Heritage brand. Minimalist graphic symbol of the CORNESS brand emblem: an elegant stylised deep green botanical corn sprout seedling with golden sun-yellow corn kernel inside the arc of the letter 'C'. Full-bleed solid background in organic earthy sage cream color (#fbf7ee). No rounded rectangle, no squircle container, no outer border, no framing shapes. The minimalist emblem is centered with clean vector geometric lines, modern organic craft aesthetic, high contrast, clean, sharp SVG vector icon look, edge-to-edge square canvas."
-            class="h-8 w-auto object-contain"
-            src="https://lh3.googleusercontent.com/aida/AEtjO1WzNpDLsD48UmBI9njzaHuhpd-kvHb66e2_1TFmms2ojZMto5EutZFD5zFkMNF01zIQhlSNRBjDQPVenxHWDc0Hk-jaap42-gye2RMQZ8xrpTAQc328Bm3UacCDPJxIDpTw4CpAnU73GbmrQuJxBJBxVsOXa0MPyfw5hPhHnSZayu872RJ-n5skocm3KW3NKm71T0DO8j5nQx5j3RwEBROnodTTQY2Mv-XSSfJdVdJ9iEX-wm1w2gH5xBdv"
+            src="images/FGlogo.png"
+            alt="CORNESS"
+            class="h-14 w-14 shrink-0 object-contain"
           />
           <div class="flex flex-col">
             <span
@@ -376,7 +415,7 @@
           </div>
         </div>
         <nav
-          class="hidden xl:flex items-center gap-2 p-1 bg-surface-container-low rounded-xl"
+          class="hidden 2xl:flex items-center gap-1 p-1 bg-surface-container-low rounded-xl"
           data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"
         >
           <a
@@ -406,22 +445,9 @@
             >Cửa Hàng &amp; Tác Động</a
           >
         </nav>
-        <div class="flex items-center gap-3 lg:gap-4">
+        <div class="flex items-center gap-3 lg:gap-4 2xl:ml-5">
           <div
-            class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-xs font-label text-on-surface-variant font-medium"
-          >
-            <span class="hover:text-primary cursor-pointer transition-colors"
-              >VN</span
-            ><span class="text-outline-variant">|</span
-            ><span class="hover:text-primary cursor-pointer transition-colors"
-              >EN</span
-            ><span class="text-outline-variant">|</span
-            ><span class="hover:text-primary cursor-pointer transition-colors"
-              >KO</span
-            >
-          </div>
-          <div
-            class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium"
+            class="hidden 2xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium"
           >
             <span class="material-symbols-outlined text-[16px]">graphic_eq</span
             ><span>CORA AI Audio</span>
@@ -434,11 +460,20 @@
               >shopping_bag</span
             ></a
           ><a
-            class="hidden lg:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm"
+            class="hidden 2xl:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm"
             data-path="trai-nghiem-workshop"
             href="experience.html"
             >Đặt Workshop / Create Story</a
           >
+          <button
+            class="corness-mobile-toggle 2xl:hidden"
+            type="button"
+            aria-label="Mở menu"
+            aria-controls="corness-mobile-menu"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined text-[21px]">menu</span>
+          </button>
           <div
             class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"
           >
@@ -446,6 +481,81 @@
               >person</span
             >
           </div>
+        </div>
+      </div>
+
+      <div
+        id="corness-mobile-menu"
+        class="corness-mobile-menu 2xl:hidden"
+        data-open="false"
+        aria-hidden="true"
+      >
+        <button
+          class="corness-mobile-menu__backdrop"
+          type="button"
+          data-mobile-close
+          aria-label="Đóng menu"
+        ></button>
+        <div
+          class="corness-mobile-menu__panel"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menu điều hướng CORNESS"
+        >
+          <div class="corness-mobile-menu__top">
+            <div>
+              <div
+                class="font-headline text-lg text-primary uppercase leading-none"
+              >
+                CORNESS
+              </div>
+              <div
+                class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-1"
+              >
+                Xuân Phú • Đồng Nai
+              </div>
+            </div>
+            <button
+              class="corness-mobile-menu__close"
+              type="button"
+              data-mobile-close
+              aria-label="Đóng menu"
+            >
+              <span class="material-symbols-outlined text-[20px]">close</span>
+            </button>
+          </div>
+          <nav class="corness-mobile-nav" aria-label="Điều hướng di động">
+            <a href="index.html"
+              ><span class="material-symbols-outlined text-[20px]">explore</span
+              ><span>Khám Phá</span></a
+            >
+            <a href="experience.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >handyman</span
+              ><span>Trải Nghiệm &amp; Workshop</span></a
+            >
+            <a href="ai-studio.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >auto_awesome</span
+              ><span>AI Studio &amp; Kể Chuyện</span></a
+            >
+            <a href="my-product.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >deployed_code</span
+              ><span>Sản Phẩm Của Bạn</span></a
+            >
+            <a href="shop.html"
+              ><span class="material-symbols-outlined text-[20px]"
+                >storefront</span
+              ><span>Cửa Hàng &amp; Tác Động</span></a
+            >
+          </nav>
+          <a class="corness-mobile-cta" href="experience.html">
+            <span>Đặt Workshop / Create Story</span>
+            <span class="material-symbols-outlined text-[18px]"
+              >arrow_forward</span
+            >
+          </a>
         </div>
       </div>
     </header>
@@ -526,8 +636,8 @@
                       class="w-full h-full object-cover"
                       data-alt="Close up photography of handcrafted Dong Nai compressed corn husk coaster with glazed ceramic inlay and stamped typography of Xuan Phu Commune, natural linen lighting, earthy tones, organic texture"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8TrYje1EOI5slnDZCmeQGvgKLNjnXvDTHsmgMqEDKtDmDeIEUh1NYB31FUBuNf8o-Hhs6sUy-hX1dQJUUDPhCp77Sk6LY10uJ0_R1HngRXB-SvB5tRWUeeGc4qsiFMgunFtgIvtlLQOG7Z5_bZUY_2dCwCppU3hrvWPhGY-6ehVtTyMo4TJu7pM1lo1KsnlQAyhJ7G1QFeCFdrRkrclOisnOnd4ewlrQH7qV4t63fyAZbMVDZBg0tAw"
-                    alt="Close up photography of handcrafted Dong Nai compressed corn husk coaster with glazed ceramic inlay and stamped typography of Xuan Phu Commune, natural linen lighting, earthy tones, organic texture"
-                  >
+                      alt="Close up photography of handcrafted Dong Nai compressed corn husk coaster with glazed ceramic inlay and stamped typography of Xuan Phu Commune, natural linen lighting, earthy tones, organic texture"
+                    />
                     <span
                       class="absolute top-2 left-2 px-2 py-0.5 rounded bg-primary text-on-primary font-label text-[10px] font-bold uppercase tracking-wider"
                       >OCOP 4 Sao</span
@@ -940,7 +1050,9 @@
               </section>
             </div>
             <!-- RIGHT COLUMN: Sticky Pricing & Ecological Impact Breakdown -->
-            <div class="lg:col-span-5 sticky top-28 space-y-6 checkout-summary-column">
+            <div
+              class="lg:col-span-5 sticky top-28 space-y-6 checkout-summary-column"
+            >
               <!-- Summary Container -->
               <div
                 class="bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-md space-y-6"
@@ -1041,7 +1153,9 @@
                   </div>
                   <button
                     class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label text-xs font-bold uppercase tracking-wider transition-colors shrink-0"
-                    id="apply-coupon-btn" type="button">
+                    id="apply-coupon-btn"
+                    type="button"
+                  >
                     Đã Áp Dụng
                   </button>
                 </div>
@@ -1144,7 +1258,9 @@
                 <div class="space-y-3 pt-2">
                   <button
                     class="w-full py-4 px-6 rounded-xl bg-primary hover:bg-tertiary text-on-primary font-label text-xs sm:text-sm font-bold uppercase tracking-widest shadow-md transition-all flex items-center justify-center gap-3 group"
-                    id="checkout-submit-btn" type="button">
+                    id="checkout-submit-btn"
+                    type="button"
+                  >
                     <span>HOÀN TẤT ĐẶT VÉ &amp; NHẬN HỘ CHIẾU SỐ</span>
                     <span
                       class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
@@ -1188,7 +1304,7 @@
                     data-alt="Warm portrait photograph of elderly female Vietnamese master artisan wearing traditional conical hat smiling in organic craft workshop in Dong Nai surrounded by natural dried corn fibers"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD361xcTBilFc4cPfvWtNzP0r3Mdv-NXwzRAmjGYujYBX_Tj0BUjn0k7B6MvbgFdrSVr2ipfJ3gKbxRYHzpiC9BoAPs4u2VQpOM9ReNOlJOV62_52xKTwA3ocxpGNBWDSFHR4VyE76FHPXjClTZKJPLDB9_w_RNOGiJt3VioejtLa0M3eNCRSMobd-Esz6gfA9qD13H7QAwXE2BVDikgRgfdMPRNqwJR7Ig9c0TTeXgHfsctJMUErFCYA"
                     alt="Warm portrait photograph of elderly female Vietnamese master artisan wearing traditional conical hat smiling in organic craft workshop in Dong Nai surrounded by natural dried corn fibers"
-                  >
+                  />
                 </div>
                 <div class="space-y-0.5">
                   <div class="flex items-center gap-1">
@@ -1279,7 +1395,9 @@
               </a>
               <button
                 class="flex-1 py-3 rounded-lg bg-primary hover:bg-tertiary text-on-primary font-label text-xs font-bold uppercase tracking-wider transition-colors"
-                id="modal-close-btn" type="button">
+                id="modal-close-btn"
+                type="button"
+              >
                 Trở Về Khám Phá
               </button>
             </div>
@@ -1504,5 +1622,7 @@
         </div>
       </div>
     </footer>
+    <script src="responsive.js"></script>
+    <script src="i18n.js"></script>
   </body>
 </html>

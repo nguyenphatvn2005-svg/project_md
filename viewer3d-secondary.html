@@ -432,7 +432,7 @@
             contactShadowMat,
           );
           contactShadow.rotation.x = -Math.PI / 2;
-          contactShadow.position.y = -0.74;
+          contactShadow.position.y = -1.62; // keep floor shadow below larger mobile coaster
           scene.add(contactShadow);
 
           coasterGroup.rotation.x = 0.36;
@@ -510,7 +510,7 @@
                 );
                 const diff = dist - touchStartDist;
                 targetZoom = Math.max(
-                  2.6,
+                  4.9,
                   Math.min(6.2, targetZoom - diff * 0.01),
                 );
                 touchStartDist = dist;
@@ -532,7 +532,7 @@
             (e) => {
               e.preventDefault();
               targetZoom += e.deltaY * 0.0035;
-              targetZoom = Math.max(2.6, Math.min(6.2, targetZoom));
+              targetZoom = Math.max(4.9, Math.min(6.2, targetZoom));
             },
             { passive: false },
           );
