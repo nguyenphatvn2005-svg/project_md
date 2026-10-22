@@ -1,25 +1,16 @@
 <!-- CORNESS — AI Cultural Studio & Trợ Lý CORA (Desktop) -->
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="web_standard" name="shell-type" />
-    <title>CORNESS — AI Cultural Studio &amp; CORA</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>CORNESS — AI Cultural Studio &amp; CORA</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
       @layer base {
         html,
         body {
@@ -40,8 +31,8 @@
         display: none;
       }
     </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script id="tailwind-config">
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
@@ -123,8 +114,7 @@
         },
       };
     </script>
-
-    <style>
+<style>
       :root {
         --corness-forest: #24452d;
         --corness-forest-deep: #173320;
@@ -273,8 +263,7 @@
         }
       }
     </style>
-
-    <style>
+<style>
       .studio-editor-column > .bg-surface-container-lowest {
         position: relative;
         overflow: hidden;
@@ -491,1114 +480,539 @@
         }
       }
     </style>
-
-    <link rel="stylesheet" href="responsive.css" />
-  </head>
-  <body class="bg-surface font-body text-on-surface antialiased">
-    <header
-      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(112,88,66,0.06)]"
-    >
-      <div class="h-20 w-full px-6 lg:px-12 flex items-center justify-between">
-        <div class="flex items-center gap-4 shrink-0 2xl:mr-5">
-          <img
-            src="images/FGlogo.png"
-            alt="CORNESS"
-            class="h-14 w-14 shrink-0 object-contain"
-          />
-          <div class="flex flex-col">
-            <span
-              class="font-headline text-lg tracking-tight uppercase text-primary leading-tight"
-              >CORNESS</span
-            ><span
-              class="font-label text-[10px] tracking-[0.08em] uppercase text-tertiary font-medium"
-              >Xuân Phú • Đồng Nai</span
-            >
-          </div>
-        </div>
-        <nav
-          class="hidden 2xl:flex items-center gap-1 p-1 bg-surface-container-low rounded-xl"
-          data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"
-        >
-          <a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="kham-pha"
-            href="index.html"
-            >Khám Phá</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="trai-nghiem-workshop"
-            href="experience.html"
-            >Trải Nghiệm &amp; Workshop</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="ai-studio-ke-chuyen"
-            href="ai-studio.html"
-            >AI Studio &amp; Kể Chuyện</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="san-pham-cua-ban"
-            href="my-product.html"
-            >Sản Phẩm Của Bạn</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="cua-hang-tac-dong"
-            href="shop.html"
-            >Cửa Hàng &amp; Tác Động</a
-          >
-        </nav>
-        <div class="flex items-center gap-3 lg:gap-4 2xl:ml-5">
-          <div
-            class="hidden 2xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium"
-          >
-            <span class="material-symbols-outlined text-[16px]">graphic_eq</span
-            ><span>CORA AI Audio</span>
-          </div>
-          <a
-            class="p-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center"
-            data-path="san-pham-cua-ban"
-            href="my-product.html"
-            ><span class="material-symbols-outlined text-[20px]"
-              >shopping_bag</span
-            ></a
-          ><a
-            class="hidden 2xl:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm"
-            data-path="trai-nghiem-workshop"
-            href="experience.html"
-            >Đặt Workshop / Create Story</a
-          >
-          <button
-            class="corness-mobile-toggle 2xl:hidden"
-            type="button"
-            aria-label="Mở menu"
-            aria-controls="corness-mobile-menu"
-            aria-expanded="false"
-          >
-            <span class="material-symbols-outlined text-[21px]">menu</span>
-          </button>
-          <div
-            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"
-          >
-            <span class="material-symbols-outlined text-on-primary text-[18px]"
-              >person</span
-            >
-          </div>
-        </div>
-      </div>
-
-      <div
-        id="corness-mobile-menu"
-        class="corness-mobile-menu 2xl:hidden"
-        data-open="false"
-        aria-hidden="true"
-      >
-        <button
-          class="corness-mobile-menu__backdrop"
-          type="button"
-          data-mobile-close
-          aria-label="Đóng menu"
-        ></button>
-        <div
-          class="corness-mobile-menu__panel"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Menu điều hướng CORNESS"
-        >
-          <div class="corness-mobile-menu__top">
-            <div>
-              <div
-                class="font-headline text-lg text-primary uppercase leading-none"
-              >
+<link href="responsive.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(112,88,66,0.06)]">
+<div class="h-20 w-full px-6 lg:px-12 flex items-center justify-between">
+<div class="flex items-center gap-4 shrink-0 2xl:mr-5">
+<img alt="CORNESS" class="h-14 w-14 shrink-0 object-contain" src="images/FGlogo.png"/>
+<div class="flex flex-col">
+<span class="font-headline text-lg tracking-tight uppercase text-primary leading-tight">CORNESS</span><span class="font-label text-[10px] tracking-[0.08em] uppercase text-tertiary font-medium">Xuan Phu • Dong Nai</span>
+</div>
+</div>
+<nav class="hidden 2xl:flex items-center gap-1 p-1 bg-surface-container-low rounded-xl" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm">
+<a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="kham-pha" href="index.html">Explore</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="trai-nghiem-workshop" href="experience.html">Experiences &amp; Workshops</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="ai-studio-ke-chuyen" href="ai-studio.html">AI Studio &amp; Storytelling</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="san-pham-cua-ban" href="my-product.html">Your Product</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="cua-hang-tac-dong" href="shop.html">Shop &amp; Impact</a>
+</nav>
+<div class="flex items-center gap-3 lg:gap-4 2xl:ml-5">
+<div class="hidden 2xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium">
+<span class="material-symbols-outlined text-[16px]">graphic_eq</span><span>CORA AI Audio</span>
+</div>
+<a class="p-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" data-path="san-pham-cua-ban" href="my-product.html"><span class="material-symbols-outlined text-[20px]">shopping_bag</span></a><a class="hidden 2xl:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm" data-path="trai-nghiem-workshop" href="experience.html">Book Workshop / Create Story</a>
+<button aria-controls="corness-mobile-menu" aria-expanded="false" aria-label="Open menu" class="corness-mobile-toggle 2xl:hidden" type="button">
+<span class="material-symbols-outlined text-[21px]">menu</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="corness-mobile-menu 2xl:hidden" data-open="false" id="corness-mobile-menu">
+<button aria-label="Close menu" class="corness-mobile-menu__backdrop" data-mobile-close="" type="button"></button>
+<div aria-label="CORNESS navigation menu" aria-modal="true" class="corness-mobile-menu__panel" role="dialog">
+<div class="corness-mobile-menu__top">
+<div>
+<div class="font-headline text-lg text-primary uppercase leading-none">
                 CORNESS
               </div>
-              <div
-                class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-1"
-              >
-                Xuân Phú • Đồng Nai
+<div class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-1">
+                Xuan Phu • Dong Nai
               </div>
-            </div>
-            <button
-              class="corness-mobile-menu__close"
-              type="button"
-              data-mobile-close
-              aria-label="Đóng menu"
-            >
-              <span class="material-symbols-outlined text-[20px]">close</span>
-            </button>
-          </div>
-          <nav class="corness-mobile-nav" aria-label="Điều hướng di động">
-            <a href="index.html"
-              ><span class="material-symbols-outlined text-[20px]">explore</span
-              ><span>Khám Phá</span></a
-            >
-            <a href="experience.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >handyman</span
-              ><span>Trải Nghiệm &amp; Workshop</span></a
-            >
-            <a href="ai-studio.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >auto_awesome</span
-              ><span>AI Studio &amp; Kể Chuyện</span></a
-            >
-            <a href="my-product.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >deployed_code</span
-              ><span>Sản Phẩm Của Bạn</span></a
-            >
-            <a href="shop.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >storefront</span
-              ><span>Cửa Hàng &amp; Tác Động</span></a
-            >
-          </nav>
-          <a class="corness-mobile-cta" href="experience.html">
-            <span>Đặt Workshop / Create Story</span>
-            <span class="material-symbols-outlined text-[18px]"
-              >arrow_forward</span
-            >
-          </a>
-        </div>
-      </div>
-    </header>
-    <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
-      <div class="flex flex-col w-full">
-        <!-- Studio Intro Header Section -->
-        <section class="w-full px-6 lg:px-12 py-8 bg-surface">
-          <div
-            class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-outline-variant/30"
-          >
-            <div class="space-y-2">
-              <div class="flex items-center gap-2">
-                <span
-                  class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container text-xs font-label uppercase font-bold tracking-wider"
-                >
-                  <span class="material-symbols-outlined text-[14px]"
-                    >auto_awesome</span
-                  >
+</div>
+<button aria-label="Close menu" class="corness-mobile-menu__close" data-mobile-close="" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<nav aria-label="Mobile navigation" class="corness-mobile-nav">
+<a href="index.html"><span class="material-symbols-outlined text-[20px]">explore</span><span>Explore</span></a>
+<a href="experience.html"><span class="material-symbols-outlined text-[20px]">handyman</span><span>Experiences &amp; Workshops</span></a>
+<a href="ai-studio.html"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span>AI Studio &amp; Storytelling</span></a>
+<a href="my-product.html"><span class="material-symbols-outlined text-[20px]">deployed_code</span><span>Your Product</span></a>
+<a href="shop.html"><span class="material-symbols-outlined text-[20px]">storefront</span><span>Shop &amp; Impact</span></a>
+</nav>
+<a class="corness-mobile-cta" href="experience.html">
+<span>Book Workshop / Create Story</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+<div class="flex flex-col w-full">
+<!-- Studio Intro Header Section -->
+<section class="w-full px-6 lg:px-12 py-8 bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-outline-variant/30">
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container text-xs font-label uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
                   CORA Cultural AI Studio v2.4
                 </span>
-                <span
-                  class="text-outline text-xs font-label uppercase tracking-widest"
-                  >• Đồng Nai Living Heritage</span
-                >
-              </div>
-              <h1
-                class="font-headline text-3xl md:text-5xl text-primary uppercase tracking-tight"
-              >
+<span class="text-outline text-xs font-label uppercase tracking-widest">• Dong Nai Living Heritage</span>
+</div>
+<h1 class="font-headline text-3xl md:text-5xl text-primary uppercase tracking-tight">
                 AI Cultural Studio
               </h1>
-              <p
-                class="font-label text-sm text-on-surface-variant max-w-2xl leading-relaxed"
-              >
-                Giao thoa giữa thuật toán thị giác bản địa và vật liệu sinh học
-                lõi ngô ép nén Xuân Phú. Thiết kế độc bản, định danh vi tế bằng
-                mã laser OCOP.
+<p class="font-label text-sm text-on-surface-variant max-w-2xl leading-relaxed">
+                Where local visual intelligence meets compressed Xuan Phu corn-cob biomaterial. Create a one-of-a-kind design identified by a refined OCOP laser code.
               </p>
-            </div>
-            <!-- Quick Telemetry Badges -->
-            <div class="flex items-center gap-4 text-xs font-label">
-              <div
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container shadow-sm"
-              >
-                <span
-                  class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"
-                ></span>
-                <span class="text-on-surface font-semibold"
-                  >Lõi ngô ép nhiệt cao 140°C</span
-                >
-              </div>
-              <div
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container shadow-sm"
-              >
-                <span class="material-symbols-outlined text-secondary text-base"
-                  >qr_code_scanner</span
-                >
-                <span class="text-on-surface font-semibold"
-                  >Laser ID:
-                  <span class="font-mono text-tertiary">#XP-7729</span></span
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Two Main Power Columns Workspace -->
-        <section class="w-full px-6 lg:px-12 py-6 bg-surface">
-          <div
-            class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
-          >
-            <!-- LEFT / MAIN: AI Cultural Designer (8 cols) -->
-            <div class="lg:col-span-8 space-y-8 studio-editor-column">
-              <!-- Step 1: Chọn phôi ép lõi ngô -->
-              <div
-                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4"
-              >
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-3">
-                    <span
-                      class="w-7 h-7 rounded-full bg-primary text-on-primary font-label text-xs font-bold flex items-center justify-center"
-                      >1</span
-                    >
-                    <div>
-                      <h3
-                        class="font-headline text-lg uppercase text-primary tracking-tight"
-                      >
-                        Chọn Phôi Ép Lõi Ngô Bản Địa
+</div>
+<!-- Quick Telemetry Badges -->
+<div class="flex items-center gap-4 text-xs font-label">
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="text-on-surface font-semibold">Corn-cob composite pressed at 140°C</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base">qr_code_scanner</span>
+<span class="text-on-surface font-semibold">Laser ID:
+                  <span class="font-mono text-tertiary">#XP-7729</span></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Two Main Power Columns Workspace -->
+<section class="w-full px-6 lg:px-12 py-6 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT / MAIN: AI Cultural Designer (8 cols) -->
+<div class="lg:col-span-8 space-y-8 studio-editor-column">
+<!-- Step 1: Chọn phôi ép lõi ngô -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary font-label text-xs font-bold flex items-center justify-center">1</span>
+<div>
+<h3 class="font-headline text-lg uppercase text-primary tracking-tight">
+                        Choose a Local Corn-Cob Substrate
                       </h3>
-                      <p class="font-label text-xs text-on-surface-variant">
-                        Vật liệu 100% phế phẩm nông nghiệp Xuân Phú, kháng nước
-                        tự nhiên
+<p class="font-label text-xs text-on-surface-variant">
+                        100% Xuan Phu agricultural by-product with natural water resistance
                       </p>
-                    </div>
-                  </div>
-                  <span
-                    class="text-[11px] font-label text-tertiary uppercase font-semibold"
-                    >Độ dày chuẩn: 8mm - 12mm</span
-                  >
-                </div>
-                <div
-                  class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2"
-                  id="substrate-selector"
-                >
-                  <!-- Option 1: Tròn -->
-                  <button
-                    class="substrate-btn active group text-left p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all relative"
-                    data-substrate="circle"
-                    type="button"
-                  >
-                    <div class="flex items-center justify-between mb-3">
-                      <span
-                        class="w-9 h-9 rounded-full bg-secondary-container/40 flex items-center justify-center text-on-secondary-container font-label text-xs font-bold"
-                        >Ø10.5</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-primary text-lg"
-                        >check_circle</span
-                      >
-                    </div>
-                    <p
-                      class="font-headline text-sm uppercase text-on-surface group-hover:text-primary transition-colors"
-                    >
-                      Đế Lót Ly Tròn
+</div>
+</div>
+<span class="text-[11px] font-label text-tertiary uppercase font-semibold">Standard thickness: 8–12 mm</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2" id="substrate-selector">
+<!-- Option 1: Tròn -->
+<button class="substrate-btn active group text-left p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all relative" data-substrate="circle" type="button">
+<div class="flex items-center justify-between mb-3">
+<span class="w-9 h-9 rounded-full bg-secondary-container/40 flex items-center justify-center text-on-secondary-container font-label text-xs font-bold">Ø10.5</span>
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+</div>
+<p class="font-headline text-sm uppercase text-on-surface group-hover:text-primary transition-colors">
+                      Round Coaster
                     </p>
-                    <p class="font-label text-xs text-on-surface-variant mt-1">
-                      Kích thước Ø10.5cm
+<p class="font-label text-xs text-on-surface-variant mt-1">
+                      Size Ø10.5 cm
                     </p>
-                    <span
-                      class="inline-block mt-3 px-2 py-0.5 rounded bg-surface-container text-[10px] font-label font-medium text-tertiary"
-                      >Chịu nhiệt 100°C</span
-                    >
-                  </button>
-                  <!-- Option 2: Vuông Lót Ấm -->
-                  <button
-                    class="substrate-btn group text-left p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all relative"
-                    data-substrate="square"
-                    type="button"
-                  >
-                    <div class="flex items-center justify-between mb-3">
-                      <span
-                        class="w-9 h-9 rounded-lg bg-primary-fixed/50 flex items-center justify-center text-on-primary-fixed-variant font-label text-xs font-bold"
-                        >18x18</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-outline-variant text-lg"
-                        >radio_button_unchecked</span
-                      >
-                    </div>
-                    <p
-                      class="font-headline text-sm uppercase text-on-surface group-hover:text-primary transition-colors"
-                    >
-                      Lót Ấm Trà Vuông
+<span class="inline-block mt-3 px-2 py-0.5 rounded bg-surface-container text-[10px] font-label font-medium text-tertiary">Heat resistant to 100°C</span>
+</button>
+<!-- Option 2: Vuông Lót Ấm -->
+<button class="substrate-btn group text-left p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all relative" data-substrate="square" type="button">
+<div class="flex items-center justify-between mb-3">
+<span class="w-9 h-9 rounded-lg bg-primary-fixed/50 flex items-center justify-center text-on-primary-fixed-variant font-label text-xs font-bold">18x18</span>
+<span class="material-symbols-outlined text-outline-variant text-lg">radio_button_unchecked</span>
+</div>
+<p class="font-headline text-sm uppercase text-on-surface group-hover:text-primary transition-colors">
+                      Square Teapot Trivet
                     </p>
-                    <p class="font-label text-xs text-on-surface-variant mt-1">
-                      Kích thước 18 x 18cm
+<p class="font-label text-xs text-on-surface-variant mt-1">
+                      Size 18 × 18 cm
                     </p>
-                    <span
-                      class="inline-block mt-3 px-2 py-0.5 rounded bg-surface-container text-[10px] font-label font-medium text-tertiary"
-                      >Khắc rãnh tản nhiệt</span
-                    >
-                  </button>
-                  <!-- Option 3: Tranh Decor -->
-                  <button
-                    class="substrate-btn group text-left p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all relative"
-                    data-substrate="panel"
-                    type="button"
-                  >
-                    <div class="flex items-center justify-between mb-3">
-                      <span
-                        class="w-9 h-9 rounded-md bg-tertiary-fixed/60 flex items-center justify-center text-tertiary font-label text-xs font-bold"
-                        >24x32</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-outline-variant text-lg"
-                        >radio_button_unchecked</span
-                      >
-                    </div>
-                    <p
-                      class="font-headline text-sm uppercase text-on-surface group-hover:text-primary transition-colors"
-                    >
-                      Tranh Decor Khối
+<span class="inline-block mt-3 px-2 py-0.5 rounded bg-surface-container text-[10px] font-label font-medium text-tertiary">Heat-dissipation grooves</span>
+</button>
+<!-- Option 3: Tranh Decor -->
+<button class="substrate-btn group text-left p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all relative" data-substrate="panel" type="button">
+<div class="flex items-center justify-between mb-3">
+<span class="w-9 h-9 rounded-md bg-tertiary-fixed/60 flex items-center justify-center text-tertiary font-label text-xs font-bold">24x32</span>
+<span class="material-symbols-outlined text-outline-variant text-lg">radio_button_unchecked</span>
+</div>
+<p class="font-headline text-sm uppercase text-on-surface group-hover:text-primary transition-colors">
+                      Decor Art Panel
                     </p>
-                    <p class="font-label text-xs text-on-surface-variant mt-1">
-                      Kích thước 24 x 32cm
+<p class="font-label text-xs text-on-surface-variant mt-1">
+                      Size 24 × 32 cm
                     </p>
-                    <span
-                      class="inline-block mt-3 px-2 py-0.5 rounded bg-surface-container text-[10px] font-label font-medium text-tertiary"
-                      >Gỗ lõi ngô đúc phẳng</span
-                    >
-                  </button>
-                </div>
-              </div>
-              <!-- Step 2: Cảm hứng văn hóa & Di sản -->
-              <div
-                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4"
-              >
-                <div class="flex items-center gap-3">
-                  <span
-                    class="w-7 h-7 rounded-full bg-primary text-on-primary font-label text-xs font-bold flex items-center justify-center"
-                    >2</span
-                  >
-                  <div>
-                    <h3
-                      class="font-headline text-lg uppercase text-primary tracking-tight"
-                    >
-                      Cảm Hứng Văn Hóa &amp; Bản Sắc Di Sản
+<span class="inline-block mt-3 px-2 py-0.5 rounded bg-surface-container text-[10px] font-label font-medium text-tertiary">Flat-cast corn composite</span>
+</button>
+</div>
+</div>
+<!-- Step 2: Cảm hứng văn hóa & Di sản -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary font-label text-xs font-bold flex items-center justify-center">2</span>
+<div>
+<h3 class="font-headline text-lg uppercase text-primary tracking-tight">
+                      Cultural Inspiration &amp; Heritage Identity
                     </h3>
-                    <p class="font-label text-xs text-on-surface-variant">
-                      Huấn luyện trên kho tàng biểu tượng di sản dân gian Đông
-                      Nam Bộ
+<p class="font-label text-xs text-on-surface-variant">
+                      Inspired by the folk-heritage symbol archive of Southern Vietnam
                     </p>
-                  </div>
-                </div>
-                <div
-                  class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2"
-                  id="motif-selector"
-                >
-                  <label
-                    class="motif-card cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-start gap-3.5 transition-all"
-                  >
-                    <input
-                      checked=""
-                      class="accent-primary mt-1"
-                      name="motif"
-                      type="radio"
-                      value="corn-sprout"
-                    />
-                    <div class="space-y-1">
-                      <span
-                        class="font-label font-bold text-sm text-on-surface block"
-                        >Hạt Ngô Nảy Mầm Xuân Phú</span
-                      >
-                      <p
-                        class="font-label text-xs text-on-surface-variant leading-relaxed"
-                      >
-                        Hình thái chồi non, hạt ngô ngậm sương mai biểu trưng
-                        cho sự tái sinh tuần hoàn.
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2" id="motif-selector">
+<label class="motif-card cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-start gap-3.5 transition-all">
+<input checked="" class="accent-primary mt-1" name="motif" type="radio" value="corn-sprout"/>
+<div class="space-y-1">
+<span class="font-label font-bold text-sm text-on-surface block">Xuan Phu Sprouting Corn</span>
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">
+                        Sprouting corn shoots and dew-covered kernels symbolize renewal and circular regeneration.
                       </p>
-                      <span
-                        class="inline-block text-[10px] font-label text-secondary font-semibold uppercase"
-                        >#SinhKhiBảnĐịa</span
-                      >
-                    </div>
-                  </label>
-                  <label
-                    class="motif-card cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-start gap-3.5 transition-all"
-                  >
-                    <input
-                      class="accent-primary mt-1"
-                      name="motif"
-                      type="radio"
-                      value="gong-choro"
-                    />
-                    <div class="space-y-1">
-                      <span
-                        class="font-label font-bold text-sm text-on-surface block"
-                        >Điệu Cồng Chiêng Chơro</span
-                      >
-                      <p
-                        class="font-label text-xs text-on-surface-variant leading-relaxed"
-                      >
-                        Âm vang lễ cúng thần lúa Yang Li phác họa qua vân tròn
-                        đồng tâm và nhịp trống cổ truyền.
+<span class="inline-block text-[10px] font-label text-secondary font-semibold uppercase">#LocalBiomass</span>
+</div>
+</label>
+<label class="motif-card cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-start gap-3.5 transition-all">
+<input class="accent-primary mt-1" name="motif" type="radio" value="gong-choro"/>
+<div class="space-y-1">
+<span class="font-label font-bold text-sm text-on-surface block">Chơro Gong Rhythm</span>
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">
+                        The rhythm of the Yang Li rice-spirit ceremony comes alive in concentric patterns and traditional drumbeats.
                       </p>
-                      <span
-                        class="inline-block text-[10px] font-label text-secondary font-semibold uppercase"
-                        >#DiSảnDânTộcChơro</span
-                      >
-                    </div>
-                  </label>
-                  <label
-                    class="motif-card cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-start gap-3.5 transition-all"
-                  >
-                    <input
-                      class="accent-primary mt-1"
-                      name="motif"
-                      type="radio"
-                      value="dongnai-river"
-                    />
-                    <div class="space-y-1">
-                      <span
-                        class="font-label font-bold text-sm text-on-surface block"
-                        >Dải Phù Sa Sông Đồng Nai</span
-                      >
-                      <p
-                        class="font-label text-xs text-on-surface-variant leading-relaxed"
-                      >
-                        Sóng nước cuộn ngọc, hoa sen và dòng chảy bồi đắp mùa
-                        màng trù phú.
+<span class="inline-block text-[10px] font-label text-secondary font-semibold uppercase">#ChroCulturalHeritage</span>
+</div>
+</label>
+<label class="motif-card cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-start gap-3.5 transition-all">
+<input class="accent-primary mt-1" name="motif" type="radio" value="dongnai-river"/>
+<div class="space-y-1">
+<span class="font-label font-bold text-sm text-on-surface block">Dong Nai Alluvial Flow</span>
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">
+                        Jade-colored currents, lotus flowers and flowing silt celebrate bountiful harvests.
                       </p>
-                      <span
-                        class="inline-block text-[10px] font-label text-secondary font-semibold uppercase"
-                        >#DòngSôngMẹ</span
-                      >
-                    </div>
-                  </label>
-                  <label
-                    class="motif-card cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-start gap-3.5 transition-all"
-                  >
-                    <input
-                      class="accent-primary mt-1"
-                      name="motif"
-                      type="radio"
-                      value="cay-mai-ceramic"
-                    />
-                    <div class="space-y-1">
-                      <span
-                        class="font-label font-bold text-sm text-on-surface block"
-                        >Sắc Men Gốm Cây Mai &amp; Biên Hòa</span
-                      >
-                      <p
-                        class="font-label text-xs text-on-surface-variant leading-relaxed"
-                      >
-                        Men xanh trổ đồng, đất nung mộc và họa tiết kỷ hà trứ
-                        danh thế kỷ 19.
+<span class="inline-block text-[10px] font-label text-secondary font-semibold uppercase">#MotherRiver</span>
+</div>
+</label>
+<label class="motif-card cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-start gap-3.5 transition-all">
+<input class="accent-primary mt-1" name="motif" type="radio" value="cay-mai-ceramic"/>
+<div class="space-y-1">
+<span class="font-label font-bold text-sm text-on-surface block">Cay Mai &amp; Bien Hoa Ceramic Glaze</span>
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">
+                        Copper-green glaze, rustic terracotta and iconic 19th-century geometric motifs.
                       </p>
-                      <span
-                        class="inline-block text-[10px] font-label text-secondary font-semibold uppercase"
-                        >#GốmSứBiênHòa</span
-                      >
-                    </div>
-                  </label>
-                </div>
-              </div>
-              <!-- Step 3: Phong cách họa phẩm -->
-              <div
-                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4"
-              >
-                <div class="flex items-center gap-3">
-                  <span
-                    class="w-7 h-7 rounded-full bg-primary text-on-primary font-label text-xs font-bold flex items-center justify-center"
-                    >3</span
-                  >
-                  <div>
-                    <h3
-                      class="font-headline text-lg uppercase text-primary tracking-tight"
-                    >
-                      Phong Cách Họa Phẩm Thủ Công
+<span class="inline-block text-[10px] font-label text-secondary font-semibold uppercase">#BienHoaCeramics</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Step 3: Phong cách họa phẩm -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary font-label text-xs font-bold flex items-center justify-center">3</span>
+<div>
+<h3 class="font-headline text-lg uppercase text-primary tracking-tight">
+                      Craft Art Style
                     </h3>
-                    <p class="font-label text-xs text-on-surface-variant">
-                      Quy định độ sâu laser và lớp phủ khoáng màu tự nhiên
+<p class="font-label text-xs text-on-surface-variant">
+                      Controls laser depth and natural mineral-color coating
                     </p>
-                  </div>
-                </div>
-                <div
-                  class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2"
-                  id="style-selector"
-                >
-                  <button
-                    class="style-btn active text-left p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all"
-                    data-style="folkloric"
-                    type="button"
-                  >
-                    <div class="flex items-center justify-between mb-1.5">
-                      <span class="font-label font-bold text-xs text-on-surface"
-                        >Folkloric Dân Gian</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-primary text-base"
-                        >radio_button_checked</span
-                      >
-                    </div>
-                    <p
-                      class="font-label text-[11px] text-on-surface-variant leading-tight"
-                    >
-                      Nét khắc mộc nổi, đường viền vàng ánh kim và men xanh lam
-                      trầm tích.
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2" id="style-selector">
+<button class="style-btn active text-left p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all" data-style="folkloric" type="button">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label font-bold text-xs text-on-surface">Folkloric Heritage</span>
+<span class="material-symbols-outlined text-primary text-base">radio_button_checked</span>
+</div>
+<p class="font-label text-[11px] text-on-surface-variant leading-tight">
+                      Rustic raised carvings, metallic-gold borders and deep blue ceramic glaze.
                     </p>
-                  </button>
-                  <button
-                    class="style-btn text-left p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all"
-                    data-style="contemporary"
-                    type="button"
-                  >
-                    <div class="flex items-center justify-between mb-1.5">
-                      <span class="font-label font-bold text-xs text-on-surface"
-                        >Contemporary</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-outline-variant text-base"
-                        >radio_button_unchecked</span
-                      >
-                    </div>
-                    <p
-                      class="font-label text-[11px] text-on-surface-variant leading-tight"
-                    >
-                      Hình khối tối giản, mảng màu phẳng chấm phá theo tinh thần
-                      đương đại.
+</button>
+<button class="style-btn text-left p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all" data-style="contemporary" type="button">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label font-bold text-xs text-on-surface">Contemporary</span>
+<span class="material-symbols-outlined text-outline-variant text-base">radio_button_unchecked</span>
+</div>
+<p class="font-label text-[11px] text-on-surface-variant leading-tight">
+                      Minimalist forms and flat-color accents inspired by contemporary design.
                     </p>
-                  </button>
-                  <button
-                    class="style-btn text-left p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all"
-                    data-style="raw"
-                    type="button"
-                  >
-                    <div class="flex items-center justify-between mb-1.5">
-                      <span class="font-label font-bold text-xs text-on-surface"
-                        >Organic Raw Mộc</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-outline-variant text-base"
-                        >radio_button_unchecked</span
-                      >
-                    </div>
-                    <p
-                      class="font-label text-[11px] text-on-surface-variant leading-tight"
-                    >
-                      Giữ nguyên vân xơ thô mộc của lõi ngô, khắc laser mờ không
-                      màu.
+</button>
+<button class="style-btn text-left p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all" data-style="raw" type="button">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label font-bold text-xs text-on-surface">Organic Raw</span>
+<span class="material-symbols-outlined text-outline-variant text-base">radio_button_unchecked</span>
+</div>
+<p class="font-label text-[11px] text-on-surface-variant leading-tight">
+                      Preserve the natural raw corn-fiber texture with subtle, uncolored laser engraving.
                     </p>
-                  </button>
-                </div>
-                <!-- Prompt Customization Bar -->
-                <div class="pt-2">
-                  <div
-                    class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low"
-                  >
-                    <span
-                      class="material-symbols-outlined text-tertiary text-lg pl-1"
-                      >psychology</span
-                    >
-                    <input
-                      class="w-full bg-transparent border-none text-xs font-label text-on-surface placeholder:text-outline focus:outline-none"
-                      id="custom-story-prompt"
-                      placeholder="Nhập thêm chi tiết: ví dụ 'khắc tên gia đình Le Dinh, ngày kỷ niệm 2025'..."
-                      type="text"
-                    />
-                    <button
-                      class="px-3 py-1.5 rounded-lg bg-surface-container text-xs font-label text-on-surface hover:bg-surface-container-high transition-colors shrink-0"
-                      type="button"
-                    >
-                      Gợi ý ngẫu nhiên
+</button>
+</div>
+<!-- Prompt Customization Bar -->
+<div class="pt-2">
+<div class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-tertiary text-lg pl-1">psychology</span>
+<input class="w-full bg-transparent border-none text-xs font-label text-on-surface placeholder:text-outline focus:outline-none" id="custom-story-prompt" placeholder="Add details, e.g. 'engrave the Le Dinh family name, anniversary 2025'..." type="text"/>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-xs font-label text-on-surface hover:bg-surface-container-high transition-colors shrink-0" type="button">
+                      Surprise me
                     </button>
-                  </div>
-                </div>
-                <!-- CTA Generator Button -->
-                <div class="pt-2">
-                  <button
-                    class="w-full py-4 px-6 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-headline text-sm uppercase tracking-wider transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-3 relative overflow-hidden group"
-                    id="generate-btn"
-                    type="button"
-                  >
-                    <span
-                      class="material-symbols-outlined text-secondary-container animate-spin text-xl hidden"
-                      id="gen-spinner"
-                      >progress_activity</span
-                    >
-                    <span
-                      class="material-symbols-outlined text-secondary-container text-xl group-hover:scale-110 transition-transform"
-                      >magic_button</span
-                    >
-                    <span>Tạo Mẫu Phôi Bằng AI CORA (Generate Design)</span>
-                    <span
-                      class="absolute right-4 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-[11px] font-bold tracking-normal uppercase"
-                    >
+</div>
+</div>
+<!-- CTA Generator Button -->
+<div class="pt-2">
+<button class="w-full py-4 px-6 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-headline text-sm uppercase tracking-wider transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-3 relative overflow-hidden group" id="generate-btn" type="button">
+<span class="material-symbols-outlined text-secondary-container animate-spin text-xl hidden" id="gen-spinner">progress_activity</span>
+<span class="material-symbols-outlined text-secondary-container text-xl group-hover:scale-110 transition-transform">magic_button</span>
+<span>Generate Design with CORA AI</span>
+<span class="absolute right-4 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-[11px] font-bold tracking-normal uppercase">
                       Free Preview
                     </span>
-                  </button>
-                </div>
-              </div>
-              <!-- Live 3D / Interactive Preview Display Pane -->
-              <div
-                class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4"
-              >
-                <div
-                  class="flex flex-col sm:flex-row sm:items-center justify-between gap-3"
-                >
-                  <div>
-                    <div class="flex items-center gap-2">
-                      <h3
-                        class="font-headline text-lg uppercase text-primary tracking-tight"
-                      >
-                        Khu Vực Giám Sát Phôi Thực Tế (Live Preview)
+</button>
+</div>
+</div>
+<!-- Live 3D / Interactive Preview Display Pane -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline text-lg uppercase text-primary tracking-tight">
+                        Live Substrate Preview
                       </h3>
-                      <span
-                        class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label text-[10px] font-bold"
-                        >100% Upcycled Biomaterial</span
-                      >
-                    </div>
-                    <p class="font-label text-xs text-on-surface-variant">
-                      Tái hiện bề mặt xơ lõi ngô nén mật độ cao cùng kỹ thuật
-                      khắc men chạm nổi
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label text-[10px] font-bold">100% Upcycled Biomaterial</span>
+</div>
+<p class="font-label text-xs text-on-surface-variant">
+                      High-density compressed corn-fiber texture with engraved glaze relief
                     </p>
-                  </div>
-                  <!-- Front / Back Toggle & 3D rotate mock -->
-                  <div
-                    class="flex items-center gap-1.5 p-1 rounded-lg bg-surface-container-low shrink-0"
-                  >
-                    <button
-                      class="px-3 py-1 rounded font-label text-xs font-semibold bg-surface-container-lowest text-primary shadow-sm"
-                      id="view-front"
-                      type="button"
-                    >
-                      Mặt Trước
+</div>
+<!-- Front / Back Toggle & 3D rotate mock -->
+<div class="flex items-center gap-1.5 p-1 rounded-lg bg-surface-container-low shrink-0">
+<button class="px-3 py-1 rounded font-label text-xs font-semibold bg-surface-container-lowest text-primary shadow-sm" id="view-front" type="button">
+                      Front
                     </button>
-                    <button
-                      class="px-3 py-1 rounded font-label text-xs font-semibold text-on-surface-variant hover:text-on-surface"
-                      id="view-back"
-                      type="button"
-                    >
-                      Mặt Sau (Laser ID)
+<button class="px-3 py-1 rounded font-label text-xs font-semibold text-on-surface-variant hover:text-on-surface" id="view-back" type="button">
+                      Back (Laser ID)
                     </button>
-                    <button
-                      class="p-1 rounded text-on-surface-variant hover:text-on-surface"
-                      id="view-3d"
-                      title="Xoay góc nghiêng 45°"
-                      type="button"
-                    >
-                      <span class="material-symbols-outlined text-base"
-                        >3d_rotation</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <!-- The Real Showcase Stage -->
-                <div
-                  class="relative w-full aspect-square md:aspect-[16/10] rounded-xl bg-gradient-to-b from-surface-container-low to-surface-container flex items-center justify-center p-6 overflow-hidden corness-preview-stage"
-                >
-                  <!-- Real Product Artifacts Switcher (Images from Prompt Context) -->
-                  <div
-                    class="relative max-h-full max-w-full flex items-center justify-center transition-all duration-300"
-                    id="preview-art-container"
-                  >
-                    <!-- Product 1: Circular Coaster (Default) -->
-                    <div
-                      class="preview-card flex flex-col items-center"
-                      id="art-circle"
-                    >
-                      <img
-                        alt="Đế lót ly tròn lõi ngô nén Xuân Phú men gốm Cây Mai"
-                        class="max-h-[380px] w-auto object-contain rounded-full shadow-2xl transition-transform hover:scale-105 duration-300"
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1Wb_wW2p6U133Gg411-aN26h57dM6c9Y0t-R_GqHn39F80fL0wRj9tX8qXf274m141z1bZ3w_u35j6A3_n9Zl4vQ4jL7Z1j-gN4g0m1gT3vX7=s1000"
-                      />
-                      <div class="mt-4 text-center">
-                        <span
-                          class="font-headline text-xs uppercase tracking-wider text-primary"
-                          >Phôi: Đế Lót Ly Tròn Ø10.5cm</span
-                        >
-                        <span class="text-tertiary font-label text-xs block"
-                          >Vân xơ tự nhiên • Men gốm đắp nổi • Bọc dầu trẩu
-                          kháng ẩm</span
-                        >
-                      </div>
-                    </div>
-                    <!-- Product 2: Square Tile (Lotus & Wave Motif) -->
-                    <div
-                      class="preview-card hidden flex flex-col items-center"
-                      id="art-square"
-                    >
-                      <img
-                        alt="Lót ấm trà vuông lõi ngô nén sóng nước hoa sen"
-                        class="max-h-[380px] w-auto object-contain rounded-xl shadow-2xl transition-transform hover:scale-105 duration-300"
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1W5a4vM_o6_C2c00Z9oM_mB275rP4f4Z14f4Rj7c_jM3n4y7jN9c0r4X14z9m0L3mN7j8M4Z_n1s9B4b_m6vR_0Z1j2-mN4v_0z1=s1000"
-                      />
-                      <div class="mt-4 text-center">
-                        <span
-                          class="font-headline text-xs uppercase tracking-wider text-primary"
-                          >Phôi: Lót Ấm Trà Vuông 18x18cm</span
-                        >
-                        <span class="text-tertiary font-label text-xs block"
-                          >Họa tiết Dải Phù Sa Sông Đồng Nai • Hoa Sen Cổ</span
-                        >
-                      </div>
-                    </div>
-                    <!-- Product 3: Panel Artwork (Chơro Gong Motif) -->
-                    <div
-                      class="preview-card hidden flex flex-col items-center"
-                      id="art-panel"
-                    >
-                      <img
-                        alt="Tranh phôi lõi ngô điệu cồng chiêng Chơro"
-                        class="max-h-[380px] w-auto object-contain rounded-xl shadow-2xl transition-transform hover:scale-105 duration-300"
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1WZ-v4N9L1m-o8r_0X9b2z5Q8g2V4k7jL9m-1X4y8t2C0z9m3N6j5L1r9M0x7K8j4Z1m7N5L2v_j3n9X0m8=s1000"
-                      />
-                      <div class="mt-4 text-center">
-                        <span
-                          class="font-headline text-xs uppercase tracking-wider text-primary"
-                          >Phôi: Tranh Decor Khối 24x32cm</span
-                        >
-                        <span class="text-tertiary font-label text-xs block"
-                          >Điệu Cồng Chiêng Chơro &amp; Vụ Mùa Nảy Mầm
-                          Vàng</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Floating Material Metadata Badge -->
-                  <div
-                    class="absolute top-4 left-4 p-3 rounded-xl bg-surface/90 backdrop-blur-md shadow-md space-y-1"
-                  >
-                    <div
-                      class="flex items-center gap-1 text-[11px] font-label font-bold text-primary"
-                    >
-                      <span class="material-symbols-outlined text-sm"
-                        >verified_user</span
-                      >
-                      <span>CHỨNG NHẬN TRUY XUẤT</span>
-                    </div>
-                    <p class="font-mono text-xs text-on-surface font-semibold">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface" id="view-3d" title="Rotate view by 45°" type="button">
+<span class="material-symbols-outlined text-base">3d_rotation</span>
+</button>
+</div>
+</div>
+<!-- The Real Showcase Stage -->
+<div class="relative w-full aspect-square md:aspect-[16/10] rounded-xl bg-gradient-to-b from-surface-container-low to-surface-container flex items-center justify-center p-6 overflow-hidden corness-preview-stage">
+<!-- Real Product Artifacts Switcher (Images from Prompt Context) -->
+<div class="relative max-h-full max-w-full flex items-center justify-center transition-all duration-300" id="preview-art-container">
+<!-- Product 1: Circular Coaster (Default) -->
+<div class="preview-card flex flex-col items-center" id="art-circle">
+<img alt="Round Xuan Phu pressed corn-cob coaster with Cay Mai ceramic glaze" class="max-h-[380px] w-auto object-contain rounded-full shadow-2xl transition-transform hover:scale-105 duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1Wb_wW2p6U133Gg411-aN26h57dM6c9Y0t-R_GqHn39F80fL0wRj9tX8qXf274m141z1bZ3w_u35j6A3_n9Zl4vQ4jL7Z1j-gN4g0m1gT3vX7=s1000"/>
+<div class="mt-4 text-center">
+<span class="font-headline text-xs uppercase tracking-wider text-primary">Blank: Round Coaster Ø10.5 cm</span>
+<span class="text-tertiary font-label text-xs block">Natural fiber grain • Raised ceramic glaze • Moisture-resistant tung-oil finish</span>
+</div>
+</div>
+<!-- Product 2: Square Tile (Lotus & Wave Motif) -->
+<div class="preview-card hidden flex flex-col items-center" id="art-square">
+<img alt="Square pressed corn-cob teapot trivet with lotus and water patterns" class="max-h-[380px] w-auto object-contain rounded-xl shadow-2xl transition-transform hover:scale-105 duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1W5a4vM_o6_C2c00Z9oM_mB275rP4f4Z14f4Rj7c_jM3n4y7jN9c0r4X14z9m0L3mN7j8M4Z_n1s9B4b_m6vR_0Z1j2-mN4v_0z1=s1000"/>
+<div class="mt-4 text-center">
+<span class="font-headline text-xs uppercase tracking-wider text-primary">Blank: Square Teapot Trivet 18 × 18 cm</span>
+<span class="text-tertiary font-label text-xs block">Dong Nai Alluvial River Motif • Traditional Lotus</span>
+</div>
+</div>
+<!-- Product 3: Panel Artwork (Chơro Gong Motif) -->
+<div class="preview-card hidden flex flex-col items-center" id="art-panel">
+<img alt="Corn-cob art panel with Chơro gong motif" class="max-h-[380px] w-auto object-contain rounded-xl shadow-2xl transition-transform hover:scale-105 duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1WZ-v4N9L1m-o8r_0X9b2z5Q8g2V4k7jL9m-1X4y8t2C0z9m3N6j5L1r9M0x7K8j4Z1m7N5L2v_j3n9X0m8=s1000"/>
+<div class="mt-4 text-center">
+<span class="font-headline text-xs uppercase tracking-wider text-primary">Blank: Decorative Art Panel 24 × 32 cm</span>
+<span class="text-tertiary font-label text-xs block">Chơro Gong Rhythm &amp; Golden Sprouting Harvest</span>
+</div>
+</div>
+</div>
+<!-- Floating Material Metadata Badge -->
+<div class="absolute top-4 left-4 p-3 rounded-xl bg-surface/90 backdrop-blur-md shadow-md space-y-1">
+<div class="flex items-center gap-1 text-[11px] font-label font-bold text-primary">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span>TRACEABILITY CERTIFIED</span>
+</div>
+<p class="font-mono text-xs text-on-surface font-semibold">
                       BATCH: VN-XP-2025-A
                     </p>
-                    <p class="text-[10px] font-label text-on-surface-variant">
-                      42g Lõi ngô nén • Giảm 120g CO2e
+<p class="text-[10px] font-label text-on-surface-variant">
+                      42 g pressed corn cob • 120 g CO₂e avoided
                     </p>
-                  </div>
-                  <!-- Action Floating Overlay (Add to Box / Order) -->
-                  <div
-                    class="absolute bottom-4 right-4 flex items-center gap-2"
-                  >
-                    <button
-                      class="px-3.5 py-2 rounded-xl bg-surface-container-highest hover:bg-surface-dim text-on-surface text-xs font-label font-bold flex items-center gap-1.5 shadow-sm transition-all"
-                      type="button"
-                    >
-                      <span class="material-symbols-outlined text-sm"
-                        >download</span
-                      >
-                      Tải Mockup
+</div>
+<!-- Action Floating Overlay (Add to Box / Order) -->
+<div class="absolute bottom-4 right-4 flex items-center gap-2">
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-highest hover:bg-surface-dim text-on-surface text-xs font-label font-bold flex items-center gap-1.5 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-sm">download</span>
+                      Download Mockup
                     </button>
-                    <button
-                      class="px-4 py-2 rounded-xl bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container text-xs font-label font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-md transition-all"
-                      type="button"
-                    >
-                      <span class="material-symbols-outlined text-sm"
-                        >add_shopping_cart</span
-                      >
-                      Đặt Sản Xuất Phôi Này
+<button class="px-4 py-2 rounded-xl bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container text-xs font-label font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+                      Order This Custom Piece
                     </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- RIGHT / SUPPORT: Trợ Lý CORA — AI Heritage Companion (4 cols) -->
-            <div class="lg:col-span-4 space-y-6 cora-column">
-              <!-- Assistant Window Card -->
-              <div
-                class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col h-[780px] cora-shell"
-              >
-                <!-- Top Header: CORA Identity -->
-                <div
-                  class="p-5 bg-surface-container-high flex items-center justify-between"
-                >
-                  <div class="flex items-center gap-3">
-                    <div class="relative">
-                      <div
-                        class="w-11 h-11 rounded-full bg-primary flex items-center justify-center text-on-primary"
-                      >
-                        <span class="material-symbols-outlined text-2xl"
-                          >neurology</span
-                        >
-                      </div>
-                      <span
-                        class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-secondary-container border-2 border-surface-container-high"
-                      ></span>
-                    </div>
-                    <div>
-                      <h4
-                        class="font-headline text-base uppercase text-primary tracking-tight"
-                      >
-                        Trợ Lý CORA
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT / SUPPORT: Trợ Lý CORA — AI Heritage Companion (4 cols) -->
+<div class="lg:col-span-4 space-y-6 cora-column">
+<!-- Assistant Window Card -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col h-[780px] cora-shell">
+<!-- Top Header: CORA Identity -->
+<div class="p-5 bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative">
+<div class="w-11 h-11 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-2xl">neurology</span>
+</div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-secondary-container border-2 border-surface-container-high"></span>
+</div>
+<div>
+<h4 class="font-headline text-base uppercase text-primary tracking-tight">
+                        CORA Assistant
                       </h4>
-                      <p class="font-label text-xs text-on-surface-variant">
-                        Người gìn giữ ký ức 1.200 hộ ngô Xuân Phú
+<p class="font-label text-xs text-on-surface-variant">
+                        Preserving the memories of 1,200 Xuan Phu corn-growing households
                       </p>
-                    </div>
-                  </div>
-                  <!-- Multi-lingual Pills -->
-                  <div
-                    class="flex items-center gap-1 p-1 rounded-lg bg-surface-container"
-                  >
-                    <button
-                      class="px-2 py-0.5 rounded text-[10px] font-label font-bold bg-primary text-on-primary"
-                      type="button"
-                    >
+</div>
+</div>
+<!-- Multi-lingual Pills -->
+<div class="flex items-center gap-1 p-1 rounded-lg bg-surface-container">
+<button class="px-2 py-0.5 rounded text-[10px] font-label font-bold bg-primary text-on-primary" type="button">
                       VN
                     </button>
-                    <button
-                      class="px-2 py-0.5 rounded text-[10px] font-label font-medium text-on-surface-variant hover:text-on-surface"
-                      type="button"
-                    >
+<button class="px-2 py-0.5 rounded text-[10px] font-label font-medium text-on-surface-variant hover:text-on-surface" type="button">
                       EN
                     </button>
-                    <button
-                      class="px-2 py-0.5 rounded text-[10px] font-label font-medium text-on-surface-variant hover:text-on-surface"
-                      type="button"
-                    >
+<button class="px-2 py-0.5 rounded text-[10px] font-label font-medium text-on-surface-variant hover:text-on-surface" type="button">
                       KO
                     </button>
-                  </div>
-                </div>
-                <!-- Chat History Stream -->
-                <div
-                  class="flex-1 p-4 overflow-y-auto space-y-3.5 bg-surface-container-low/40"
-                  id="chat-messages"
-                >
-                  <!-- CORA Message 1 -->
-                  <div class="flex gap-2.5 items-start">
-                    <div
-                      class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 mt-1"
-                    >
-                      <span class="material-symbols-outlined text-[14px]"
-                        >psychology</span
-                      >
-                    </div>
-                    <div
-                      class="bg-surface-container p-3.5 rounded-2xl rounded-tl-sm text-xs font-label text-on-surface space-y-1.5 shadow-sm max-w-[88%]"
-                    >
-                      <p class="font-semibold text-primary">
-                        Dạ chào bạn! Em là CORA.
+</div>
+</div>
+<!-- Chat History Stream -->
+<div class="flex-1 p-4 overflow-y-auto space-y-3.5 bg-surface-container-low/40" id="chat-messages">
+<!-- CORA Message 1 -->
+<div class="flex gap-2.5 items-start">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+</div>
+<div class="bg-surface-container p-3.5 rounded-2xl rounded-tl-sm text-xs font-label text-on-surface space-y-1.5 shadow-sm max-w-[88%]">
+<p class="font-semibold text-primary">
+                        Hello! I'm CORA.
                       </p>
-                      <p class="leading-relaxed">
-                        Em đã học toàn bộ dữ liệu lịch sử đất bazan Xuân Phú và
-                        kỹ nghệ ép phế phẩm lõi ngô hữu cơ. Bạn muốn em gợi ý
-                        câu chuyện đằng sau hoa văn nào cho món quà thủ công hôm
-                        nay?
+<p class="leading-relaxed">
+                        I've learned about the history of Xuan Phu's basalt land and the art of pressing organic corn-cob residues. Would you like a story behind one of today's handcrafted gift motifs?
                       </p>
-                      <span
-                        class="text-[9px] text-tertiary font-mono block pt-0.5"
-                        >09:42 AM • Bản địa hóa Đông Nai</span
-                      >
-                    </div>
-                  </div>
-                  <!-- User Sample Reply -->
-                  <div class="flex gap-2.5 items-start justify-end">
-                    <div
-                      class="bg-primary-container text-on-primary-container p-3 rounded-2xl rounded-tr-sm text-xs font-label space-y-1 shadow-sm max-w-[85%]"
-                    >
-                      <p class="leading-relaxed">
-                        Lõi ngô ép này có sợ bị mốc hoặc hỏng khi rót nước trà
-                        nóng lên không bạn?
+<span class="text-[9px] text-tertiary font-mono block pt-0.5">09:42 AM • Dong Nai Local Heritage</span>
+</div>
+</div>
+<!-- User Sample Reply -->
+<div class="flex gap-2.5 items-start justify-end">
+<div class="bg-primary-container text-on-primary-container p-3 rounded-2xl rounded-tr-sm text-xs font-label space-y-1 shadow-sm max-w-[85%]">
+<p class="leading-relaxed">
+                        Could this pressed corn cob grow mold or get damaged by hot tea?
                       </p>
-                      <span
-                        class="text-[9px] text-on-primary-container/70 font-mono block text-right pt-0.5"
-                        >09:43 AM</span
-                      >
-                    </div>
-                    <div
-                      class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 mt-1"
-                    >
-                      <span class="material-symbols-outlined text-[14px]"
-                        >person</span
-                      >
-                    </div>
-                  </div>
-                  <!-- CORA Response 2 -->
-                  <div class="flex gap-2.5 items-start">
-                    <div
-                      class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 mt-1"
-                    >
-                      <span class="material-symbols-outlined text-[14px]"
-                        >psychology</span
-                      >
-                    </div>
-                    <div
-                      class="bg-surface-container p-3.5 rounded-2xl rounded-tl-sm text-xs font-label text-on-surface space-y-1.5 shadow-sm max-w-[88%]"
-                    >
-                      <p class="leading-relaxed">
-                        <strong class="text-primary"
-                          >Hoàn toàn an tâm ạ!</strong
-                        >
-                        Lõi ngô sau khi nghiền tuyển nổi được sấy khử ẩm đạt độ
-                        ẩm dưới 8%, sau đó ép gia nhiệt thủy lực ở 140°C với
-                        chất kết dính sinh học từ tinh bột biến tính.
+<span class="text-[9px] text-on-primary-container/70 font-mono block text-right pt-0.5">09:43 AM</span>
+</div>
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-[14px]">person</span>
+</div>
+</div>
+<!-- CORA Response 2 -->
+<div class="flex gap-2.5 items-start">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+</div>
+<div class="bg-surface-container p-3.5 rounded-2xl rounded-tl-sm text-xs font-label text-on-surface space-y-1.5 shadow-sm max-w-[88%]">
+<p class="leading-relaxed">
+<strong class="text-primary">You can feel confident using it!</strong>
+                        The milled corn fiber is dried to below 8% moisture, then hydraulically heat-pressed at 140°C with a modified starch-based bio-binder.
                       </p>
-                      <p class="leading-relaxed">
-                        Bề mặt được phủ 2 lớp dầu trẩu tự nhiên (Tung oil) kháng
-                        nước sôi 100°C tuyệt đối, dùng 3-5 năm không ẩm mốc.
+<p class="leading-relaxed">
+                        The surface receives two coats of natural tung oil for water resistance against 100°C hot water and is designed to resist mold over 3–5 years.
                       </p>
-                      <span
-                        class="text-[9px] text-tertiary font-mono block pt-0.5"
-                        >09:44 AM • Verified Test OCOP 4 sao</span
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- Quick Discovery Suggestion Chips -->
-                <div
-                  class="p-3 bg-surface-container-lowest border-t border-surface-container space-y-2"
-                >
-                  <span
-                    class="text-[11px] font-label uppercase font-bold text-outline block"
-                    >Câu hỏi nhanh cho CORA:</span
-                  >
-                  <div class="flex flex-wrap gap-1.5">
-                    <button
-                      class="quick-q-btn px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-[11px] font-label transition-colors"
-                      type="button"
-                    >
-                      Tại sao lại chọn lõi ngô Xuân Phú?
+<span class="text-[9px] text-tertiary font-mono block pt-0.5">09:44 AM • Verified Test OCOP 4 sao</span>
+</div>
+</div>
+</div>
+<!-- Quick Discovery Suggestion Chips -->
+<div class="p-3 bg-surface-container-lowest border-t border-surface-container space-y-2">
+<span class="text-[11px] font-label uppercase font-bold text-outline block">Quick questions for CORA:</span>
+<div class="flex flex-wrap gap-1.5">
+<button class="quick-q-btn px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-[11px] font-label transition-colors" type="button">
+                      Why use Xuan Phu corn cobs?
                     </button>
-                    <button
-                      class="quick-q-btn px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-[11px] font-label transition-colors"
-                      type="button"
-                    >
-                      Khả năng chịu nhiệt nước sôi?
+<button class="quick-q-btn px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-[11px] font-label transition-colors" type="button">
+                      Can it withstand boiling water?
                     </button>
-                    <button
-                      class="quick-q-btn px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-[11px] font-label transition-colors"
-                      type="button"
-                    >
-                      Chuyện nghệ nhân Chú Ba Thiện?
+<button class="quick-q-btn px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-[11px] font-label transition-colors" type="button">
+                      Tell me about artisan Uncle Ba Thien.
                     </button>
-                  </div>
-                </div>
-                <!-- Prompt Typing Area -->
-                <div
-                  class="p-3 bg-surface-container-high flex items-center gap-2"
-                >
-                  <input
-                    class="flex-1 bg-surface-container-lowest rounded-xl px-3 py-2 text-xs font-label text-on-surface placeholder:text-outline border-none focus:outline-none"
-                    id="chat-input"
-                    placeholder="Hỏi CORA về quy trình, văn hóa Chơro hoặc đặt hàng..."
-                    type="text"
-                  />
-                  <button
-                    class="w-9 h-9 rounded-xl bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center shrink-0 transition-colors shadow-sm"
-                    id="send-chat-btn"
-                    type="button"
-                  >
-                    <span class="material-symbols-outlined text-base"
-                      >send</span
-                    >
-                  </button>
-                </div>
-              </div>
-              <!-- Artisan Story Snippet Card -->
-              <div class="p-4 rounded-2xl bg-surface-container-high space-y-3">
-                <div class="flex items-center gap-3">
-                  <div
-                    class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary font-bold font-headline text-xs"
-                  >
+</div>
+</div>
+<!-- Prompt Typing Area -->
+<div class="p-3 bg-surface-container-high flex items-center gap-2">
+<input class="flex-1 bg-surface-container-lowest rounded-xl px-3 py-2 text-xs font-label text-on-surface placeholder:text-outline border-none focus:outline-none" id="chat-input" placeholder="Ask CORA about the process, Chơro culture or ordering..." type="text"/>
+<button class="w-9 h-9 rounded-xl bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center shrink-0 transition-colors shadow-sm" id="send-chat-btn" type="button">
+<span class="material-symbols-outlined text-base">send</span>
+</button>
+</div>
+</div>
+<!-- Artisan Story Snippet Card -->
+<div class="p-4 rounded-2xl bg-surface-container-high space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary font-bold font-headline text-xs">
                     3T
                   </div>
-                  <div>
-                    <p class="font-headline text-xs uppercase text-on-surface">
-                      Chú Ba Thiện • 62 Tuổi
+<div>
+<p class="font-headline text-xs uppercase text-on-surface">
+                      Uncle Ba Thien • Age 62
                     </p>
-                    <p class="font-label text-[11px] text-tertiary">
-                      Trưởng nhóm chế tác HTX Thủ công Xuân Phú
+<p class="font-label text-[11px] text-tertiary">
+                      Head of the Xuan Phu Handicraft Cooperative Craft Team
                     </p>
-                  </div>
-                </div>
-                <p
-                  class="font-label text-xs text-on-surface-variant italic leading-relaxed"
-                >
-                  “Trước đây vụ mùa xong là khói rơm rạ, cùi bắp đốt nghẹt cả
-                  đường làng. Nay cái lõi bắp thơm mùi nắng được máy AI của mấy
-                  cháu vẽ hoa sen lên nhìn sang trọng như ngọc quý.”
+</div>
+</div>
+<p class="font-label text-xs text-on-surface-variant italic leading-relaxed">
+                  “After the harvest, smoke from burning straw and corn cobs used to fill the village roads. Now the younger generation uses AI to design lotus flowers on sun-dried corn cobs, making them look as precious as jade.”
                 </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Green Impact Bar (Bottom Metric Anchor) -->
-        <section
-          class="w-full px-6 lg:px-12 py-8 bg-surface-container-low mt-8"
-        >
-          <div
-            class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center"
-          >
-            <!-- Metric 1 -->
-            <div
-              class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container shadow-sm"
-            >
-              <div
-                class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0"
-              >
-                <span class="material-symbols-outlined text-2xl">eco</span>
-              </div>
-              <div>
-                <span
-                  class="font-headline text-2xl text-primary leading-none block"
-                  >240+ Tấn</span
-                >
-                <span class="font-label text-xs text-on-surface-variant"
-                  >Phụ phẩm vỏ &amp; lõi bắp tuần hoàn</span
-                >
-              </div>
-            </div>
-            <!-- Metric 2 -->
-            <div
-              class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container shadow-sm"
-            >
-              <div
-                class="w-12 h-12 rounded-xl bg-secondary-container/40 text-on-secondary-container flex items-center justify-center shrink-0"
-              >
-                <span class="material-symbols-outlined text-2xl">groups</span>
-              </div>
-              <div>
-                <span
-                  class="font-headline text-2xl text-on-surface leading-none block"
-                  >45 Hộ Dân</span
-                >
-                <span class="font-label text-xs text-on-surface-variant"
-                  >Tăng 35% thu nhập sau thu hoạch</span
-                >
-              </div>
-            </div>
-            <!-- Metric 3 -->
-            <div
-              class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container shadow-sm"
-            >
-              <div
-                class="w-12 h-12 rounded-xl bg-tertiary-fixed/60 text-tertiary flex items-center justify-center shrink-0"
-              >
-                <span class="material-symbols-outlined text-2xl"
-                  >fingerprint</span
-                >
-              </div>
-              <div>
-                <span
-                  class="font-headline text-2xl text-tertiary leading-none block"
-                  >100% Trace</span
-                >
-                <span class="font-label text-xs text-on-surface-variant"
-                  >Laser ID độc bản chống hàng giả</span
-                >
-              </div>
-            </div>
-            <!-- Metric 4: Carbon Saved Dial -->
-            <div
-              class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container shadow-sm"
-            >
-              <div
-                class="w-12 h-12 rounded-xl bg-surface-container-highest text-primary flex items-center justify-center shrink-0"
-              >
-                <span class="material-symbols-outlined text-2xl"
-                  >cloud_off</span
-                >
-              </div>
-              <div>
-                <span
-                  class="font-headline text-2xl text-primary leading-none block"
-                  >-312 Tấn CO2</span
-                >
-                <span class="font-label text-xs text-on-surface-variant"
-                  >Cắt giảm phát thải do đốt đồng</span
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Interactive Logic for Substrate Preview, Style Picking & Chat Simulation -->
-        <script>
+</div>
+</div>
+</div>
+</section>
+<!-- Green Impact Bar (Bottom Metric Anchor) -->
+<section class="w-full px-6 lg:px-12 py-8 bg-surface-container-low mt-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
+<!-- Metric 1 -->
+<div class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">eco</span>
+</div>
+<div>
+<span class="font-headline text-2xl text-primary leading-none block">240+ Tons</span>
+<span class="font-label text-xs text-on-surface-variant">Reclaimed corn husks and cobs</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">groups</span>
+</div>
+<div>
+<span class="font-headline text-2xl text-on-surface leading-none block">45 Households</span>
+<span class="font-label text-xs text-on-surface-variant">35% increase in post-harvest income</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/60 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">fingerprint</span>
+</div>
+<div>
+<span class="font-headline text-2xl text-tertiary leading-none block">100% Trace</span>
+<span class="font-label text-xs text-on-surface-variant">Unique anti-counterfeit laser ID</span>
+</div>
+</div>
+<!-- Metric 4: Carbon Saved Dial -->
+<div class="flex items-center gap-4 p-4 rounded-2xl bg-surface-container shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">cloud_off</span>
+</div>
+<div>
+<span class="font-headline text-2xl text-primary leading-none block">−312 Tons CO₂</span>
+<span class="font-label text-xs text-on-surface-variant">Reduced emissions from field burning</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Logic for Substrate Preview, Style Picking & Chat Simulation -->
+<script>
           (function initCornessStudio() {
             // Substrate Selection Switching
             const substrateButtons =
@@ -1748,7 +1162,7 @@
                 msgDiv.innerHTML = `
             <div class="bg-primary-container text-on-primary-container p-3 rounded-2xl rounded-tr-sm text-xs font-label space-y-1 shadow-sm max-w-[85%]">
               <p class="leading-relaxed">${text}</p>
-              <span class="text-[9px] text-on-primary-container/70 font-mono block text-right pt-0.5">Vừa xong</span>
+              <span class="text-[9px] text-on-primary-container/70 font-mono block text-right pt-0.5">Just now</span>
             </div>
             <div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 mt-1">
               <span class="material-symbols-outlined text-[14px]">person</span>
@@ -1761,7 +1175,7 @@
             </div>
             <div class="bg-surface-container p-3.5 rounded-2xl rounded-tl-sm text-xs font-label text-on-surface space-y-1.5 shadow-sm max-w-[88%]">
               <p class="leading-relaxed">${text}</p>
-              <span class="text-[9px] text-tertiary font-mono block pt-0.5">Vừa xong • Trợ lý CORA</span>
+              <span class="text-[9px] text-tertiary font-mono block pt-0.5">Just now • CORA Assistant</span>
             </div>
           `;
               }
@@ -1777,25 +1191,25 @@
               // Auto reply simulation based on keywords
               setTimeout(() => {
                 let reply =
-                  "Dạ, CORA đã ghi nhận ý kiến của bạn và kết nối trực tiếp với xưởng thủ công Xuân Phú!";
+                  "Thanks! CORA has noted your message and can help you learn more about the Xuan Phu craft workshop.";
                 if (
-                  userText.includes("Xuân Phú") ||
-                  userText.includes("tại sao")
+                  userText.toLowerCase().includes("xuan phu") ||
+                  userText.toLowerCase().includes("why")
                 ) {
                   reply =
-                    "Đồng Nai là vựa bắp lai lớn nhất miền Nam. Mỗi năm xã Xuân Phú thu hoạch hàng ngàn hecta bắp. Việc thu gom lõi bắp vừa ngăn nạn đốt đồng gây khói mù, vừa tạo việc làm ổn định cho phụ nữ và người lớn tuổi địa phương.";
+                    "Dong Nai is one of southern Vietnam’s major corn-growing regions. Reclaiming post-harvest cobs helps reduce smoky field burning and supports work opportunities for local women and older residents.";
                 } else if (
-                  userText.includes("Chú Ba") ||
-                  userText.includes("nghệ nhân")
+                  userText.toLowerCase().includes("ba thien") ||
+                  userText.toLowerCase().includes("artisan")
                 ) {
                   reply =
-                    "Chú Ba Thiện là nghệ nhân cả đời gắn với cây bắp. Chú phụ trách khâu tuyển chọn các cùi bắp già đanh, sợi thớ dày và kiểm định chất lượng ép nhiệt thủy lực.";
+                    "Uncle Ba Thien has spent his life working with corn and natural fibers. He selects firm, high-quality cobs and oversees the quality of the hydraulic heat-pressing process.";
                 } else if (
-                  userText.includes("chịu nhiệt") ||
-                  userText.includes("nước sôi")
+                  userText.toLowerCase().includes("heat") ||
+                  userText.toLowerCase().includes("boiling")
                 ) {
                   reply =
-                    "Sản phẩm được ép nén tỷ trọng 1.15g/cm³ và quét 2 lớp sơn sinh học chiết xuất thực vật, có thể đặt ấm nước sôi 100°C thoải mái mà không bị cong vênh hay biến màu ạ.";
+                    "The product is pressed to a density of 1.15 g/cm³ and finished with two plant-based protective coatings. It is designed for contact with hot teapots up to 100°C without warping or discoloration.";
                 }
                 appendMessage(reply, false);
               }, 700);
@@ -1817,129 +1231,94 @@
             });
           })();
         </script>
-      </div>
-    </main>
-    <footer class="w-full bg-surface-container-low pt-16 pb-12 mt-20">
-      <div class="w-full px-6 lg:px-12">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12"
-        >
-          <div class="lg:col-span-2 space-y-4">
-            <div class="flex items-center gap-3">
-              <img
-                alt="CORNESS Logo"
-                class="h-8 w-auto object-contain"
-                src="images/FGlogo.png"
-              /><span
-                class="font-headline text-xl uppercase tracking-tight text-primary"
-                >CORNESS</span
-              >
-            </div>
-            <p
-              class="font-label text-xs uppercase tracking-[0.08em] text-secondary font-bold"
-            >
-              From Waste to Story • Tôn Vinh Di Sản Nông Nghiệp
+</div>
+</main>
+<footer class="w-full bg-surface-container-low pt-16 pb-12 mt-20">
+<div class="w-full px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12">
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<img alt="CORNESS Logo" class="h-8 w-auto object-contain" src="images/FGlogo.png"/><span class="font-headline text-xl uppercase tracking-tight text-primary">CORNESS</span>
+</div>
+<p class="font-label text-xs uppercase tracking-[0.08em] text-secondary font-bold">
+              From Waste to Story • Celebrating Agricultural Heritage
             </p>
-            <p
-              class="font-label text-sm text-on-surface-variant max-w-md leading-relaxed"
-            >
-              Hệ sinh thái thủ công mỹ nghệ bền vững chuyển hóa phế phẩm vỏ bắp
-              Xuân Phú, Đồng Nai thành những tác phẩm mang hồn cốt dân tộc, kết
-              nối nghệ nhân truyền thống cùng công nghệ AI văn hóa tiên phong.
+<p class="font-label text-sm text-on-surface-variant max-w-md leading-relaxed">
+              A sustainable craft ecosystem that transforms discarded corn husks from Xuan Phu, Dong Nai into creations inspired by Vietnamese heritage, connecting traditional artisans with pioneering cultural AI technology.
             </p>
-            <div class="flex items-center gap-3 pt-2">
-              <span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-primary"
-                ><span class="material-symbols-outlined text-[14px]"
-                  >verified</span
-                >Chứng nhận OCOP Tiêu Biểu</span
-              ><span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-tertiary"
-                ><span class="material-symbols-outlined text-[14px]"
-                  >nest_eco_leaf</span
-                >100% Upcycled Biomaterial</span
-              >
-            </div>
-          </div>
-          <div class="space-y-3">
-            <h4
-              class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
-            >
-              1. Khám Phá
+<div class="flex items-center gap-3 pt-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-primary"><span class="material-symbols-outlined text-[14px]">verified</span>Recognized OCOP Certification</span><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-tertiary"><span class="material-symbols-outlined text-[14px]">nest_eco_leaf</span>100% Upcycled Biomaterial</span>
+</div>
+</div>
+<div class="space-y-3">
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">
+              1. Explore
             </h4>
-            <ul class="space-y-2 font-label text-sm text-on-surface-variant">
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Nguồn gốc Vỏ Bắp Xuân Phú
+<ul class="space-y-2 font-label text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Origin of Xuan Phu Corn Husks
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Làng Nghề &amp; Nghệ Nhân
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Craft Villages &amp; Artisans
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Quy Trình Xử Lý Thuần Tự Nhiên
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Natural Processing Methods
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Thư Viện Hoa Văn Bản Địa
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Local Motif Library
               </li>
-            </ul>
-          </div>
-          <div class="space-y-3">
-            <h4
-              class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
-            >
-              2. Trải Nghiệm &amp; AI
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">
+              2. Experiences &amp; AI
             </h4>
-            <ul class="space-y-2 font-label text-sm text-on-surface-variant">
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Workshop Thủ Công Tại Chỗ
+<ul class="space-y-2 font-label text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Hands-on Craft Workshops
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
+<li class="hover:text-primary cursor-pointer transition-colors">
                 CORA AI Cultural Studio
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Kể Chuyện Bằng Giọng Nói
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Voice Storytelling
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Tùy Biến Sản Phẩm 3D
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Customize 3D Products
               </li>
-            </ul>
-          </div>
-          <div class="space-y-3">
-            <h4
-              class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
-            >
-              3. Cửa Hàng &amp; Tác Động
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">
+              3. Shop &amp; Impact
             </h4>
-            <ul class="space-y-2 font-label text-sm text-on-surface-variant">
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Bộ Sưu Tập Giới Hạn
+<ul class="space-y-2 font-label text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Limited-Edition Collection
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Tác Động Giảm Thải Carbon
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Carbon Reduction Impact
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Hỗ Trợ Sinh Kế Nông Dân
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Support Farmers’ Livelihoods
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Chính Sách Bền Vững &amp; Đối Tác
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Sustainability Policy &amp; Partners
               </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-label text-xs text-on-surface-variant"
-        >
-          <p>
-            © 2025 CORNESS Sustainable Craft &amp; Cultural Heritage. Xuân Phú,
-            Xuân Lộc, Đồng Nai.
+</ul>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-label text-xs text-on-surface-variant">
+<p>
+            © 2025 CORNESS Sustainable Craft &amp; Cultural Heritage. Xuan Phu, Xuan Loc, Dong Nai.
           </p>
-          <div class="flex items-center gap-6">
-            <span>Kinh Tế Tuần Hoàn Nông Nghiệp</span
-            ><span>Bảo Tồn Bản Sắc Việt</span>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="responsive.js"></script>
-    <script src="i18n.js"></script>
-  </body>
+<div class="flex items-center gap-6">
+<span>Circular Agricultural Economy</span><span>Preserving Vietnamese Identity</span>
+</div>
+</div>
+</div>
+</footer>
+<script src="responsive.js"></script>
+<script src="i18n.js"></script>
+</body>
 </html>

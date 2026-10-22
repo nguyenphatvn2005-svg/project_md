@@ -1,25 +1,16 @@
 <!-- CORNESS — Thanh Toán Workshop (Desktop Checkout) -->
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="web_standard" name="shell-type" />
-    <title>CORNESS — Thanh Toán Workshop</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>CORNESS — Workshop Checkout</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
       @layer base {
         html,
         body {
@@ -40,8 +31,8 @@
         display: none;
       }
     </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script id="tailwind-config">
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
@@ -123,8 +114,7 @@
         },
       };
     </script>
-
-    <style>
+<style>
       :root {
         --corness-forest: #24452d;
         --corness-forest-deep: #173320;
@@ -273,8 +263,7 @@
         }
       }
     </style>
-
-    <style>
+<style>
       .checkout-form-column > section,
       .checkout-summary-column > div,
       .checkout-summary-column > section {
@@ -390,1020 +379,490 @@
         }
       }
     </style>
-
-    <link rel="stylesheet" href="responsive.css" />
-  </head>
-  <body class="bg-surface font-body text-on-surface antialiased">
-    <header
-      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(112,88,66,0.06)]"
-    >
-      <div class="h-20 w-full px-6 lg:px-12 flex items-center justify-between">
-        <div class="flex items-center gap-4 shrink-0 2xl:mr-5">
-          <img
-            src="images/FGlogo.png"
-            alt="CORNESS"
-            class="h-14 w-14 shrink-0 object-contain"
-          />
-          <div class="flex flex-col">
-            <span
-              class="font-headline text-lg tracking-tight uppercase text-primary leading-tight"
-              >CORNESS</span
-            ><span
-              class="font-label text-[10px] tracking-[0.08em] uppercase text-tertiary font-medium"
-              >Xuân Phú • Đồng Nai</span
-            >
-          </div>
-        </div>
-        <nav
-          class="hidden 2xl:flex items-center gap-1 p-1 bg-surface-container-low rounded-xl"
-          data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"
-        >
-          <a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="kham-pha"
-            href="index.html"
-            >Khám Phá</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="trai-nghiem-workshop"
-            href="experience.html"
-            >Trải Nghiệm &amp; Workshop</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="ai-studio-ke-chuyen"
-            href="ai-studio.html"
-            >AI Studio &amp; Kể Chuyện</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="san-pham-cua-ban"
-            href="my-product.html"
-            >Sản Phẩm Của Bạn</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="cua-hang-tac-dong"
-            href="shop.html"
-            >Cửa Hàng &amp; Tác Động</a
-          >
-        </nav>
-        <div class="flex items-center gap-3 lg:gap-4 2xl:ml-5">
-          <div
-            class="hidden 2xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium"
-          >
-            <span class="material-symbols-outlined text-[16px]">graphic_eq</span
-            ><span>CORA AI Audio</span>
-          </div>
-          <a
-            class="p-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center"
-            data-path="san-pham-cua-ban"
-            href="my-product.html"
-            ><span class="material-symbols-outlined text-[20px]"
-              >shopping_bag</span
-            ></a
-          ><a
-            class="hidden 2xl:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm"
-            data-path="trai-nghiem-workshop"
-            href="experience.html"
-            >Đặt Workshop / Create Story</a
-          >
-          <button
-            class="corness-mobile-toggle 2xl:hidden"
-            type="button"
-            aria-label="Mở menu"
-            aria-controls="corness-mobile-menu"
-            aria-expanded="false"
-          >
-            <span class="material-symbols-outlined text-[21px]">menu</span>
-          </button>
-          <div
-            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"
-          >
-            <span class="material-symbols-outlined text-on-primary text-[18px]"
-              >person</span
-            >
-          </div>
-        </div>
-      </div>
-
-      <div
-        id="corness-mobile-menu"
-        class="corness-mobile-menu 2xl:hidden"
-        data-open="false"
-        aria-hidden="true"
-      >
-        <button
-          class="corness-mobile-menu__backdrop"
-          type="button"
-          data-mobile-close
-          aria-label="Đóng menu"
-        ></button>
-        <div
-          class="corness-mobile-menu__panel"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Menu điều hướng CORNESS"
-        >
-          <div class="corness-mobile-menu__top">
-            <div>
-              <div
-                class="font-headline text-lg text-primary uppercase leading-none"
-              >
+<link href="responsive.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(112,88,66,0.06)]">
+<div class="h-20 w-full px-6 lg:px-12 flex items-center justify-between">
+<div class="flex items-center gap-4 shrink-0 2xl:mr-5">
+<img alt="CORNESS" class="h-14 w-14 shrink-0 object-contain" src="images/FGlogo.png"/>
+<div class="flex flex-col">
+<span class="font-headline text-lg tracking-tight uppercase text-primary leading-tight">CORNESS</span><span class="font-label text-[10px] tracking-[0.08em] uppercase text-tertiary font-medium">Xuan Phu • Dong Nai</span>
+</div>
+</div>
+<nav class="hidden 2xl:flex items-center gap-1 p-1 bg-surface-container-low rounded-xl" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm">
+<a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="kham-pha" href="index.html">Explore</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="trai-nghiem-workshop" href="experience.html">Experiences &amp; Workshops</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="ai-studio-ke-chuyen" href="ai-studio.html">AI Studio &amp; Storytelling</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="san-pham-cua-ban" href="my-product.html">Your Product</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="cua-hang-tac-dong" href="shop.html">Shop &amp; Impact</a>
+</nav>
+<div class="flex items-center gap-3 lg:gap-4 2xl:ml-5">
+<div class="hidden 2xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium">
+<span class="material-symbols-outlined text-[16px]">graphic_eq</span><span>CORA AI Audio</span>
+</div>
+<a class="p-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" data-path="san-pham-cua-ban" href="my-product.html"><span class="material-symbols-outlined text-[20px]">shopping_bag</span></a><a class="hidden 2xl:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm" data-path="trai-nghiem-workshop" href="experience.html">Book Workshop / Create Story</a>
+<button aria-controls="corness-mobile-menu" aria-expanded="false" aria-label="Open menu" class="corness-mobile-toggle 2xl:hidden" type="button">
+<span class="material-symbols-outlined text-[21px]">menu</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="corness-mobile-menu 2xl:hidden" data-open="false" id="corness-mobile-menu">
+<button aria-label="Close menu" class="corness-mobile-menu__backdrop" data-mobile-close="" type="button"></button>
+<div aria-label="CORNESS navigation menu" aria-modal="true" class="corness-mobile-menu__panel" role="dialog">
+<div class="corness-mobile-menu__top">
+<div>
+<div class="font-headline text-lg text-primary uppercase leading-none">
                 CORNESS
               </div>
-              <div
-                class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-1"
-              >
-                Xuân Phú • Đồng Nai
+<div class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-1">
+                Xuan Phu • Dong Nai
               </div>
-            </div>
-            <button
-              class="corness-mobile-menu__close"
-              type="button"
-              data-mobile-close
-              aria-label="Đóng menu"
-            >
-              <span class="material-symbols-outlined text-[20px]">close</span>
-            </button>
-          </div>
-          <nav class="corness-mobile-nav" aria-label="Điều hướng di động">
-            <a href="index.html"
-              ><span class="material-symbols-outlined text-[20px]">explore</span
-              ><span>Khám Phá</span></a
-            >
-            <a href="experience.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >handyman</span
-              ><span>Trải Nghiệm &amp; Workshop</span></a
-            >
-            <a href="ai-studio.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >auto_awesome</span
-              ><span>AI Studio &amp; Kể Chuyện</span></a
-            >
-            <a href="my-product.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >deployed_code</span
-              ><span>Sản Phẩm Của Bạn</span></a
-            >
-            <a href="shop.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >storefront</span
-              ><span>Cửa Hàng &amp; Tác Động</span></a
-            >
-          </nav>
-          <a class="corness-mobile-cta" href="experience.html">
-            <span>Đặt Workshop / Create Story</span>
-            <span class="material-symbols-outlined text-[18px]"
-              >arrow_forward</span
-            >
-          </a>
-        </div>
-      </div>
-    </header>
-    <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
-      <div class="flex flex-col w-full">
-        <div class="w-full px-6 lg:px-12 py-8 max-w-[1440px] mx-auto">
-          <!-- Breadcrumb & Trust Banner -->
-          <div class="flex flex-wrap items-center justify-between gap-4 pb-8">
-            <div
-              class="flex items-center gap-2 font-label text-xs tracking-wider uppercase text-on-surface-variant"
-            >
-              <a class="hover:text-primary transition-colors" href="#"
-                >Trang Chủ</a
-              >
-              <span class="text-outline-variant">/</span>
-              <a class="hover:text-primary transition-colors" href="#"
-                >Trải Nghiệm Workshop</a
-              >
-              <span class="text-outline-variant">/</span>
-              <span class="text-primary font-bold">Thanh Toán An Toàn</span>
-            </div>
-            <div
-              class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-primary font-label text-xs font-semibold shadow-sm"
-            >
-              <span
-                class="material-symbols-outlined text-[16px] text-primary"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >lock</span
-              >
-              <span>Bảo mật 256-bit SSL • Cổng Thanh Toán Chuẩn Quốc Gia</span>
-            </div>
-          </div>
-          <!-- Editorial Title & Status Indicator -->
-          <div
-            class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4"
-          >
-            <div>
-              <span
-                class="font-label text-xs uppercase tracking-[0.14em] text-secondary font-bold block mb-1"
-                >Bước 02/02 • Xác Nhận Suất Tham Gia</span
-              >
-              <h1
-                class="font-headline text-3xl lg:text-4xl text-primary tracking-tight uppercase leading-none"
-              >
-                Thanh Toán &amp; Đóng Góp Sinh Thái
+</div>
+<button aria-label="Close menu" class="corness-mobile-menu__close" data-mobile-close="" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<nav aria-label="Mobile navigation" class="corness-mobile-nav">
+<a href="index.html"><span class="material-symbols-outlined text-[20px]">explore</span><span>Explore</span></a>
+<a href="experience.html"><span class="material-symbols-outlined text-[20px]">handyman</span><span>Experiences &amp; Workshops</span></a>
+<a href="ai-studio.html"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span>AI Studio &amp; Storytelling</span></a>
+<a href="my-product.html"><span class="material-symbols-outlined text-[20px]">deployed_code</span><span>Your Product</span></a>
+<a href="shop.html"><span class="material-symbols-outlined text-[20px]">storefront</span><span>Shop &amp; Impact</span></a>
+</nav>
+<a class="corness-mobile-cta" href="experience.html">
+<span>Book Workshop / Create Story</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+<div class="flex flex-col w-full">
+<div class="w-full px-6 lg:px-12 py-8 max-w-[1440px] mx-auto">
+<!-- Breadcrumb & Trust Banner -->
+<div class="flex flex-wrap items-center justify-between gap-4 pb-8">
+<div class="flex items-center gap-2 font-label text-xs tracking-wider uppercase text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Workshop Experience</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-bold">Secure Checkout</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-primary font-label text-xs font-semibold shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary" style='font-variation-settings: "FILL" 1'>lock</span>
+<span>256-bit SSL security • National-standard payment gateway</span>
+</div>
+</div>
+<!-- Editorial Title & Status Indicator -->
+<div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label text-xs uppercase tracking-[0.14em] text-secondary font-bold block mb-1">Step 02/02 • Confirm Your Reservation</span>
+<h1 class="font-headline text-3xl lg:text-4xl text-primary tracking-tight uppercase leading-none">
+                Payment &amp; Eco Contribution
               </h1>
-            </div>
-            <div
-              class="flex items-center gap-3 font-label text-xs text-on-surface-variant bg-surface-container-low px-4 py-2 rounded-xl"
-            >
-              <span
-                class="inline-block w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"
-              ></span>
-              <span
-                >Giữ chỗ tự động trong
-                <strong class="text-primary font-bold" id="countdown-timer"
-                  >14:59</strong
-                >
-                phút</span
-              >
-            </div>
-          </div>
-          <!-- Main Two-Column Layout -->
-          <div
-            class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start"
-          >
-            <!-- LEFT COLUMN: Form Inputs & Flow -->
-            <div class="lg:col-span-7 space-y-8 checkout-form-column">
-              <!-- Selected Workshop Card -->
-              <section
-                class="bg-surface-container-low rounded-2xl p-6 shadow-sm"
-              >
-                <div class="flex flex-col sm:flex-row gap-5 items-start">
-                  <div
-                    class="w-full sm:w-36 h-36 rounded-xl overflow-hidden shrink-0 shadow-sm relative bg-surface-container"
-                  >
-                    <img
-                      class="w-full h-full object-cover"
-                      data-alt="Close up photography of handcrafted Dong Nai compressed corn husk coaster with glazed ceramic inlay and stamped typography of Xuan Phu Commune, natural linen lighting, earthy tones, organic texture"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8TrYje1EOI5slnDZCmeQGvgKLNjnXvDTHsmgMqEDKtDmDeIEUh1NYB31FUBuNf8o-Hhs6sUy-hX1dQJUUDPhCp77Sk6LY10uJ0_R1HngRXB-SvB5tRWUeeGc4qsiFMgunFtgIvtlLQOG7Z5_bZUY_2dCwCppU3hrvWPhGY-6ehVtTyMo4TJu7pM1lo1KsnlQAyhJ7G1QFeCFdrRkrclOisnOnd4ewlrQH7qV4t63fyAZbMVDZBg0tAw"
-                      alt="Close up photography of handcrafted Dong Nai compressed corn husk coaster with glazed ceramic inlay and stamped typography of Xuan Phu Commune, natural linen lighting, earthy tones, organic texture"
-                    />
-                    <span
-                      class="absolute top-2 left-2 px-2 py-0.5 rounded bg-primary text-on-primary font-label text-[10px] font-bold uppercase tracking-wider"
-                      >OCOP 4 Sao</span
-                    >
-                  </div>
-                  <div class="space-y-2 flex-1">
-                    <div class="flex items-center gap-2">
-                      <span
-                        class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label text-[10px] font-bold uppercase tracking-wider"
-                        >Workshop Văn Hóa</span
-                      >
-                      <span class="text-outline-variant text-xs">•</span>
-                      <span class="font-label text-xs text-tertiary font-medium"
-                        >Bản Quyền CORNESS 2026</span
-                      >
-                    </div>
-                    <h2
-                      class="font-display text-xl text-on-surface uppercase tracking-tight leading-tight"
-                    >
-                      Tự Tay Ép Lõi Ngô &amp; Tạo Tác Lót Ly Di Sản
+</div>
+<div class="flex items-center gap-3 font-label text-xs text-on-surface-variant bg-surface-container-low px-4 py-2 rounded-xl">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span>Reservation held for
+                <strong class="text-primary font-bold" id="countdown-timer">14:59</strong>
+                minutes</span>
+</div>
+</div>
+<!-- Main Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<!-- LEFT COLUMN: Form Inputs & Flow -->
+<div class="lg:col-span-7 space-y-8 checkout-form-column">
+<!-- Selected Workshop Card -->
+<section class="bg-surface-container-low rounded-2xl p-6 shadow-sm">
+<div class="flex flex-col sm:flex-row gap-5 items-start">
+<div class="w-full sm:w-36 h-36 rounded-xl overflow-hidden shrink-0 shadow-sm relative bg-surface-container">
+<img alt="Close up photography of handcrafted Dong Nai compressed corn husk coaster with glazed ceramic inlay and stamped typography of Xuan Phu Commune, natural linen lighting, earthy tones, organic texture" class="w-full h-full object-cover" data-alt="Close up photography of handcrafted Dong Nai compressed corn husk coaster with glazed ceramic inlay and stamped typography of Xuan Phu Commune, natural linen lighting, earthy tones, organic texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8TrYje1EOI5slnDZCmeQGvgKLNjnXvDTHsmgMqEDKtDmDeIEUh1NYB31FUBuNf8o-Hhs6sUy-hX1dQJUUDPhCp77Sk6LY10uJ0_R1HngRXB-SvB5tRWUeeGc4qsiFMgunFtgIvtlLQOG7Z5_bZUY_2dCwCppU3hrvWPhGY-6ehVtTyMo4TJu7pM1lo1KsnlQAyhJ7G1QFeCFdrRkrclOisnOnd4ewlrQH7qV4t63fyAZbMVDZBg0tAw"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-primary text-on-primary font-label text-[10px] font-bold uppercase tracking-wider">OCOP 4 Sao</span>
+</div>
+<div class="space-y-2 flex-1">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label text-[10px] font-bold uppercase tracking-wider">Cultural Workshop</span>
+<span class="text-outline-variant text-xs">•</span>
+<span class="font-label text-xs text-tertiary font-medium">CORNESS Copyright 2026</span>
+</div>
+<h2 class="font-display text-xl text-on-surface uppercase tracking-tight leading-tight">
+                      Press Corn-Cob Composite &amp; Craft a Heritage Coaster
                     </h2>
-                    <div
-                      class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-xs font-label text-on-surface-variant"
-                    >
-                      <div class="flex items-center gap-2">
-                        <span
-                          class="material-symbols-outlined text-[16px] text-primary"
-                          >schedule</span
-                        >
-                        <span
-                          ><strong>09:00 - 11:30</strong> • Thứ Bảy, 18 Thg 5,
-                          2026</span
-                        >
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <span
-                          class="material-symbols-outlined text-[16px] text-primary"
-                          >pin_drop</span
-                        >
-                        <span>Xưởng Ấp Phú Mỹ, Xã Xuân Phú, Đồng Nai</span>
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <span
-                          class="material-symbols-outlined text-[16px] text-primary"
-                          >group</span
-                        >
-                        <span
-                          >Số lượng đăng ký: <strong>02 Khách</strong> (Người
-                          lớn)</span
-                        >
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <span
-                          class="material-symbols-outlined text-[16px] text-primary"
-                          >verified_user</span
-                        >
-                        <span>Đã kèm bảo hộ &amp; nguyên liệu trọn gói</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- Participant Information -->
-              <section
-                class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-5"
-              >
-                <div class="flex items-center justify-between pb-3 border-b-0">
-                  <div class="flex items-center gap-2.5">
-                    <span
-                      class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label text-xs font-bold"
-                      >1</span
-                    >
-                    <h3
-                      class="font-headline text-lg uppercase text-on-surface tracking-tight"
-                    >
-                      Thông Tin Người Tham Gia
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-xs font-label text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span><strong>09:00 - 11:30</strong> • Saturday, May 18, 2026</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">pin_drop</span>
+<span>Phu My Hamlet Workshop, Xuan Phu, Dong Nai</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">group</span>
+<span>Participants: <strong>02 Guests</strong> (Adults)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+<span>Safety gear &amp; all materials included</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Participant Information -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-5">
+<div class="flex items-center justify-between pb-3 border-b-0">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label text-xs font-bold">1</span>
+<h3 class="font-headline text-lg uppercase text-on-surface tracking-tight">
+                      Participant Information
                     </h3>
-                  </div>
-                  <span class="font-label text-xs text-on-surface-variant"
-                    >Nhận hộ chiếu số tức thì</span
-                  >
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div class="sm:col-span-2 space-y-1.5">
-                    <label
-                      class="font-label text-xs font-semibold uppercase tracking-wider text-on-surface-variant flex items-center gap-1"
-                    >
-                      Họ và Tên Đại Diện <span class="text-secondary">*</span>
-                    </label>
-                    <div class="relative">
-                      <span
-                        class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[18px] text-outline"
-                        >badge</span
-                      >
-                      <input
-                        class="w-full pl-10 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-label text-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-inner"
-                        type="text"
-                        value="Lê Hoàng Minh"
-                      />
-                    </div>
-                  </div>
-                  <div class="space-y-1.5">
-                    <label
-                      class="font-label text-xs font-semibold uppercase tracking-wider text-on-surface-variant flex items-center gap-1"
-                    >
-                      Số Điện Thoại Zalo <span class="text-secondary">*</span>
-                    </label>
-                    <div class="relative">
-                      <span
-                        class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[18px] text-outline"
-                        >call</span
-                      >
-                      <input
-                        class="w-full pl-10 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-label text-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-inner"
-                        type="tel"
-                        value="0988 234 567"
-                      />
-                    </div>
-                  </div>
-                  <div class="space-y-1.5">
-                    <label
-                      class="font-label text-xs font-semibold uppercase tracking-wider text-on-surface-variant flex items-center gap-1"
-                    >
-                      Email Nhận Vé Điện Tử
+</div>
+<span class="font-label text-xs text-on-surface-variant">Receive your digital passport instantly</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="sm:col-span-2 space-y-1.5">
+<label class="font-label text-xs font-semibold uppercase tracking-wider text-on-surface-variant flex items-center gap-1">
+                      Primary Guest Name <span class="text-secondary">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[18px] text-outline">badge</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-label text-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" type="text" value="Le Hoang Minh"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="font-label text-xs font-semibold uppercase tracking-wider text-on-surface-variant flex items-center gap-1">
+                      Zalo Phone Number <span class="text-secondary">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[18px] text-outline">call</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-label text-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" type="tel" value="0988 234 567"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="font-label text-xs font-semibold uppercase tracking-wider text-on-surface-variant flex items-center gap-1">
+                      Email for E-Ticket
                       <span class="text-secondary">*</span>
-                    </label>
-                    <div class="relative">
-                      <span
-                        class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[18px] text-outline"
-                        >mail</span
-                      >
-                      <input
-                        class="w-full pl-10 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-label text-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-inner"
-                        type="email"
-                        value="minh.lehoang@vietcraft.vn"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <p class="font-label text-xs text-on-surface-variant italic">
-                  Vé QR Code và tài liệu chuẩn bị sẽ gửi trực tiếp đến Zalo
-                  &amp; Email của bạn sau 10 giây xác thực giao dịch.
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[18px] text-outline">mail</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-label text-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" type="email" value="minh.lehoang@vietcraft.vn"/>
+</div>
+</div>
+</div>
+<p class="font-label text-xs text-on-surface-variant italic">
+                  Your QR ticket and preparation guide will be sent to Zalo and email within 10 seconds after payment verification.
                 </p>
-              </section>
-              <!-- Laser Customization Feature -->
-              <section
-                class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4"
-              >
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-2.5">
-                    <span
-                      class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label text-xs font-bold"
-                      >2</span
-                    >
-                    <h3
-                      class="font-headline text-lg uppercase text-on-surface tracking-tight"
-                    >
-                      Miễn Phí Khắc Laser Cá Nhân Hóa
+</section>
+<!-- Laser Customization Feature -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label text-xs font-bold">2</span>
+<h3 class="font-headline text-lg uppercase text-on-surface tracking-tight">
+                      Complimentary Laser Personalization
                     </h3>
-                  </div>
-                  <span
-                    class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label text-[11px] font-bold uppercase"
-                    >Đặc quyền CORNESS</span
-                  >
-                </div>
-                <p
-                  class="font-label text-xs text-on-surface-variant leading-relaxed"
-                >
-                  Nghệ nhân xưởng sẽ tiến hành khắc nhiệt viền lưng lót ly lõi
-                  ngô của bạn kỷ niệm buổi trải nghiệm. Tối đa 12 ký tự in hoa
-                  hoặc số.
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label text-[11px] font-bold uppercase">CORNESS Privilege</span>
+</div>
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">
+                  Our artisans will engrave the back edge of your corn-cob coaster as a keepsake. Up to 12 uppercase letters or numbers.
                 </p>
-                <div
-                  class="p-4 rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center gap-4"
-                >
-                  <div class="flex-1 w-full space-y-1.5">
-                    <label
-                      class="font-label text-xs font-semibold uppercase tracking-wider text-on-surface-variant"
-                      >Thông điệp khắc nhiệt (Mặt sau tác phẩm)</label
-                    >
-                    <input
-                      class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-headline uppercase text-sm tracking-widest focus:outline-none focus:ring-2 focus:ring-secondary shadow-inner"
-                      id="laser-text-input"
-                      maxlength="12"
-                      type="text"
-                      value="MINH &amp; AN"
-                    />
-                    <div
-                      class="flex justify-between font-label text-[11px] text-outline"
-                    >
-                      <span>Ví dụ: MINH &amp; AN • 18.05.2026</span>
-                      <span id="char-counter">8/12 ký tự</span>
-                    </div>
-                  </div>
-                  <!-- Live Preview Badge -->
-                  <div
-                    class="w-32 h-20 rounded-xl bg-surface-container-high flex flex-col items-center justify-center text-center p-2 shadow-inner shrink-0 laser-preview-badge"
-                  >
-                    <span
-                      class="font-label text-[9px] text-tertiary uppercase tracking-wider font-semibold"
-                      >Xem Trước Bản Khắc</span
-                    >
-                    <span
-                      class="font-headline text-xs text-primary mt-1 tracking-widest uppercase"
-                      id="laser-preview-text"
-                      >MINH &amp; AN</span
-                    >
-                    <span class="font-label text-[8px] text-outline mt-0.5"
-                      >XUAN PHU • 2026</span
-                    >
-                  </div>
-                </div>
-              </section>
-              <!-- Payment Method Selection -->
-              <section
-                class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-5"
-              >
-                <div class="flex items-center justify-between pb-2">
-                  <div class="flex items-center gap-2.5">
-                    <span
-                      class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label text-xs font-bold"
-                      >3</span
-                    >
-                    <h3
-                      class="font-headline text-lg uppercase text-on-surface tracking-tight"
-                    >
-                      Phương Thức Thanh Toán
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center gap-4">
+<div class="flex-1 w-full space-y-1.5">
+<label class="font-label text-xs font-semibold uppercase tracking-wider text-on-surface-variant">Laser engraving message (back of artwork)</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-headline uppercase text-sm tracking-widest focus:outline-none focus:ring-2 focus:ring-secondary shadow-inner" id="laser-text-input" maxlength="12" type="text" value="MINH &amp; AN"/>
+<div class="flex justify-between font-label text-[11px] text-outline">
+<span>Example: MINH &amp; AN • 18.05.2026</span>
+<span id="char-counter">8/12 characters</span>
+</div>
+</div>
+<!-- Live Preview Badge -->
+<div class="w-32 h-20 rounded-xl bg-surface-container-high flex flex-col items-center justify-center text-center p-2 shadow-inner shrink-0 laser-preview-badge">
+<span class="font-label text-[9px] text-tertiary uppercase tracking-wider font-semibold">Engraving Preview</span>
+<span class="font-headline text-xs text-primary mt-1 tracking-widest uppercase" id="laser-preview-text">MINH &amp; AN</span>
+<span class="font-label text-[8px] text-outline mt-0.5">XUAN PHU • 2026</span>
+</div>
+</div>
+</section>
+<!-- Payment Method Selection -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-5">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label text-xs font-bold">3</span>
+<h3 class="font-headline text-lg uppercase text-on-surface tracking-tight">
+                      Payment Method
                     </h3>
-                  </div>
-                  <span class="font-label text-xs font-semibold text-primary"
-                    >Tự động kích hoạt vé</span
-                  >
-                </div>
-                <div class="space-y-3" id="payment-method-selector">
-                  <!-- Method 1: VietQR Napas (Active by default) -->
-                  <label
-                    class="flex items-start gap-3.5 p-4 rounded-xl bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container group"
-                  >
-                    <input
-                      checked=""
-                      class="mt-1 w-4 h-4 text-primary focus:ring-primary accent-primary"
-                      name="payment_method"
-                      type="radio"
-                      value="vietqr"
-                    />
-                    <div class="flex-1 space-y-1">
-                      <div
-                        class="flex items-center justify-between flex-wrap gap-2"
-                      >
-                        <div class="flex items-center gap-2">
-                          <span
-                            class="font-label text-sm font-bold uppercase text-on-surface"
-                            >VietQR Chuyển Khoản Tức Thì (Napas 247)</span
-                          >
-                          <span
-                            class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label text-[10px] font-bold uppercase"
-                            >Khuyên Dùng</span
-                          >
-                        </div>
-                        <span
-                          class="font-label text-[11px] text-primary font-bold"
-                          >0đ Phụ Phí</span
-                        >
-                      </div>
-                      <p class="font-label text-xs text-on-surface-variant">
-                        Quét mã QR qua app mọi ngân hàng Việt Nam. Hệ thống ghi
-                        nhận vé tự động tức thì mà không cần chụp màn hình
-                        chuyển khoản.
+</div>
+<span class="font-label text-xs font-semibold text-primary">Ticket activates automatically</span>
+</div>
+<div class="space-y-3" id="payment-method-selector">
+<!-- Method 1: VietQR Napas (Active by default) -->
+<label class="flex items-start gap-3.5 p-4 rounded-xl bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container group">
+<input checked="" class="mt-1 w-4 h-4 text-primary focus:ring-primary accent-primary" name="payment_method" type="radio" value="vietqr"/>
+<div class="flex-1 space-y-1">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label text-sm font-bold uppercase text-on-surface">VietQR Instant Bank Transfer (Napas 247)</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label text-[10px] font-bold uppercase">Recommended</span>
+</div>
+<span class="font-label text-[11px] text-primary font-bold">No Fee</span>
+</div>
+<p class="font-label text-xs text-on-surface-variant">
+                        Scan the QR code with any Vietnamese banking app. Your ticket is recorded automatically without uploading a transfer screenshot.
                       </p>
-                      <div class="flex items-center gap-2 pt-2">
-                        <span
-                          class="px-2 py-0.5 rounded bg-surface-container-highest text-[10px] font-label font-medium text-on-surface-variant"
-                          >Vietcombank</span
-                        >
-                        <span
-                          class="px-2 py-0.5 rounded bg-surface-container-highest text-[10px] font-label font-medium text-on-surface-variant"
-                          >Techcombank</span
-                        >
-                        <span
-                          class="px-2 py-0.5 rounded bg-surface-container-highest text-[10px] font-label font-medium text-on-surface-variant"
-                          >MBBank</span
-                        >
-                        <span
-                          class="px-2 py-0.5 rounded bg-surface-container-highest text-[10px] font-label font-medium text-on-surface-variant"
-                          >ACB</span
-                        >
-                        <span class="font-label text-[10px] text-outline"
-                          >+40 Ngân hàng</span
-                        >
-                      </div>
-                    </div>
-                  </label>
-                  <!-- Method 2: E-Wallet -->
-                  <label
-                    class="flex items-start gap-3.5 p-4 rounded-xl bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container group"
-                  >
-                    <input
-                      class="mt-1 w-4 h-4 text-primary focus:ring-primary accent-primary"
-                      name="payment_method"
-                      type="radio"
-                      value="ewallet"
-                    />
-                    <div class="flex-1 space-y-1">
-                      <div class="flex items-center justify-between">
-                        <span
-                          class="font-label text-sm font-bold uppercase text-on-surface"
-                          >Ví Điện Tử (MoMo, ZaloPay, Apple Pay)</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-[18px] text-outline"
-                          >account_balance_wallet</span
-                        >
-                      </div>
-                      <p class="font-label text-xs text-on-surface-variant">
-                        Thanh toán 1 chạm siêu tốc bằng liên kết ví MoMo hoặc
-                        ZaloPay trực tiếp trên thiết bị của bạn.
+<div class="flex items-center gap-2 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-[10px] font-label font-medium text-on-surface-variant">Vietcombank</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-[10px] font-label font-medium text-on-surface-variant">Techcombank</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-[10px] font-label font-medium text-on-surface-variant">MBBank</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-[10px] font-label font-medium text-on-surface-variant">ACB</span>
+<span class="font-label text-[10px] text-outline">40+ Banks</span>
+</div>
+</div>
+</label>
+<!-- Method 2: E-Wallet -->
+<label class="flex items-start gap-3.5 p-4 rounded-xl bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container group">
+<input class="mt-1 w-4 h-4 text-primary focus:ring-primary accent-primary" name="payment_method" type="radio" value="ewallet"/>
+<div class="flex-1 space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label text-sm font-bold uppercase text-on-surface">E-Wallet (MoMo, ZaloPay, Apple Pay)</span>
+<span class="material-symbols-outlined text-[18px] text-outline">account_balance_wallet</span>
+</div>
+<p class="font-label text-xs text-on-surface-variant">
+                        Pay in one tap with MoMo or ZaloPay directly from your device.
                       </p>
-                    </div>
-                  </label>
-                  <!-- Method 3: Credit/Debit Cards -->
-                  <label
-                    class="flex items-start gap-3.5 p-4 rounded-xl bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container group"
-                  >
-                    <input
-                      class="mt-1 w-4 h-4 text-primary focus:ring-primary accent-primary"
-                      name="payment_method"
-                      type="radio"
-                      value="card"
-                    />
-                    <div class="flex-1 space-y-1">
-                      <div class="flex items-center justify-between">
-                        <span
-                          class="font-label text-sm font-bold uppercase text-on-surface"
-                          >Thẻ Quốc Tế (Visa, MasterCard, JCB)</span
-                        >
-                        <span
-                          class="material-symbols-outlined text-[18px] text-outline"
-                          >credit_card</span
-                        >
-                      </div>
-                      <p class="font-label text-xs text-on-surface-variant">
-                        Hỗ trợ thẻ phát hành nội địa và quốc tế, bảo vệ quyền
-                        lợi giao dịch 3D-Secure 2.0.
+</div>
+</label>
+<!-- Method 3: Credit/Debit Cards -->
+<label class="flex items-start gap-3.5 p-4 rounded-xl bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container group">
+<input class="mt-1 w-4 h-4 text-primary focus:ring-primary accent-primary" name="payment_method" type="radio" value="card"/>
+<div class="flex-1 space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label text-sm font-bold uppercase text-on-surface">International Cards (Visa, Mastercard, JCB)</span>
+<span class="material-symbols-outlined text-[18px] text-outline">credit_card</span>
+</div>
+<p class="font-label text-xs text-on-surface-variant">
+                        Supports domestic and international cards with 3-D Secure 2.0 transaction protection.
                       </p>
-                    </div>
-                  </label>
-                </div>
-              </section>
-              <!-- Trust Badges & Policies -->
-              <section
-                class="p-6 rounded-2xl bg-surface-container-low grid grid-cols-1 md:grid-cols-3 gap-5"
-              >
-                <div class="flex items-start gap-3">
-                  <span
-                    class="material-symbols-outlined text-primary text-[22px] shrink-0"
-                    >event_repeat</span
-                  >
-                  <div>
-                    <h4
-                      class="font-label text-xs font-bold uppercase tracking-wider text-on-surface"
-                    >
-                      Hoàn Hủy Linh Hoạt
+</div>
+</label>
+</div>
+</section>
+<!-- Trust Badges & Policies -->
+<section class="p-6 rounded-2xl bg-surface-container-low grid grid-cols-1 md:grid-cols-3 gap-5">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0">event_repeat</span>
+<div>
+<h4 class="font-label text-xs font-bold uppercase tracking-wider text-on-surface">
+                      Flexible Cancellations
                     </h4>
-                    <p
-                      class="font-label text-[11px] text-on-surface-variant mt-0.5"
-                    >
-                      Miễn phí dời lịch hoặc hoàn tiền 100% trước 24 giờ diễn ra
-                      buổi xưởng.
+<p class="font-label text-[11px] text-on-surface-variant mt-0.5">
+                      Reschedule free of charge or receive a full refund up to 24 hours before your session.
                     </p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <span
-                    class="material-symbols-outlined text-primary text-[22px] shrink-0"
-                    >medical_services</span
-                  >
-                  <div>
-                    <h4
-                      class="font-label text-xs font-bold uppercase tracking-wider text-on-surface"
-                    >
-                      Bảo Hiểm Trải Nghiệm
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0">medical_services</span>
+<div>
+<h4 class="font-label text-xs font-bold uppercase tracking-wider text-on-surface">
+                      Experience Insurance
                     </h4>
-                    <p
-                      class="font-label text-[11px] text-on-surface-variant mt-0.5"
-                    >
-                      Bao gồm gói bảo hiểm an toàn y tế trong suốt thời gian
-                      tham gia tại xưởng.
+<p class="font-label text-[11px] text-on-surface-variant mt-0.5">
+                      Includes medical and safety coverage throughout your workshop visit.
                     </p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <span
-                    class="material-symbols-outlined text-primary text-[22px] shrink-0"
-                    >workspace_premium</span
-                  >
-                  <div>
-                    <h4
-                      class="font-label text-xs font-bold uppercase tracking-wider text-on-surface"
-                    >
-                      Chứng Nhận Nghệ Nhân
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0">workspace_premium</span>
+<div>
+<h4 class="font-label text-xs font-bold uppercase tracking-wider text-on-surface">
+                      Artisan Certificate
                     </h4>
-                    <p
-                      class="font-label text-[11px] text-on-surface-variant mt-0.5"
-                    >
-                      Mỗi khách được cấp Giấy chứng nhận Đại sứ Tái sinh Nông
-                      sản Đồng Nai.
+<p class="font-label text-[11px] text-on-surface-variant mt-0.5">
+                      Each participant receives a Dong Nai Agricultural Regeneration Ambassador certificate.
                     </p>
-                  </div>
-                </div>
-              </section>
-            </div>
-            <!-- RIGHT COLUMN: Sticky Pricing & Ecological Impact Breakdown -->
-            <div
-              class="lg:col-span-5 sticky top-28 space-y-6 checkout-summary-column"
-            >
-              <!-- Summary Container -->
-              <div
-                class="bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-md space-y-6"
-              >
-                <div class="flex items-center justify-between pb-4">
-                  <h3
-                    class="font-headline text-lg uppercase tracking-tight text-on-surface"
-                  >
-                    Chi Phí Minh Bạch
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: Sticky Pricing & Ecological Impact Breakdown -->
+<div class="lg:col-span-5 sticky top-28 space-y-6 checkout-summary-column">
+<!-- Summary Container -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-md space-y-6">
+<div class="flex items-center justify-between pb-4">
+<h3 class="font-headline text-lg uppercase tracking-tight text-on-surface">
+                    Transparent Pricing
                   </h3>
-                  <span
-                    class="font-label text-xs font-bold text-secondary uppercase tracking-widest"
-                    >Hóa Đơn Số</span
-                  >
-                </div>
-                <!-- Line items -->
-                <div
-                  class="space-y-3 font-label text-sm text-on-surface-variant"
-                >
-                  <div class="flex items-center justify-between">
-                    <div>
-                      <span class="text-on-surface font-medium"
-                        >Vé Trải Nghiệm Thủ Công</span
-                      >
-                      <span class="block text-xs text-outline"
-                        >2 Khách • 350.000 VNĐ / người</span
-                      >
-                    </div>
-                    <span class="font-body text-base text-on-surface font-bold"
-                      >700.000 VNĐ</span
-                    >
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-1.5">
-                      <span class="text-on-surface font-medium"
-                        >Đóng góp Quỹ Sinh Kế Nông Hộ</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[15px] text-primary"
-                        title="10% giá trị vé đóng góp trực tiếp mua nông sản của bà con Xuân Phú"
-                        >eco</span
-                      >
-                    </div>
-                    <span class="font-body text-sm text-primary font-semibold"
-                      >+70.000 VNĐ
-                      <span class="text-[11px] font-label text-outline"
-                        >(Đã gồm)</span
-                      ></span
-                    >
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <div>
-                      <span class="text-on-surface font-medium"
-                        >Khắc Laser Kỷ Niệm Tùy Biến</span
-                      >
-                      <span class="block text-xs text-outline"
-                        >Khắc nhiệt công nghệ sạch</span
-                      >
-                    </div>
-                    <span
-                      class="font-label text-xs text-primary font-bold uppercase"
-                      >Miễn Phí (0đ)</span
-                    >
-                  </div>
-                  <div
-                    class="flex items-center justify-between text-secondary pt-1"
-                    id="discount-row"
-                  >
-                    <div class="flex items-center gap-1.5">
-                      <span class="material-symbols-outlined text-[16px]"
-                        >local_activity</span
-                      >
-                      <span
-                        class="font-semibold text-xs uppercase tracking-wider"
-                        >Ưu Đãi Di Sản: XUANPHU2026</span
-                      >
-                    </div>
-                    <span class="font-body text-base font-bold text-secondary"
-                      >-50.000 VNĐ</span
-                    >
-                  </div>
-                </div>
-                <!-- Promo Code Input Block -->
-                <div
-                  class="p-3 rounded-xl bg-surface-container-low flex items-center gap-2"
-                >
-                  <div class="relative flex-1">
-                    <span
-                      class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[16px] text-outline"
-                      >sell</span
-                    >
-                    <input
-                      class="w-full pl-8 pr-3 py-2 rounded-lg bg-surface-container-lowest font-label text-xs uppercase tracking-wider font-semibold text-on-surface focus:outline-none focus:ring-1 focus:ring-primary"
-                      id="coupon-input"
-                      type="text"
-                      value="XUANPHU2026"
-                    />
-                  </div>
-                  <button
-                    class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label text-xs font-bold uppercase tracking-wider transition-colors shrink-0"
-                    id="apply-coupon-btn"
-                    type="button"
-                  >
-                    Đã Áp Dụng
+<span class="font-label text-xs font-bold text-secondary uppercase tracking-widest">Digital Invoice</span>
+</div>
+<!-- Line items -->
+<div class="space-y-3 font-label text-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<div>
+<span class="text-on-surface font-medium">Hands-on Craft Experience Ticket</span>
+<span class="block text-xs text-outline">2 Guests • VND 350,000/person</span>
+</div>
+<span class="font-body text-base text-on-surface font-bold">VND 700,000</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface font-medium">Contribution to the Farmers' Livelihood Fund</span>
+<span class="material-symbols-outlined text-[15px] text-primary" title="10% of the ticket price directly supports Xuan Phu farmers">eco</span>
+</div>
+<span class="font-body text-sm text-primary font-semibold">+VND 70,000
+                      <span class="text-[11px] font-label text-outline">(Included)</span></span>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="text-on-surface font-medium">Custom Commemorative Laser Engraving</span>
+<span class="block text-xs text-outline">Eco-friendly laser engraving</span>
+</div>
+<span class="font-label text-xs text-primary font-bold uppercase">Free (VND 0)</span>
+</div>
+<div class="flex items-center justify-between text-secondary pt-1" id="discount-row">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">local_activity</span>
+<span class="font-semibold text-xs uppercase tracking-wider">Heritage Discount: XUANPHU2026</span>
+</div>
+<span class="font-body text-base font-bold text-secondary">−VND 50,000</span>
+</div>
+</div>
+<!-- Promo Code Input Block -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-2">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[16px] text-outline">sell</span>
+<input class="w-full pl-8 pr-3 py-2 rounded-lg bg-surface-container-lowest font-label text-xs uppercase tracking-wider font-semibold text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" id="coupon-input" type="text" value="XUANPHU2026"/>
+</div>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label text-xs font-bold uppercase tracking-wider transition-colors shrink-0" id="apply-coupon-btn" type="button">
+                    Applied
                   </button>
-                </div>
-                <!-- Total Calculation -->
-                <div
-                  class="pt-4 p-4 rounded-xl bg-surface-container flex items-center justify-between"
-                >
-                  <div>
-                    <span
-                      class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold block"
-                      >Tổng Thanh Toán</span
-                    >
-                    <span class="font-label text-[11px] text-outline"
-                      >Đã bao gồm thuế VAT &amp; bảo hiểm</span
-                    >
-                  </div>
-                  <div class="text-right">
-                    <span
-                      class="font-headline text-2xl lg:text-3xl text-primary font-normal leading-tight"
-                      id="final-total"
-                      >650.000</span
-                    >
-                    <span
-                      class="font-label text-xs text-primary font-bold ml-1 uppercase"
-                      >VNĐ</span
-                    >
-                  </div>
-                </div>
-                <!-- Direct Ecological Impact Data Visualization -->
-                <div class="p-4 rounded-xl bg-primary/10 space-y-3">
-                  <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                      <span
-                        class="material-symbols-outlined text-primary text-[18px]"
-                        >nest_eco_leaf</span
-                      >
-                      <span
-                        class="font-label text-xs uppercase tracking-wider font-bold text-primary"
-                        >Tác Động Sinh Thái Tức Thì</span
-                      >
-                    </div>
-                    <span
-                      class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label text-[9px] font-bold uppercase"
-                      >Xác Thực Xanh</span
-                    >
-                  </div>
-                  <p class="font-label text-xs text-on-surface-variant">
-                    Vé này của bạn trực tiếp đồng hành cùng nông dân Xuân Phú
-                    trong mô hình kinh tế tuần hoàn:
+</div>
+<!-- Total Calculation -->
+<div class="pt-4 p-4 rounded-xl bg-surface-container flex items-center justify-between">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold block">Total Payment</span>
+<span class="font-label text-[11px] text-outline">VAT and insurance included</span>
+</div>
+<div class="text-right">
+<span class="font-headline text-2xl lg:text-3xl text-primary font-normal leading-tight" id="final-total">650.000</span>
+<span class="font-label text-xs text-primary font-bold ml-1 uppercase">VND</span>
+</div>
+</div>
+<!-- Direct Ecological Impact Data Visualization -->
+<div class="p-4 rounded-xl bg-primary/10 space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">nest_eco_leaf</span>
+<span class="font-label text-xs uppercase tracking-wider font-bold text-primary">Immediate Environmental Impact</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label text-[9px] font-bold uppercase">Green Verification</span>
+</div>
+<p class="font-label text-xs text-on-surface-variant">
+                    Your ticket directly supports Xuan Phu farmers through the circular agriculture program:
                   </p>
-                  <div class="grid grid-cols-2 gap-3 pt-1">
-                    <div
-                      class="p-3 rounded-lg bg-surface-container-lowest shadow-sm"
-                    >
-                      <div class="flex items-center gap-1.5 text-primary">
-                        <span class="material-symbols-outlined text-[16px]"
-                          >compost</span
-                        >
-                        <span class="font-body text-lg font-bold">172g</span>
-                      </div>
-                      <span
-                        class="font-label text-[10px] text-outline block uppercase tracking-wider mt-0.5"
-                        >Lõi ngô được cứu khỏi đốt bỏ</span
-                      >
-                    </div>
-                    <div
-                      class="p-3 rounded-lg bg-surface-container-lowest shadow-sm"
-                    >
-                      <div class="flex items-center gap-1.5 text-secondary">
-                        <span class="material-symbols-outlined text-[16px]"
-                          >co2</span
-                        >
-                        <span class="font-body text-lg font-bold">0.76 kg</span>
-                      </div>
-                      <span
-                        class="font-label text-[10px] text-outline block uppercase tracking-wider mt-0.5"
-                        >Giảm phát thải khí nhà kính (CO2e)</span
-                      >
-                    </div>
-                  </div>
-                  <!-- Inline Mini Progress Indicator -->
-                  <div class="space-y-1 pt-1">
-                    <div
-                      class="flex justify-between font-label text-[10px] text-on-surface-variant"
-                    >
-                      <span>Chỉ tiêu tái chế tuần này tại xưởng</span>
-                      <span class="font-bold text-primary">84% hoàn thành</span>
-                    </div>
-                    <div
-                      class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden"
-                    >
-                      <div
-                        class="h-full bg-primary rounded-full"
-                        style="width: 84%"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Checkout CTA -->
-                <div class="space-y-3 pt-2">
-                  <button
-                    class="w-full py-4 px-6 rounded-xl bg-primary hover:bg-tertiary text-on-primary font-label text-xs sm:text-sm font-bold uppercase tracking-widest shadow-md transition-all flex items-center justify-center gap-3 group"
-                    id="checkout-submit-btn"
-                    type="button"
-                  >
-                    <span>HOÀN TẤT ĐẶT VÉ &amp; NHẬN HỘ CHIẾU SỐ</span>
-                    <span
-                      class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
-                      >arrow_forward</span
-                    >
-                  </button>
-                  <div
-                    class="flex items-center justify-center gap-4 text-center font-label text-[11px] text-outline-variant pt-1"
-                  >
-                    <span
-                      class="flex items-center gap-1 text-on-surface-variant"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[14px] text-primary"
-                        >verified</span
-                      >
-                      Hộ chiếu QR bảo chứng OCOP
+<div class="grid grid-cols-2 gap-3 pt-1">
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">compost</span>
+<span class="font-body text-lg font-bold">172g</span>
+</div>
+<span class="font-label text-[10px] text-outline block uppercase tracking-wider mt-0.5">Corn cobs rescued from burning</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">co2</span>
+<span class="font-body text-lg font-bold">0.76 kg</span>
+</div>
+<span class="font-label text-[10px] text-outline block uppercase tracking-wider mt-0.5">Greenhouse gas emissions avoided (CO₂e)</span>
+</div>
+</div>
+<!-- Inline Mini Progress Indicator -->
+<div class="space-y-1 pt-1">
+<div class="flex justify-between font-label text-[10px] text-on-surface-variant">
+<span>This week's recycling target at the workshop</span>
+<span class="font-bold text-primary">84% completed</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 84%"></div>
+</div>
+</div>
+</div>
+<!-- Checkout CTA -->
+<div class="space-y-3 pt-2">
+<button class="w-full py-4 px-6 rounded-xl bg-primary hover:bg-tertiary text-on-primary font-label text-xs sm:text-sm font-bold uppercase tracking-widest shadow-md transition-all flex items-center justify-center gap-3 group" id="checkout-submit-btn" type="button">
+<span>COMPLETE BOOKING &amp; GET YOUR DIGITAL PASSPORT</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="flex items-center justify-center gap-4 text-center font-label text-[11px] text-outline-variant pt-1">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+                      OCOP-verified QR passport
                     </span>
-                    <span>•</span>
-                    <span
-                      class="flex items-center gap-1 text-on-surface-variant"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[14px] text-primary"
-                        >check_circle</span
-                      >
-                      Xuất hóa đơn đỏ điện tử
+<span>•</span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+                      Electronic VAT invoice available
                     </span>
-                  </div>
-                </div>
-              </div>
-              <!-- Artisan Story Vignette -->
-              <div
-                class="p-5 rounded-2xl bg-surface-container-low flex items-center gap-4 shadow-sm"
-              >
-                <div
-                  class="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-container"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    data-alt="Warm portrait photograph of elderly female Vietnamese master artisan wearing traditional conical hat smiling in organic craft workshop in Dong Nai surrounded by natural dried corn fibers"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD361xcTBilFc4cPfvWtNzP0r3Mdv-NXwzRAmjGYujYBX_Tj0BUjn0k7B6MvbgFdrSVr2ipfJ3gKbxRYHzpiC9BoAPs4u2VQpOM9ReNOlJOV62_52xKTwA3ocxpGNBWDSFHR4VyE76FHPXjClTZKJPLDB9_w_RNOGiJt3VioejtLa0M3eNCRSMobd-Esz6gfA9qD13H7QAwXE2BVDikgRgfdMPRNqwJR7Ig9c0TTeXgHfsctJMUErFCYA"
-                    alt="Warm portrait photograph of elderly female Vietnamese master artisan wearing traditional conical hat smiling in organic craft workshop in Dong Nai surrounded by natural dried corn fibers"
-                  />
-                </div>
-                <div class="space-y-0.5">
-                  <div class="flex items-center gap-1">
-                    <span
-                      class="font-label text-xs font-bold uppercase text-on-surface"
-                      >Nghệ Nhân Hướng Dẫn: Bác Năm Thu</span
-                    >
-                    <span
-                      class="material-symbols-outlined text-[14px] text-secondary"
-                      >star</span
-                    >
-                  </div>
-                  <p
-                    class="font-label text-[11px] text-on-surface-variant leading-relaxed"
-                  >
-                    "Mỗi chiếc lót ly không chỉ là vật dụng, đó là câu chuyện
-                    hồi sinh của từng bắp ngô Xuân Phú nuôi sống gia đình tôi."
+</div>
+</div>
+</div>
+<!-- Artisan Story Vignette -->
+<div class="p-5 rounded-2xl bg-surface-container-low flex items-center gap-4 shadow-sm">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-container">
+<img alt="Warm portrait photograph of elderly female Vietnamese master artisan wearing traditional conical hat smiling in organic craft workshop in Dong Nai surrounded by natural dried corn fibers" class="w-full h-full object-cover" data-alt="Warm portrait photograph of elderly female Vietnamese master artisan wearing traditional conical hat smiling in organic craft workshop in Dong Nai surrounded by natural dried corn fibers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD361xcTBilFc4cPfvWtNzP0r3Mdv-NXwzRAmjGYujYBX_Tj0BUjn0k7B6MvbgFdrSVr2ipfJ3gKbxRYHzpiC9BoAPs4u2VQpOM9ReNOlJOV62_52xKTwA3ocxpGNBWDSFHR4VyE76FHPXjClTZKJPLDB9_w_RNOGiJt3VioejtLa0M3eNCRSMobd-Esz6gfA9qD13H7QAwXE2BVDikgRgfdMPRNqwJR7Ig9c0TTeXgHfsctJMUErFCYA"/>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-1">
+<span class="font-label text-xs font-bold uppercase text-on-surface">Workshop Instructor: Uncle Nam Thu</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">star</span>
+</div>
+<p class="font-label text-[11px] text-on-surface-variant leading-relaxed">
+                    “Each coaster is more than an everyday item; it is the story of Xuan Phu corn being given a new life and sustaining my family.”
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Interactive Modal: Payment Simulator / Confirmation -->
-        <div
-          class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-4"
-          id="success-modal"
-        >
-          <div
-            class="bg-surface rounded-2xl max-w-lg w-full p-8 shadow-2xl space-y-6 text-center animate-in fade-in zoom-in-95 duration-200"
-          >
-            <div
-              class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container mx-auto flex items-center justify-center shadow-lg"
-            >
-              <span class="material-symbols-outlined text-[36px]"
-                >verified</span
-              >
-            </div>
-            <div class="space-y-2">
-              <span
-                class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-xs font-bold uppercase tracking-wider"
-                >Đã Kích Hoạt Vé Thành Công</span
-              >
-              <h3
-                class="font-headline text-2xl uppercase tracking-tight text-primary"
-              >
-                Chào Mừng Đến Xuân Phú!
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Modal: Payment Simulator / Confirmation -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-4" id="success-modal">
+<div class="bg-surface rounded-2xl max-w-lg w-full p-8 shadow-2xl space-y-6 text-center animate-in fade-in zoom-in-95 duration-200">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container mx-auto flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[36px]">verified</span>
+</div>
+<div class="space-y-2">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-xs font-bold uppercase tracking-wider">Ticket Activated Successfully</span>
+<h3 class="font-headline text-2xl uppercase tracking-tight text-primary">
+                Welcome to Xuan Phu!
               </h3>
-              <p
-                class="font-label text-xs text-on-surface-variant leading-relaxed"
-              >
-                Mã vé số:
-                <strong class="text-on-surface">#CRN-XP-2026-8891</strong
-                >.<br />
-                Hộ chiếu số và lộ trình đưa đón đã được chuyển tới Zalo số
-                <strong>0988 234 567</strong> và email
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">
+                Ticket number:
+                <strong class="text-on-surface">#CRN-XP-2026-8891</strong>.<br/>
+                Your digital passport and shuttle instructions have been sent to Zalo number
+                <strong>0988 234 567</strong> and email
                 <strong>minh.lehoang@vietcraft.vn</strong>.
               </p>
-            </div>
-            <!-- QR Artifact Preview -->
-            <div
-              class="p-4 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-2"
-            >
-              <div
-                class="w-36 h-36 bg-surface-container-lowest rounded-lg p-2 flex items-center justify-center shadow-sm"
-              >
-                <svg
-                  class="w-32 h-32 text-on-surface"
-                  fill="currentColor"
-                  viewBox="0 0 100 100"
-                >
-                  <path
-                    d="M10 10h30v30h-30zM15 15v20h20v-20zM60 10h30v30h-30zM65 15v20h20v-20zM10 60h30v30h-30zM15 65v20h20v-20zM22 22h6v6h-6zM72 22h6v6h-6zM22 72h6v6h-6zM45 10h10v15h-10zM45 35h10v10h-10zM10 45h15v10h-15zM35 45h20v10h-20zM60 45h10v20h-10zM80 45h10v10h-10zM45 65h10v25h-10zM60 75h15v15h-15zM80 65h10v25h-10z"
-                  ></path>
-                </svg>
-              </div>
-              <span
-                class="font-label text-[11px] text-tertiary font-bold tracking-widest uppercase"
-                >Lót Ly Khắc Nhiệt: "MINH &amp; AN"</span
-              >
-            </div>
-            <div class="pt-2 flex flex-col sm:flex-row gap-3">
-              <a
-                class="flex-1 py-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label text-xs font-bold uppercase tracking-wider transition-colors text-center"
-                href="#"
-              >
-                Tải Vé PDF (Apple Wallet)
+</div>
+<!-- QR Artifact Preview -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-2">
+<div class="w-36 h-36 bg-surface-container-lowest rounded-lg p-2 flex items-center justify-center shadow-sm">
+<svg class="w-32 h-32 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<path d="M10 10h30v30h-30zM15 15v20h20v-20zM60 10h30v30h-30zM65 15v20h20v-20zM10 60h30v30h-30zM15 65v20h20v-20zM22 22h6v6h-6zM72 22h6v6h-6zM22 72h6v6h-6zM45 10h10v15h-10zM45 35h10v10h-10zM10 45h15v10h-15zM35 45h20v10h-20zM60 45h10v20h-10zM80 45h10v10h-10zM45 65h10v25h-10zM60 75h15v15h-15zM80 65h10v25h-10z"></path>
+</svg>
+</div>
+<span class="font-label text-[11px] text-tertiary font-bold tracking-widest uppercase">Laser-Engraved Coaster: “MINH &amp; AN”</span>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row gap-3">
+<a class="flex-1 py-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label text-xs font-bold uppercase tracking-wider transition-colors text-center" href="#">
+                Download Ticket PDF (Apple Wallet)
               </a>
-              <button
-                class="flex-1 py-3 rounded-lg bg-primary hover:bg-tertiary text-on-primary font-label text-xs font-bold uppercase tracking-wider transition-colors"
-                id="modal-close-btn"
-                type="button"
-              >
-                Trở Về Khám Phá
+<button class="flex-1 py-3 rounded-lg bg-primary hover:bg-tertiary text-on-primary font-label text-xs font-bold uppercase tracking-wider transition-colors" id="modal-close-btn" type="button">
+                Back to Explore
               </button>
-            </div>
-          </div>
-        </div>
-        <script>
+</div>
+</div>
+</div>
+<script>
           // Live Character Counter & Preview for Laser Engraving
           const laserInput = document.getElementById("laser-text-input");
           const laserPreview = document.getElementById("laser-preview-text");
@@ -1413,8 +872,8 @@
             laserInput.addEventListener("input", (e) => {
               const val = e.target.value.toUpperCase();
               e.target.value = val;
-              laserPreview.textContent = val || "CÁ NHÂN HÓA";
-              charCounter.textContent = `${val.length}/12 ký tự`;
+              laserPreview.textContent = val || "PERSONALIZE";
+              charCounter.textContent = `${val.length}/12 characters`;
             });
           }
 
@@ -1428,7 +887,7 @@
               timerEl.textContent = `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
               if (duration <= 0) {
                 clearInterval(interval);
-                timerEl.textContent = "00:00 (Hết hạn)";
+                timerEl.textContent = "00:00 (Expired)";
               }
               duration--;
             }, 1000);
@@ -1447,7 +906,7 @@
               if (isApplied) {
                 discountRow.classList.add("hidden");
                 finalTotal.textContent = "700.000";
-                couponBtn.textContent = "Áp Dụng";
+                couponBtn.textContent = "Apply";
                 couponBtn.classList.remove("bg-surface-container-high");
                 couponBtn.classList.add("bg-primary", "text-on-primary");
                 isApplied = false;
@@ -1455,7 +914,7 @@
                 if (couponInput.value.trim().toUpperCase() === "XUANPHU2026") {
                   discountRow.classList.remove("hidden");
                   finalTotal.textContent = "650.000";
-                  couponBtn.textContent = "Đã Áp Dụng";
+                  couponBtn.textContent = "Applied";
                   couponBtn.classList.remove("bg-primary", "text-on-primary");
                   couponBtn.classList.add(
                     "bg-surface-container-high",
@@ -1463,7 +922,7 @@
                   );
                   isApplied = true;
                 } else {
-                  alert("Mã ưu đãi không hợp lệ. Hãy thử: XUANPHU2026");
+                  alert("Invalid promo code. Try XUANPHU2026.");
                 }
               }
             });
@@ -1482,13 +941,13 @@
             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
           </svg>
-          Đang Xác Thực Napas 247...
+          Verifying via Napas 247...
         `;
               setTimeout(() => {
                 successModal.classList.remove("hidden");
                 successModal.classList.add("flex");
                 checkoutBtn.disabled = false;
-                checkoutBtn.innerHTML = `<span>HOÀN TẤT ĐẶT VÉ & NHẬN HỘ CHIẾU SỐ</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span>`;
+                checkoutBtn.innerHTML = `<span>COMPLETE BOOKING & GET YOUR DIGITAL PASSPORT</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span>`;
               }, 1200);
             });
           }
@@ -1500,129 +959,94 @@
             });
           }
         </script>
-      </div>
-    </main>
-    <footer class="w-full bg-surface-container-low pt-16 pb-12 mt-20">
-      <div class="w-full px-6 lg:px-12">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12"
-        >
-          <div class="lg:col-span-2 space-y-4">
-            <div class="flex items-center gap-3">
-              <img
-                alt="CORNESS Logo"
-                class="h-8 w-auto object-contain"
-                src="images/FGlogo.png"
-              /><span
-                class="font-headline text-xl uppercase tracking-tight text-primary"
-                >CORNESS</span
-              >
-            </div>
-            <p
-              class="font-label text-xs uppercase tracking-[0.08em] text-secondary font-bold"
-            >
-              From Waste to Story • Tôn Vinh Di Sản Nông Nghiệp
+</div>
+</main>
+<footer class="w-full bg-surface-container-low pt-16 pb-12 mt-20">
+<div class="w-full px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12">
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<img alt="CORNESS Logo" class="h-8 w-auto object-contain" src="images/FGlogo.png"/><span class="font-headline text-xl uppercase tracking-tight text-primary">CORNESS</span>
+</div>
+<p class="font-label text-xs uppercase tracking-[0.08em] text-secondary font-bold">
+              From Waste to Story • Celebrating Agricultural Heritage
             </p>
-            <p
-              class="font-label text-sm text-on-surface-variant max-w-md leading-relaxed"
-            >
-              Hệ sinh thái thủ công mỹ nghệ bền vững chuyển hóa phế phẩm vỏ bắp
-              Xuân Phú, Đồng Nai thành những tác phẩm mang hồn cốt dân tộc, kết
-              nối nghệ nhân truyền thống cùng công nghệ AI văn hóa tiên phong.
+<p class="font-label text-sm text-on-surface-variant max-w-md leading-relaxed">
+              A sustainable craft ecosystem that transforms discarded corn husks from Xuan Phu, Dong Nai into creations inspired by Vietnamese heritage, connecting traditional artisans with pioneering cultural AI technology.
             </p>
-            <div class="flex items-center gap-3 pt-2">
-              <span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-primary"
-                ><span class="material-symbols-outlined text-[14px]"
-                  >verified</span
-                >Chứng nhận OCOP Tiêu Biểu</span
-              ><span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-tertiary"
-                ><span class="material-symbols-outlined text-[14px]"
-                  >nest_eco_leaf</span
-                >100% Upcycled Biomaterial</span
-              >
-            </div>
-          </div>
-          <div class="space-y-3">
-            <h4
-              class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
-            >
-              1. Khám Phá
+<div class="flex items-center gap-3 pt-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-primary"><span class="material-symbols-outlined text-[14px]">verified</span>Recognized OCOP Certification</span><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-tertiary"><span class="material-symbols-outlined text-[14px]">nest_eco_leaf</span>100% Upcycled Biomaterial</span>
+</div>
+</div>
+<div class="space-y-3">
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">
+              1. Explore
             </h4>
-            <ul class="space-y-2 font-label text-sm text-on-surface-variant">
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Nguồn gốc Vỏ Bắp Xuân Phú
+<ul class="space-y-2 font-label text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Origin of Xuan Phu Corn Husks
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Làng Nghề &amp; Nghệ Nhân
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Craft Villages &amp; Artisans
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Quy Trình Xử Lý Thuần Tự Nhiên
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Natural Processing Methods
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Thư Viện Hoa Văn Bản Địa
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Local Motif Library
               </li>
-            </ul>
-          </div>
-          <div class="space-y-3">
-            <h4
-              class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
-            >
-              2. Trải Nghiệm &amp; AI
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">
+              2. Experiences &amp; AI
             </h4>
-            <ul class="space-y-2 font-label text-sm text-on-surface-variant">
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Workshop Thủ Công Tại Chỗ
+<ul class="space-y-2 font-label text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Hands-on Craft Workshops
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
+<li class="hover:text-primary cursor-pointer transition-colors">
                 CORA AI Cultural Studio
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Kể Chuyện Bằng Giọng Nói
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Voice Storytelling
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Tùy Biến Sản Phẩm 3D
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Customize 3D Products
               </li>
-            </ul>
-          </div>
-          <div class="space-y-3">
-            <h4
-              class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
-            >
-              3. Cửa Hàng &amp; Tác Động
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">
+              3. Shop &amp; Impact
             </h4>
-            <ul class="space-y-2 font-label text-sm text-on-surface-variant">
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Bộ Sưu Tập Giới Hạn
+<ul class="space-y-2 font-label text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Limited-Edition Collection
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Tác Động Giảm Thải Carbon
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Carbon Reduction Impact
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Hỗ Trợ Sinh Kế Nông Dân
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Support Farmers’ Livelihoods
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Chính Sách Bền Vững &amp; Đối Tác
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Sustainability Policy &amp; Partners
               </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-label text-xs text-on-surface-variant"
-        >
-          <p>
-            © 2025 CORNESS Sustainable Craft &amp; Cultural Heritage. Xuân Phú,
-            Xuân Lộc, Đồng Nai.
+</ul>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-label text-xs text-on-surface-variant">
+<p>
+            © 2025 CORNESS Sustainable Craft &amp; Cultural Heritage. Xuan Phu, Xuan Loc, Dong Nai.
           </p>
-          <div class="flex items-center gap-6">
-            <span>Kinh Tế Tuần Hoàn Nông Nghiệp</span
-            ><span>Bảo Tồn Bản Sắc Việt</span>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="responsive.js"></script>
-    <script src="i18n.js"></script>
-  </body>
+<div class="flex items-center gap-6">
+<span>Circular Agricultural Economy</span><span>Preserving Vietnamese Identity</span>
+</div>
+</div>
+</div>
+</footer>
+<script src="responsive.js"></script>
+<script src="i18n.js"></script>
+</body>
 </html>

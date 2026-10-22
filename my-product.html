@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="web_standard" name="shell-type" />
-    <title>CORNESS — Sản Phẩm Của Bạn &amp; Kỷ Ước Di Sản</title>
+    <title>CORNESS — Your Product &amp; Heritage Memory</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
@@ -123,7 +123,6 @@
         },
       };
     </script>
-
     <style>
       :root {
         --corness-forest: #24452d;
@@ -273,8 +272,719 @@
         }
       }
     </style>
+    <style>
+      /* CORNESS · Destination cards: scoped to the new section. */
+      #destinations-dong-nai {
+        background: #f8f3e9;
+        padding: 68px 48px 80px;
+      }
+      #destinations-dong-nai .destination-shell {
+        max-width: 1280px;
+        margin: auto;
+      }
+      #destinations-dong-nai .destination-section-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        padding-bottom: 20px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid rgba(67, 72, 62, 0.18);
+      }
+      #destinations-dong-nai .destination-eyebrow {
+        color: #385624;
+        text-transform: uppercase;
+        font:
+          700 12px/1.5 "Be Vietnam Pro",
+          sans-serif;
+        letter-spacing: 0.16em;
+        margin: 0 0 4px;
+      }
+      #destinations-dong-nai .destination-heading-title {
+        color: #1d1c16;
+        text-transform: uppercase;
+        font:
+          700 clamp(26px, 3vw, 38px)/1.23 "Playfair Display",
+          Georgia,
+          serif;
+        letter-spacing: -0.025em;
+        margin: 0;
+      }
+      #destinations-dong-nai .destination-section-desc {
+        margin: 9px 0 0;
+        color: #636459;
+        font:
+          400 13px/1.7 "Be Vietnam Pro",
+          sans-serif;
+      }
+      #destinations-dong-nai .destination-count {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        flex-shrink: 0;
+        background: #f2ede3;
+        color: #385624;
+        padding: 12px 17px;
+        border-radius: 12px;
+        font:
+          700 12px/1.3 "Be Vietnam Pro",
+          sans-serif;
+        white-space: nowrap;
+      }
+      #destinations-dong-nai .destination-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+        align-items: stretch;
+      }
+      #destinations-dong-nai .destination-card {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        padding: 20px;
+        background: #f2ede3;
+        border: 1px solid rgba(67, 72, 62, 0.09);
+        border-radius: 23px;
+        box-shadow: 0 5px 11px rgba(41, 45, 32, 0.06);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+      #destinations-dong-nai .destination-card--featured {
+        border: 2px solid #385624;
+        padding: 19px;
+      }
+      #destinations-dong-nai .destination-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(56, 86, 36, 0.46);
+        box-shadow: 0 20px 38px rgba(41, 45, 32, 0.13);
+      }
+      #destinations-dong-nai .destination-photo {
+        position: relative;
+        height: 208px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 13px;
+        background: radial-gradient(ellipse at 45% 30%, #96ae84, #385624 72%);
+      }
+      #destinations-dong-nai .destination-photo img {
+        display: block;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.5s ease;
+      }
+      #destinations-dong-nai .destination-card:hover .destination-photo img {
+        transform: scale(1.04);
+      }
+      #destinations-dong-nai .destination-photo-fallback {
+        font-size: 86px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      #destinations-dong-nai .destination-photo-index {
+        position: absolute;
+        z-index: 1;
+        top: 12px;
+        left: 12px;
+        background: rgba(255, 253, 248, 0.92);
+        color: #385624;
+        padding: 7px 10px;
+        border-radius: 99px;
+        font:
+          800 10px/1 "Be Vietnam Pro",
+          sans-serif;
+        letter-spacing: 0.08em;
+      }
+      #destinations-dong-nai .destination-photo-credit {
+        position: absolute;
+        z-index: 1;
+        bottom: 9px;
+        right: 10px;
+        color: #fff;
+        text-decoration: none;
+        background: rgba(28, 37, 22, 0.58);
+        padding: 5px 8px;
+        border-radius: 8px;
+        font:
+          500 9px/1 "Be Vietnam Pro",
+          sans-serif;
+      }
+      #destinations-dong-nai .destination-card-body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 21px 3px 14px;
+      }
+      #destinations-dong-nai .destination-kicker {
+        margin: 0 0 8px;
+        color: #795900;
+        font:
+          800 11px/1.45 "Be Vietnam Pro",
+          sans-serif;
+        letter-spacing: 0.055em;
+      }
+      #destinations-dong-nai .destination-title {
+        font:
+          700 18px/1.45 "Be Vietnam Pro",
+          sans-serif;
+        color: #1d1c16;
+        margin: 0 0 11px;
+        letter-spacing: -0.025em;
+      }
+      #destinations-dong-nai .destination-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 14px;
+      }
+      #destinations-dong-nai .destination-badge {
+        border: 1px solid rgba(56, 86, 36, 0.16);
+        background: rgba(56, 86, 36, 0.065);
+        color: #385624;
+        border-radius: 99px;
+        padding: 6px 9px;
+        font:
+          700 10px/1.3 "Be Vietnam Pro",
+          sans-serif;
+      }
+      #destinations-dong-nai .destination-desc {
+        font:
+          400 12.5px/1.75 "Be Vietnam Pro",
+          sans-serif;
+        color: #43483e;
+        margin: 0 0 17px;
+      }
+      #destinations-dong-nai .destination-facts {
+        margin-top: auto;
+        padding: 14px 0 0;
+        border-top: 1px solid rgba(67, 72, 62, 0.1);
+        display: grid;
+        gap: 9px;
+      }
+      #destinations-dong-nai .destination-facts p {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        margin: 0;
+        color: #43483e;
+        font:
+          400 11.5px/1.65 "Be Vietnam Pro",
+          sans-serif;
+      }
+      #destinations-dong-nai .destination-facts p .material-symbols-outlined {
+        font-size: 16px;
+        color: #385624;
+        line-height: 1.3;
+        flex: none;
+      }
+      #destinations-dong-nai .destination-facts strong {
+        color: #1d1c16;
+        font-weight: 700;
+      }
+      #destinations-dong-nai .destination-action {
+        margin-top: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #385624;
+        border-radius: 10px;
+        background: #385624;
+        color: #fff;
+        cursor: pointer;
+        text-align: left;
+        font:
+          700 11.5px/1.4 "Be Vietnam Pro",
+          sans-serif;
+        transition:
+          background 0.2s,
+          transform 0.2s;
+      }
+      #destinations-dong-nai .destination-action .material-symbols-outlined {
+        font-size: 18px;
+        flex: none;
+      }
+      #destinations-dong-nai .destination-action:hover {
+        background: #24452d;
+        transform: translateY(-1px);
+      }
+      #destinations-dong-nai .destination-action:focus-visible {
+        outline: 3px solid #c9962f;
+        outline-offset: 3px;
+      }
+      .destination-modal[hidden] {
+        display: none !important;
+      }
+      .destination-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px;
+      }
+      .destination-modal-shade {
+        position: absolute;
+        inset: 0;
+        border: 0;
+        background: rgba(20, 32, 21, 0.72);
+        cursor: pointer;
+      }
+      .destination-modal-panel {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+        width: min(900px, 100%);
+        max-height: min(740px, calc(100dvh - 36px));
+        overflow: auto;
+        border-radius: 20px;
+        background: #fffdf8;
+        box-shadow: 0 25px 75px rgba(0, 0, 0, 0.3);
+        outline: none;
+      }
+      .destination-modal-visual {
+        position: relative;
+        min-height: 100%;
+        background: linear-gradient(140deg, #7e9868, #24452d);
+        display: grid;
+        place-items: center;
+      }
+      .destination-modal-visual .material-symbols-outlined {
+        font-size: 98px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .destination-modal-visual img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .destination-modal-content {
+        padding: 36px;
+      }
+      .destination-modal-close {
+        position: absolute;
+        z-index: 3;
+        top: 13px;
+        right: 13px;
+        display: grid;
+        place-items: center;
+        width: 39px;
+        height: 39px;
+        border: 1px solid rgba(56, 86, 36, 0.12);
+        border-radius: 50%;
+        background: #f8f3e9;
+        color: #385624;
+        cursor: pointer;
+      }
+      .destination-modal-kicker {
+        font:
+          800 11px/1.5 "Be Vietnam Pro",
+          sans-serif;
+        letter-spacing: 0.09em;
+        color: #795900;
+        margin: 0 0 8px;
+      }
+      .destination-modal-content h3 {
+        color: #1d1c16;
+        font:
+          700 26px/1.32 "Playfair Display",
+          Georgia,
+          serif;
+        margin: 0 0 15px;
+      }
+      .destination-modal-content p {
+        font:
+          400 13px/1.76 "Be Vietnam Pro",
+          sans-serif;
+        color: #43483e;
+        margin: 0 0 12px;
+      }
+      .destination-modal-content p strong {
+        color: #1d1c16;
+      }
+      .destination-modal-actions {
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+      .destination-modal-actions a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        justify-content: center;
+        padding: 12px 14px;
+        border-radius: 10px;
+        font:
+          700 11.5px/1.35 "Be Vietnam Pro",
+          sans-serif;
+        min-height: 45px;
+      }
+      .destination-modal-actions a:first-child {
+        background: #385624;
+        color: #fff;
+      }
+      .destination-modal-actions a:last-child {
+        background: #f2ede3;
+        color: #385624;
+      }
+      .destination-modal-source {
+        display: block;
+        margin-top: 22px;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font:
+          400 10px/1.55 "Be Vietnam Pro",
+          sans-serif;
+        color: #74796d;
+      }
+      .destination-modal-note {
+        margin-top: 18px !important;
+        font-size: 10.5px !important;
+        color: #75756c !important;
+      }
+      @media (max-width: 1100px) {
+        #destinations-dong-nai .destination-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        #destinations-dong-nai {
+          padding-inline: 32px;
+        }
+      }
+      @media (max-width: 680px) {
+        #destinations-dong-nai {
+          padding: 44px 16px 52px;
+        }
+        #destinations-dong-nai .destination-section-heading {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 14px;
+          margin-bottom: 20px;
+        }
+        #destinations-dong-nai .destination-heading-title {
+          font-size: 27px;
+        }
+        #destinations-dong-nai .destination-count {
+          padding: 9px 12px;
+        }
+        #destinations-dong-nai .destination-grid {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+        #destinations-dong-nai .destination-card {
+          padding: 15px;
+          border-radius: 19px;
+        }
+        #destinations-dong-nai .destination-card--featured {
+          padding: 14px;
+        }
+        #destinations-dong-nai .destination-photo {
+          height: 190px;
+        }
+        #destinations-dong-nai .destination-card-body {
+          padding-top: 16px;
+        }
+        #destinations-dong-nai .destination-title {
+          font-size: 17px;
+        }
+        .destination-modal-panel {
+          display: flex;
+          flex-direction: column;
+        }
+        .destination-modal-visual {
+          height: 178px;
+          min-height: 178px;
+        }
+        .destination-modal-content {
+          padding: 25px 18px;
+        }
+        .destination-modal-content h3 {
+          font-size: 23px;
+        }
+        .destination-modal-actions {
+          flex-direction: column;
+        }
+        .destination-modal-actions a {
+          width: 100%;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #destinations-dong-nai .destination-card,
+        #destinations-dong-nai .destination-photo img,
+        #destinations-dong-nai .destination-action {
+          transition: none;
+        }
+      }
+    </style>
+    <style>
+      #destinations-dong-nai .destination-card:nth-child(1) .destination-photo {
+        background: center / cover no-repeat
+          url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2ODAiIGhlaWdodD0iMzkwIiB2aWV3Qm94PSIwIDAgNjgwIDM5MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2I5ZGZjMCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzVjOTU3NCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiM3Njk4NjUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNjNkMmIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBmaWxsPSJ1cmwoI3NreSkiIGQ9Ik0wIDBoNjgwdjM5MEgweiIvPjxjaXJjbGUgY3g9IjUyMCIgY3k9Ijc5IiByPSI2MiIgZmlsbD0iI2U2ZWNjMSIgb3BhY2l0eT0iLjY1Ii8+PHBhdGggZD0iTTAgMjAwUTEzNSAxNDUgMjkwIDE5NlQ2ODAgMTY2djIyNEgwIiBmaWxsPSIjN2FhNDdlIi8+PHBhdGggZD0iTTAgMjYwUTE1MiAyMDQgMzAwIDI0OVQ2ODAgMjA5djE4MUgwIiBmaWxsPSIjMzk3MzU2Ii8+PHBhdGggZD0iTTAgMzE1UTIyMCAyMzggMzk1IDMxMFQ2ODAgMjUwdjE0MEgwIiBmaWxsPSJ1cmwoI3ApIi8+PHBhdGggZD0iTTI1MCAzOTBRMzA0IDI5MiAzODAgMjY0UTM1OCAzMjIgNDAzIDM5MCIgZmlsbD0iI2JmYWQ3YyIgb3BhY2l0eT0iLjc2Ii8+PGcgZmlsbD0iIzFjNGMzNSI+PHBhdGggZD0iTTUwIDMzNWgyNVYxMzJINTB6TTI3IDE5MWwzNC0xMzAgMzUgMTMwek0xMCAyNDFsNTEtMTQ0IDUxIDE0NHoiLz48cGF0aCBkPSJNNTk3IDM0OWgyN1YxMjJoLTI3ek01NzQgMTgzbDM2LTEzNCAzNyAxMzR6TTU1MyAyNDNsNTgtMTQyIDU3IDE0MnoiLz48cGF0aCBkPSJNMTM1IDMxOGgxNFYxNjVoLTE0ek0xMDggMjE0bDM0LTkwIDM0IDkwek05MyAyNjlsNDgtMTA5IDQ4IDEwOXoiLz48L2c+PGcgc3Ryb2tlPSIjZGJlY2Q2IiBzdHJva2Utd2lkdGg9IjMiIG9wYWNpdHk9Ii4zMyI+PHBhdGggZD0iTTI3OCAwbC04MCAyNjBNMzQwIDBsLTMwIDMwME00MTYgMGw0OSAyNjAiLz48L2c+PC9zdmc+");
+      }
+      #destinations-dong-nai .destination-card:nth-child(2) .destination-photo {
+        background: center / cover no-repeat
+          url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2ODAiIGhlaWdodD0iMzkwIiB2aWV3Qm94PSIwIDAgNjgwIDM5MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2JjZTdjZCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y1ZTZiNiIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJyaXZlciIgeDI9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjODBkMGNhIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjI3ZDg1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNza3kpIiBkPSJNMCAwaDY4MHYzOTBIMHoiLz48cGF0aCBkPSJNMCAxNzFRMTUwIDExOCAzMjMgMTczVDY4MCAxNTh2MjMySDAiIGZpbGw9IiM3OWE4NzkiLz48cGF0aCBkPSJNMCAyNDBRMjA3IDE2NSAzNzUgMjI1VDY4MCAxODh2MjAySDAiIGZpbGw9IiMzODZlNTgiLz48cGF0aCBkPSJNMCAyNjZRMTkwIDIzNiAzNDAgMjcwVDY4MCAyNDZ2MTQ0SDAiIGZpbGw9InVybCgjcml2ZXIpIi8+PHBhdGggZD0iTTAgMzI1UTEzMCAzMDQgMjYwIDMyNVQ1MjAgMzE2VDY4MCAzMzciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RlZjZlMSIgc3Ryb2tlLXdpZHRoPSI1IiBvcGFjaXR5PSIuNDciLz48cGF0aCBkPSJNMjk4IDI5NWwxMTUgMC0yOSAxOGgtNTl6IiBmaWxsPSIjZGZiMjRmIi8+PGVsbGlwc2UgY3g9IjM1MCIgY3k9IjI4OCIgcng9IjIwIiByeT0iMTIiIGZpbGw9IiMyZTRjMzkiLz48cGF0aCBkPSJNMzUwIDI3NXYtMzUiIHN0cm9rZT0iI2Y1ZWFkMyIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZD0iTTM1MiAyNDZsMzggMjYtMzkgMiIgZmlsbD0iI2Y1ZTRiOCIvPjxnIGZpbGw9IiMyZTY1M2UiPjxjaXJjbGUgY3g9IjU4IiBjeT0iMTgxIiByPSI3MiIvPjxjaXJjbGUgY3g9IjEzNiIgY3k9IjEzNSIgcj0iNzQiLz48Y2lyY2xlIGN4PSI1OTAiIGN5PSIxMzIiIHI9Ijc4Ii8+PGNpcmNsZSBjeD0iNjYyIiBjeT0iMTYzIiByPSI2NiIvPjwvZz48L3N2Zz4=");
+      }
+      #destinations-dong-nai .destination-card:nth-child(3) .destination-photo {
+        background: center / cover no-repeat
+          url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2ODAiIGhlaWdodD0iMzkwIiB2aWV3Qm94PSIwIDAgNjgwIDM5MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNkZmQ2YmEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNiNWM5YjciLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibSIgeDI9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjNmU5NThkIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzA1NzU0Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNzKSIgZD0iTTAgMGg2ODB2MzkwSDB6Ii8+PGNpcmNsZSBjeD0iNTA4IiBjeT0iOTQiIHI9IjQ5IiBmaWxsPSIjZmZlZGM1IiBvcGFjaXR5PSIuNzUiLz48cGF0aCBkPSJNMCAyNjNMMTYwIDExNWwxMzIgMTM1TDM5NSA5M2wyMDQgMTg1IDgxLTg3djE5OUgwIiBmaWxsPSIjOWRiNWFhIi8+PHBhdGggZD0iTTAgMzMwTDIyNiAxMzlsMTE5IDE1MUw0NjcgMTI2bDIxMyAxODV2NzlIMCIgZmlsbD0idXJsKCNtKSIvPjxwYXRoIGQ9Ik0yMDAgMTU2bDI2LTE3IDM0IDQ1LTM2LTE5ek00NDUgMTUxbDIyLTI1IDUwIDUxLTQ0LTI1eiIgZmlsbD0iI2RiZTNkOCIvPjxwYXRoIGQ9Ik0wIDM2MFExMTUgMzIwIDI4MCAzNThUNjgwIDMzMXY1OUgwIiBmaWxsPSIjMmM1MzQ2Ii8+PHBhdGggZD0iTTAgMTAzTDY4MCAxNTMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzM5NDIzZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTM1MSAxMzB2MzQiIHN0cm9rZT0iIzM0NDQzYyIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZD0iTTMyNiAxNjZoNTVsLTcgMzdxLTIyIDIzLTQyIDB6IiBmaWxsPSIjZDZhNDQ4IiBzdHJva2U9IiMyODNkMzEiIHN0cm9rZS13aWR0aD0iNCIvPjxwYXRoIGQ9Ik0zNDQgMTcyaDIxdjIxaC0yMXoiIGZpbGw9IiM4M2E2YTEiLz48ZyBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuNDIiPjxlbGxpcHNlIGN4PSI5OSIgY3k9IjE5OCIgcng9IjExMiIgcnk9IjE4Ii8+PGVsbGlwc2UgY3g9IjU1MiIgY3k9IjIzNiIgcng9IjEyMCIgcnk9IjE2Ii8+PC9nPjwvc3ZnPg==");
+      }
+      #destinations-dong-nai .destination-card:nth-child(4) .destination-photo {
+        background: center / cover no-repeat
+          url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2ODAiIGhlaWdodD0iMzkwIiB2aWV3Qm94PSIwIDAgNjgwIDM5MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2FjZTdlNSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2YyZmFlMyIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJwb29sIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiM2YmQ1ZGEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNTk1YzYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBmaWxsPSJ1cmwoI3NreSkiIGQ9Ik0wIDBoNjgwdjM5MEgweiIvPjxwYXRoIGQ9Ik0wIDE4NVExODYgMTYwIDMzMCAxOTRUNjgwIDE4NXYyMDVIMCIgZmlsbD0iIzdlYzhhOSIvPjxwYXRoIGQ9Ik0wIDI0MFExNDggMjA3IDMwNCAyNDJUNjgwIDIyMnYxNjhIMCIgZmlsbD0idXJsKCNwb29sKSIvPjxwYXRoIGQ9Ik0wIDMwMVE5MCAyNzggMTc1IDMwN1QzNzAgMzAxVDY4MCAzMDgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2UyZmNmOCIgc3Ryb2tlLXdpZHRoPSI2Ii8+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNMTUwIDQ1djE3MXEwIDQ2IDU2IDQ2dDU2LTQ3VjE1NSIgc3Ryb2tlPSIjZjRiOTNjIiBzdHJva2Utd2lkdGg9IjI5Ii8+PHBhdGggZD0iTTIxMCAzMHYxMTZxMCA1NiA1MiA1NnQ1NS01M1Y3MiIgc3Ryb2tlPSIjZTM2ZjU2IiBzdHJva2Utd2lkdGg9IjIyIi8+PHBhdGggZD0iTTMzNiA1NnYxNTBxMCA2MCA1MCA2MHQ0Ny02NFYxMTEiIHN0cm9rZT0iIzRiOWJjYyIgc3Ryb2tlLXdpZHRoPSIyNCIvPjwvZz48cGF0aCBkPSJNMCAyNjBMNjgwIDI2MCIgc3Ryb2tlPSIjZjhmNWRmIiBzdHJva2Utd2lkdGg9IjExIi8+PGc+PHBhdGggZD0iTTQ3NiAyMzFsNDQtODggNDQgODgiIGZpbGw9IiNmNGQ0ODciLz48cGF0aCBkPSJNNTE0IDE0M3YxMDYiIHN0cm9rZT0iI2Y1ZTVjOSIgc3Ryb2tlLXdpZHRoPSI2Ii8+PHBhdGggZD0iTTU1OSAyMjRsMzItNjUgMzMgNjUiIGZpbGw9IiNlYzg5NzIiLz48cGF0aCBkPSJNNTg5IDE1OXY4NyIgc3Ryb2tlPSIjZjVlNWM5IiBzdHJva2Utd2lkdGg9IjUiLz48L2c+PGcgZmlsbD0iI2Y5ZjNkOSI+PGVsbGlwc2UgY3g9IjExNSIgY3k9IjMxMiIgcng9IjE5IiByeT0iOSIvPjxlbGxpcHNlIGN4PSI0ODMiIGN5PSIzMTYiIHJ4PSIyMSIgcnk9IjkiLz48L2c+PC9zdmc+");
+      }
+      #destinations-dong-nai .destination-card:nth-child(5) .destination-photo {
+        background: center / cover no-repeat
+          url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2ODAiIGhlaWdodD0iMzkwIiB2aWV3Qm94PSIwIDAgNjgwIDM5MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2Y1YWI2ZCIvPjxzdG9wIG9mZnNldD0iLjY1IiBzdG9wLWNvbG9yPSIjZWFhODdjIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNmI4Y2EwIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9Imxha2UiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2RjOTc2YiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzM2Njk4MyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGZpbGw9InVybCgjc2t5KSIgZD0iTTAgMGg2ODB2MzkwSDB6Ii8+PGNpcmNsZSBjeD0iMzkwIiBjeT0iMTY3IiByPSI3MCIgZmlsbD0iI2ZmZDRhMSIvPjxwYXRoIGQ9Ik0wIDE5OVExNTAgMTYyIDMwMCAyMDBUNjgwIDE4N3YyMDNIMCIgZmlsbD0iIzY5ODk4MiIvPjxwYXRoIGQ9Ik0wIDIyMlExNTkgMjA5IDMzNiAyMjlUNjgwIDIxM3YxNzdIMCIgZmlsbD0idXJsKCNsYWtlKSIvPjxwYXRoIGQ9Ik0zMjIgMjM5bDE1MC0xTTMwMCAyNTNsMTk1LTFNMzQwIDI3N2wxMzktMk0zNjkgMzAwbDEwMS0zIiBzdHJva2U9IiNmZmQzYTAiIHN0cm9rZS13aWR0aD0iNCIgb3BhY2l0eT0iLjYiLz48cGF0aCBkPSJNMCAzMzhRMTE4IDMxNiAyMjUgMzQ0VDQ3NyAzMjhUNjgwIDM1MHY0MEgwIiBmaWxsPSIjMjk1YzRjIi8+PHBhdGggZD0iTTEzMCAzMDdsODEtOTIgOTAgOTJ6IiBmaWxsPSIjZDViYzgyIi8+PHBhdGggZD0iTTIxMSAyMTV2OTIiIHN0cm9rZT0iI2U1ZDlhMSIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTIwMiAzMDdsMzQtNTcgMzIgNTciIGZpbGw9IiM4Yjc2NWUiLz48cGF0aCBkPSJNMTQ0IDMxNWgyNG0xMDktOGgyMSIgc3Ryb2tlPSIjZmZlYWIxIiBzdHJva2Utd2lkdGg9IjYiLz48cGF0aCBkPSJNNDkwIDI5M2w3NSAwLTE4IDEyaC0zOXoiIGZpbGw9IiMyMDJmMzYiLz48cGF0aCBkPSJNNTIwIDI4NHYtMjUiIHN0cm9rZT0iIzIyMmQzNSIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTQ5MyAyNTdsMzAtMTIgMjAgMTMiIGZpbGw9IiNlN2Q1YWUiLz48L3N2Zz4=");
+      }
+      #destinations-dong-nai .destination-card:nth-child(6) .destination-photo {
+        background: center / cover no-repeat
+          url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2ODAiIGhlaWdodD0iMzkwIiB2aWV3Qm94PSIwIDAgNjgwIDM5MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZiZGZhYSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E4Yzg4YyIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJncm91bmQiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzdhOTk1MSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzQyNjYzYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGZpbGw9InVybCgjc2t5KSIgZD0iTTAgMGg2ODB2MzkwSDB6Ii8+PGNpcmNsZSBjeD0iNTEwIiBjeT0iNzQiIHI9IjU1IiBmaWxsPSIjZmZmNmNjIiBvcGFjaXR5PSIuNyIvPjxwYXRoIGQ9Ik0wIDI3MlExNjAgMjM1IDI5MCAyNThUNjgwIDI0M3YxNDdIMCIgZmlsbD0idXJsKCNncm91bmQpIi8+PHBhdGggZD0iTTI2MSAzOTBRMzAwIDI5OCAzNTggMjU1bDU1IDEzNSIgZmlsbD0iI2NmYjQ4NiIvPjxnIGZpbGw9IiM2YzRlMzQiPjxwYXRoIGQ9Ik05NCAzMDJoMjJWMTM3SDk0ek01MzEgMzE0aDIwVjExNWgtMjB6TTIwNSAyNzNoMTdWMTQ1aC0xN3pNNDA4IDI3NWgxN1YxNDJoLTE3eiIvPjwvZz48ZyBmaWxsPSIjNDc3ZDQzIj48ZWxsaXBzZSBjeD0iMTAyIiBjeT0iMTM0IiByeD0iOTUiIHJ5PSI2NCIvPjxlbGxpcHNlIGN4PSI1NTEiIGN5PSIxMjUiIHJ4PSI5OCIgcnk9Ijc5Ii8+PGVsbGlwc2UgY3g9IjIxNSIgY3k9IjEzNyIgcng9IjcyIiByeT0iNTMiLz48ZWxsaXBzZSBjeD0iNDE3IiBjeT0iMTMyIiByeD0iNzUiIHJ5PSI1OCIvPjwvZz48ZyBmaWxsPSIjYThiODRlIiBvcGFjaXR5PSIuOCI+PGNpcmNsZSBjeD0iNTUiIGN5PSIxMDQiIHI9IjM1Ii8+PGNpcmNsZSBjeD0iMTU3IiBjeT0iMTM1IiByPSIzMSIvPjxjaXJjbGUgY3g9IjUwNCIgY3k9IjkyIiByPSIzNiIvPjxjaXJjbGUgY3g9IjYwNiIgY3k9IjE1MSIgcj0iMzkiLz48L2c+PGcgZmlsbD0iI2RhNWUzOSIgc3Ryb2tlPSIjYTgzZTMxIiBzdHJva2Utd2lkdGg9IjMiPjxjaXJjbGUgY3g9IjUwIiBjeT0iMTY5IiByPSIxOCIvPjxjaXJjbGUgY3g9IjEwMiIgY3k9IjE5MCIgcj0iMTciLz48Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTciIHI9IjE3Ii8+PGNpcmNsZSBjeD0iNTI0IiBjeT0iMTgxIiByPSIxOCIvPjxjaXJjbGUgY3g9IjU3MCIgY3k9IjE5MyIgcj0iMTYiLz48Y2lyY2xlIGN4PSI2MDgiIGN5PSIxNTYiIHI9IjE5Ii8+PGNpcmNsZSBjeD0iMjExIiBjeT0iMTgyIiByPSIxNCIvPjxjaXJjbGUgY3g9IjQxNyIgY3k9IjE4MyIgcj0iMTciLz48L2c+PC9zdmc+");
+      }
+      #destinations-dong-nai .destination-facts .destination-fact-icon {
+        font-size: 17px;
+        color: #385624;
+        line-height: 1.25;
+        flex: none;
+        min-width: 16px;
+        text-align: center;
+      }
+      #destinations-dong-nai .destination-action-arrow {
+        font:
+          700 21px/1 Arial,
+          sans-serif;
+        flex: none;
+      }
+      #destinations-dong-nai .destination-photo img {
+        z-index: 1;
+      }
+      #destinations-dong-nai .destination-photo-index,
+      #destinations-dong-nai .destination-photo-credit {
+        z-index: 2;
+      }
+    </style>
+    <link href="responsive.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="responsive.css" />
+    <style id="cora-bilingual-audio-style">
+      /* Bilingual audio guide: maintain CORNESS brand styling and mobile ergonomics. */
+      #cora-audio-tour {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        min-width: 0;
+        color: #fff;
+      }
+      #cora-audio-tour button {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+      }
+      #cora-audio-tour .cora-audio-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 9px;
+        flex-wrap: wrap;
+      }
+      #cora-audio-tour .cora-audio-language {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      #cora-audio-tour .cora-audio-language-label {
+        font:
+          700 10px "Be Vietnam Pro",
+          sans-serif;
+        letter-spacing: 0.09em;
+        color: #c8eeac;
+      }
+      #cora-audio-tour .cora-audio-language-switch {
+        display: flex;
+        gap: 4px;
+        background: rgba(255, 255, 255, 0.12);
+        padding: 4px;
+        border-radius: 999px;
+      }
+      #cora-audio-tour .cora-audio-language-button {
+        border-radius: 999px;
+        padding: 7px 12px;
+        min-height: 33px;
+        color: #e4eedc;
+        font:
+          700 11px "Be Vietnam Pro",
+          sans-serif;
+        white-space: nowrap;
+        transition:
+          background 0.18s,
+          color 0.18s,
+          box-shadow 0.18s;
+      }
+      #cora-audio-tour .cora-audio-language-button:hover:not(.is-selected) {
+        background: rgba(255, 255, 255, 0.12);
+      }
+      #cora-audio-tour .cora-audio-language-button.is-selected {
+        background: #fdc74a;
+        color: #473400;
+        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.14);
+      }
+      #cora-audio-tour .cora-audio-timeline {
+        padding: 4px 0;
+        display: flex;
+        align-items: center;
+      }
+      #cora-audio-tour .cora-audio-seek {
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        height: 7px;
+        border: 0;
+        border-radius: 99px;
+        background: linear-gradient(
+          to right,
+          #fdc74a 0%,
+          #fdc74a var(--cora-progress, 0%),
+          rgba(255, 255, 255, 0.25) var(--cora-progress, 0%),
+          rgba(255, 255, 255, 0.25) 100%
+        );
+        outline: none;
+      }
+      #cora-audio-tour .cora-audio-seek::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #fdc74a;
+        border: 2px solid #fef9ef;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.22);
+      }
+      #cora-audio-tour .cora-audio-seek::-moz-range-thumb {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #fdc74a;
+        border: 2px solid #fef9ef;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.22);
+      }
+      #cora-audio-tour .cora-audio-actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      #cora-audio-tour .cora-audio-skip {
+        display: grid;
+        place-items: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        color: white;
+        background: transparent;
+      }
+      #cora-audio-tour .cora-audio-skip:hover {
+        background: rgba(255, 255, 255, 0.12);
+      }
+      #cora-audio-tour .cora-audio-primary {
+        display: grid;
+        place-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #fdc74a;
+        color: #715300;
+        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.14);
+      }
+      #cora-audio-tour .cora-audio-primary:hover {
+        background: #ffdf9f;
+      }
+      #cora-audio-tour .cora-audio-primary .material-symbols-outlined {
+        font-size: 27px;
+      }
+      #cora-audio-tour button:focus-visible,
+      #cora-audio-tour a:focus-visible,
+      #cora-audio-tour summary:focus-visible,
+      #cora-audio-tour input:focus-visible {
+        outline: 2px solid #fdc74a;
+        outline-offset: 3px;
+      }
+      #cora-audio-tour .cora-audio-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        flex-wrap: wrap;
+        border-top: 1px solid rgba(255, 255, 255, 0.14);
+        padding-top: 8px;
+      }
+      #cora-audio-tour .cora-audio-download {
+        display: inline-flex;
+        align-items: center;
+        gap: 3px;
+        color: #ffdf9f;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font:
+          600 10px "Be Vietnam Pro",
+          sans-serif;
+      }
+      #cora-audio-tour .cora-audio-download .material-symbols-outlined {
+        font-size: 16px;
+      }
+      #cora-audio-tour .cora-audio-transcript {
+        border-top: 1px solid rgba(255, 255, 255, 0.11);
+        padding-top: 8px;
+      }
+      #cora-audio-tour .cora-audio-transcript summary {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        cursor: pointer;
+        width: fit-content;
+        font:
+          600 11px "Be Vietnam Pro",
+          sans-serif;
+        color: #f5edce;
+        list-style: none;
+      }
+      #cora-audio-tour .cora-audio-transcript summary::-webkit-details-marker {
+        display: none;
+      }
+      #cora-audio-tour .cora-audio-transcript[open] summary span {
+        transform: rotate(180deg);
+      }
+      #cora-audio-tour .cora-audio-transcript p {
+        margin-top: 10px;
+        white-space: pre-line;
+        color: #d8e5d0;
+      }
+      @media (max-width: 480px) {
+        #cora-audio-tour .cora-audio-heading {
+          align-items: flex-start;
+        }
+        #cora-audio-tour .cora-audio-language-switch {
+          width: 100%;
+        }
+        #cora-audio-tour .cora-audio-language-button {
+          flex: 1;
+        }
+      }
+    </style>
   </head>
   <body class="bg-surface font-body text-on-surface antialiased">
     <header
@@ -283,9 +993,9 @@
       <div class="h-20 w-full px-6 lg:px-12 flex items-center justify-between">
         <div class="flex items-center gap-4 shrink-0 2xl:mr-5">
           <img
-            src="images/FGlogo.png"
             alt="CORNESS"
             class="h-14 w-14 shrink-0 object-contain"
+            src="images/FGlogo.png"
           />
           <div class="flex flex-col">
             <span
@@ -293,7 +1003,7 @@
               >CORNESS</span
             ><span
               class="font-label text-[10px] tracking-[0.08em] uppercase text-tertiary font-medium"
-              >Xuân Phú • Đồng Nai</span
+              >Xuan Phu • Dong Nai</span
             >
           </div>
         </div>
@@ -305,27 +1015,27 @@
             class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
             data-path="kham-pha"
             href="index.html"
-            >Khám Phá</a
+            >Explore</a
           ><a
             class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
             data-path="trai-nghiem-workshop"
             href="experience.html"
-            >Trải Nghiệm &amp; Workshop</a
+            >Experiences &amp; Workshops</a
           ><a
             class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
             data-path="ai-studio-ke-chuyen"
             href="ai-studio.html"
-            >AI Studio &amp; Kể Chuyện</a
+            >AI Studio &amp; Storytelling</a
           ><a
             class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
             data-path="san-pham-cua-ban"
             href="my-product.html"
-            >Sản Phẩm Của Bạn</a
+            >Your Product</a
           ><a
             class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
             data-path="cua-hang-tac-dong"
             href="shop.html"
-            >Cửa Hàng &amp; Tác Động</a
+            >Shop &amp; Impact</a
           >
         </nav>
         <div class="flex items-center gap-3 lg:gap-4 2xl:ml-5">
@@ -346,14 +1056,14 @@
             class="hidden 2xl:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm"
             data-path="trai-nghiem-workshop"
             href="experience.html"
-            >Đặt Workshop / Create Story</a
+            >Book Workshop / Create Story</a
           >
           <button
-            class="corness-mobile-toggle 2xl:hidden"
-            type="button"
-            aria-label="Mở menu"
             aria-controls="corness-mobile-menu"
             aria-expanded="false"
+            aria-label="Open menu"
+            class="corness-mobile-toggle 2xl:hidden"
+            type="button"
           >
             <span class="material-symbols-outlined text-[21px]">menu</span>
           </button>
@@ -366,24 +1076,23 @@
           </div>
         </div>
       </div>
-
       <div
-        id="corness-mobile-menu"
+        aria-hidden="true"
         class="corness-mobile-menu 2xl:hidden"
         data-open="false"
-        aria-hidden="true"
+        id="corness-mobile-menu"
       >
         <button
+          aria-label="Close menu"
           class="corness-mobile-menu__backdrop"
+          data-mobile-close=""
           type="button"
-          data-mobile-close
-          aria-label="Đóng menu"
         ></button>
         <div
+          aria-label="CORNESS navigation menu"
+          aria-modal="true"
           class="corness-mobile-menu__panel"
           role="dialog"
-          aria-modal="true"
-          aria-label="Menu điều hướng CORNESS"
         >
           <div class="corness-mobile-menu__top">
             <div>
@@ -395,46 +1104,46 @@
               <div
                 class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-1"
               >
-                Xuân Phú • Đồng Nai
+                Xuan Phu • Dong Nai
               </div>
             </div>
             <button
+              aria-label="Close menu"
               class="corness-mobile-menu__close"
+              data-mobile-close=""
               type="button"
-              data-mobile-close
-              aria-label="Đóng menu"
             >
               <span class="material-symbols-outlined text-[20px]">close</span>
             </button>
           </div>
-          <nav class="corness-mobile-nav" aria-label="Điều hướng di động">
+          <nav aria-label="Mobile navigation" class="corness-mobile-nav">
             <a href="index.html"
               ><span class="material-symbols-outlined text-[20px]">explore</span
-              ><span>Khám Phá</span></a
+              ><span>Explore</span></a
             >
             <a href="experience.html"
               ><span class="material-symbols-outlined text-[20px]"
                 >handyman</span
-              ><span>Trải Nghiệm &amp; Workshop</span></a
+              ><span>Experiences &amp; Workshops</span></a
             >
             <a href="ai-studio.html"
               ><span class="material-symbols-outlined text-[20px]"
                 >auto_awesome</span
-              ><span>AI Studio &amp; Kể Chuyện</span></a
+              ><span>AI Studio &amp; Storytelling</span></a
             >
             <a href="my-product.html"
               ><span class="material-symbols-outlined text-[20px]"
                 >deployed_code</span
-              ><span>Sản Phẩm Của Bạn</span></a
+              ><span>Your Product</span></a
             >
             <a href="shop.html"
               ><span class="material-symbols-outlined text-[20px]"
                 >storefront</span
-              ><span>Cửa Hàng &amp; Tác Động</span></a
+              ><span>Shop &amp; Impact</span></a
             >
           </nav>
           <a class="corness-mobile-cta" href="experience.html">
-            <span>Đặt Workshop / Create Story</span>
+            <span>Book Workshop / Create Story</span>
             <span class="material-symbols-outlined text-[18px]"
               >arrow_forward</span
             >
@@ -467,7 +1176,7 @@
                   <span
                     class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"
                   ></span>
-                  Workshop #04 • Đã Sở Hữu
+                  Workshop #04 • Owned
                 </span>
                 <span
                   class="text-xs font-label text-on-primary-container font-medium tracking-wide"
@@ -484,19 +1193,19 @@
                     id="togglePrivate"
                     type="button"
                   >
-                    Riêng Tư
+                    Private
                   </button>
                   <button
                     class="px-3.5 py-1 rounded-full text-xs font-label font-semibold text-on-primary-container hover:text-on-primary transition-all"
                     id="togglePublic"
                     type="button"
                   >
-                    Công Khai
+                    Public
                   </button>
                 </div>
                 <button
                   class="p-2 rounded-full bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary transition-colors flex items-center justify-center"
-                  title="Chia sẻ tác phẩm"
+                  title="Share this artwork"
                   type="button"
                 >
                   <span class="material-symbols-outlined text-[18px]"
@@ -664,7 +1373,7 @@
                             ctx.textBaseline = "middle";
 
                             const textBottom =
-                              "XUÂN PHÚ COMMUNE, ĐỒNG NAI PROVINCE  •  FROM WASTE TO STORY";
+                              "XUAN PHU COMMUNE, DONG NAI PROVINCE  •  FROM WASTE TO STORY";
                             const radius = 418;
                             const step = (Math.PI * 1.35) / textBottom.length;
                             const startAngle =
@@ -802,7 +1511,7 @@
                               -240,
                             );
                             ctx.fillText(
-                              "86G RECYCLED CORN COB • XUÂN PHÚ",
+                              "86G RECYCLED CORN COB • XUAN PHU",
                               0,
                               -205,
                             );
@@ -1092,35 +1801,35 @@
                     <button
                       class="px-3 py-1.5 rounded-full bg-surface-container-lowest/20 hover:bg-surface-container-lowest/30 backdrop-blur-md text-[11px] font-label uppercase tracking-wider text-on-primary flex items-center gap-1.5 shadow-lg transition-colors"
                       id="btnReset3D"
-                      title="Đặt lại góc xoay"
+                      title="Reset rotation"
                       type="button"
                     >
                       <span class="material-symbols-outlined text-[15px]"
                         >restart_alt</span
                       >
-                      <span>Xoay 360°</span>
+                      <span>Rotate 360°</span>
                     </button>
                     <button
                       class="px-3 py-1.5 rounded-full bg-surface-container-lowest/20 hover:bg-surface-container-lowest/30 backdrop-blur-md text-[11px] font-label uppercase tracking-wider text-on-primary flex items-center gap-1.5 shadow-lg transition-colors"
                       id="btnFront3D"
-                      title="Xem mặt trước họa tiết gốm Biên Hòa"
+                      title="View front with Bien Hoa ceramic motif"
                       type="button"
                     >
                       <span class="material-symbols-outlined text-[15px]"
                         >flip_to_front</span
                       >
-                      <span>Mặt Trước</span>
+                      <span>Front</span>
                     </button>
                     <button
                       class="px-3 py-1.5 rounded-full bg-surface-container-lowest/20 hover:bg-surface-container-lowest/30 backdrop-blur-md text-[11px] font-label uppercase tracking-wider text-on-primary flex items-center gap-1.5 shadow-lg transition-colors"
                       id="btnBack3D"
-                      title="Xem mặt sau khắc laser mã QR xác thực"
+                      title="View back with laser-engraved verification QR code"
                       type="button"
                     >
                       <span class="material-symbols-outlined text-[15px]"
                         >qr_code_2</span
                       >
-                      <span>Mặt Sau / QR</span>
+                      <span>Back / QR</span>
                     </button>
                   </div>
                 </div>
@@ -1131,11 +1840,11 @@
                   >
                     <span
                       class="block text-[10px] font-label uppercase text-on-primary-container font-medium tracking-wider"
-                      >Cấu Trúc Bề Mặt</span
+                      >Surface Structure</span
                     >
                     <span
                       class="text-sm font-label font-bold text-on-primary mt-0.5"
-                      >Lõi ngô ép mịn</span
+                      >Fine-pressed corn cob</span
                     >
                   </div>
                   <div
@@ -1143,11 +1852,11 @@
                   >
                     <span
                       class="block text-[10px] font-label uppercase text-on-primary-container font-medium tracking-wider"
-                      >Độ Dày Nén</span
+                      >Compressed Thickness</span
                     >
                     <span
                       class="text-sm font-label font-bold text-on-primary mt-0.5"
-                      >8.0 mm chuẩn</span
+                      >Standard 8.0 mm</span
                     >
                   </div>
                   <div
@@ -1155,11 +1864,11 @@
                   >
                     <span
                       class="block text-[10px] font-label uppercase text-on-primary-container font-medium tracking-wider"
-                      >Chịu Nhiệt Độ</span
+                      >Heat Resistance</span
                     >
                     <span
                       class="text-sm font-label font-bold text-on-primary mt-0.5"
-                      >120°C An toàn</span
+                      >Heat-safe up to 120°C</span
                     >
                   </div>
                 </div>
@@ -1173,7 +1882,7 @@
                     <span class="material-symbols-outlined text-[16px]"
                       >verified_user</span
                     >
-                    <span>Di Sản Văn Hóa &amp; Tái Sinh Phụ Phẩm</span>
+                    <span>Cultural Heritage &amp; By-product Regeneration</span>
                   </div>
                   <h1
                     class="font-headline text-4xl sm:text-5xl lg:text-6xl text-surface-bright tracking-tight leading-none uppercase"
@@ -1183,13 +1892,13 @@
                   <p
                     class="font-label text-base text-surface-container-highest/90 pt-1 font-normal leading-relaxed"
                   >
-                    Tấm lót ly thủ công độc bản được tạo tác từ
+                    This one-of-a-kind handcrafted coaster is made from
                     <span class="text-secondary-fixed font-semibold"
-                      >86g phế phẩm lõi ngô tươi</span
+                      >86 g of reclaimed corn cobs</span
                     >
-                    thu hoạch sau vụ mùa hè thu tại Đồng Nai. Tác phẩm khắc ghi
-                    dấu ấn văn hoá dân gian qua sắc chàm, hoàng cúc và men gốm
-                    Việt.
+                    collected after the summer–autumn harvest in Dong Nai. Its
+                    indigo tones, golden chrysanthemums and Vietnamese ceramic
+                    glaze celebrate local folk art.
                   </p>
                 </div>
                 <!-- Metadata Record Strip -->
@@ -1198,24 +1907,24 @@
                     <p
                       class="text-[10px] font-label uppercase tracking-widest text-on-primary-container"
                     >
-                      Thời Gian Hoàn Tất
+                      Completed On
                     </p>
                     <p
                       class="font-label text-sm font-bold text-surface-bright mt-0.5"
                     >
-                      22 Tháng 09, 2026
+                      September 22, 2026
                     </p>
                   </div>
                   <div class="p-3 bg-surface-container-lowest/10 rounded-lg">
                     <p
                       class="text-[10px] font-label uppercase tracking-widest text-on-primary-container"
                     >
-                      Xuất Xứ Sinh Thái
+                      Eco Origin
                     </p>
                     <p
                       class="font-label text-sm font-bold text-surface-bright mt-0.5"
                     >
-                      Xuân Phú • Đồng Nai
+                      Xuan Phu • Dong Nai
                     </p>
                   </div>
                   <div
@@ -1224,12 +1933,12 @@
                     <p
                       class="text-[10px] font-label uppercase tracking-widest text-on-primary-container"
                     >
-                      Nghệ Nhân Hướng Dẫn
+                      Guiding Artisan
                     </p>
                     <p
                       class="font-label text-sm font-bold text-surface-bright mt-0.5"
                     >
-                      Chú Ba Thiện (K22)
+                      Uncle Ba Thien (K22)
                     </p>
                   </div>
                 </div>
@@ -1242,7 +1951,7 @@
                     <span class="material-symbols-outlined text-[18px]"
                       >badge</span
                     >
-                    Mở Museum Passport
+                    Open Museum Passport
                   </a>
                   <button
                     class="px-5 py-3 rounded-lg bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary transition-colors font-label font-medium text-xs uppercase tracking-wider inline-flex items-center gap-2"
@@ -1252,7 +1961,7 @@
                     <span class="material-symbols-outlined text-[18px]"
                       >play_circle</span
                     >
-                    Nghe Thuyết Minh Cora (2:14)
+                    Listen to CORA Narration (2:14)
                   </button>
                 </div>
               </div>
@@ -1268,17 +1977,17 @@
               <div>
                 <span
                   class="font-label text-xs uppercase tracking-[0.16em] text-secondary font-bold block mb-1"
-                  >Chỉ Số Sinh Thái &amp; Đo Lường Xanh</span
+                  >Eco Metrics &amp; Green Measurement</span
                 >
                 <h2
                   class="font-headline text-2xl lg:text-3xl uppercase tracking-tight text-on-surface"
                 >
-                  Đóng Góp Tuần Hoàn Của Minh
+                  Minh’s Circular Contribution
                 </h2>
               </div>
               <div class="text-xs font-label text-on-surface-variant max-w-sm">
-                Mỗi gram phụ phẩm nông nghiệp được giữ lại trên mặt đất là bước
-                nhỏ giảm tải việc đốt nương rẫy và khói bụi CO2 tại Đồng Nai.
+                Every gram of agricultural waste kept out of the fire helps
+                reduce crop-residue burning and CO₂ pollution in Dong Nai.
               </div>
             </div>
             <!-- 4 High Impact Metric Bento Tiles -->
@@ -1293,7 +2002,7 @@
                   >
                   <span
                     class="font-label text-[11px] font-semibold uppercase px-2 py-0.5 rounded bg-primary/10"
-                    >Khối Lượng Thật</span
+                    >Actual Weight</span
                   >
                 </div>
                 <div class="my-4">
@@ -1307,14 +2016,14 @@
                     >
                   </div>
                   <p class="font-label text-xs font-semibold text-primary mt-1">
-                    Lõi ngô hữu cơ khô
+                    Dried organic corn cob
                   </p>
                 </div>
                 <p
                   class="font-label text-xs text-on-surface-variant leading-relaxed"
                 >
-                  Được sấy tự nhiên dưới nắng vàng Xuân Phú 48h để bảo toàn kết
-                  cấu sợi xơ cellulose.
+                  Naturally sun-dried for 48 hours in Xuan Phu to preserve the
+                  cellulose fiber structure.
                 </p>
               </div>
               <!-- Metric 2: Bắp ngô tái sinh -->
@@ -1327,7 +2036,7 @@
                   >
                   <span
                     class="font-label text-[11px] font-semibold uppercase px-2 py-0.5 rounded bg-secondary/10"
-                    >Tái Thu Gom</span
+                    >Recovered Materials</span
                   >
                 </div>
                 <div class="my-4">
@@ -1337,20 +2046,20 @@
                     >
                     <span
                       class="font-label text-base font-bold text-on-surface-variant"
-                      >bắp</span
+                      >corn cobs</span
                     >
                   </div>
                   <p
                     class="font-label text-xs font-semibold text-secondary mt-1"
                   >
-                    Ngô mùa sau thu hoạch
+                    Post-harvest corn
                   </p>
                 </div>
                 <p
                   class="font-label text-xs text-on-surface-variant leading-relaxed"
                 >
-                  Thu gom trực tiếp từ hộ nông dân liên kết tại cánh đồng bắp
-                  bản địa Đồng Nai.
+                  Collected directly from partner farmers in the cornfields of
+                  Dong Nai.
                 </p>
               </div>
               <!-- Metric 3: CO2e Tránh phát thải -->
@@ -1365,7 +2074,7 @@
                   >
                   <span
                     class="font-label text-[11px] font-semibold uppercase px-2 py-0.5 rounded bg-primary/10"
-                    >Tránh Ô Nhiễm</span
+                    >Pollution Prevented</span
                   >
                 </div>
                 <div class="my-4">
@@ -1379,14 +2088,14 @@
                     >
                   </div>
                   <p class="font-label text-xs font-semibold text-primary mt-1">
-                    Tránh phát thải rác đồng
+                    Avoided field-waste emissions
                   </p>
                 </div>
                 <p
                   class="font-label text-xs text-on-surface-variant leading-relaxed"
                 >
-                  Quy đổi theo tiêu chuẩn kiểm kê khí thải nông nghiệp mở ISO
-                  14064 phần phụ phẩm.
+                  Estimated using ISO 14064 agricultural greenhouse-gas
+                  accounting principles for crop residues.
                 </p>
               </div>
               <!-- Metric 4: Giờ gia công -->
@@ -1399,7 +2108,7 @@
                   >
                   <span
                     class="font-label text-[11px] font-semibold uppercase px-2 py-0.5 rounded bg-tertiary/10"
-                    >Tỉ Mỉ Thủ Công</span
+                    >Handcrafted with Care</span
                   >
                 </div>
                 <div class="my-4">
@@ -1409,20 +2118,20 @@
                     >
                     <span
                       class="font-label text-base font-bold text-on-surface-variant"
-                      >giờ</span
+                      >hours</span
                     >
                   </div>
                   <p
                     class="font-label text-xs font-semibold text-tertiary mt-1"
                   >
-                    Trải nghiệm chế tác
+                    Crafting experience
                   </p>
                 </div>
                 <p
                   class="font-label text-xs text-on-surface-variant leading-relaxed"
                 >
-                  Tự tay Minh sàng lọc sợi, ép khuôn thủ công và khắc hoa văn
-                  cùng nghệ nhân làng nghề.
+                  Minh personally sorted fibers, hand-pressed the mold and
+                  engraved motifs alongside local artisans.
                 </p>
               </div>
             </div>
@@ -1439,14 +2148,14 @@
               <h2
                 class="font-headline text-3xl lg:text-4xl uppercase tracking-tight text-on-surface"
               >
-                Hành Trình Tái Sinh 5 Bước
+                5-Step Regeneration Journey
               </h2>
               <p
                 class="font-label text-sm text-on-surface-variant leading-relaxed"
               >
-                Mỗi tấm lót ly CORNESS đều trải qua quy trình chuyển hóa vật
-                liệu sinh học nghiêm ngặt mà vẫn tôn trọng đặc tính xơ xốp tự
-                nhiên của nông sản.
+                Every CORNESS coaster follows a carefully controlled
+                bio-material transformation process while retaining the natural
+                texture of corn fiber.
               </p>
             </div>
             <!-- 5-Step Process Horizontal Stepper -->
@@ -1466,18 +2175,18 @@
                   <h3
                     class="font-label text-sm font-bold text-on-surface uppercase"
                   >
-                    Búp Ngô Tươi
+                    Fresh Corn Cobs
                   </h3>
                   <p
                     class="font-label text-xs text-on-surface-variant leading-relaxed"
                   >
-                    Thu hoạch tại ruộng Xuân Phú, Đồng Nai. Tách hạt dùng cho
-                    thực phẩm, giữ lại lõi tươi nguyên dưỡng chất.
+                    Harvested in Xuan Phu, Dong Nai. The kernels are used for
+                    food, while the fresh cobs are recovered.
                   </p>
                 </div>
                 <span
                   class="text-[10px] font-label uppercase text-primary font-semibold"
-                  >100% Nông Sản Sạch</span
+                  >100% Clean Agricultural Materials</span
                 >
               </div>
               <!-- Step 2 (Features raw corn cob photo) -->
@@ -1494,28 +2203,28 @@
                 <!-- Inline Thumbnail -->
                 <div class="w-full h-24 rounded-lg overflow-hidden my-1">
                   <img
+                    alt="Rustic wooden barn table with fresh unhusked green sweetcorn on the left and a neat pile of dried raw corn cobs and husks on the right, natural warm golden sunlight streaming through wooden shutters."
                     class="w-full h-full object-cover"
                     data-alt="Rustic wooden barn table with fresh unhusked green sweetcorn on the left and a neat pile of dried raw corn cobs and husks on the right, natural warm golden sunlight streaming through wooden shutters."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAir85OKx43fxCnYjT5P-xE2Qe6I9DlmjdbINogEsXYTGMMOmm2AVN_avjDqSS_wl1DZedCn7WitYU09mprUgn92JbYkH3lpXv3K5PtGcb4pH1U2uEOjUgEeUI-yy5AP0z3EwMylDvFJX_3-t5o8cy4UjciUGJHSr2Wh0NMmg4icAd_cETaroNjQuw2bobYAZV_YWgNNHX1UhcJKx_pu4xSnHHZo_pEFTj9blf3eWZIoTBPQJ2Rn1smPA"
-                    alt="Rustic wooden barn table with fresh unhusked green sweetcorn on the left and a neat pile of dried raw corn cobs and husks on the right, natural warm golden sunlight streaming through wooden shutters."
                   />
                 </div>
                 <div class="space-y-1.5">
                   <h3
                     class="font-label text-sm font-bold text-on-surface uppercase"
                   >
-                    Lọc Lõi Thô (86g)
+                    Raw Cob Selection (86 g)
                   </h3>
                   <p
                     class="font-label text-xs text-on-surface-variant leading-relaxed"
                   >
-                    Phơi sấy tự nhiên dưới nắng vàng và tuyển chọn lõi đạt mật
-                    độ cellulose ổn định cao nhất.
+                    Naturally sun-dried and selected for stable, high-density
+                    cellulose fibers.
                   </p>
                 </div>
                 <span
                   class="text-[10px] font-label uppercase text-secondary font-semibold"
-                  >Sấy Nắng 48 Giờ</span
+                  >48 Hours of Sun Drying</span
                 >
               </div>
               <!-- Step 3 -->
@@ -1533,18 +2242,18 @@
                   <h3
                     class="font-label text-sm font-bold text-on-surface uppercase"
                   >
-                    Bio-Fiber Nghiền Mịn
+                    Finely Milled Bio-Fiber
                   </h3>
                   <p
                     class="font-label text-xs text-on-surface-variant leading-relaxed"
                   >
-                    Nghiền cơ học thành xơ hạt đều 1.5mm, kết hợp chất kết dính
-                    sinh học từ tinh bột sắn hữu cơ không hóa chất độc hại.
+                    Mechanically milled into uniform 1.5 mm fibers and blended
+                    with non-toxic organic cassava-starch binder.
                   </p>
                 </div>
                 <span
                   class="text-[10px] font-label uppercase text-tertiary font-semibold"
-                  >Keo Tinh Bột Tự Nhiên</span
+                  >Natural Starch Binder</span
                 >
               </div>
               <!-- Step 4 -->
@@ -1562,18 +2271,18 @@
                   <h3
                     class="font-label text-sm font-bold text-on-surface uppercase"
                   >
-                    Phôi Ép Nhiệt
+                    Heat-Pressed Composite
                   </h3>
                   <p
                     class="font-label text-xs text-on-surface-variant leading-relaxed"
                   >
-                    Ép thủy lực áp suất 15 MPa dưới nhiệt độ 110°C tạo độ nén
-                    dày 8mm chuẩn, bề mặt tựa cork mềm mại.
+                    Hydraulically pressed at 15 MPa and 110°C to form a standard
+                    8 mm cork-like surface.
                   </p>
                 </div>
                 <span
                   class="text-[10px] font-label uppercase text-primary font-semibold"
-                  >Nén Khối 8.0mm</span
+                  >8.0 mm Pressed Form</span
                 >
               </div>
               <!-- Step 5 (Final Coaster Product of Minh) -->
@@ -1591,18 +2300,19 @@
                   <h3
                     class="font-label text-sm font-bold text-primary uppercase"
                   >
-                    Lót Ly Của Minh
+                    Minh's Coaster
                   </h3>
                   <p
                     class="font-label text-xs text-on-surface-variant leading-relaxed"
                   >
-                    Lên màu tự nhiên, in nhiệt hoa văn chim ngậm cành hoa cúc
-                    Đông Nai và khắc laser tên tác giả hoàn tất.
+                    Naturally colored, heat-printed with a Dong Nai
+                    chrysanthemum-and-bird motif, then finished with a
+                    laser-engraved signature.
                   </p>
                 </div>
                 <span
                   class="text-[10px] font-label uppercase text-primary font-bold"
-                  >Tác Phẩm Hoàn Chỉnh</span
+                  >Finished Artwork</span
                 >
               </div>
             </div>
@@ -1617,27 +2327,27 @@
               <div>
                 <span
                   class="font-label text-xs uppercase tracking-[0.16em] text-secondary font-bold block mb-1"
-                  >Dấu Ấn Kỷ Niệm &amp; Con Người</span
+                  >Memories &amp; People</span
                 >
                 <h2
                   class="font-headline text-2xl lg:text-3xl uppercase tracking-tight text-on-surface"
                 >
-                  Ký Ức Workshop Cùng Chú Ba Thiện
+                  Workshop Memories with Uncle Ba Thien
                 </h2>
               </div>
               <div class="flex items-center gap-3">
                 <img
+                  alt="Close-up portrait of an elderly Vietnamese artisan craftsman in his 60s named Ba Thien, gentle smiling eyes with warm laugh lines, wearing traditional earthy organic linen craft shirt, sun-drenched artisan craft studio background."
                   class="w-10 h-10 rounded-full object-cover shadow-sm"
                   data-alt="Close-up portrait of an elderly Vietnamese artisan craftsman in his 60s named Ba Thien, gentle smiling eyes with warm laugh lines, wearing traditional earthy organic linen craft shirt, sun-drenched artisan craft studio background."
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGodkqP8evsTILrYz51zgNjSkYuX1-6og-Tngct2M7Uo-EQkRfEAxrgE0Y9T1b-EDk24UpGtRixceQLSWDC0PCLUnMxY0twwfqw7gxwaCn7iojHFEmAuJcmMyDHOQv79XVgvuxMjED9QyjpCbOZ9u3xFzcTNbOXRuHcc1w_fdKykfbJoDR43azBgMQij1ocbgKeAE7EJaZlnwgeCItrGs-QzsVweerixGmSz5xJeKPZH9AH-9b8DtTNA"
-                  alt="Close-up portrait of an elderly Vietnamese artisan craftsman in his 60s named Ba Thien, gentle smiling eyes with warm laugh lines, wearing traditional earthy organic linen craft shirt, sun-drenched artisan craft studio background."
                 />
                 <div>
                   <p class="font-label text-xs font-bold text-on-surface">
-                    Chú Ba Thiện
+                    Uncle Ba Thien
                   </p>
                   <p class="font-label text-[11px] text-on-surface-variant">
-                    Nghệ nhân mộc &amp; xơ ngô • 28 năm kinh nghiệm
+                    Wood and corn-fiber artisan • 28 years of experience
                   </p>
                 </div>
               </div>
@@ -1650,10 +2360,10 @@
               >
                 <div class="h-48 overflow-hidden relative">
                   <img
+                    alt="Hands of a young craft learner and an older Vietnamese artisan sorting through sun-dried golden corn fibers and raw corn cobs on an aged wooden work table, warm afternoon light."
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     data-alt="Hands of a young craft learner and an older Vietnamese artisan sorting through sun-dried golden corn fibers and raw corn cobs on an aged wooden work table, warm afternoon light."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuPf505zb9bltd3dMbso9op-wG1RoLoLhy8Yb9CsD_SKVdxykg4JGrLhP5lsrvOIORKDZW5lJPYSvGZgM523Ydd1TqN7Mu7syo-mFxEENrsgrIN630sHXZ0YAE5LTWifzk43Fj2YeE1KOblCANXS4bcqypQdgTCa8CjNQ8EOb9bQ6aKBwYnZ-mG5ypXJ8kSYi1KAqycJJIDduiKBpAxFKHJltIGFrUglFBthTgfUmrlhp0fac-bhnf9w"
-                    alt="Hands of a young craft learner and an older Vietnamese artisan sorting through sun-dried golden corn fibers and raw corn cobs on an aged wooden work table, warm afternoon light."
                   />
                   <span
                     class="absolute top-3 left-3 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-md text-[11px] font-label font-bold text-on-surface"
@@ -1665,18 +2375,19 @@
                     <h4
                       class="font-label text-xs font-bold uppercase text-on-surface"
                     >
-                      1. Chọn Phôi Hạt Ngô
+                      1. Selecting Corn Fiber
                     </h4>
                     <p
                       class="font-label text-xs text-on-surface-variant mt-1 leading-relaxed"
                     >
-                      Chú Ba Thiện hướng dẫn Minh dùng xúc giác để cảm nhận mật
-                      độ xơ ngô đạt độ ẩm dưới 12%.
+                      Uncle Ba Thien showed Minh how to feel the texture and
+                      recognize corn fiber with under 12% moisture.
                     </p>
                   </div>
                   <span
                     class="text-[10px] font-label text-secondary font-medium italic"
-                    >“Ngô khô giòn thì lót ly mới chịu nước tốt.”</span
+                    >“Only crisp, dry corn makes a truly water-resistant
+                    coaster.”</span
                   >
                 </div>
               </div>
@@ -1686,10 +2397,10 @@
               >
                 <div class="h-48 overflow-hidden relative">
                   <img
+                    alt="Artisanal hydraulic manual press machine pressing natural beige fibrous corn bio-composite material into circular mold disc, artisan hands operating lever carefully in workshop."
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     data-alt="Artisanal hydraulic manual press machine pressing natural beige fibrous corn bio-composite material into circular mold disc, artisan hands operating lever carefully in workshop."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuByBjmF_EQfyukc4msvGe2Mh5WI8gmXJHwV5tCDO2_jwWD-KNJb_I8XxFCYXXeCNYYOfA0xbkxRmEBD1VprR3OhUVZzJsMAzx2Z7NXRjAxOi9HVJFrzCaEK2_KRCcHoZ9JorYqUTiAIB1q4I4yniAoQEq4XV5cWDP3FxzYbRzzmVWBvrU3r8CyvmGP3KafwYRg8XSiCfZkfL2vwbtMxOeyNKJQU9Wfp3KOejTIeOjRmnbZKf5tFnpMbhA"
-                    alt="Artisanal hydraulic manual press machine pressing natural beige fibrous corn bio-composite material into circular mold disc, artisan hands operating lever carefully in workshop."
                   />
                   <span
                     class="absolute top-3 left-3 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-md text-[11px] font-label font-bold text-on-surface"
@@ -1701,18 +2412,19 @@
                     <h4
                       class="font-label text-xs font-bold uppercase text-on-surface"
                     >
-                      2. Nén Ép Thủy Lực
+                      2. Hydraulic Pressing
                     </h4>
                     <p
                       class="font-label text-xs text-on-surface-variant mt-1 leading-relaxed"
                     >
-                      Minh tự tay xoay tay đòn ép nén lực 15 tấn, cảm nhận bột
-                      ngô định hình thành đĩa tròn rắn chắc.
+                      Minh operated the 15-ton press by hand, watching the corn
+                      fiber take the shape of a solid round coaster.
                     </p>
                   </div>
                   <span
                     class="text-[10px] font-label text-secondary font-medium italic"
-                    >“Dứt khoát một nhịp, giữ 10 giây cho xơ kết.”</span
+                    >“One firm press, then hold for ten seconds so the fibers
+                    can bond.”</span
                   >
                 </div>
               </div>
@@ -1722,10 +2434,10 @@
               >
                 <div class="h-48 overflow-hidden relative">
                   <img
+                    alt="Close-up overhead view of hands delicately applying botanical natural color pigments in deep teal blue, saffron yellow, and brick orange onto circular textured eco-craft coaster coaster surface."
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     data-alt="Close-up overhead view of hands delicately applying botanical natural color pigments in deep teal blue, saffron yellow, and brick orange onto circular textured eco-craft coaster coaster surface."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7E_SdID2Yob566iDMO_NMtpnW9-d-e582cGRoe4TMzJDV9smbYCqqb3xxuDpP7dtJ18hclXipFbIWfC1B4YOZaGnuDNb4vRo6Vrq8uqkQk-Rv85wFbRfzCGuq2ml-k4ywqR3hi0rNLxdMEs-AfcWQybf1Kh0EjeDBuFuQBIltqb9wZQrr7Knv1KOOjFATeoPhzuRB-qs53I9BvMtxEx3tjQpRcQM-uJxnT-exslEefjK80ENwlZmVJw"
-                    alt="Close-up overhead view of hands delicately applying botanical natural color pigments in deep teal blue, saffron yellow, and brick orange onto circular textured eco-craft coaster coaster surface."
                   />
                   <span
                     class="absolute top-3 left-3 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-md text-[11px] font-label font-bold text-on-surface"
@@ -1737,18 +2449,19 @@
                     <h4
                       class="font-label text-xs font-bold uppercase text-on-surface"
                     >
-                      3. Lên Màu Hoa Văn Bản Địa
+                      3. Applying Local Motifs
                     </h4>
                     <p
                       class="font-label text-xs text-on-surface-variant mt-1 leading-relaxed"
                     >
-                      Tỉ mỉ chuyển màu họa tiết hoa cúc và cặp chim phượng hoàng
-                      bằng sắc chàm và củ nâu truyền thống.
+                      Carefully coloring chrysanthemums and paired phoenixes
+                      with traditional indigo and natural brown dyes.
                     </p>
                   </div>
                   <span
                     class="text-[10px] font-label text-secondary font-medium italic"
-                    >“Sắc xanh men gốm biểu trưng cho đất trời an lành.”</span
+                    >“The blue of ceramic glaze symbolizes harmony between earth
+                    and sky.”</span
                   >
                 </div>
               </div>
@@ -1758,10 +2471,10 @@
               >
                 <div class="h-48 overflow-hidden relative">
                   <img
+                    alt="Precision laser cutter beam carefully inscribing Vietnamese geographic text and owner signature onto edge rim of circular artisan corn husk coaster, subtle smoke wisps."
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     data-alt="Precision laser cutter beam carefully inscribing Vietnamese geographic text and owner signature onto edge rim of circular artisan corn husk coaster, subtle smoke wisps."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt5O-RZk653m4Sw4FH4TsFKuIwv0sGmAsFGpkux0SxCWv3roT2gdm8Yf0uR9e1eKrKAUJ8Cn3MautRl33Ew4fWZC2b1joCjS1PpuYU4ymFG21brlOewDX3_lPDnJLUu8Dsy0TS6wV25w1wV-HsNl-LblXAYRs8Daf6iCufW1F1spy_tp0gL0jUCyDZH4XG-4AWnDMtGLAGowFZzpV-XaAYKyZYnbhz1QHxy9R2s3XJfiDCZ_bD2YnzUQ"
-                    alt="Precision laser cutter beam carefully inscribing Vietnamese geographic text and owner signature onto edge rim of circular artisan corn husk coaster, subtle smoke wisps."
+                    src="images/4cham.jpg"
                   />
                   <span
                     class="absolute top-3 left-3 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-md text-[11px] font-label font-bold text-on-surface"
@@ -1773,18 +2486,19 @@
                     <h4
                       class="font-label text-xs font-bold uppercase text-on-surface"
                     >
-                      4. Khắc Laser Địa Danh
+                      4. Engraving the Place of Origin
                     </h4>
                     <p
                       class="font-label text-xs text-on-surface-variant mt-1 leading-relaxed"
                     >
-                      Khắc chìm dòng chữ ‘Xuan Phu Commune, Dong Nai Province’
-                      định danh tọa độ gốc của nguồn nguyên liệu.
+                      Laser-engraving “Xuan Phu Commune, Dong Nai Province” to
+                      identify the original source of the materials.
                     </p>
                   </div>
                   <span
                     class="text-[10px] font-label text-secondary font-medium italic"
-                    >“Kỷ niệm này sẽ bền mãi cùng tách trà của bạn.”</span
+                    >“This memory will last as long as your favorite tea
+                    cup.”</span
                   >
                 </div>
               </div>
@@ -1824,7 +2538,7 @@
                       <h3
                         class="font-label text-xs font-bold uppercase tracking-wider text-on-surface"
                       >
-                        Hộ Chiếu Tác Phẩm Di Sản
+                        Heritage Artwork Passport
                       </h3>
                       <p
                         class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest"
@@ -1835,7 +2549,7 @@
                   </div>
                   <span
                     class="px-2 py-0.5 rounded bg-primary/10 text-primary text-[10px] font-label font-bold uppercase"
-                    >Chuẩn OCOP 4☆</span
+                    >OCOP 4-Star Standard</span
                   >
                 </div>
                 <!-- Passport Detail Rows -->
@@ -1844,7 +2558,7 @@
                     class="flex justify-between py-1.5 border-b border-outline-variant/20"
                   >
                     <span class="text-on-surface-variant"
-                      >Mã Định Danh Duy Nhất:</span
+                      >Unique Artwork ID:</span
                     >
                     <span class="font-mono font-bold text-on-surface"
                       >#VN-XP-8821-MINH</span
@@ -1854,36 +2568,34 @@
                     class="flex justify-between py-1.5 border-b border-outline-variant/20"
                   >
                     <span class="text-on-surface-variant"
-                      >Chủ Sở Hữu / Tác Giả:</span
+                      >Owner / Creator:</span
                     >
-                    <span class="font-bold text-on-surface">Lê Hoàng Minh</span>
+                    <span class="font-bold text-on-surface">Le Hoang Minh</span>
                   </div>
                   <div
                     class="flex justify-between py-1.5 border-b border-outline-variant/20"
                   >
-                    <span class="text-on-surface-variant">Loại Hiện Vật:</span>
+                    <span class="text-on-surface-variant">Artifact Type:</span>
                     <span class="font-bold text-on-surface"
-                      >Artisan Coaster (Tấm Lót Ly)</span
+                      >Artisan Coaster</span
                     >
                   </div>
                   <div
                     class="flex justify-between py-1.5 border-b border-outline-variant/20"
                   >
-                    <span class="text-on-surface-variant"
-                      >Vật Liệu Cấu Thành:</span
-                    >
+                    <span class="text-on-surface-variant">Materials:</span>
                     <span class="font-bold text-on-surface text-right"
-                      >Lõi ngô Xuân Phú, Sắn hữu cơ</span
+                      >Xuan Phu corn cob, organic cassava</span
                     >
                   </div>
                   <div
                     class="flex justify-between py-1.5 border-b border-outline-variant/20"
                   >
                     <span class="text-on-surface-variant"
-                      >Thẩm Quyền Xác Thực:</span
+                      >Verification Authority:</span
                     >
                     <span class="font-bold text-primary"
-                      >CORNESS Vietnam × UBND Xuân Phú</span
+                      >CORNESS Vietnam × Xuan Phu People's Committee</span
                     >
                   </div>
                 </div>
@@ -1899,7 +2611,7 @@
                       <svg
                         class="w-full h-full text-on-surface"
                         fill="currentColor"
-                        viewBox="0 0 24 24"
+                        viewbox="0 0 24 24"
                       >
                         <path
                           d="M2 2h8v8H2V2zm2 2v4h4V4H4zm10-2h8v8h-8V2zm2 2v4h4V4h-4zM2 14h8v8H2v-8zm2 2v4h4v-4H4zm14 0h4v4h-4v-4zm-4-2h2v2h-2v-2zm-2 2h2v4h-2v-4zm4 4h4v2h-4v-2zm-6-2h2v2h-2v-2zm8-4h2v2h-2v-2zm-4-2h4v2h-4v-2zM5 5h2v2H5V5zm12 0h2v2h-2V5zM5 17h2v2H5v-2z"
@@ -1910,75 +2622,171 @@
                       <p
                         class="font-label text-xs font-bold text-on-surface uppercase"
                       >
-                        Mã Tra Cứu Blockchain
+                        Blockchain Lookup Code
                       </p>
                       <p class="font-label text-[11px] text-on-surface-variant">
-                        Quét để truy xuất chuỗi cung ứng vật liệu sạch từ ruộng
-                        bắp Đồng Nai.
+                        Scan to trace the clean-material supply chain back to
+                        Dong Nai cornfields.
                       </p>
                     </div>
                   </div>
                 </div>
-                <!-- Audio Guide Widget by Cora AI -->
+                <!-- CORA Audio Tour: actual MP3 narration in two languages -->
                 <div
-                  class="bg-primary text-on-primary p-4 rounded-xl flex flex-col space-y-3 shadow-sm"
+                  id="cora-audio-tour"
+                  class="bg-primary text-on-primary p-4 rounded-xl shadow-sm"
+                  aria-label="CORA bilingual audio tour"
                 >
-                  <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-2">
+                  <audio
+                    id="cora-audio-media"
+                    preload="metadata"
+                    src="audio/cora-story-en.mp3"
+                  ></audio>
+                  <div class="cora-audio-heading">
+                    <div class="flex items-center gap-2 min-w-0">
                       <span
                         class="material-symbols-outlined text-[20px] text-secondary-container"
+                        aria-hidden="true"
                         >graphic_eq</span
                       >
                       <span
                         class="font-label text-xs font-bold uppercase tracking-wider"
-                        >Cora Audio Tour Guide</span
+                        >CORA AUDIO TOUR GUIDE</span
                       >
                     </div>
                     <span
-                      class="font-label text-[11px] text-on-primary-container font-mono"
-                      >01:42 / 02:14</span
+                      id="cora-audio-time"
+                      class="font-label text-[11px] text-on-primary-container font-mono shrink-0"
+                      aria-label="Playback time"
+                      >0:00 / --:--</span
                     >
+                  </div>
+                  <div
+                    class="cora-audio-language"
+                    role="group"
+                    aria-label="Choose narration language"
+                  >
+                    <span class="cora-audio-language-label"
+                      >VOICE LANGUAGE</span
+                    >
+                    <div class="cora-audio-language-switch">
+                      <button
+                        class="cora-audio-language-button is-selected"
+                        data-cora-lang="en"
+                        type="button"
+                        aria-pressed="true"
+                      >
+                        English
+                      </button>
+                      <button
+                        class="cora-audio-language-button"
+                        data-cora-lang="vi"
+                        type="button"
+                        aria-pressed="false"
+                      >
+                        Vietnamese
+                      </button>
+                    </div>
                   </div>
                   <p
                     class="font-label text-xs text-on-primary-container leading-relaxed"
+                    id="cora-audio-excerpt"
                   >
-                    “Lắng nghe câu chuyện mùa vụ hè thu và nhịp đập của xơ ngô
-                    Xuân Phú được hồi sinh trong tay bạn...”
+                    “Hear how Xuan Phu's corn harvest is transformed into
+                    handmade memories, one creation at a time.”
                   </p>
-                  <!-- Audio Progress Bar -->
-                  <div
-                    class="w-full bg-surface-container-lowest/20 h-1.5 rounded-full overflow-hidden"
-                  >
-                    <div
-                      class="bg-secondary-container h-full w-[78%] transition-all"
-                    ></div>
-                  </div>
-                  <div class="flex items-center justify-between pt-1">
-                    <button
-                      class="p-1 rounded-full hover:bg-surface-container-lowest/10 transition-colors"
-                      type="button"
+                  <div class="cora-audio-timeline">
+                    <label class="sr-only" for="cora-audio-seek"
+                      >Seek through the audio story</label
                     >
-                      <span class="material-symbols-outlined text-[18px]"
+                    <input
+                      id="cora-audio-seek"
+                      class="cora-audio-seek"
+                      type="range"
+                      min="0"
+                      max="1000"
+                      step="1"
+                      value="0"
+                      style="--cora-progress: 0%"
+                      aria-label="Seek through the audio story"
+                    />
+                  </div>
+                  <div class="cora-audio-actions">
+                    <button
+                      id="cora-audio-back"
+                      class="cora-audio-skip"
+                      type="button"
+                      aria-label="Rewind 10 seconds"
+                      title="Rewind 10 seconds"
+                    >
+                      <span class="material-symbols-outlined" aria-hidden="true"
                         >replay_10</span
                       >
                     </button>
                     <button
-                      class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:bg-secondary-fixed transition-colors"
+                      id="cora-audio-toggle"
+                      class="cora-audio-primary"
                       type="button"
+                      aria-label="Play audio"
+                      title="Play audio"
                     >
-                      <span class="material-symbols-outlined text-[20px]"
-                        >pause</span
+                      <span
+                        id="cora-audio-icon"
+                        class="material-symbols-outlined"
+                        aria-hidden="true"
+                        >play_arrow</span
                       >
                     </button>
                     <button
-                      class="p-1 rounded-full hover:bg-surface-container-lowest/10 transition-colors"
+                      id="cora-audio-forward"
+                      class="cora-audio-skip"
                       type="button"
+                      aria-label="Forward 10 seconds"
+                      title="Forward 10 seconds"
                     >
-                      <span class="material-symbols-outlined text-[18px]"
+                      <span class="material-symbols-outlined" aria-hidden="true"
                         >forward_10</span
                       >
                     </button>
                   </div>
+                  <div class="cora-audio-footer">
+                    <span
+                      id="cora-audio-status"
+                      class="font-label text-[10px] text-on-primary-container"
+                      role="status"
+                      aria-live="polite"
+                      >Ready to play · English narration</span
+                    >
+                    <a
+                      id="cora-audio-download"
+                      class="cora-audio-download"
+                      href="audio/cora-story-en.mp3"
+                      download="cora-story-en.mp3"
+                      title="Download current narration"
+                      >Download MP3
+                      <span class="material-symbols-outlined" aria-hidden="true"
+                        >download</span
+                      ></a
+                    >
+                  </div>
+                  <details class="cora-audio-transcript">
+                    <summary>
+                      Read the audio transcript
+                      <span class="material-symbols-outlined" aria-hidden="true"
+                        >expand_more</span
+                      >
+                    </summary>
+                    <p
+                      id="cora-audio-transcript"
+                      class="font-label text-xs leading-relaxed"
+                      lang="en"
+                    >
+                      Welcome to CORNESS, a place where the harvest becomes a
+                      story. In Xuan Phu, Dong Nai, each corn harvest leaves
+                      behind corn cobs that can become a beautiful handmade
+                      keepsake.
+                    </p>
+                  </details>
                 </div>
               </div>
               <!-- Right: Verified AI Diary Journal Entry -->
@@ -2001,11 +2809,11 @@
                         <h3
                           class="font-label text-sm font-bold uppercase text-on-surface"
                         >
-                          Nhật Ký Tác Giả &amp; AI Cora Đồng Sáng Tạo
+                          Creator's Journal &amp; AI CORA Co-Creation
                         </h3>
                         <p class="font-label text-xs text-on-surface-variant">
-                          Ghi nhận lúc 16:45 • 22/09/2026 tại Xưởng Thủ Công
-                          Xuân Phú
+                          Recorded at 4:45 PM • September 22, 2026, at Xuan Phu
+                          Craft Workshop
                         </p>
                       </div>
                     </div>
@@ -2018,18 +2826,17 @@
                     class="prose font-label text-sm text-on-surface-variant leading-relaxed space-y-3"
                   >
                     <p>
-                      “Buổi chiều ở xưởng ngát mùi thơm thanh khiết của ngô khô
-                      sấy nắng. Lần đầu tiên tôi hiểu rằng 86 gam lõi ngô tưởng
-                      chừng vô nghĩa bị vứt bỏ sau mỗi bữa ăn lại có thể tạo nên
-                      một bề mặt mịn màng, chắc nịch đến vậy.”
+                      “The workshop smelled of sun-dried corn that afternoon.
+                      For the first time, I realized that 86 grams of seemingly
+                      useless corn cobs could become a surface so smooth and
+                      solid.”
                     </p>
                     <p>
-                      “Khi ngồi cùng chú Ba Thiện, từng động tác pha màu chàm tự
-                      nhiên và ấn tay đòn ép nén làm tôi lắng lại sau chuỗi ngày
-                      bận rộn nơi phố thị. Họa tiết chim chích ngậm cành hoa cúc
-                      không đơn thuần là một bản in, mà như lời chào mộc mạc từ
-                      đất mẹ Đồng Nai gửi tới từng tách trà sáng mỗi ngày trên
-                      bàn làm việc của tôi.”
+                      “Working beside Uncle Ba Thien, mixing natural indigo and
+                      operating the press helped me slow down after busy days in
+                      the city. The bird carrying a chrysanthemum sprig felt
+                      more than a print—it was a quiet greeting from Dong Nai to
+                      my morning cup of tea.”
                     </p>
                   </div>
                   <!-- Artisan Note Box -->
@@ -2042,12 +2849,13 @@
                     >
                     <div class="font-label text-xs">
                       <span class="font-bold text-on-surface block mb-0.5"
-                        >Lời Nhắn Của Chú Ba Thiện Gửi Minh:</span
+                        >A Message from Uncle Ba Thien to Minh:</span
                       >
                       <span class="text-on-surface-variant italic"
-                        >“Cái lót ly này sống bằng cái tâm nâng niu của cháu.
-                        Dùng lâu ngày, hơi ấm của ly cà phê sẽ làm màu xơ ngô
-                        càng bóng thẫm và thơm mùi rơm rạ quê mình.”</span
+                        >“Your coaster will thrive as long as you care for it.
+                        Over time, the warmth of your coffee will deepen the
+                        color of the corn fiber and bring out the scent of our
+                        countryside.”</span
                       >
                     </div>
                   </div>
@@ -2060,7 +2868,7 @@
                       <span class="material-symbols-outlined text-[16px]"
                         >edit</span
                       >
-                      Viết Tiếp Cảm Nghĩ
+                      Continue Writing Your Reflections
                     </button>
                     <button
                       class="px-4 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-dim text-on-surface text-xs font-label font-semibold uppercase tracking-wider inline-flex items-center gap-1.5 transition-colors"
@@ -2069,7 +2877,7 @@
                       <span class="material-symbols-outlined text-[16px]"
                         >download</span
                       >
-                      Tải Bản Lưu Trữ PDF (A4)
+                      Download Archive as PDF (A4)
                     </button>
                   </div>
                 </div>
@@ -2084,17 +2892,17 @@
                     >
                     <div>
                       <p class="font-label text-xs font-bold text-on-surface">
-                        Đóng Góp Vào Quỹ Xanh Xuân Phú
+                        Contribute to the Xuan Phu Green Fund
                       </p>
                       <p class="font-label text-[11px] text-on-surface-variant">
-                        10% kinh phí workshop được trích trả lại cho hợp tác xã
-                        nông dân trồng ngô.
+                        10% of workshop proceeds are returned to the local corn
+                        farmers' cooperative.
                       </p>
                     </div>
                   </div>
                   <span
                     class="text-xs font-label font-bold text-primary uppercase tracking-wider shrink-0"
-                    >+1,200 Điểm Sen Xanh</span
+                    >+1,200 Green Lotus Points</span
                   >
                 </div>
               </div>
@@ -2110,19 +2918,19 @@
               <div>
                 <span
                   class="font-label text-xs uppercase tracking-[0.16em] text-primary font-bold block mb-0.5"
-                  >Bộ Sưu Tập Di Sản Cá Nhân</span
+                  >Personal Heritage Collection</span
                 >
                 <h2
                   class="font-headline text-2xl lg:text-3xl uppercase tracking-tight text-on-surface"
                 >
-                  Bộ Sưu Tập Của Minh (03 Tác Phẩm)
+                  Minh's Collection (03 Creations)
                 </h2>
               </div>
               <a
                 class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-xs font-label font-bold uppercase tracking-wider inline-flex items-center gap-1.5 transition-colors"
                 href="#"
               >
-                <span>Khám Phá Workshop Mới</span>
+                <span>Explore New Workshops</span>
                 <span class="material-symbols-outlined text-[16px]"
                   >arrow_forward</span
                 >
@@ -2137,20 +2945,20 @@
                 <div
                   class="absolute top-4 right-4 px-2.5 py-0.5 rounded-full bg-primary text-on-primary text-[10px] font-label font-bold uppercase"
                 >
-                  Đang Xem
+                  Currently Viewing
                 </div>
                 <div class="h-44 w-full flex items-center justify-center p-2">
                   <img
+                    alt="Circular artisan coaster handcrafted from upcycled compressed corn cobs, decorated with rich blue and orange Vietnamese heritage botanical motifs."
                     class="max-h-full object-contain filter drop-shadow-md"
                     data-alt="Circular artisan coaster handcrafted from upcycled compressed corn cobs, decorated with rich blue and orange Vietnamese heritage botanical motifs."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW4Mu_M-soaCPbU2mq0G7yb2fQh5FKfm1aa8j0o4C7hS-5IB90OUvN8RIZOTj9fNI9mxWcWnxCu-W2yWmCsTuCd1dW6RifbspWPqhvUWzXyWTA2ji6ohl3Gc5QAqnc5vg-L6xsiC9G4U27tmFolVpdm0GyRQYK1qRR7_3xMxHkR6XHKlWxwbUIvfk0X2HZb-3cKfiUgaPZm9odLRc2kCO_L3tpct3Al7STes9fBXDXqfgh-JZtyquiSw"
-                    alt="Circular artisan coaster handcrafted from upcycled compressed corn cobs, decorated with rich blue and orange Vietnamese heritage botanical motifs."
                   />
                 </div>
                 <div class="space-y-1.5">
                   <span
                     class="text-[10px] font-label uppercase tracking-widest text-primary font-bold"
-                    >Workshop #04 • 86g Lõi Ngô</span
+                    >Workshop #04 • 86 g Corn Cob</span
                   >
                   <h3 class="font-label text-base font-bold text-on-surface">
                     Minh’s CORNESS Coaster
@@ -2158,16 +2966,16 @@
                   <p
                     class="font-label text-xs text-on-surface-variant line-clamp-2"
                   >
-                    Tấm lót ly ép nén hoa cúc hoàng triều, giữ ấm và cách nhiệt
-                    120°C an toàn tuyệt đối.
+                    A pressed coaster with royal chrysanthemum motifs, providing
+                    safe heat insulation up to 120°C.
                   </p>
                 </div>
                 <div
                   class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-xs font-label"
                 >
                   <span class="text-on-surface-variant"
-                    >Tình Trạng:
-                    <strong class="text-on-surface">Đã nhận hàng</strong></span
+                    >Status:
+                    <strong class="text-on-surface">Delivered</strong></span
                   >
                   <span class="text-primary font-bold">#XP-8821</span>
                 </div>
@@ -2178,33 +2986,33 @@
               >
                 <div class="h-44 w-full flex items-center justify-center p-2">
                   <img
+                    alt="Handmade bespoke notebook journal with textured woven corn husk paper cover in natural cream tone, embossed with minimalist green botanical corn leaf symbol, stitched linen binding on rustic wood surface."
                     class="max-h-full object-contain filter drop-shadow-md"
                     data-alt="Handmade bespoke notebook journal with textured woven corn husk paper cover in natural cream tone, embossed with minimalist green botanical corn leaf symbol, stitched linen binding on rustic wood surface."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgJRCmIjN80NvY0ehfEZGZdTlmqWMJzhkyyZ1yldCHszkMHsGAulRqDBuleFHXbAPHktueYZC4aHp0KomHF0kzloJMsXVs-rV6Je83y3bzvbYqsWGB7uMsiCfv3WwI2wX-1VQWICqkhv56XPAOy3kaXy0jpY7R0YDjJ6_E5dfVyl7Fbxhk4439l3us-V0RHDHWf4RnMSvxu7OjFKC7rsdLNVDNLL8wskxlR_dAXlD-9b1FcUKLT7ukrw"
-                    alt="Handmade bespoke notebook journal with textured woven corn husk paper cover in natural cream tone, embossed with minimalist green botanical corn leaf symbol, stitched linen binding on rustic wood surface."
                   />
                 </div>
                 <div class="space-y-1.5">
                   <span
                     class="text-[10px] font-label uppercase tracking-widest text-secondary font-bold"
-                    >Workshop #02 • 120g Vỏ Bắp Lụa</span
+                    >Workshop #02 • 120 g Silky Corn Husk</span
                   >
                   <h3 class="font-label text-base font-bold text-on-surface">
-                    Sổ Tay Di Sản ‘Gieo Hạt’
+                    “Planting Seeds” Heritage Journal
                   </h3>
                   <p
                     class="font-label text-xs text-on-surface-variant line-clamp-2"
                   >
-                    Sổ tay làm từ 100% giấy xơ bắp không tẩy trắng, kết hợp khâu
-                    gáy chỉ gai truyền thống.
+                    Made from 100% unbleached corn-fiber paper with traditional
+                    hand-sewn hemp-thread binding.
                   </p>
                 </div>
                 <div
                   class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-xs font-label"
                 >
                   <span class="text-on-surface-variant"
-                    >Tình Trạng:
-                    <strong class="text-on-surface">Đã lưu trữ</strong></span
+                    >Status:
+                    <strong class="text-on-surface">Archived</strong></span
                   >
                   <span class="text-secondary font-bold">#XP-4109</span>
                 </div>
@@ -2215,34 +3023,34 @@
               >
                 <div class="h-44 w-full flex items-center justify-center p-2">
                   <img
+                    alt="Modern sculptural origami table lamp shade made of translucent pressed corn husk fiber diffusing warm honey-gold incandescent glow, organic craft room aesthetic."
                     class="max-h-full object-contain filter drop-shadow-md"
                     data-alt="Modern sculptural origami table lamp shade made of translucent pressed corn husk fiber diffusing warm honey-gold incandescent glow, organic craft room aesthetic."
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_79jq2lgv3BtpXVHFHZ3rCAQnjnaMCRCsJAGGYpB2n2jXVtn41YoGOWfLDNw42gzCyMtCLOpvavaK0YuzPFx_wI93Q94IVKH49qoC8e5Q9ck_vxqmOHbVPyHg2A_Uzy4N2zabzhgkmb7KOi7jgTvD9ymgPVwqIrm0YPGuA-5zgucGtYeoSfuN7dEWxnt_tHitroL-0ltl7miYV-57axdcbuHckuk6DWw9O8Sh74HGErzZb1PlTnvCpA"
-                    alt="Modern sculptural origami table lamp shade made of translucent pressed corn husk fiber diffusing warm honey-gold incandescent glow, organic craft room aesthetic."
                   />
                 </div>
                 <div class="space-y-1.5">
                   <span
                     class="text-[10px] font-label uppercase tracking-widest text-tertiary font-bold"
-                    >Bản Giới Hạn Đặt Riêng</span
+                    >Limited Bespoke Edition</span
                   >
                   <h3 class="font-label text-base font-bold text-on-surface">
-                    Đèn Thả Bàn ‘Ánh Thu’
+                    “Autumn Glow” Table Lamp
                   </h3>
                   <p
                     class="font-label text-xs text-on-surface-variant line-clamp-2"
                   >
-                    Chao đèn khuếch tán ánh sáng ấm áp, xếp lớp thủ công từ màng
-                    lụa vỏ bắp tươi tuyển chọn.
+                    A warm, softly glowing lampshade, handcrafted from layered
+                    corn-husk membranes.
                   </p>
                 </div>
                 <div
                   class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-xs font-label"
                 >
                   <span class="text-on-surface-variant"
-                    >Tình Trạng:
+                    >Status:
                     <strong class="text-tertiary"
-                      >Đang chế tác (80%)</strong
+                      >In Production (80%)</strong
                     ></span
                   >
                   <span class="text-tertiary font-bold">#XP-9032</span>
@@ -2251,6 +3059,715 @@
             </div>
           </div>
         </section>
+        <!-- Featured Dong Nai destination cards: added after Minh's collection -->
+        <section
+          aria-labelledby="destination-section-title"
+          id="destinations-dong-nai"
+        >
+          <div class="destination-shell">
+            <div class="destination-section-heading">
+              <div>
+                <p class="destination-eyebrow">
+                  Local Travel &amp; Experience Guide
+                </p>
+                <h2
+                  class="destination-heading-title"
+                  id="destination-section-title"
+                >
+                  Dong Nai's Featured Destinations (06 Places)
+                </h2>
+                <p class="destination-section-desc">
+                  From ancient forests and misty mountain peaks to lakeside
+                  escapes and fruit-filled orchards.
+                </p>
+              </div>
+              <span class="destination-count"
+                ><span aria-hidden="true">✦</span> 06 journeys to discover</span
+              >
+            </div>
+            <div class="destination-grid">
+              <article
+                aria-labelledby="title-cat-tien"
+                class="destination-card destination-card--featured"
+              >
+                <div class="destination-photo">
+                  <img
+                    alt="Illustrative photo of Cat Tien National Park"
+                    decoding="async"
+                    loading="lazy"
+                    onerror="this.style.display = 'none'"
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Cat_Tien_Park%2C_Vietnam%2C_forest.jpg?width=960"
+                  />
+                  <span class="destination-photo-index">01 / 06</span>
+                  <a
+                    aria-label="Photo: Vyacheslav Argenberg · Wikimedia Commons (CC BY 4.0)"
+                    class="destination-photo-credit"
+                    href="https://commons.wikimedia.org/wiki/File:Cat_Tien_Park,_Vietnam,_forest.jpg"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Photo credit ↗</a
+                  >
+                </div>
+                <div class="destination-card-body">
+                  <p class="destination-kicker">01 · FOREST ADVENTURE</p>
+                  <h3 class="destination-title" id="title-cat-tien">
+                    Cat Tien National Park
+                  </h3>
+                  <div class="destination-badges">
+                    <span class="destination-badge"
+                      >World Biosphere Reserve</span
+                    ><span class="destination-badge"
+                      >Nature Stays / Camping</span
+                    >
+                  </div>
+                  <p class="destination-desc">
+                    Dong Nai's green treasure. An ideal destination for
+                    trekking, forest cycling, birdwatching and guided nighttime
+                    wildlife watching, with the option to explore Bau Sau
+                    wetlands.
+                  </p>
+                  <div class="destination-facts">
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >✦</span
+                      ><span
+                        ><strong>Best time to visit:</strong> December – May
+                        (dry season).</span
+                      >
+                    </p>
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >◈</span
+                      ><span
+                        ><strong>Best for:</strong> Adventure seekers, groups of
+                        friends and nature-loving families.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <button
+                  aria-controls="destination-modal"
+                  aria-haspopup="dialog"
+                  class="destination-action"
+                  data-destination="cat-tien"
+                  type="button"
+                >
+                  <span>View Details &amp; Itinerary</span
+                  ><span aria-hidden="true" class="destination-action-arrow"
+                    >→</span
+                  >
+                </button>
+              </article>
+              <article
+                aria-labelledby="title-bo-cap-vang"
+                class="destination-card"
+              >
+                <div class="destination-photo">
+                  <img
+                    alt="Illustrative photo of Bo Cap Vang Ecotourism Area"
+                    decoding="async"
+                    loading="lazy"
+                    onerror="this.style.display = 'none'"
+                    src="https://dulichviet.com.vn/images/bandidau/den-bo-cap-vang-co-gi-thu-hut-du-khach.jpg"
+                  />
+                  <span class="destination-photo-index">02 / 06</span>
+                  <a
+                    aria-label="Photo: Du Lich Viet · Reference image"
+                    class="destination-photo-credit"
+                    href="https://dulichviet.com.vn/tin-tuc/bo-cap-vang-dia-diem-du-lich-thu-hut-du-khach-tai-dong-nai"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Photo credit ↗</a
+                  >
+                </div>
+                <div class="destination-card-body">
+                  <p class="destination-kicker">02 · RIVERSIDE FUN</p>
+                  <h3 class="destination-title" id="title-bo-cap-vang">
+                    Bo Cap Vang Ecotourism Area
+                  </h3>
+                  <div class="destination-badges">
+                    <span class="destination-badge">Group Outings</span
+                    ><span class="destination-badge">Water Activities</span>
+                  </div>
+                  <p class="destination-desc">
+                    A lively destination for waterside recreation in Dong Nai,
+                    perfect for weekend team-building activities and discovering
+                    the flavors of southern river cuisine.
+                  </p>
+                  <div class="destination-facts">
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >✦</span
+                      ><span
+                        ><strong>Local dishes to try:</strong> Clay-pot roast
+                        chicken and charcoal-grilled snakehead fish.</span
+                      >
+                    </p>
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >◈</span
+                      ><span
+                        ><strong>Best for:</strong> Students, companies and
+                        large groups of friends.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <button
+                  aria-controls="destination-modal"
+                  aria-haspopup="dialog"
+                  class="destination-action"
+                  data-destination="bo-cap-vang"
+                  type="button"
+                >
+                  <span>View Details &amp; Ticket Information</span
+                  ><span aria-hidden="true" class="destination-action-arrow"
+                    >→</span
+                  >
+                </button>
+              </article>
+              <article
+                aria-labelledby="title-chua-chan"
+                class="destination-card"
+              >
+                <div class="destination-photo">
+                  <img
+                    alt="Illustrative photo of Chua Chan Mountain &amp; Buu Quang Pagoda"
+                    decoding="async"
+                    loading="lazy"
+                    onerror="this.style.display = 'none'"
+                    src="https://cdn.xanhsm.com/2025/02/924b0320-nui-chua-chan-10.jpg"
+                  />
+                  <span class="destination-photo-index">03 / 06</span>
+                  <a
+                    aria-label="Photo: Xanh SM · Reference image"
+                    class="destination-photo-credit"
+                    href="https://www.xanhsm.com/news/nui-chua-chan"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Photo credit ↗</a
+                  >
+                </div>
+                <div class="destination-card-body">
+                  <p class="destination-kicker">
+                    03 · MOUNTAIN &amp; SPIRITUAL ESCAPE
+                  </p>
+                  <h3 class="destination-title" id="title-chua-chan">
+                    Chua Chan Mountain &amp; Buu Quang Pagoda
+                  </h3>
+                  <div class="destination-badges">
+                    <span class="destination-badge">Spiritual Heritage</span
+                    ><span class="destination-badge">Easy Trekking</span>
+                  </div>
+                  <p class="destination-desc">
+                    Southern Vietnam's second-highest mountain, at 837 m. Climb
+                    the temple steps, take the cable car for panoramic views, or
+                    visit the revered Buu Quang (Gia Lao) Pagoda.
+                  </p>
+                  <div class="destination-facts">
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >✦</span
+                      ><span
+                        ><strong>Must-try experience:</strong> Cloud watching
+                        and overnight mountain camping.</span
+                      >
+                    </p>
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >◈</span
+                      ><span
+                        ><strong>Best for:</strong> Pilgrims and hiking
+                        enthusiasts.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <button
+                  aria-controls="destination-modal"
+                  aria-haspopup="dialog"
+                  class="destination-action"
+                  data-destination="chua-chan"
+                  type="button"
+                >
+                  <span>View Details &amp; Hiking Map</span
+                  ><span aria-hidden="true" class="destination-action-arrow"
+                    >→</span
+                  >
+                </button>
+              </article>
+              <article
+                aria-labelledby="title-amazing-bay"
+                class="destination-card"
+              >
+                <div class="destination-photo">
+                  <img
+                    alt="Illustrative photo of Son Tien Tourist Area &amp; Amazing Bay Water Park"
+                    decoding="async"
+                    loading="lazy"
+                    onerror="this.style.display = 'none'"
+                    src="https://mia.vn/media/uploads/blog-du-lich/khu-du-lich-son-tien-04-1695549985.jpg"
+                  />
+                  <span class="destination-photo-index">04 / 06</span>
+                  <a
+                    aria-label="Photo: MIA.vn · Reference image"
+                    class="destination-photo-credit"
+                    href="https://mia.vn/cam-nang-du-lich/khu-du-lich-son-tien-12792"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Photo credit ↗</a
+                  >
+                </div>
+                <div class="destination-card-body">
+                  <p class="destination-kicker">04 · WATER-PARK ADVENTURE</p>
+                  <h3 class="destination-title" id="title-amazing-bay">
+                    Son Tien Tourist Area &amp; Amazing Bay Water Park
+                  </h3>
+                  <div class="destination-badges">
+                    <span class="destination-badge">Premium Entertainment</span
+                    ><span class="destination-badge"
+                      >One of Vietnam's Largest Water Parks</span
+                    >
+                  </div>
+                  <p class="destination-desc">
+                    Near Bien Hoa, the Amazing Bay water park features a vast
+                    artificial beach, powerful wave pools and dozens of
+                    thrilling modern water slides.
+                  </p>
+                  <div class="destination-facts">
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >✦</span
+                      ><span
+                        ><strong>Highlights:</strong> Artificial beach, wave
+                        pool and modern waterslides.</span
+                      >
+                    </p>
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >◈</span
+                      ><span
+                        ><strong>Best for:</strong> Families with children and
+                        groups who enjoy water activities.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <button
+                  aria-controls="destination-modal"
+                  aria-haspopup="dialog"
+                  class="destination-action"
+                  data-destination="amazing-bay"
+                  type="button"
+                >
+                  <span>View Details &amp; Tickets</span
+                  ><span aria-hidden="true" class="destination-action-arrow"
+                    >→</span
+                  >
+                </button>
+              </article>
+              <article aria-labelledby="title-tri-an" class="destination-card">
+                <div class="destination-photo">
+                  <img
+                    alt="Illustrative photo of Tri An Floating Village &amp; Tri An Lake"
+                    decoding="async"
+                    loading="lazy"
+                    onerror="this.style.display = 'none'"
+                    src="https://cafefcdn.com/203337114487263232/2023/3/11/photo-15-1678507901269303913858.jpg"
+                  />
+                  <span class="destination-photo-index">05 / 06</span>
+                  <a
+                    aria-label="Photo: CafeF · Reference image"
+                    class="destination-photo-credit"
+                    href="https://cafef.vn/vua-hoa-minh-voi-thien-nhien-vua-trai-nghiem-tien-nghi-cuc-xin-tai-cac-khu-glamping-quanh-ho-tri-an-20230311111333389.chn"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Photo credit ↗</a
+                  >
+                </div>
+                <div class="destination-card-body">
+                  <p class="destination-kicker">05 · LAKESIDE GETAWAY</p>
+                  <h3 class="destination-title" id="title-tri-an">
+                    Tri An Floating Village &amp; Tri An Lake
+                  </h3>
+                  <div class="destination-badges">
+                    <span class="destination-badge">Camping &amp; Glamping</span
+                    ><span class="destination-badge">SUP Paddling</span>
+                  </div>
+                  <p class="destination-desc">
+                    A wide-open world of water and sky. Leave the city behind to
+                    paddleboard at sunrise, fish, enjoy local lake fish and look
+                    up at the stars at night.
+                  </p>
+                  <div class="destination-facts">
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >✦</span
+                      ><span
+                        ><strong>Recommended activities:</strong> Sunset views,
+                        campfires, SUP paddling and lakeside stays.</span
+                      >
+                    </p>
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >◈</span
+                      ><span
+                        ><strong>Best for:</strong> Young travelers, couples and
+                        glamping lovers.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <button
+                  aria-controls="destination-modal"
+                  aria-haspopup="dialog"
+                  class="destination-action"
+                  data-destination="tri-an"
+                  type="button"
+                >
+                  <span>View Details &amp; Tent Rentals</span
+                  ><span aria-hidden="true" class="destination-action-arrow"
+                    >→</span
+                  >
+                </button>
+              </article>
+              <article
+                aria-labelledby="title-long-khanh"
+                class="destination-card"
+              >
+                <div class="destination-photo">
+                  <img
+                    alt="Illustrative photo of Long Khanh Fruit Orchards (Fruit Season)"
+                    decoding="async"
+                    loading="lazy"
+                    onerror="this.style.display = 'none'"
+                    src="https://images.baodantoc.vn/uploads/2022/6/18/LongKhanh-01.jpg"
+                  />
+                  <span class="destination-photo-index">06 / 06</span>
+                  <a
+                    aria-label="Photo: Ethnic &amp; Development Newspaper · Reference image"
+                    class="destination-photo-credit"
+                    href="https://baodantoc.vn/long-khanh-dong-nai-khai-thac-hieu-qua-the-manh-du-lich-vuon-1656060583911.htm"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Photo credit ↗</a
+                  >
+                </div>
+                <div class="destination-card-body">
+                  <p class="destination-kicker">06 · ORCHARD EXPLORATION</p>
+                  <h3 class="destination-title" id="title-long-khanh">
+                    Long Khanh Fruit Orchards (Fruit Season)
+                  </h3>
+                  <div class="destination-badges">
+                    <span class="destination-badge">Agritourism</span
+                    ><span class="destination-badge"
+                      >Taste Fruit at the Orchard</span
+                    >
+                  </div>
+                  <p class="destination-desc">
+                    Southern Vietnam's fruit-growing heartland. During the
+                    May–August harvest, visitors can pick and enjoy rambutan,
+                    durian, mangosteen, pomelo and other seasonal specialties.
+                  </p>
+                  <div class="destination-facts">
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >✦</span
+                      ><span
+                        ><strong>Fruit season:</strong> May–August; ripening
+                        dates vary by orchard.</span
+                      >
+                    </p>
+                    <p>
+                      <span aria-hidden="true" class="destination-fact-icon"
+                        >◈</span
+                      ><span
+                        ><strong>Best for:</strong> Families and visitors
+                        interested in local culture and food.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <button
+                  aria-controls="destination-modal"
+                  aria-haspopup="dialog"
+                  class="destination-action"
+                  data-destination="long-khanh"
+                  type="button"
+                >
+                  <span>View Details &amp; Orchard Directory</span
+                  ><span aria-hidden="true" class="destination-action-arrow"
+                    >→</span
+                  >
+                </button>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- Detail dialog: accessible, reusable for the six cards -->
+        <div class="destination-modal" hidden="" id="destination-modal">
+          <button
+            aria-label="Close destination details"
+            class="destination-modal-shade"
+            data-close-destination=""
+            type="button"
+          ></button>
+          <div
+            aria-labelledby="destination-modal-title"
+            aria-modal="true"
+            class="destination-modal-panel"
+            role="dialog"
+            tabindex="-1"
+          >
+            <div class="destination-modal-visual">
+              <span aria-hidden="true">✦</span
+              ><img alt="" id="destination-modal-image" />
+            </div>
+            <div class="destination-modal-content">
+              <button
+                aria-label="Close window"
+                class="destination-modal-close"
+                data-close-destination=""
+                type="button"
+              >
+                <span aria-hidden="true">✕</span>
+              </button>
+              <p
+                class="destination-modal-kicker"
+                id="destination-modal-kicker"
+              ></p>
+              <h3 id="destination-modal-title"></h3>
+              <p id="destination-modal-desc"></p>
+              <p>
+                <strong id="destination-modal-note-label"></strong>
+                <span id="destination-modal-note"></span>
+              </p>
+              <p>
+                <strong>Best for:</strong>
+                <span id="destination-modal-suited"></span>
+              </p>
+              <div class="destination-modal-actions">
+                <a
+                  href="#"
+                  id="destination-modal-website"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><span id="destination-modal-external-text"
+                    >View Information</span
+                  ><span aria-hidden="true">↗</span></a
+                >
+                <a
+                  href="#"
+                  id="destination-modal-map"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Open Map <span aria-hidden="true">➤</span></a
+                >
+              </div>
+              <a
+                class="destination-modal-source"
+                href="#"
+                id="destination-modal-photo-credit"
+                rel="noopener noreferrer"
+                target="_blank"
+              ></a>
+              <p class="destination-modal-note">
+                Information, services and ticket prices may change. Please
+                confirm details directly with the operator before your visit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <script>
+          (() => {
+            const places = {
+              "cat-tien": {
+                kind: "01 · FOREST ADVENTURE",
+                title: "Cat Tien National Park",
+                intro:
+                  "Dong Nai's green treasure. An ideal destination for trekking, forest cycling, birdwatching and guided nighttime wildlife watching, with the option to explore Bau Sau wetlands.",
+                note_label: "Best time to visit",
+                note: "December – May (dry season).",
+                suited:
+                  "Adventure seekers, groups of friends and nature-loving families.",
+                external: "National Park Information & Tours",
+                url: "https://cattiennationalpark.com.vn/",
+                map: "Vườn Quốc Gia Cát Tiên, Đồng Nai",
+                credit: "Vyacheslav Argenberg · Wikimedia Commons (CC BY 4.0)",
+                creditUrl:
+                  "https://commons.wikimedia.org/wiki/File:Cat_Tien_Park,_Vietnam,_forest.jpg",
+                img: "https://commons.wikimedia.org/wiki/Special:FilePath/Cat_Tien_Park%2C_Vietnam%2C_forest.jpg?width=960",
+              },
+              "bo-cap-vang": {
+                kind: "02 · RIVERSIDE FUN",
+                title: "Bo Cap Vang Ecotourism Area",
+                intro:
+                  "A lively destination for waterside recreation in Dong Nai, perfect for weekend team-building activities and discovering the flavors of southern river cuisine.",
+                note_label: "Local dishes to try",
+                note: "Clay-pot roast chicken and charcoal-grilled snakehead fish.",
+                suited: "Students, companies and large groups of friends.",
+                external: "Visitor Information & Ticket Prices",
+                url: "https://www.klook.com/vi/blog/khu-du-lich-bo-cap-vang/",
+                map: "Khu du lịch sinh thái Bò Cạp Vàng, Nhơn Trạch, Đồng Nai",
+                credit: "Du Lịch Việt · Ảnh tham khảo",
+                creditUrl:
+                  "https://dulichviet.com.vn/tin-tuc/bo-cap-vang-dia-diem-du-lich-thu-hut-du-khach-tai-dong-nai",
+                img: "https://dulichviet.com.vn/images/bandidau/den-bo-cap-vang-co-gi-thu-hut-du-khach.jpg",
+              },
+              "chua-chan": {
+                kind: "03 · MOUNTAIN & SPIRITUAL ESCAPE",
+                title: "Chua Chan Mountain & Buu Quang Pagoda",
+                intro:
+                  "Southern Vietnam's second-highest mountain, at 837 m. Climb the temple steps, take the cable car for panoramic views, or visit the revered Buu Quang (Gia Lao) Pagoda.",
+                note_label: "Must-try experience",
+                note: "Cloud watching and overnight mountain camping.",
+                suited: "Pilgrims and hiking enthusiasts.",
+                external: "Cable Car & Visitor Information",
+                url: "https://captreonuichuachan.com/",
+                map: "Núi Chứa Chan, Xuân Lộc, Đồng Nai",
+                credit: "Xanh SM · Ảnh tham khảo",
+                creditUrl: "https://www.xanhsm.com/news/nui-chua-chan",
+                img: "https://cdn.xanhsm.com/2025/02/924b0320-nui-chua-chan-10.jpg",
+              },
+              "amazing-bay": {
+                kind: "04 · WATER-PARK ADVENTURE",
+                title: "Son Tien Tourist Area & Amazing Bay Water Park",
+                intro:
+                  "Near Bien Hoa, the Amazing Bay water park features a vast artificial beach, powerful wave pools and dozens of thrilling modern water slides.",
+                note_label: "Highlights",
+                note: "Artificial beach, wave pool and modern waterslides.",
+                suited:
+                  "Families with children and groups who enjoy water activities.",
+                external: "Water Park Ticket Information",
+                url: "https://www.theamazingbay.com/",
+                map: "The Amazing Bay, Sơn Tiên, Đồng Nai",
+                credit: "MIA.vn · Ảnh tham khảo",
+                creditUrl:
+                  "https://mia.vn/cam-nang-du-lich/khu-du-lich-son-tien-12792",
+                img: "https://mia.vn/media/uploads/blog-du-lich/khu-du-lich-son-tien-04-1695549985.jpg",
+              },
+              "tri-an": {
+                kind: "05 · LAKESIDE GETAWAY",
+                title: "Tri An Floating Village & Tri An Lake",
+                intro:
+                  "A wide-open world of water and sky. Leave the city behind to paddleboard at sunrise, fish, enjoy local lake fish and look up at the stars at night.",
+                note_label: "Recommended activities",
+                note: "Sunset views, campfires, SUP paddling and lakeside stays.",
+                suited: "Young travelers, couples and glamping lovers.",
+                external: "Find Glamping & Tent Rentals",
+                url: "https://www.google.com/search?q=thu%C3%AA+l%E1%BB%81u+glamping+H%E1%BB%93+Tr%E1%BB%8B+An+%C4%90%E1%BB%93ng+Nai",
+                map: "Hồ Trị An, Đồng Nai",
+                credit: "CafeF · Ảnh tham khảo",
+                creditUrl:
+                  "https://cafef.vn/vua-hoa-minh-voi-thien-nhien-vua-trai-nghiem-tien-nghi-cuc-xin-tai-cac-khu-glamping-quanh-ho-tri-an-20230311111333389.chn",
+                img: "https://cafefcdn.com/203337114487263232/2023/3/11/photo-15-1678507901269303913858.jpg",
+              },
+              "long-khanh": {
+                kind: "06 · ORCHARD EXPLORATION",
+                title: "Long Khanh Fruit Orchards (Fruit Season)",
+                intro:
+                  "Southern Vietnam's fruit-growing heartland. During the May–August harvest, visitors can pick and enjoy rambutan, durian, mangosteen, pomelo and other seasonal specialties.",
+                note_label: "Fruit season",
+                note: "May–August; ripening dates vary by orchard.",
+                suited:
+                  "Families and visitors interested in local culture and food.",
+                external: "Find Local Fruit Orchards",
+                url: "https://www.google.com/search?q=danh+s%C3%A1ch+nh%C3%A0+v%C6%B0%E1%BB%9Dn+du+l%E1%BB%8Bch+Long+Kh%C3%A1nh+%C4%90%E1%BB%93ng+Nai",
+                map: "Vườn trái cây Long Khánh, Đồng Nai",
+                credit: "Báo Dân tộc và Phát triển · Ảnh tham khảo",
+                creditUrl:
+                  "https://baodantoc.vn/long-khanh-dong-nai-khai-thac-hieu-qua-the-manh-du-lich-vuon-1656060583911.htm",
+                img: "https://images.baodantoc.vn/uploads/2022/6/18/LongKhanh-01.jpg",
+              },
+            };
+            const modal = document.getElementById("destination-modal");
+            if (!modal) return;
+            const panel = modal.querySelector(".destination-modal-panel");
+            const photo = document.getElementById("destination-modal-image");
+            let previousFocus = null;
+            let previousOverflow = "";
+            const assignText = (id, value) => {
+              document.getElementById(id).textContent = value;
+            };
+            const open = (id) => {
+              const d = places[id];
+              if (!d) return;
+              previousFocus = document.activeElement;
+              previousOverflow = document.body.style.overflow;
+              assignText("destination-modal-kicker", d.kind);
+              assignText("destination-modal-title", d.title);
+              assignText("destination-modal-desc", d.intro);
+              assignText("destination-modal-note-label", d.note_label + ":");
+              assignText("destination-modal-note", d.note);
+              assignText("destination-modal-suited", d.suited);
+              assignText("destination-modal-external-text", d.external);
+              document.getElementById("destination-modal-website").href = d.url;
+              document.getElementById("destination-modal-map").href =
+                "https://www.google.com/maps/search/?api=1&query=" +
+                encodeURIComponent(d.map);
+              const credit = document.getElementById(
+                "destination-modal-photo-credit",
+              );
+              credit.href = d.creditUrl;
+              credit.textContent = "Photo credit: " + d.credit;
+              photo.style.display = "block";
+              photo.onerror = () => {
+                photo.style.display = "none";
+              };
+              photo.src = d.img;
+              photo.alt = "Illustrative photo of " + d.title;
+              modal.hidden = false;
+              document.body.style.overflow = "hidden";
+              panel.focus({ preventScroll: true });
+            };
+            const close = () => {
+              if (modal.hidden) return;
+              modal.hidden = true;
+              document.body.style.overflow = previousOverflow;
+              photo.removeAttribute("src");
+              if (previousFocus?.isConnected)
+                previousFocus.focus({ preventScroll: true });
+            };
+            document
+              .querySelectorAll("[data-destination]")
+              .forEach((btn) =>
+                btn.addEventListener("click", () =>
+                  open(btn.dataset.destination),
+                ),
+              );
+            modal
+              .querySelectorAll("[data-close-destination]")
+              .forEach((btn) => btn.addEventListener("click", close));
+            document.addEventListener("keydown", (e) => {
+              if (modal.hidden) return;
+              if (e.key === "Escape") {
+                e.preventDefault();
+                close();
+              }
+              if (e.key === "Tab") {
+                const focusable = Array.from(
+                  panel.querySelectorAll(
+                    'button:not([disabled]),a[href]:not([tabindex="-1"])',
+                  ),
+                );
+                if (!focusable.length) return;
+                const first = focusable[0],
+                  last = focusable[focusable.length - 1];
+                if (
+                  e.shiftKey &&
+                  (document.activeElement === first ||
+                    document.activeElement === panel)
+                ) {
+                  e.preventDefault();
+                  last.focus();
+                } else if (!e.shiftKey && document.activeElement === last) {
+                  e.preventDefault();
+                  first.focus();
+                }
+              }
+            });
+          })();
+        </script>
         <!-- Interactive Script for Privacy Toggles & Audio Micro-interactions -->
         <script>
           (function () {
@@ -2281,6 +3798,8 @@
                 const target = document.getElementById("artifact-passport");
                 if (target) {
                   target.scrollIntoView({ behavior: "smooth" });
+                  // A real user click can start the bilingual audio guide.
+                  window.CornessCoraAudio?.play();
                 }
               });
             }
@@ -2307,21 +3826,22 @@
             <p
               class="font-label text-xs uppercase tracking-[0.08em] text-secondary font-bold"
             >
-              From Waste to Story • Tôn Vinh Di Sản Nông Nghiệp
+              From Waste to Story • Celebrating Agricultural Heritage
             </p>
             <p
               class="font-label text-sm text-on-surface-variant max-w-md leading-relaxed"
             >
-              Hệ sinh thái thủ công mỹ nghệ bền vững chuyển hóa phế phẩm vỏ bắp
-              Xuân Phú, Đồng Nai thành những tác phẩm mang hồn cốt dân tộc, kết
-              nối nghệ nhân truyền thống cùng công nghệ AI văn hóa tiên phong.
+              A sustainable craft ecosystem that transforms discarded corn husks
+              from Xuan Phu, Dong Nai into creations inspired by Vietnamese
+              heritage, connecting traditional artisans with pioneering cultural
+              AI technology.
             </p>
             <div class="flex items-center gap-3 pt-2">
               <span
                 class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-primary"
                 ><span class="material-symbols-outlined text-[14px]"
                   >verified</span
-                >Chứng nhận OCOP Tiêu Biểu</span
+                >Recognized OCOP Certification</span
               ><span
                 class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-tertiary"
                 ><span class="material-symbols-outlined text-[14px]"
@@ -2334,20 +3854,20 @@
             <h4
               class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
             >
-              1. Khám Phá
+              1. Explore
             </h4>
             <ul class="space-y-2 font-label text-sm text-on-surface-variant">
               <li class="hover:text-primary cursor-pointer transition-colors">
-                Nguồn gốc Vỏ Bắp Xuân Phú
+                Origin of Xuan Phu Corn Husks
               </li>
               <li class="hover:text-primary cursor-pointer transition-colors">
-                Làng Nghề &amp; Nghệ Nhân
+                Craft Villages &amp; Artisans
               </li>
               <li class="hover:text-primary cursor-pointer transition-colors">
-                Quy Trình Xử Lý Thuần Tự Nhiên
+                Natural Processing Methods
               </li>
               <li class="hover:text-primary cursor-pointer transition-colors">
-                Thư Viện Hoa Văn Bản Địa
+                Local Motif Library
               </li>
             </ul>
           </div>
@@ -2355,20 +3875,20 @@
             <h4
               class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
             >
-              2. Trải Nghiệm &amp; AI
+              2. Experiences &amp; AI
             </h4>
             <ul class="space-y-2 font-label text-sm text-on-surface-variant">
               <li class="hover:text-primary cursor-pointer transition-colors">
-                Workshop Thủ Công Tại Chỗ
+                Hands-on Craft Workshops
               </li>
               <li class="hover:text-primary cursor-pointer transition-colors">
                 CORA AI Cultural Studio
               </li>
               <li class="hover:text-primary cursor-pointer transition-colors">
-                Kể Chuyện Bằng Giọng Nói
+                Voice Storytelling
               </li>
               <li class="hover:text-primary cursor-pointer transition-colors">
-                Tùy Biến Sản Phẩm 3D
+                Customize 3D Products
               </li>
             </ul>
           </div>
@@ -2376,20 +3896,20 @@
             <h4
               class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
             >
-              3. Cửa Hàng &amp; Tác Động
+              3. Shop &amp; Impact
             </h4>
             <ul class="space-y-2 font-label text-sm text-on-surface-variant">
               <li class="hover:text-primary cursor-pointer transition-colors">
-                Bộ Sưu Tập Giới Hạn
+                Limited-Edition Collection
               </li>
               <li class="hover:text-primary cursor-pointer transition-colors">
-                Tác Động Giảm Thải Carbon
+                Carbon Reduction Impact
               </li>
               <li class="hover:text-primary cursor-pointer transition-colors">
-                Hỗ Trợ Sinh Kế Nông Dân
+                Support Farmers’ Livelihoods
               </li>
               <li class="hover:text-primary cursor-pointer transition-colors">
-                Chính Sách Bền Vững &amp; Đối Tác
+                Sustainability Policy &amp; Partners
               </li>
             </ul>
           </div>
@@ -2398,16 +3918,17 @@
           class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-label text-xs text-on-surface-variant"
         >
           <p>
-            © 2025 CORNESS Sustainable Craft &amp; Cultural Heritage. Xuân Phú,
-            Xuân Lộc, Đồng Nai.
+            © 2025 CORNESS Sustainable Craft &amp; Cultural Heritage. Xuan Phu,
+            Xuan Loc, Dong Nai.
           </p>
           <div class="flex items-center gap-6">
-            <span>Kinh Tế Tuần Hoàn Nông Nghiệp</span
-            ><span>Bảo Tồn Bản Sắc Việt</span>
+            <span>Circular Agricultural Economy</span
+            ><span>Preserving Vietnamese Identity</span>
           </div>
         </div>
       </div>
     </footer>
+    <script src="cora-audio.js"></script>
     <script src="responsive.js"></script>
     <script src="i18n.js"></script>
   </body>

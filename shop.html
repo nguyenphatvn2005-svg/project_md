@@ -1,25 +1,16 @@
 <!-- CORNESS — Cửa Hàng Tạo Tác & Tác Động Bền Vững (Desktop) -->
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="web_standard" name="shell-type" />
-    <title>CORNESS — Cửa Hàng Tạo Tác &amp; Tác Động Bền Vững</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>CORNESS — Craft Store &amp; Sustainable Impact</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
       @layer base {
         html,
         body {
@@ -40,8 +31,8 @@
         display: none;
       }
     </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script id="tailwind-config">
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
@@ -123,8 +114,7 @@
         },
       };
     </script>
-
-    <style>
+<style>
       :root {
         --corness-forest: #24452d;
         --corness-forest-deep: #173320;
@@ -273,1079 +263,555 @@
         }
       }
     </style>
-
-    <link rel="stylesheet" href="responsive.css" />
-  </head>
-  <body class="bg-surface font-body text-on-surface antialiased">
-    <header
-      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(112,88,66,0.06)]"
-    >
-      <div class="h-20 w-full px-6 lg:px-12 flex items-center justify-between">
-        <div class="flex items-center gap-4 shrink-0 2xl:mr-5">
-          <img
-            alt="CORNESS Logo"
-            class="h-14 w-14 shrink-0 object-contain"
-            src="images/FGlogo.png"
-          />
-          <div class="flex flex-col">
-            <span
-              class="font-headline text-lg tracking-tight uppercase text-primary leading-tight"
-              >CORNESS</span
-            ><span
-              class="font-label text-[10px] tracking-[0.08em] uppercase text-tertiary font-medium"
-              >Xuân Phú • Đồng Nai</span
-            >
-          </div>
-        </div>
-        <nav
-          class="hidden 2xl:flex items-center gap-1 p-1 bg-surface-container-low rounded-xl"
-          data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"
-        >
-          <a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="kham-pha"
-            href="index.html"
-            >Khám Phá</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="trai-nghiem-workshop"
-            href="experience.html"
-            >Trải Nghiệm &amp; Workshop</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="ai-studio-ke-chuyen"
-            href="ai-studio.html"
-            >AI Studio &amp; Kể Chuyện</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="san-pham-cua-ban"
-            href="my-product.html"
-            >Sản Phẩm Của Bạn</a
-          ><a
-            class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"
-            data-path="cua-hang-tac-dong"
-            href="shop.html"
-            >Cửa Hàng &amp; Tác Động</a
-          >
-        </nav>
-        <div class="flex items-center gap-3 lg:gap-4 2xl:ml-5">
-          <div
-            class="hidden 2xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium"
-          >
-            <span class="material-symbols-outlined text-[16px]">graphic_eq</span
-            ><span>CORA AI Audio</span>
-          </div>
-          <a
-            class="p-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center"
-            data-path="san-pham-cua-ban"
-            href="my-product.html"
-            ><span class="material-symbols-outlined text-[20px]"
-              >shopping_bag</span
-            ></a
-          ><a
-            class="hidden 2xl:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm"
-            data-path="trai-nghiem-workshop"
-            href="experience.html"
-            >Đặt Workshop / Create Story</a
-          >
-          <button
-            class="corness-mobile-toggle 2xl:hidden"
-            type="button"
-            aria-label="Mở menu"
-            aria-controls="corness-mobile-menu"
-            aria-expanded="false"
-          >
-            <span class="material-symbols-outlined text-[21px]">menu</span>
-          </button>
-          <div
-            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"
-          >
-            <span class="material-symbols-outlined text-on-primary text-[18px]"
-              >person</span
-            >
-          </div>
-        </div>
-      </div>
-
-      <div
-        id="corness-mobile-menu"
-        class="corness-mobile-menu 2xl:hidden"
-        data-open="false"
-        aria-hidden="true"
-      >
-        <button
-          class="corness-mobile-menu__backdrop"
-          type="button"
-          data-mobile-close
-          aria-label="Đóng menu"
-        ></button>
-        <div
-          class="corness-mobile-menu__panel"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Menu điều hướng CORNESS"
-        >
-          <div class="corness-mobile-menu__top">
-            <div>
-              <div
-                class="font-headline text-lg text-primary uppercase leading-none"
-              >
+<link href="responsive.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(112,88,66,0.06)]">
+<div class="h-20 w-full px-6 lg:px-12 flex items-center justify-between">
+<div class="flex items-center gap-4 shrink-0 2xl:mr-5">
+<img alt="CORNESS Logo" class="h-14 w-14 shrink-0 object-contain" src="images/FGlogo.png"/>
+<div class="flex flex-col">
+<span class="font-headline text-lg tracking-tight uppercase text-primary leading-tight">CORNESS</span><span class="font-label text-[10px] tracking-[0.08em] uppercase text-tertiary font-medium">Xuan Phu • Dong Nai</span>
+</div>
+</div>
+<nav class="hidden 2xl:flex items-center gap-1 p-1 bg-surface-container-low rounded-xl" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm">
+<a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="kham-pha" href="index.html">Explore</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="trai-nghiem-workshop" href="experience.html">Experiences &amp; Workshops</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="ai-studio-ke-chuyen" href="ai-studio.html">AI Studio &amp; Storytelling</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="san-pham-cua-ban" href="my-product.html">Your Product</a><a class="px-4 py-2 text-sm font-label uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="cua-hang-tac-dong" href="shop.html">Shop &amp; Impact</a>
+</nav>
+<div class="flex items-center gap-3 lg:gap-4 2xl:ml-5">
+<div class="hidden 2xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-label font-medium">
+<span class="material-symbols-outlined text-[16px]">graphic_eq</span><span>CORA AI Audio</span>
+</div>
+<a class="p-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" data-path="san-pham-cua-ban" href="my-product.html"><span class="material-symbols-outlined text-[20px]">shopping_bag</span></a><a class="hidden 2xl:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label text-xs uppercase font-bold tracking-wider transition-colors shadow-sm" data-path="trai-nghiem-workshop" href="experience.html">Book Workshop / Create Story</a>
+<button aria-controls="corness-mobile-menu" aria-expanded="false" aria-label="Open menu" class="corness-mobile-toggle 2xl:hidden" type="button">
+<span class="material-symbols-outlined text-[21px]">menu</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="corness-mobile-menu 2xl:hidden" data-open="false" id="corness-mobile-menu">
+<button aria-label="Close menu" class="corness-mobile-menu__backdrop" data-mobile-close="" type="button"></button>
+<div aria-label="CORNESS navigation menu" aria-modal="true" class="corness-mobile-menu__panel" role="dialog">
+<div class="corness-mobile-menu__top">
+<div>
+<div class="font-headline text-lg text-primary uppercase leading-none">
                 CORNESS
               </div>
-              <div
-                class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-1"
-              >
-                Xuân Phú • Đồng Nai
+<div class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-1">
+                Xuan Phu • Dong Nai
               </div>
-            </div>
-            <button
-              class="corness-mobile-menu__close"
-              type="button"
-              data-mobile-close
-              aria-label="Đóng menu"
-            >
-              <span class="material-symbols-outlined text-[20px]">close</span>
-            </button>
-          </div>
-          <nav class="corness-mobile-nav" aria-label="Điều hướng di động">
-            <a href="index.html"
-              ><span class="material-symbols-outlined text-[20px]">explore</span
-              ><span>Khám Phá</span></a
-            >
-            <a href="experience.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >handyman</span
-              ><span>Trải Nghiệm &amp; Workshop</span></a
-            >
-            <a href="ai-studio.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >auto_awesome</span
-              ><span>AI Studio &amp; Kể Chuyện</span></a
-            >
-            <a href="my-product.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >deployed_code</span
-              ><span>Sản Phẩm Của Bạn</span></a
-            >
-            <a href="shop.html"
-              ><span class="material-symbols-outlined text-[20px]"
-                >storefront</span
-              ><span>Cửa Hàng &amp; Tác Động</span></a
-            >
-          </nav>
-          <a class="corness-mobile-cta" href="experience.html">
-            <span>Đặt Workshop / Create Story</span>
-            <span class="material-symbols-outlined text-[18px]"
-              >arrow_forward</span
-            >
-          </a>
-        </div>
-      </div>
-    </header>
-    <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
-      <div class="flex flex-col w-full">
-        <!-- Top Editorial Header & Currency Selector -->
-        <section class="w-full px-6 lg:px-12 py-10 bg-surface">
-          <div
-            class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8"
-          >
-            <div class="space-y-3 max-w-2xl">
-              <div class="flex items-center gap-2">
-                <span
-                  class="inline-block w-2.5 h-2.5 rounded-full bg-secondary-container"
-                ></span>
-                <span
-                  class="font-label text-xs uppercase tracking-[0.18em] font-bold text-secondary"
-                  >Hệ Sinh Thái Thủ Công Tuần Hoàn • Xuân Phú</span
-                >
-              </div>
-              <h1
-                class="font-headline text-3xl sm:text-4xl lg:text-5xl text-primary uppercase tracking-tight leading-none"
-              >
-                Bộ Sưu Tập Tạo Tác Di Sản &amp; Đo Lường Sinh Thái
+</div>
+<button aria-label="Close menu" class="corness-mobile-menu__close" data-mobile-close="" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<nav aria-label="Mobile navigation" class="corness-mobile-nav">
+<a href="index.html"><span class="material-symbols-outlined text-[20px]">explore</span><span>Explore</span></a>
+<a href="experience.html"><span class="material-symbols-outlined text-[20px]">handyman</span><span>Experiences &amp; Workshops</span></a>
+<a href="ai-studio.html"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span>AI Studio &amp; Storytelling</span></a>
+<a href="my-product.html"><span class="material-symbols-outlined text-[20px]">deployed_code</span><span>Your Product</span></a>
+<a href="shop.html"><span class="material-symbols-outlined text-[20px]">storefront</span><span>Shop &amp; Impact</span></a>
+</nav>
+<a class="corness-mobile-cta" href="experience.html">
+<span>Book Workshop / Create Story</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+<div class="flex flex-col w-full">
+<!-- Top Editorial Header & Currency Selector -->
+<section class="w-full px-6 lg:px-12 py-10 bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8">
+<div class="space-y-3 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-label text-xs uppercase tracking-[0.18em] font-bold text-secondary">Circular Craft Ecosystem • Xuan Phu</span>
+</div>
+<h1 class="font-headline text-3xl sm:text-4xl lg:text-5xl text-primary uppercase tracking-tight leading-none">
+                Heritage Craft Collection &amp; Eco Measurement
               </h1>
-              <p
-                class="font-label text-sm text-on-surface-variant font-normal leading-relaxed pt-1"
-              >
-                Mỗi hiện vật CORNESS đều mang mã định danh số (Digital
-                Passport), truy xuất toàn vẹn nông hộ thu hoạch lõi vỏ bắp và
-                bàn tay nghệ nhân bản địa Đồng Nai chế tác.
+<p class="font-label text-sm text-on-surface-variant font-normal leading-relaxed pt-1">
+                Each CORNESS artifact includes a Digital Passport that traces the farming households supplying the corn husks and cobs, as well as the local Dong Nai artisans who created it.
               </p>
-            </div>
-            <!-- Currency & Unit Controls -->
-            <div class="flex flex-wrap items-center gap-3">
-              <div
-                class="flex items-center p-1 rounded-xl bg-surface-container text-xs font-label font-semibold text-on-surface-variant shadow-sm"
-                id="currency-switch"
-              >
-                <button
-                  class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-bold transition-all"
-                  data-curr="VND"
-                  type="button"
-                >
-                  VND (đ)
+</div>
+<!-- Currency & Unit Controls -->
+<div class="flex flex-wrap items-center gap-3">
+<div class="flex items-center p-1 rounded-xl bg-surface-container text-xs font-label font-semibold text-on-surface-variant shadow-sm" id="currency-switch">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-bold transition-all" data-curr="VND" type="button">
+                  VND
                 </button>
-                <button
-                  class="px-3.5 py-1.5 rounded-lg hover:text-on-surface transition-all"
-                  data-curr="USD"
-                  type="button"
-                >
+<button class="px-3.5 py-1.5 rounded-lg hover:text-on-surface transition-all" data-curr="USD" type="button">
                   USD ($)
                 </button>
-                <button
-                  class="px-3.5 py-1.5 rounded-lg hover:text-on-surface transition-all"
-                  data-curr="KRW"
-                  type="button"
-                >
+<button class="px-3.5 py-1.5 rounded-lg hover:text-on-surface transition-all" data-curr="KRW" type="button">
                   KRW (₩)
                 </button>
-              </div>
-              <div
-                class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container-low text-xs font-label text-tertiary"
-              >
-                <span class="material-symbols-outlined text-sm text-primary"
-                  >verified_user</span
-                >
-                <span class="font-medium">OCOP 4 Sao • ESG Audit</span>
-              </div>
-            </div>
-          </div>
-          <!-- Live Ecological Metric Grid -->
-          <div
-            class="max-w-7xl mx-auto mt-4 p-8 rounded-2xl bg-surface-container-low shadow-[0_4px_24px_rgba(97,74,53,0.05)]"
-          >
-            <div
-              class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 gap-3"
-            >
-              <div class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary text-2xl"
-                  >monitoring</span
-                >
-                <div>
-                  <h2
-                    class="font-label text-xs uppercase tracking-[0.14em] font-bold text-on-surface"
-                  >
-                    Bảng Đo Lường Tác Động Xuân Phú • Niên Vụ 2025
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container-low text-xs font-label text-tertiary">
+<span class="material-symbols-outlined text-sm text-primary">verified_user</span>
+<span class="font-medium">OCOP 4 Sao • ESG Audit</span>
+</div>
+</div>
+</div>
+<!-- Live Ecological Metric Grid -->
+<div class="max-w-7xl mx-auto mt-4 p-8 rounded-2xl bg-surface-container-low shadow-[0_4px_24px_rgba(97,74,53,0.05)]">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 gap-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">monitoring</span>
+<div>
+<h2 class="font-label text-xs uppercase tracking-[0.14em] font-bold text-on-surface">
+                    Xuan Phu Impact Dashboard • 2025 Season
                   </h2>
-                  <p class="font-label text-xs text-on-surface-variant">
-                    Cập nhật trực tiếp từ trạm cân nông sản và tổ hợp làng nghề
-                    xã Xuân Phú, H. Xuân Lộc
+<p class="font-label text-xs text-on-surface-variant">
+                    Updated from agricultural weighing stations and craft cooperatives in Xuan Phu Commune, Xuan Loc District
                   </p>
-                </div>
-              </div>
-              <span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label text-[11px] font-bold"
-              >
-                <span
-                  class="w-2 h-2 rounded-full bg-primary animate-pulse"
-                ></span>
-                Thời gian thực
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label text-[11px] font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Live
               </span>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <!-- Metric 1 -->
-              <div
-                class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between"
-              >
-                <div class="flex items-center justify-between">
-                  <span
-                    class="font-label text-[11px] uppercase tracking-wider text-outline font-semibold"
-                    >Khí quyển sạch</span
-                  >
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >air</span
-                  >
-                </div>
-                <div class="py-4">
-                  <div class="font-body text-4xl text-primary tracking-tight">
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Metric 1 -->
+<div class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label text-[11px] uppercase tracking-wider text-outline font-semibold">Cleaner Air</span>
+<span class="material-symbols-outlined text-primary text-lg">air</span>
+</div>
+<div class="py-4">
+<div class="font-body text-4xl text-primary tracking-tight">
                     50%
                   </div>
-                  <div
-                    class="font-label text-xs font-bold uppercase tracking-wider text-on-surface mt-1"
-                  >
-                    Cắt giảm khói bụi &amp; đốt rơm rạ
+<div class="font-label text-xs font-bold uppercase tracking-wider text-on-surface mt-1">
+                    Reducing smoke and crop-residue burning
                   </div>
-                </div>
-                <p
-                  class="font-label text-xs text-on-surface-variant leading-snug"
-                >
-                  Chấm dứt tập quán đốt đồng sau vụ bắp Đông-Xuân tại 3 tiểu
-                  khu.
+</div>
+<p class="font-label text-xs text-on-surface-variant leading-snug">
+                  Ending post-harvest field burning in three corn-growing zones.
                 </p>
-              </div>
-              <!-- Metric 2 -->
-              <div
-                class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between"
-              >
-                <div class="flex items-center justify-between">
-                  <span
-                    class="font-label text-[11px] uppercase tracking-wider text-outline font-semibold"
-                    >Sinh kế nông hộ</span
-                  >
-                  <span class="material-symbols-outlined text-secondary text-lg"
-                    >trending_up</span
-                  >
-                </div>
-                <div class="py-4">
-                  <div class="font-body text-4xl text-secondary tracking-tight">
+</div>
+<!-- Metric 2 -->
+<div class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label text-[11px] uppercase tracking-wider text-outline font-semibold">Farmer Livelihoods</span>
+<span class="material-symbols-outlined text-secondary text-lg">trending_up</span>
+</div>
+<div class="py-4">
+<div class="font-body text-4xl text-secondary tracking-tight">
                     +18-20%
                   </div>
-                  <div
-                    class="font-label text-xs font-bold uppercase tracking-wider text-on-surface mt-1"
-                  >
-                    Thu nhập cải thiện bền vững
+<div class="font-label text-xs font-bold uppercase tracking-wider text-on-surface mt-1">
+                    Sustainably increased income
                   </div>
-                </div>
-                <p
-                  class="font-label text-xs text-on-surface-variant leading-snug"
-                >
-                  Gia tăng giá trị ròng từ phụ phẩm nông nghiệp từng bỏ hoang.
+</div>
+<p class="font-label text-xs text-on-surface-variant leading-snug">
+                  Creating value from agricultural by-products once discarded.
                 </p>
-              </div>
-              <!-- Metric 3 -->
-              <div
-                class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between"
-              >
-                <div class="flex items-center justify-between">
-                  <span
-                    class="font-label text-[11px] uppercase tracking-wider text-outline font-semibold"
-                    >Bảo tồn bản sắc</span
-                  >
-                  <span class="material-symbols-outlined text-tertiary text-lg"
-                    >local_florist</span
-                  >
-                </div>
-                <div class="py-4">
-                  <div class="font-body text-4xl text-tertiary tracking-tight">
+</div>
+<!-- Metric 3 -->
+<div class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label text-[11px] uppercase tracking-wider text-outline font-semibold">Heritage Preservation</span>
+<span class="material-symbols-outlined text-tertiary text-lg">local_florist</span>
+</div>
+<div class="py-4">
+<div class="font-body text-4xl text-tertiary tracking-tight">
                     650+
                   </div>
-                  <div
-                    class="font-label text-xs font-bold uppercase tracking-wider text-on-surface mt-1"
-                  >
-                    Lượt truyền dạy nghề thủ công
+<div class="font-label text-xs font-bold uppercase tracking-wider text-on-surface mt-1">
+                    Craft training sessions
                   </div>
-                </div>
-                <p
-                  class="font-label text-xs text-on-surface-variant leading-snug"
-                >
-                  Đào tạo phụ nữ nông nhàn kỹ thuật ép nén sợi và khắc men gốm.
+</div>
+<p class="font-label text-xs text-on-surface-variant leading-snug">
+                  Training rural women in fiber pressing and ceramic engraving techniques.
                 </p>
-              </div>
-              <!-- Metric 4 -->
-              <div
-                class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between"
-              >
-                <div class="flex items-center justify-between">
-                  <span
-                    class="font-label text-[11px] uppercase tracking-wider text-outline font-semibold"
-                    >Sinh khối tái sinh</span
-                  >
-                  <span
-                    class="material-symbols-outlined text-surface-tint text-lg"
-                    >recycling</span
-                  >
-                </div>
-                <div class="py-4">
-                  <div
-                    class="font-body text-4xl text-surface-tint tracking-tight"
-                  >
+</div>
+<!-- Metric 4 -->
+<div class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label text-[11px] uppercase tracking-wider text-outline font-semibold">Regenerated Biomass</span>
+<span class="material-symbols-outlined text-surface-tint text-lg">recycling</span>
+</div>
+<div class="py-4">
+<div class="font-body text-4xl text-surface-tint tracking-tight">
                     12.000+
                   </div>
-                  <div
-                    class="font-label text-xs font-bold uppercase tracking-wider text-on-surface mt-1"
-                  >
-                    Lõi vỏ bắp ngô tuần hoàn
+<div class="font-label text-xs font-bold uppercase tracking-wider text-on-surface mt-1">
+                    Reclaimed corn cobs and husks
                   </div>
-                </div>
-                <p
-                  class="font-label text-xs text-on-surface-variant leading-snug"
-                >
-                  Được nghiền nén thành vật liệu đế cách nhiệt tiêu chuẩn bảo
-                  tàng.
+</div>
+<p class="font-label text-xs text-on-surface-variant leading-snug">
+                  Milled and pressed into museum-standard insulating coaster materials.
                 </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Curated Product Catalog Section -->
-        <section class="w-full px-6 lg:px-12 py-16 bg-surface-container-low">
-          <div class="max-w-7xl mx-auto space-y-10">
-            <div
-              class="flex flex-col md:flex-row md:items-end justify-between gap-4"
-            >
-              <div>
-                <span
-                  class="font-label text-xs uppercase tracking-[0.14em] font-bold text-primary"
-                  >Tạo Tác Chọn Lọc</span
-                >
-                <h2
-                  class="font-headline text-2xl sm:text-3xl text-on-surface uppercase tracking-tight mt-1"
-                >
-                  Tác Phẩm Thủ Công Từ Vỏ Bắp Ép Ép Tự Nhiên
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Product Catalog Section -->
+<section class="w-full px-6 lg:px-12 py-16 bg-surface-container-low">
+<div class="max-w-7xl mx-auto space-y-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label text-xs uppercase tracking-[0.14em] font-bold text-primary">Curated Crafts</span>
+<h2 class="font-headline text-2xl sm:text-3xl text-on-surface uppercase tracking-tight mt-1">
+                  Handcrafted Pieces from Naturally Pressed Corn Fiber
                 </h2>
-              </div>
-              <div
-                class="flex items-center gap-2 font-label text-xs text-on-surface-variant"
-              >
-                <span class="font-medium">Sắp xếp:</span>
-                <span
-                  class="px-3 py-1.5 bg-surface-container rounded-lg font-bold text-primary cursor-pointer"
-                  >Bán Chạy Nhất</span
-                >
-                <span
-                  class="px-3 py-1.5 hover:bg-surface-container rounded-lg cursor-pointer transition-colors"
-                  >Tác Động Giảm Thải</span
-                >
-              </div>
-            </div>
-            <!-- 4-Column Product Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <!-- Product Card 1: Best Seller Heritage Coaster -->
-              <div
-                class="group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
-              >
-                <div
-                  class="relative w-full aspect-square bg-surface-container p-6 flex items-center justify-center overflow-hidden"
-                >
-                  <img
-                    alt="Đế Lót Ly Di Sản Hoa Văn Bản Địa Xuân Phú làm từ lõi bắp ép nén hữu cơ và men màu thủ công"
-                    class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-                    src="https://lh3.googleusercontent.com/aida/AEtjO1UaLImSgPbReSHdBVO68VdokKEBdtgxJokL6FEHkWgF_MI-XWGlTlZn5FSJQ2D0pMTUvGQV7uXH84bJ1jqhfNk1NnyrzbWdcfWfjM3OTLXDWh9JESfyHu0msh7CQHkInMGh6bSy_U5FaTRvTjYbpiiha1s4E2QG5oMz1swjpGxcX_zpo5zWxJHYka62irz-YLu8t7YNtJDvWFO7noQG6be5QwXmzAUR0AIXYtrCS2GhVGZHNKv-jskh2AY"
-                  />
-                  <span
-                    class="absolute top-4 left-4 px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-label text-[10px] font-bold uppercase tracking-wider shadow-sm"
-                  >
-                    Best-Seller Di Sản
+</div>
+<div class="flex items-center gap-2 font-label text-xs text-on-surface-variant">
+<span class="font-medium">Sort:</span>
+<span class="px-3 py-1.5 bg-surface-container rounded-lg font-bold text-primary cursor-pointer">Best Selling</span>
+<span class="px-3 py-1.5 hover:bg-surface-container rounded-lg cursor-pointer transition-colors">Waste-Reduction Impact</span>
+</div>
+</div>
+<!-- 4-Column Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product Card 1: Best Seller Heritage Coaster -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative w-full aspect-square bg-surface-container p-6 flex items-center justify-center overflow-hidden">
+<img alt="Xuan Phu heritage coaster made from organic pressed corn cob with a handcrafted ceramic motif" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1UaLImSgPbReSHdBVO68VdokKEBdtgxJokL6FEHkWgF_MI-XWGlTlZn5FSJQ2D0pMTUvGQV7uXH84bJ1jqhfNk1NnyrzbWdcfWfjM3OTLXDWh9JESfyHu0msh7CQHkInMGh6bSy_U5FaTRvTjYbpiiha1s4E2QG5oMz1swjpGxcX_zpo5zWxJHYka62irz-YLu8t7YNtJDvWFO7noQG6be5QwXmzAUR0AIXYtrCS2GhVGZHNKv-jskh2AY"/>
+<span class="absolute top-4 left-4 px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-label text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                    Heritage Best Seller
                   </span>
-                  <span
-                    class="absolute bottom-4 right-4 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-sm font-label text-[10px] font-bold text-tertiary"
-                  >
-                    4.8g CO2e Bù Đắp
+<span class="absolute bottom-4 right-4 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-sm font-label text-[10px] font-bold text-tertiary">
+                    4.8 g CO₂e Offset
                   </span>
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                  <div class="space-y-2">
-                    <div
-                      class="flex items-center justify-between text-xs font-label text-outline"
-                    >
-                      <span>Xuân Phú • Mã: CS-2501</span>
-                      <span class="font-semibold text-primary"
-                        >Đường kính 11cm</span
-                      >
-                    </div>
-                    <h3
-                      class="font-label text-base font-bold text-on-surface group-hover:text-primary transition-colors leading-tight"
-                    >
-                      Đế Lót Ly Di Sản Hoa Văn Phù Điêu
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center justify-between text-xs font-label text-outline">
+<span>Xuan Phu • Code: CS-2501</span>
+<span class="font-semibold text-primary">Diameter: 11 cm</span>
+</div>
+<h3 class="font-label text-base font-bold text-on-surface group-hover:text-primary transition-colors leading-tight">
+                      Embossed Heritage Motif Coaster
                     </h3>
-                    <p
-                      class="font-label text-xs text-on-surface-variant line-clamp-2"
-                    >
-                      Đúc từ sợi xơ vỏ bắp kết dính cùng keo hữu cơ, bề mặt dập
-                      nổi hoa văn gốm Biên Hòa thế kỷ 19 chống thấm nước.
+<p class="font-label text-xs text-on-surface-variant line-clamp-2">
+                      Molded from corn-husk fibers and organic binder, with a water-resistant raised design inspired by 19th-century Bien Hoa ceramics.
                     </p>
-                  </div>
-                  <div
-                    class="pt-2 flex items-center justify-between border-t-0"
-                  >
-                    <div>
-                      <span
-                        class="font-label text-[10px] text-outline uppercase block"
-                        >Giá niêm yết</span
-                      >
-                      <span
-                        class="font-body text-2xl text-primary price-tag"
-                        data-krw="8200"
-                        data-usd="6.2"
-                        data-vnd="145000"
-                        >145.000 đ</span
-                      >
-                    </div>
-                    <button
-                      class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5"
-                      type="button"
-                    >
-                      <span class="material-symbols-outlined text-[16px]"
-                        >keyboard_double_arrow_left</span
-                      >
-                      <span>Chọn Mua</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Product Card 2: Heat Trivet -->
-              <div
-                class="group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
-              >
-                <div
-                  class="relative w-full aspect-square bg-surface-container p-6 flex items-center justify-center overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-                    data-alt="Square artisanal heat coaster pad crafted from compacted raw corn husks with engraved Vietnamese lotus flower motif filled with natural organic indigo and teal dyes, macro studio photography, warm morning sunlight, natural organic grain texture."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVj-Kw1321iGY5Jpeqc7G1nxU4sBefxT0ekqUdD051FlA1HEgFJ4K7fVLm71JEQwwNCWQJShW-RVdR-W447uRKeNjO2guIoDZ8tcyBpjlKe6r16a94Iuuq_DI97zIt-zmfxcnjSVSc6LRrhOmoeyB0gzF1e9vQPzYC22tKglH5uUwuBB0A0piET6l39d-KHQCa64VACJPL6_0V-zyih6qrB_Q8WjNisrZHBObEsVwv3IzGrbwDNCptxw"
-                    alt="Square artisanal heat coaster pad crafted from compacted raw corn husks with engraved Vietnamese lotus flower motif filled with natural organic indigo and teal dyes, macro studio photography, warm morning sunlight, natural organic grain texture."
-                  />
-                  <span
-                    class="absolute top-4 left-4 px-2.5 py-1 rounded-md bg-surface-container-highest text-tertiary font-label text-[10px] font-bold uppercase tracking-wider"
-                  >
-                    Kháng Nhiệt 180°C
+</div>
+<div class="pt-2 flex items-center justify-between border-t-0">
+<div>
+<span class="font-label text-[10px] text-outline uppercase block">List Price</span>
+<span class="font-body text-2xl text-primary price-tag" data-krw="8200" data-usd="6.2" data-vnd="145000">VND 145,000</span>
+</div>
+<button class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">keyboard_double_arrow_left</span>
+<span>Add to Cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2: Heat Trivet -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative w-full aspect-square bg-surface-container p-6 flex items-center justify-center overflow-hidden">
+<img alt="Square artisanal heat coaster pad crafted from compacted raw corn husks with engraved Vietnamese lotus flower motif filled with natural organic indigo and teal dyes, macro studio photography, warm morning sunlight, natural organic grain texture." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Square artisanal heat coaster pad crafted from compacted raw corn husks with engraved Vietnamese lotus flower motif filled with natural organic indigo and teal dyes, macro studio photography, warm morning sunlight, natural organic grain texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVj-Kw1321iGY5Jpeqc7G1nxU4sBefxT0ekqUdD051FlA1HEgFJ4K7fVLm71JEQwwNCWQJShW-RVdR-W447uRKeNjO2guIoDZ8tcyBpjlKe6r16a94Iuuq_DI97zIt-zmfxcnjSVSc6LRrhOmoeyB0gzF1e9vQPzYC22tKglH5uUwuBB0A0piET6l39d-KHQCa64VACJPL6_0V-zyih6qrB_Q8WjNisrZHBObEsVwv3IzGrbwDNCptxw"/>
+<span class="absolute top-4 left-4 px-2.5 py-1 rounded-md bg-surface-container-highest text-tertiary font-label text-[10px] font-bold uppercase tracking-wider">
+                    Heat Resistant to 180°C
                   </span>
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                  <div class="space-y-2">
-                    <div
-                      class="flex items-center justify-between text-xs font-label text-outline"
-                    >
-                      <span>Tổ hợp 2 • Mã: TR-1904</span>
-                      <span class="font-semibold text-primary"
-                        >Kích thước 18x18cm</span
-                      >
-                    </div>
-                    <h3
-                      class="font-label text-base font-bold text-on-surface group-hover:text-primary transition-colors leading-tight"
-                    >
-                      Tấm Lót Nồi Bền Nhiệt Đồng Nai
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center justify-between text-xs font-label text-outline">
+<span>Craft Group 2 • Code: TR-1904</span>
+<span class="font-semibold text-primary">Size: 18 × 18 cm</span>
+</div>
+<h3 class="font-label text-base font-bold text-on-surface group-hover:text-primary transition-colors leading-tight">
+                      Dong Nai Heat-Resistant Trivet
                     </h3>
-                    <p
-                      class="font-label text-xs text-on-surface-variant line-clamp-2"
-                    >
-                      Lớp lõi bắp dày 12mm chịu nhiệt độ sôi trên bàn ăn, chạm
-                      khắc hoa sen thanh khiết mang lời chúc sung túc.
+<p class="font-label text-xs text-on-surface-variant line-clamp-2">
+                      A 12 mm thick corn-cob core protects the dining table from heat, while a hand-carved lotus motif symbolizes prosperity.
                     </p>
-                  </div>
-                  <div class="pt-2 flex items-center justify-between">
-                    <div>
-                      <span
-                        class="font-label text-[10px] text-outline uppercase block"
-                        >Giá niêm yết</span
-                      >
-                      <span
-                        class="font-body text-2xl text-primary price-tag"
-                        data-krw="14500"
-                        data-usd="10.8"
-                        data-vnd="260000"
-                        >260.000 đ</span
-                      >
-                    </div>
-                    <button
-                      class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5"
-                      type="button"
-                    >
-                      <span class="material-symbols-outlined text-[16px]"
-                        >keyboard_double_arrow_left</span
-                      >
-                      <span>Chọn Mua</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Product Card 3: DIY Kit -->
-              <div
-                class="group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
-              >
-                <div
-                  class="relative w-full aspect-square bg-surface-container p-6 flex items-center justify-center overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500"
-                    data-alt="Sustainable artisanal DIY craft box opened on a rustic wooden table showing dried corn leaves, natural pigment bottles, carving stylus tools, mold shapes and illustrated guide booklet for home crafting, warm earth tones, overhead soft studio lighting."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrRl9Rf9sF9BCOrMLOhBJuzvYssTy1O_KRTHs01TNL_OFfwiA30u4adZ9-MyJWCsfEKXRAPB_57rF8BNgMhdcbFMzScHc3MxfpFgMyo7s31VOHY_bUBD5sS8U9AKj4cwLEf1B0qZ0lztLaWCHdX6jRHembJSreZ5ZFJB2HjWLufpjbRzD2jevlJcUK-y-HBSVg2CDkDiNta7Xq4VYwxPLRPmh8e_86BF898N2wa1hPobR_ywKysI08MQ"
-                    alt="Sustainable artisanal DIY craft box opened on a rustic wooden table showing dried corn leaves, natural pigment bottles, carving stylus tools, mold shapes and illustrated guide booklet for home crafting, warm earth tones, overhead soft studio lighting."
-                  />
-                  <span
-                    class="absolute top-4 left-4 px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed font-label text-[10px] font-bold uppercase tracking-wider"
-                  >
-                    Tự Sáng Tạo Tại Nhà
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div>
+<span class="font-label text-[10px] text-outline uppercase block">List Price</span>
+<span class="font-body text-2xl text-primary price-tag" data-krw="14500" data-usd="10.8" data-vnd="260000">VND 260,000</span>
+</div>
+<button class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">keyboard_double_arrow_left</span>
+<span>Add to Cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3: DIY Kit -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative w-full aspect-square bg-surface-container p-6 flex items-center justify-center overflow-hidden">
+<img alt="Sustainable artisanal DIY craft box opened on a rustic wooden table showing dried corn leaves, natural pigment bottles, carving stylus tools, mold shapes and illustrated guide booklet for home crafting, warm earth tones, overhead soft studio lighting." class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="Sustainable artisanal DIY craft box opened on a rustic wooden table showing dried corn leaves, natural pigment bottles, carving stylus tools, mold shapes and illustrated guide booklet for home crafting, warm earth tones, overhead soft studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrRl9Rf9sF9BCOrMLOhBJuzvYssTy1O_KRTHs01TNL_OFfwiA30u4adZ9-MyJWCsfEKXRAPB_57rF8BNgMhdcbFMzScHc3MxfpFgMyo7s31VOHY_bUBD5sS8U9AKj4cwLEf1B0qZ0lztLaWCHdX6jRHembJSreZ5ZFJB2HjWLufpjbRzD2jevlJcUK-y-HBSVg2CDkDiNta7Xq4VYwxPLRPmh8e_86BF898N2wa1hPobR_ywKysI08MQ"/>
+<span class="absolute top-4 left-4 px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed font-label text-[10px] font-bold uppercase tracking-wider">
+                    Create at Home
                   </span>
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                  <div class="space-y-2">
-                    <div
-                      class="flex items-center justify-between text-xs font-label text-outline"
-                    >
-                      <span>Bộ Tự Chế • Mã: DIY-03</span>
-                      <span class="font-semibold text-secondary"
-                        >Tặng kèm Video AI</span
-                      >
-                    </div>
-                    <h3
-                      class="font-label text-base font-bold text-on-surface group-hover:text-primary transition-colors leading-tight"
-                    >
-                      Bộ Tự Chế DIY Kit Thủ Công Lõi Bắp
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center justify-between text-xs font-label text-outline">
+<span>DIY Craft Kit • Code: DIY-03</span>
+<span class="font-semibold text-secondary">Includes AI Tutorial Video</span>
+</div>
+<h3 class="font-label text-base font-bold text-on-surface group-hover:text-primary transition-colors leading-tight">
+                      Corn-Cob Handicraft DIY Kit
                     </h3>
-                    <p
-                      class="font-label text-xs text-on-surface-variant line-clamp-2"
-                    >
-                      Bao gồm 3 phôi đế nén thô, bộ màu khoáng đất tự nhiên, cọ
-                      tỉa lông tre và mã quét truy cập phòng hướng dẫn thực tế
-                      ảo.
+<p class="font-label text-xs text-on-surface-variant line-clamp-2">
+                      Includes three raw pressed blanks, natural mineral pigments, bamboo-fiber brushes and a QR code to access virtual craft tutorials.
                     </p>
-                  </div>
-                  <div class="pt-2 flex items-center justify-between">
-                    <div>
-                      <span
-                        class="font-label text-[10px] text-outline uppercase block"
-                        >Giá niêm yết</span
-                      >
-                      <span
-                        class="font-body text-2xl text-primary price-tag"
-                        data-krw="22000"
-                        data-usd="16.5"
-                        data-vnd="390000"
-                        >390.000 đ</span
-                      >
-                    </div>
-                    <button
-                      class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5"
-                      type="button"
-                    >
-                      <span class="material-symbols-outlined text-[16px]"
-                        >keyboard_double_arrow_left</span
-                      >
-                      <span>Chọn Mua</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Product Card 4: Corporate ESG Gift Set -->
-              <div
-                class="group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
-              >
-                <div
-                  class="relative w-full aspect-square bg-surface-container p-6 flex items-center justify-center overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500"
-                    data-alt="High-end corporate luxury gift box made of recycled textured corn husk fiber packaging containing handcrafted coasters with laser engraved corporate logos, botanical certificates, and silk ribbons in deep green and gold tones, pristine commercial catalog product photography."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3NB9vo6xOfbBd9cgldSs_iMhvxBrGtBm-rtoa0pU2ZTtL4uK-LUz41REf04j3EpbCLeFmQOVHGp88RYQ3-omrlNUFvtAMYNEGxudKwX1wmkPuEWvJRtmpSjvtyyDr-p4HVlyUelHrOLXSvu3HgyUHTW4LnTS11OhKyGViGuYnYlFW_hecVwMsSLfMBM8kTc0moNr1jqYETs4riMNU8qYMdqhcSg5z74NeiE45quf3eAlxjLyyriHLUQ"
-                    alt="High-end corporate luxury gift box made of recycled textured corn husk fiber packaging containing handcrafted coasters with laser engraved corporate logos, botanical certificates, and silk ribbons in deep green and gold tones, pristine commercial catalog product photography."
-                  />
-                  <span
-                    class="absolute top-4 left-4 px-2.5 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label text-[10px] font-bold uppercase tracking-wider"
-                  >
-                    Dành Cho Doanh Nghiệp
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div>
+<span class="font-label text-[10px] text-outline uppercase block">List Price</span>
+<span class="font-body text-2xl text-primary price-tag" data-krw="22000" data-usd="16.5" data-vnd="390000">VND 390,000</span>
+</div>
+<button class="px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">keyboard_double_arrow_left</span>
+<span>Add to Cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4: Corporate ESG Gift Set -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative w-full aspect-square bg-surface-container p-6 flex items-center justify-center overflow-hidden">
+<img alt="High-end corporate luxury gift box made of recycled textured corn husk fiber packaging containing handcrafted coasters with laser engraved corporate logos, botanical certificates, and silk ribbons in deep green and gold tones, pristine commercial catalog product photography." class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="High-end corporate luxury gift box made of recycled textured corn husk fiber packaging containing handcrafted coasters with laser engraved corporate logos, botanical certificates, and silk ribbons in deep green and gold tones, pristine commercial catalog product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3NB9vo6xOfbBd9cgldSs_iMhvxBrGtBm-rtoa0pU2ZTtL4uK-LUz41REf04j3EpbCLeFmQOVHGp88RYQ3-omrlNUFvtAMYNEGxudKwX1wmkPuEWvJRtmpSjvtyyDr-p4HVlyUelHrOLXSvu3HgyUHTW4LnTS11OhKyGViGuYnYlFW_hecVwMsSLfMBM8kTc0moNr1jqYETs4riMNU8qYMdqhcSg5z74NeiE45quf3eAlxjLyyriHLUQ"/>
+<span class="absolute top-4 left-4 px-2.5 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label text-[10px] font-bold uppercase tracking-wider">
+                    For Businesses
                   </span>
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                  <div class="space-y-2">
-                    <div
-                      class="flex items-center justify-between text-xs font-label text-outline"
-                    >
-                      <span>ESG Solution • Đặt trước</span>
-                      <span class="font-semibold text-primary"
-                        >In Logo Khắc Nổi</span
-                      >
-                    </div>
-                    <h3
-                      class="font-label text-base font-bold text-on-surface group-hover:text-primary transition-colors leading-tight"
-                    >
-                      Set Quà Tặng Doanh Nghiệp ESG
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<div class="flex items-center justify-between text-xs font-label text-outline">
+<span>ESG Solutions • Pre-Order</span>
+<span class="font-semibold text-primary">Embossed Logo Engraving</span>
+</div>
+<h3 class="font-label text-base font-bold text-on-surface group-hover:text-primary transition-colors leading-tight">
+                      ESG Corporate Gift Set
                     </h3>
-                    <p
-                      class="font-label text-xs text-on-surface-variant line-clamp-2"
-                    >
-                      Hộp quà cao cấp đi kèm báo cáo giảm phát thải CO2 kiểm
-                      định độc lập, quà tặng đối ngoại ý nghĩa cho đối tác toàn
-                      cầu.
+<p class="font-label text-xs text-on-surface-variant line-clamp-2">
+                      Premium gift packaging with an independently verified CO₂-reduction report, offering a meaningful cultural gift for global partners.
                     </p>
-                  </div>
-                  <div class="pt-2 flex items-center justify-between">
-                    <div>
-                      <span
-                        class="font-label text-[10px] text-outline uppercase block"
-                        >Báo giá theo số lượng</span
-                      >
-                      <span class="font-label text-sm font-bold text-tertiary"
-                        >Liên hệ tư vấn</span
-                      >
-                    </div>
-                    <button
-                      class="px-4 py-2.5 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5"
-                      type="button"
-                    >
-                      <span class="material-symbols-outlined text-[16px]"
-                        >contact_support</span
-                      >
-                      <span>Nhận Tư Vấn</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Interactive Supply Chain Transparency (Digital Material Passport) -->
-        <section class="w-full px-6 lg:px-12 py-20 bg-surface">
-          <div class="max-w-7xl mx-auto">
-            <div
-              class="p-8 lg:p-12 rounded-3xl bg-surface-container flex flex-col lg:flex-row items-center gap-12 shadow-[0_8px_30px_rgba(97,74,53,0.06)]"
-            >
-              <!-- Left: Context & Storytelling -->
-              <div class="flex-1 space-y-6">
-                <div
-                  class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label text-xs font-bold uppercase tracking-wider"
-                >
-                  <span class="material-symbols-outlined text-sm"
-                    >qr_code_scanner</span
-                  >
-                  <span>Minh Bạch Chuỗi Cung Ứng • Blockchain Passport</span>
-                </div>
-                <h2
-                  class="font-headline text-3xl sm:text-4xl text-on-surface uppercase tracking-tight leading-tight"
-                >
-                  Quét QR Phía Sau Mỗi Hiện Vật: Tận Mắt Thấy Nông Dân &amp;
-                  Nghệ Nhân Của Bạn
+</div>
+<div class="pt-2 flex items-center justify-between">
+<div>
+<span class="font-label text-[10px] text-outline uppercase block">Custom pricing by quantity</span>
+<span class="font-label text-sm font-bold text-tertiary">Contact for a quote</span>
+</div>
+<button class="px-4 py-2.5 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">contact_support</span>
+<span>Request a Consultation</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Supply Chain Transparency (Digital Material Passport) -->
+<section class="w-full px-6 lg:px-12 py-20 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="p-8 lg:p-12 rounded-3xl bg-surface-container flex flex-col lg:flex-row items-center gap-12 shadow-[0_8px_30px_rgba(97,74,53,0.06)]">
+<!-- Left: Context & Storytelling -->
+<div class="flex-1 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label text-xs font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">qr_code_scanner</span>
+<span>Supply Chain Transparency • Blockchain Passport</span>
+</div>
+<h2 class="font-headline text-3xl sm:text-4xl text-on-surface uppercase tracking-tight leading-tight">
+                  SCAN EACH ARTIFACT'S QR CODE TO MEET ITS FARMERS &amp; ARTISANS
                 </h2>
-                <p
-                  class="font-label text-sm text-on-surface-variant leading-relaxed"
-                >
-                  Chúng tôi kiên định xóa bỏ sự ẩn danh trong chuỗi cung ứng thủ
-                  công mỹ nghệ. Phía sau mỗi tấm đế lót CORNESS được bắn laser
-                  một mã QR độc bản, dẫn lối bạn đến cánh đồng thu hoạch cụ thể,
-                  ngày phơi nén vỏ ngô và hồ sơ nghệ nhân phụ trách khâu khắc
-                  men.
+<p class="font-label text-sm text-on-surface-variant leading-relaxed">
+                  We believe every maker deserves recognition. Each CORNESS coaster has a unique laser-engraved QR code that links to the exact harvest field, drying and pressing dates, and the artisan who completed its ceramic details.
                 </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                  <div
-                    class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3"
-                  >
-                    <div
-                      class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0"
-                    >
-                      <span
-                        class="material-symbols-outlined text-secondary text-2xl"
-                        >agriculture</span
-                      >
-                    </div>
-                    <div>
-                      <span
-                        class="font-label text-[10px] uppercase font-bold text-outline"
-                        >Nông Hộ Cung Ứng</span
-                      >
-                      <p class="font-label text-xs font-bold text-on-surface">
-                        Gia đình Chú Ba Sang
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-2xl">agriculture</span>
+</div>
+<div>
+<span class="font-label text-[10px] uppercase font-bold text-outline">Supplying Farm</span>
+<p class="font-label text-xs font-bold text-on-surface">
+                        Uncle Ba Sang's Family
                       </p>
-                      <p class="font-label text-[11px] text-on-surface-variant">
-                        Xuân Lộc • Vụ T3/2025
+<p class="font-label text-[11px] text-on-surface-variant">
+                        Xuan Loc • March 2025 Harvest
                       </p>
-                    </div>
-                  </div>
-                  <div
-                    class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3"
-                  >
-                    <div
-                      class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0"
-                    >
-                      <span
-                        class="material-symbols-outlined text-primary text-2xl"
-                        >draw</span
-                      >
-                    </div>
-                    <div>
-                      <span
-                        class="font-label text-[10px] uppercase font-bold text-outline"
-                        >Nghệ Nhân Khắc Dáng</span
-                      >
-                      <p class="font-label text-xs font-bold text-on-surface">
-                        Cô Mai &amp; Tổ hợp 4
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">draw</span>
+</div>
+<div>
+<span class="font-label text-[10px] uppercase font-bold text-outline">Craft Engraving Artisan</span>
+<p class="font-label text-xs font-bold text-on-surface">
+                        Ms. Mai &amp; Craft Group 4
                       </p>
-                      <p class="font-label text-[11px] text-on-surface-variant">
-                        32 năm kinh nghiệm gốm nén
+<p class="font-label text-[11px] text-on-surface-variant">
+                        32 years of ceramic craftsmanship
                       </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="pt-2 flex flex-wrap items-center gap-4">
-                  <button
-                    class="px-5 py-3 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-all shadow-md flex items-center gap-2"
-                    id="demo-qr-btn"
-                    type="button"
-                  >
-                    <span class="material-symbols-outlined text-lg"
-                      >center_focus_strong</span
-                    >
-                    <span>Mô Phỏng Trải Nghiệm Quét QR</span>
-                  </button>
-                  <span class="font-label text-xs text-outline"
-                    >Mã định danh bảo chứng tiêu chuẩn ISO 14067</span
-                  >
-                </div>
-              </div>
-              <!-- Right: Digital Passport Mobile Card Display -->
-              <div class="w-full lg:w-[420px] shrink-0">
-                <div
-                  class="w-full bg-surface-container-lowest rounded-2xl p-6 shadow-xl space-y-5 transition-transform duration-300 hover:scale-[1.01]"
-                  id="passport-box"
-                >
-                  <div
-                    class="flex items-center justify-between pb-4 border-b-0"
-                  >
-                    <div class="flex items-center gap-2">
-                      <span
-                        class="material-symbols-outlined text-primary text-lg"
-                        >fingerprint</span
-                      >
-                      <span
-                        class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
-                        >COR-PASSPORT #VN8921</span
-                      >
-                    </div>
-                    <span
-                      class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label text-[10px] font-bold"
-                      >Xác Thực</span
-                    >
-                  </div>
-                  <div
-                    class="relative w-full h-48 rounded-xl overflow-hidden bg-surface-container-high flex items-center justify-center"
-                  >
-                    <img
-                      class="w-full h-full object-cover"
-                      data-alt="Authentic portrait of a Vietnamese middle-aged artisan woman smiling proudly in her craft workshop in Dong Nai, holding corn husk craft coasters, soft natural ambient lighting, documentary style photography."
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXeSbOCdY4gQQvukA47IJsHVhM4MjYlWdRx1VKYSjdyMUYgMM0DapxwIPaRSqwhiqAf814MnGCtjG81dGrmPQksbfvdQd2rYAYdxKBQ3q7igRFvc14HJKyiCIx2RL3hJTT0Zup9s4Uzi3EjsUbaEef7S4YRVASr4hsaRrnhl8zJqAdefjWzWYxqRjxJfD7YxdXhQHOv_4WTKipd3Ly5RsVPuEoPY-xNETGf2_KE0EVTrbMQoH8RZVBow"
-                      alt="Authentic portrait of a Vietnamese middle-aged artisan woman smiling proudly in her craft workshop in Dong Nai, holding corn husk craft coasters, soft natural ambient lighting, documentary style photography."
-                    />
-                    <div
-                      class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-4"
-                    >
-                      <div class="text-inverse-on-surface">
-                        <div
-                          class="font-label text-[11px] uppercase tracking-wider text-secondary-fixed"
-                        >
-                          Nghệ nhân phụ trách
+</div>
+</div>
+</div>
+<div class="pt-2 flex flex-wrap items-center gap-4">
+<button class="px-5 py-3 rounded-xl bg-primary text-on-primary hover:bg-tertiary font-label text-xs font-bold uppercase tracking-wider transition-all shadow-md flex items-center gap-2" id="demo-qr-btn" type="button">
+<span class="material-symbols-outlined text-lg">center_focus_strong</span>
+<span>QR Scan Experience Demo</span>
+</button>
+<span class="font-label text-xs text-outline">ISO 14067 Traceability Identification</span>
+</div>
+</div>
+<!-- Right: Digital Passport Mobile Card Display -->
+<div class="w-full lg:w-[420px] shrink-0">
+<div class="w-full bg-surface-container-lowest rounded-2xl p-6 shadow-xl space-y-5 transition-transform duration-300 hover:scale-[1.01]" id="passport-box">
+<div class="flex items-center justify-between pb-4 border-b-0">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">fingerprint</span>
+<span class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">COR-PASSPORT #VN8921</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label text-[10px] font-bold">Verified</span>
+</div>
+<div class="relative w-full h-48 rounded-xl overflow-hidden bg-surface-container-high flex items-center justify-center">
+<img alt="Authentic portrait of a Vietnamese middle-aged artisan woman smiling proudly in her craft workshop in Dong Nai, holding corn husk craft coasters, soft natural ambient lighting, documentary style photography." class="w-full h-full object-cover" data-alt="Authentic portrait of a Vietnamese middle-aged artisan woman smiling proudly in her craft workshop in Dong Nai, holding corn husk craft coasters, soft natural ambient lighting, documentary style photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXeSbOCdY4gQQvukA47IJsHVhM4MjYlWdRx1VKYSjdyMUYgMM0DapxwIPaRSqwhiqAf814MnGCtjG81dGrmPQksbfvdQd2rYAYdxKBQ3q7igRFvc14HJKyiCIx2RL3hJTT0Zup9s4Uzi3EjsUbaEef7S4YRVASr4hsaRrnhl8zJqAdefjWzWYxqRjxJfD7YxdXhQHOv_4WTKipd3Ly5RsVPuEoPY-xNETGf2_KE0EVTrbMQoH8RZVBow"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-4">
+<div class="text-inverse-on-surface">
+<div class="font-label text-[11px] uppercase tracking-wider text-secondary-fixed">
+                          Artisan in charge
                         </div>
-                        <div class="font-label text-sm font-bold">
-                          Nguyễn Thị Mai • Hợp tác xã Xuân Phú
+<div class="font-label text-sm font-bold">
+                          Nguyen Thi Mai • Xuan Phu Cooperative
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="space-y-3 font-label text-xs">
-                    <div class="flex justify-between items-center py-1">
-                      <span class="text-outline">Tọa độ cánh đồng:</span>
-                      <span class="font-semibold text-on-surface"
-                        >10°55'42"N 107°18'09"E</span
-                      >
-                    </div>
-                    <div class="flex justify-between items-center py-1">
-                      <span class="text-outline"
-                        >Khối lượng vỏ bắp thu nạp:</span
-                      >
-                      <span class="font-semibold text-primary"
-                        >185 gram / 1 chiếc đế</span
-                      >
-                    </div>
-                    <div class="flex justify-between items-center py-1">
-                      <span class="text-outline"
-                        >Lượng khí nhà kính tránh được:</span
-                      >
-                      <span class="font-semibold text-secondary"
-                        >0.42 kg CO2 eq</span
-                      >
-                    </div>
-                    <div class="flex justify-between items-center py-1">
-                      <span class="text-outline">Thù lao trả trực tiếp:</span>
-                      <span class="font-semibold text-on-surface"
-                        >32.000 đ / sản phẩm</span
-                      >
-                    </div>
-                  </div>
-                  <div
-                    class="p-3 rounded-xl bg-surface-container-low flex items-center gap-3"
-                  >
-                    <div
-                      class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0"
-                    >
-                      <span
-                        class="material-symbols-outlined text-primary text-xl"
-                        >eco</span
-                      >
-                    </div>
-                    <div class="flex-1">
-                      <p
-                        class="font-label text-[11px] text-on-surface leading-tight font-medium"
-                      >
-                        Hiện vật có thể băm nhỏ làm phân bón hữu cơ compost sau
-                        18 tháng sử dụng.
+</div>
+</div>
+</div>
+<div class="space-y-3 font-label text-xs">
+<div class="flex justify-between items-center py-1">
+<span class="text-outline">Field coordinates:</span>
+<span class="font-semibold text-on-surface">10°55'42"N 107°18'09"E</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-outline">Corn husks collected:</span>
+<span class="font-semibold text-primary">185 grams per coaster</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-outline">Greenhouse gas emissions avoided:</span>
+<span class="font-semibold text-secondary">0.42 kg CO2 eq</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-outline">Direct artisan payment:</span>
+<span class="font-semibold text-on-surface">VND 32,000 per piece</span>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-xl">eco</span>
+</div>
+<div class="flex-1">
+<p class="font-label text-[11px] text-on-surface leading-tight font-medium">
+                        After 18 months of use, the item can be shredded and composted as organic fertilizer.
                       </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- 4 Fair Trade Commitments Section -->
-        <section class="w-full px-6 lg:px-12 py-16 bg-surface-container-low">
-          <div class="max-w-7xl mx-auto space-y-12">
-            <div class="text-center max-w-2xl mx-auto space-y-3">
-              <span
-                class="font-label text-xs uppercase tracking-[0.16em] font-bold text-secondary"
-                >Nguyên Tắc Bền Vững</span
-              >
-              <h2
-                class="font-headline text-3xl sm:text-4xl text-primary uppercase tracking-tight"
-              >
-                4 Cam Kết Thương Mại Công Bằng
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4 Fair Trade Commitments Section -->
+<section class="w-full px-6 lg:px-12 py-16 bg-surface-container-low">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="text-center max-w-2xl mx-auto space-y-3">
+<span class="font-label text-xs uppercase tracking-[0.16em] font-bold text-secondary">Sustainability Principles</span>
+<h2 class="font-headline text-3xl sm:text-4xl text-primary uppercase tracking-tight">
+                4 Fair-Trade Commitments
               </h2>
-              <p class="font-label text-sm text-on-surface-variant">
-                Không chỉ là sản phẩm trang trí, mỗi chiếc đế lót là sự đồng
-                hành trường kỳ cùng nông dân và thợ thủ công phụ nữ địa phương.
+<p class="font-label text-sm text-on-surface-variant">
+                More than decorative products, CORNESS coasters support a lasting partnership with local farmers and women artisans.
               </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <!-- Commitment 1 -->
-              <div
-                class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm space-y-4 hover:-translate-y-1 transition-transform"
-              >
-                <div
-                  class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-secondary"
-                >
-                  <span class="material-symbols-outlined text-2xl"
-                    >price_check</span
-                  >
-                </div>
-                <h3
-                  class="font-label text-base font-bold text-on-surface leading-snug"
-                >
-                  Bao Tiêu Nông Sản Cao Hơn 25% Thị Trường
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Commitment 1 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm space-y-4 hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">price_check</span>
+</div>
+<h3 class="font-label text-base font-bold text-on-surface leading-snug">
+                  Purchasing Agricultural Residues 25% Above Market Price
                 </h3>
-                <p
-                  class="font-label text-xs text-on-surface-variant leading-relaxed"
-                >
-                  Ký kết hợp đồng dài hạn thu gom phế phẩm vỏ bắp ngay tại
-                  ruộng, đảm bảo nguồn thu bổ sung ổn định bất chấp biến động
-                  mùa màng.
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">
+                  Long-term contracts purchase corn husks directly from the fields, providing stable extra income regardless of harvest fluctuations.
                 </p>
-              </div>
-              <!-- Commitment 2 -->
-              <div
-                class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm space-y-4 hover:-translate-y-1 transition-transform"
-              >
-                <div
-                  class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary"
-                >
-                  <span class="material-symbols-outlined text-2xl"
-                    >diversity_1</span
-                  >
-                </div>
-                <h3
-                  class="font-label text-base font-bold text-on-surface leading-snug"
-                >
-                  70% Lao Động Là Phụ Nữ Địa Phương
+</div>
+<!-- Commitment 2 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm space-y-4 hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">diversity_1</span>
+</div>
+<h3 class="font-label text-base font-bold text-on-surface leading-snug">
+                  70% of Workers Are Local Women
                 </h3>
-                <p
-                  class="font-label text-xs text-on-surface-variant leading-relaxed"
-                >
-                  Ưu tiên giải quyết việc làm tại chỗ cho phụ nữ nông thôn lúc
-                  nông nhàn, tổ chức lớp bồi dưỡng tay nghề và phụ cấp y tế định
-                  kỳ.
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">
+                  Prioritizing rural employment during the agricultural off-season, with skills training and regular healthcare support.
                 </p>
-              </div>
-              <!-- Commitment 3 -->
-              <div
-                class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm space-y-4 hover:-translate-y-1 transition-transform"
-              >
-                <div
-                  class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-tertiary"
-                >
-                  <span class="material-symbols-outlined text-2xl"
-                    >compost</span
-                  >
-                </div>
-                <h3
-                  class="font-label text-base font-bold text-on-surface leading-snug"
-                >
-                  100% Hoàn Trả Tự Nhiên Đất Mẹ
+</div>
+<!-- Commitment 3 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm space-y-4 hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-2xl">compost</span>
+</div>
+<h3 class="font-label text-base font-bold text-on-surface leading-snug">
+                  100% Return to Nature
                 </h3>
-                <p
-                  class="font-label text-xs text-on-surface-variant leading-relaxed"
-                >
-                  Sử dụng chất kết dính sinh học từ tinh bột và keo thực vật tự
-                  nhiên, hoàn toàn không chứa nhựa nhiệt dẻo hay hóa chất độc
-                  hại.
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">
+                  Made with natural plant-based starch binders, free from thermoplastic materials and hazardous chemicals.
                 </p>
-              </div>
-              <!-- Commitment 4 -->
-              <div
-                class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm space-y-4 hover:-translate-y-1 transition-transform"
-              >
-                <div
-                  class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed"
-                >
-                  <span class="material-symbols-outlined text-2xl"
-                    >all_inclusive</span
-                  >
-                </div>
-                <h3
-                  class="font-label text-base font-bold text-on-surface leading-snug"
-                >
-                  Đóng Gói Không Rác Thải Nhựa (Zero-Plastic)
+</div>
+<!-- Commitment 4 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm space-y-4 hover:-translate-y-1 transition-transform">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-2xl">all_inclusive</span>
+</div>
+<h3 class="font-label text-base font-bold text-on-surface leading-snug">
+                  Zero-Plastic Packaging
                 </h3>
-                <p
-                  class="font-label text-xs text-on-surface-variant leading-relaxed"
-                >
-                  Toàn bộ hộp đóng gói, giấy lót và băng dính được làm từ giấy
-                  kẹp sợi rơm tự nhiên và mực in gốc nước không ô nhiễm.
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">
+                  Boxes, liners and tape use straw-fiber paper and low-impact, water-based inks.
                 </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Interactive Call to Action Banner -->
-        <section class="w-full px-6 lg:px-12 py-16 bg-surface">
-          <div
-            class="max-w-7xl mx-auto rounded-3xl bg-primary text-on-primary p-8 lg:p-14 relative overflow-hidden shadow-2xl"
-          >
-            <!-- Decorative Organic Radial Background Graphic -->
-            <div
-              class="absolute -right-24 -bottom-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"
-            ></div>
-            <div
-              class="absolute -left-12 -top-12 w-64 h-64 rounded-full bg-primary-container/40 blur-2xl pointer-events-none"
-            ></div>
-            <div class="relative z-10 max-w-2xl space-y-5">
-              <span
-                class="px-3.5 py-1 rounded-full bg-primary-container text-on-primary-container font-label text-xs font-bold uppercase tracking-wider inline-block"
-              >
-                Hợp Tác Phát Triển Bền Vững • B2B &amp; Văn Hóa
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Call to Action Banner -->
+<section class="w-full px-6 lg:px-12 py-16 bg-surface">
+<div class="max-w-7xl mx-auto rounded-3xl bg-primary text-on-primary p-8 lg:p-14 relative overflow-hidden shadow-2xl">
+<!-- Decorative Organic Radial Background Graphic -->
+<div class="absolute -right-24 -bottom-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -top-12 w-64 h-64 rounded-full bg-primary-container/40 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 max-w-2xl space-y-5">
+<span class="px-3.5 py-1 rounded-full bg-primary-container text-on-primary-container font-label text-xs font-bold uppercase tracking-wider inline-block">
+                Sustainable Partnerships • B2B &amp; Culture
               </span>
-              <h2
-                class="font-headline text-3xl sm:text-4xl text-on-primary uppercase tracking-tight leading-tight"
-              >
-                Cùng CORNESS Lan Tỏa Giá Trị Nông Nghiệp Tuần Hoàn
+<h2 class="font-headline text-3xl sm:text-4xl text-on-primary uppercase tracking-tight leading-tight">
+                Help CORNESS Share the Value of Circular Agriculture
               </h2>
-              <p
-                class="font-label text-sm text-on-primary-container leading-relaxed"
-              >
-                Bạn là thương hiệu lữ hành, chuỗi khách sạn sinh thái, hay doanh
-                nghiệp đang tìm kiếm quà tặng văn hóa đạt chuẩn ESG quốc tế? Đội
-                ngũ thiết kế của chúng tôi sẵn sàng đồng hành sáng tạo mẫu mã
-                độc quyền.
+<p class="font-label text-sm text-on-primary-container leading-relaxed">
+                Are you a travel brand, eco-hotel chain or company seeking cultural gifts that meet international ESG standards? Our design team can create exclusive products with you.
               </p>
-              <div class="pt-4 flex flex-wrap items-center gap-4">
-                <a
-                  class="px-6 py-3.5 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-lg flex items-center gap-2"
-                  href="#"
-                >
-                  <span class="material-symbols-outlined text-lg">mail</span>
-                  <span>Gửi Yêu Cầu Hợp Tác B2B</span>
-                </a>
-                <a
-                  class="px-6 py-3.5 rounded-xl bg-primary-container hover:bg-tertiary-container text-on-primary font-label text-xs font-bold uppercase tracking-wider transition-colors flex items-center gap-2"
-                  href="#"
-                >
-                  <span class="material-symbols-outlined text-lg"
-                    >download</span
-                  >
-                  <span>Tải Hồ Sơ Năng Lực &amp; Báo Cáo ESG 2025</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Currency Switcher & QR Modal Micro-Interaction Script -->
-        <script>
+<div class="pt-4 flex flex-wrap items-center gap-4">
+<a class="px-6 py-3.5 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-label text-xs font-bold uppercase tracking-wider transition-colors shadow-lg flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
+<span>Send a B2B Partnership Inquiry</span>
+</a>
+<a class="px-6 py-3.5 rounded-xl bg-primary-container hover:bg-tertiary-container text-on-primary font-label text-xs font-bold uppercase tracking-wider transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg">download</span>
+<span>Download Company Profile &amp; 2025 ESG Report</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Currency Switcher & QR Modal Micro-Interaction Script -->
+<script>
           (function () {
             // Currency Switcher Logic
             const currButtons = document.querySelectorAll(
@@ -1382,7 +848,7 @@
                     tag.textContent =
                       Number(tag.getAttribute("data-vnd")).toLocaleString(
                         "vi-VN",
-                      ) + " đ";
+                      ) + " VND";
                   }
                 });
               });
@@ -1404,129 +870,94 @@
             }
           })();
         </script>
-      </div>
-    </main>
-    <footer class="w-full bg-surface-container-low pt-16 pb-12 mt-20">
-      <div class="w-full px-6 lg:px-12">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12"
-        >
-          <div class="lg:col-span-2 space-y-4">
-            <div class="flex items-center gap-3">
-              <img
-                alt="Favicon and PWA app icon for CORNESS - Sustainable Corn Craft &amp; Cultural Heritage brand. Minimalist graphic symbol of the CORNESS brand emblem: an elegant stylised deep green botanical corn sprout seedling with golden sun-yellow corn kernel inside the arc of the letter 'C'. Full-bleed solid background in organic earthy sage cream color (#fbf7ee). No rounded rectangle, no squircle container, no outer border, no framing shapes. The minimalist emblem is centered with clean vector geometric lines, modern organic craft aesthetic, high contrast, clean, sharp SVG vector icon look, edge-to-edge square canvas."
-                class="h-8 w-auto object-contain"
-                src="https://lh3.googleusercontent.com/aida/AEtjO1WzNpDLsD48UmBI9njzaHuhpd-kvHb66e2_1TFmms2ojZMto5EutZFD5zFkMNF01zIQhlSNRBjDQPVenxHWDc0Hk-jaap42-gye2RMQZ8xrpTAQc328Bm3UacCDPJxIDpTw4CpAnU73GbmrQuJxBJBxVsOXa0MPyfw5hPhHnSZayu872RJ-n5skocm3KW3NKm71T0DO8j5nQx5j3RwEBROnodTTQY2Mv-XSSfJdVdJ9iEX-wm1w2gH5xBdv"
-              /><span
-                class="font-headline text-xl uppercase tracking-tight text-primary"
-                >CORNESS</span
-              >
-            </div>
-            <p
-              class="font-label text-xs uppercase tracking-[0.08em] text-secondary font-bold"
-            >
-              From Waste to Story • Tôn Vinh Di Sản Nông Nghiệp
+</div>
+</main>
+<footer class="w-full bg-surface-container-low pt-16 pb-12 mt-20">
+<div class="w-full px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12">
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<img alt="Favicon and PWA app icon for CORNESS - Sustainable Corn Craft &amp; Cultural Heritage brand. Minimalist graphic symbol of the CORNESS brand emblem: an elegant stylised deep green botanical corn sprout seedling with golden sun-yellow corn kernel inside the arc of the letter 'C'. Full-bleed solid background in organic earthy sage cream color (#fbf7ee). No rounded rectangle, no squircle container, no outer border, no framing shapes. The minimalist emblem is centered with clean vector geometric lines, modern organic craft aesthetic, high contrast, clean, sharp SVG vector icon look, edge-to-edge square canvas." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WzNpDLsD48UmBI9njzaHuhpd-kvHb66e2_1TFmms2ojZMto5EutZFD5zFkMNF01zIQhlSNRBjDQPVenxHWDc0Hk-jaap42-gye2RMQZ8xrpTAQc328Bm3UacCDPJxIDpTw4CpAnU73GbmrQuJxBJBxVsOXa0MPyfw5hPhHnSZayu872RJ-n5skocm3KW3NKm71T0DO8j5nQx5j3RwEBROnodTTQY2Mv-XSSfJdVdJ9iEX-wm1w2gH5xBdv"/><span class="font-headline text-xl uppercase tracking-tight text-primary">CORNESS</span>
+</div>
+<p class="font-label text-xs uppercase tracking-[0.08em] text-secondary font-bold">
+              From Waste to Story • Celebrating Agricultural Heritage
             </p>
-            <p
-              class="font-label text-sm text-on-surface-variant max-w-md leading-relaxed"
-            >
-              Hệ sinh thái thủ công mỹ nghệ bền vững chuyển hóa phế phẩm vỏ bắp
-              Xuân Phú, Đồng Nai thành những tác phẩm mang hồn cốt dân tộc, kết
-              nối nghệ nhân truyền thống cùng công nghệ AI văn hóa tiên phong.
+<p class="font-label text-sm text-on-surface-variant max-w-md leading-relaxed">
+              A sustainable craft ecosystem that transforms discarded corn husks from Xuan Phu, Dong Nai into creations inspired by Vietnamese heritage, connecting traditional artisans with pioneering cultural AI technology.
             </p>
-            <div class="flex items-center gap-3 pt-2">
-              <span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-primary"
-                ><span class="material-symbols-outlined text-[14px]"
-                  >verified</span
-                >Chứng nhận OCOP Tiêu Biểu</span
-              ><span
-                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-tertiary"
-                ><span class="material-symbols-outlined text-[14px]"
-                  >nest_eco_leaf</span
-                >100% Upcycled Biomaterial</span
-              >
-            </div>
-          </div>
-          <div class="space-y-3">
-            <h4
-              class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
-            >
-              1. Khám Phá
+<div class="flex items-center gap-3 pt-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-primary"><span class="material-symbols-outlined text-[14px]">verified</span>Recognized OCOP Certification</span><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-[11px] font-label font-semibold text-tertiary"><span class="material-symbols-outlined text-[14px]">nest_eco_leaf</span>100% Upcycled Biomaterial</span>
+</div>
+</div>
+<div class="space-y-3">
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">
+              1. Explore
             </h4>
-            <ul class="space-y-2 font-label text-sm text-on-surface-variant">
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Nguồn gốc Vỏ Bắp Xuân Phú
+<ul class="space-y-2 font-label text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Origin of Xuan Phu Corn Husks
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Làng Nghề &amp; Nghệ Nhân
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Craft Villages &amp; Artisans
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Quy Trình Xử Lý Thuần Tự Nhiên
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Natural Processing Methods
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Thư Viện Hoa Văn Bản Địa
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Local Motif Library
               </li>
-            </ul>
-          </div>
-          <div class="space-y-3">
-            <h4
-              class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
-            >
-              2. Trải Nghiệm &amp; AI
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">
+              2. Experiences &amp; AI
             </h4>
-            <ul class="space-y-2 font-label text-sm text-on-surface-variant">
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Workshop Thủ Công Tại Chỗ
+<ul class="space-y-2 font-label text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Hands-on Craft Workshops
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
+<li class="hover:text-primary cursor-pointer transition-colors">
                 CORA AI Cultural Studio
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Kể Chuyện Bằng Giọng Nói
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Voice Storytelling
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Tùy Biến Sản Phẩm 3D
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Customize 3D Products
               </li>
-            </ul>
-          </div>
-          <div class="space-y-3">
-            <h4
-              class="font-label text-xs uppercase tracking-widest font-bold text-on-surface"
-            >
-              3. Cửa Hàng &amp; Tác Động
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">
+              3. Shop &amp; Impact
             </h4>
-            <ul class="space-y-2 font-label text-sm text-on-surface-variant">
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Bộ Sưu Tập Giới Hạn
+<ul class="space-y-2 font-label text-sm text-on-surface-variant">
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Limited-Edition Collection
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Tác Động Giảm Thải Carbon
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Carbon Reduction Impact
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Hỗ Trợ Sinh Kế Nông Dân
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Support Farmers’ Livelihoods
               </li>
-              <li class="hover:text-primary cursor-pointer transition-colors">
-                Chính Sách Bền Vững &amp; Đối Tác
+<li class="hover:text-primary cursor-pointer transition-colors">
+                Sustainability Policy &amp; Partners
               </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-label text-xs text-on-surface-variant"
-        >
-          <p>
-            © 2025 CORNESS Sustainable Craft &amp; Cultural Heritage. Xuân Phú,
-            Xuân Lộc, Đồng Nai.
+</ul>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-label text-xs text-on-surface-variant">
+<p>
+            © 2025 CORNESS Sustainable Craft &amp; Cultural Heritage. Xuan Phu, Xuan Loc, Dong Nai.
           </p>
-          <div class="flex items-center gap-6">
-            <span>Kinh Tế Tuần Hoàn Nông Nghiệp</span
-            ><span>Bảo Tồn Bản Sắc Việt</span>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="responsive.js"></script>
-    <script src="i18n.js"></script>
-  </body>
+<div class="flex items-center gap-6">
+<span>Circular Agricultural Economy</span><span>Preserving Vietnamese Identity</span>
+</div>
+</div>
+</div>
+</footer>
+<script src="responsive.js"></script>
+<script src="i18n.js"></script>
+</body>
 </html>

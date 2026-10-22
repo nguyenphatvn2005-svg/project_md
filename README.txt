@@ -1,37 +1,28 @@
-CORNESS — AI Cultural Studio / Premium UI Optimization
-====================================================
+CORNESS WEBSITE — ENGLISH EDITION
+=================================
+All seven main pages and their interactive UI have been translated into English:
+- explore.html: Explore & Heritage
+- my-product.html: Your Product, Personal Collection & Six Dong Nai Destinations
+- experience.html: Experiences & Workshop Booking
+- ai-studio.html: AI Studio & CORA Chat
+- shop.html: Shop & Sustainability Impact
+- checkout.html: Workshop Checkout
+- digital-pass.html: Digital Ticket & Workshop Passport
 
-Đã tối ưu:
-- Font tiếng Việt:
-  + Headline / Display: Playfair Display
-  + Body / Label: Be Vietnam Pro
-- Header glass / backdrop blur / cân bằng spacing.
-- Card, border, shadow và typography được tinh chỉnh theo phong cách premium craft/heritage.
-- ai-studio.html:
-  + Giữ nguyên layout editor 8 cột + CORA 4 cột.
-  + Nâng cấp Substrate / Style / Motif active-hover states.
-  + Nâng cấp Live Preview frame.
-  + Nâng cấp CORA chat bubbles, quick prompts, input và sticky panel.
-- checkout.html:
-  + Giữ nguyên layout form 7 cột + summary 5 cột.
-  + Nâng cấp payment cards và trạng thái checked.
-  + Làm nổi bật Laser Personalization Preview.
-  + Nâng cấp sticky pricing / eco impact summary.
-- Responsive được bổ sung cho tablet/mobile.
+The 3D viewer text is also in English. Navigation labels, image descriptions,
+form fields, notifications, modals, calculator output and interactive copy have
+been updated. The English workshop guide option is selected by default.
 
-Cam kết giữ nguyên:
-- Tất cả ID gốc.
-- Tất cả src hình ảnh.
-- Các class JavaScript tương tác gốc (chỉ thêm class visual mới ở một số wrapper).
-- Script logic cuối file.
-- Three.js và các viewer hiện có.
+Run index.html or my-product.html. The existing index.html redirects to
+my-product.html as in the supplied source. The main Explore page remains
+explore.html. CSS, JS and the original navigation structure are preserved.
 
-Kiểm tra:
-- 9/9 file parse HTML hợp lệ.
-- Không có duplicate ID.
-- JavaScript inline 9/9 file qua node --check.
-- Tất cả src hình ảnh trùng tuyệt đối với bản gốc.
-- Tất cả ID gốc trùng tuyệt đối với bản gốc.
+IMPORTANT: The source files did not include the local images/ directory.
+Restore your existing images/ folder alongside these files (especially
+images/FGlogo.png). Existing external photos, hosted media and the Tailwind/
+Google Fonts resources need an internet connection. The six destination cards
+have in-page fallback visuals if remote images do not load.
 
-Chạy:
-Mở cả thư mục bằng VS Code và chạy index.html bằng Live Server.
+Only the website language/content was changed; claims, sample booking data and
+other functionality have not been independently verified. Review third-party
+photo usage rights before publishing.
